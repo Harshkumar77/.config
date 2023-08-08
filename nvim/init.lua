@@ -353,6 +353,7 @@ cmp.setup {
 }
 
 require 'volcano.nvim-tree'
+require 'volcano.nvim-tree'
 
 
 -- The line beneath this is called `modeline`. See `:help modeline`
