@@ -104,11 +104,15 @@ require('lazy').setup({
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
     opts = {
-      options = {
-        icons_enabled = false,
+      options      = {
+        icons_enabled = true,
         theme = 'onedark',
         component_separators = '|',
         section_separators = '',
+      },
+      dependencies
+                   = {
+        'nvim-tree/nvim-web-devicons'
       },
     },
   },
@@ -161,6 +165,8 @@ require('lazy').setup({
       'nvim-tree/nvim-web-devicons'
     },
   },
+
+  { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
@@ -264,7 +270,7 @@ local on_attach = function(_, bufnr)
 
   -- See `:help K` for why this keymap
   nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-  nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
+  nmap('gk', vim.lsp.buf.signature_help, 'Signature Documentation')
 
   -- Lesser used LSP functionality
   nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
@@ -376,7 +382,8 @@ cmp.setup {
 
 require 'volcano.nvim-tree'
 require 'volcano.tree-sitter'
-vim.keymap.set('n' , '<C-s>', ':tabnew ~/notes/scrathpad.md<cr>')
+require 'volcano.bufferline'
+vim.keymap.set('n', '<C-s>', ':tabnew ~/notes/scrathpad.md<cr>')
 
 
 
