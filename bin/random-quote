@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-selection="$(wc ~/notes/quotes -l | awk '{print $1}')"
-random_quote_index="$(shuf -i 0-$selection -n 1)"
-echo ""
-echo ""
-sed -n "$random_quote_index"p ~/notes/quotes | lolcat
-echo ""
