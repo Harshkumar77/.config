@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+selection="$(find  ~/.config ~/.config/home-dot-files -maxdepth 1 -iwholename "*config/*" -or -iname ".*" | fzf)"
+nvim "$selection"
+
+
