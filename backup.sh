@@ -1,8 +1,14 @@
+msg="$(date | openssl shake128 | awk -F ' ' '{print $2}')"
+
 echo "starting backup........."
 git -C ~/.config add ~/.config/nvim
+git -C ~/.config add ~/.config/wallpaper
+git -C ~/.config add ~/.config/home-dot-files
+git -C ~/.config add ~/.config/backup.sh
+git -C ~/.config add ~/.config/bin 
 git -C ~/.config add -u 
-git -C ~/.config commit -m "$(date)"
+git -C ~/.config commit -m "$msg"
 git -C ~/.config push
 git -C ~/notes add -A
-git commit -m "$(date)"
+git -C ~/notes commit -m "$msg"
 echo "backup done"
