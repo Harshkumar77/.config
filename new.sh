@@ -1,2 +1,3 @@
-git clone --depth 1 https://github.com/user/repo.git
-ln ~/.config/home-dot-files/* ~
+ln ~/.config/home-dot-files/.vimrc ~/.vimrc
+ln ~/.config/home-dot-files/.vimrc ~/.zshrc
+
