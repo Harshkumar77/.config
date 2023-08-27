@@ -19,13 +19,6 @@ autocmd({'BufWritePost'} , {
   end
 })
 
-     -- vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
-     --   pattern = {"*.c", "*.h"},
-     --   callback = function(ev)
-     --     print(string.format('event fired: s', vim.inspect(ev)))
-     --   end
-     -- })
-
 -- start buffer from the point it was leaved
 -- augroup('lastPosition', { clear = true })
 -- autocmd('Filetype', {
