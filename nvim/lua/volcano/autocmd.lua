@@ -15,7 +15,7 @@ autocmd('Filetype', {
 autocmd({'BufWritePost'} , {
   pattern = {'*notes/*'},
   callback = function ()
-    vim.cmd[[~/.config/backup.sh]]
+    vim.cmd[[!sh ~/.config/backup.sh]]
   end
 })
 
