@@ -1,3 +1,4 @@
+export EDITOR="nvim"
 export PATH=$HOME/.config/bin:$HOME/.config/bin/nvim-linux64/bin:$PATH
 random-quote
 
