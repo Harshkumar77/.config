@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+rand_wall=`ls ~/.config/wallpaper/ -I wallpaper.jpg | shuf -n 1`
+echo $rand_wall | awk -F ".jpg" '{print $1}' | lolcat
+cp ~/.config/wallpaper/"$rand_wall"  ~/.config/wallpaper/wallpaper.jpg

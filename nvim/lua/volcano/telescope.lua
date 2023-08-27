@@ -4,10 +4,10 @@ require('telescope').setup {
       i = {
         ['<C-u>'] = false,
         ['<C-d>'] = false,
-        ["<cr>"] = require('telescope.actions').file_tab,
+        -- ["<cr>"] = require('telescope.actions').file_tab,
       },
       n = {
-        ["<cr>"] = require('telescope.actions').file_tab,
+        -- ["<cr>"] = require('telescope.actions').file_tab,
       }
     },
   },

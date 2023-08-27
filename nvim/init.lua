@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
 
-  -- Git 
+  -- Git
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
@@ -55,9 +55,9 @@ require('lazy').setup({
       -- Adds a number of user-friendly snippets
       'rafamadriz/friendly-snippets',
 
-      -- file path
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-cmdline'
     },
   },
 
@@ -72,11 +72,11 @@ require('lazy').setup({
     opts = {
       -- See `:help gitsigns.txt`
       signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
+        add = { text = '' },
+        change = { text = '||' },
+        delete = { text = '' },
         topdelete = { text = '‾' },
-        changedelete = { text = '~' },
+        changedelete = { text = '|' },
       },
       on_attach = function(bufnr)
         vim.keymap.set('n', '<leader>gp', require('gitsigns').prev_hunk,
@@ -87,19 +87,17 @@ require('lazy').setup({
     },
   },
 
-
-
   {
-    -- Theme inspired by Atom
+    -- Theme
     'navarasu/onedark.nvim',
   },
   {
     'lunarvim/synthwave84.nvim'
   },
+  { 'tanvirtin/monokai.nvim' },
   {
-    -- Set lualine as statusline
+    --  statusline
     'nvim-lualine/lualine.nvim',
-    -- See `:help lualine.txt`
     opts = {
       options      = {
         icons_enabled = true,
@@ -151,8 +149,6 @@ require('lazy').setup({
 
 }, {})
 
--- telescope
-
 require 'volcano.tree-sitter'
 require 'volcano.lsp'
 require 'volcano.nvim-tree'
@@ -162,3 +158,4 @@ require 'volcano.indent'
 require 'volcano.theme'
 require 'volcano.cmp'
 require 'volcano.telescope'
+require 'volcano.autocmd'

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+session=`tmux ls | awk -F ":" '{print $1}' | fzf`
+tmux switch -t "$session" || tmux attach -t "$session"
+
+
