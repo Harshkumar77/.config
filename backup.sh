@@ -11,4 +11,6 @@ git -C ~/.config commit -m "$msg"
 git -C ~/.config push
 git -C ~/notes add -A
 git -C ~/notes commit -m "$msg"
+git -C ~/notes push
+
 echo "backup done"
