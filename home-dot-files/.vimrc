@@ -137,6 +137,10 @@ let g:vimwiki_diary_caption_level=-1
 "set list
 "set listchars+=eol:󰦷 " didn't like it maybe future its eol character
 
-noremap Q <C-^> "jump to last file
+nnoremap Q <C-^> "jump to last file
 
 set ls=3 "only one status line
+
+" not worjing now
+set dictionary+=/usr/share/dict/words
+inoremap <C-d> <C-x><C-k>
