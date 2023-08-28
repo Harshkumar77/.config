@@ -142,5 +142,5 @@ nnoremap Q <C-^> "jump to last file
 set ls=3 "only one status line
 
 " not worjing now
-set dictionary+=/usr/share/dict/words
+set dict='/usr/share/dict/words'
 inoremap <C-d> <C-x><C-k>
