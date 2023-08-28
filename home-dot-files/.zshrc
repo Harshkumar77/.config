@@ -35,3 +35,8 @@ alias ll='exa --icons -ahl'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+
+# taskwarrior 
+alias t='task'
+alias tg='task ghistory.weekly'
+alias cal='task calendar'
