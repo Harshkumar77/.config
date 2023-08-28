@@ -133,6 +133,7 @@ let g:vimwiki_list = [{'path': '~/notes/',
                         \ 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_markdown_link_ext = 1
 let g:vimwiki_diary_caption_level=-1
+let g:vimwiki_auto_header=1
 
 "set list
 "set listchars+=eol:󰦷 " didn't like it maybe future its eol character
