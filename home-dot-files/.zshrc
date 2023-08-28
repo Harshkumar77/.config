@@ -1,6 +1,8 @@
 export EDITOR="nvim"
 export PATH=$HOME/.config/bin:$HOME/.config/bin/nvim-linux64/bin:$PATH
+clear
 random-quote
+task limit:1
 
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -14,8 +16,8 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-# "no bell
-unsetopt BEEP
+
+unsetopt BEEP # "no bell
 
 source ~/.config/fzf-tab/fzf-tab.plugin.zsh
 source ~/.config/zsh-plugins/zsh-autosuggestion/zsh-autosuggestions.zsh
