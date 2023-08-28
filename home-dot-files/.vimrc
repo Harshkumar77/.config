@@ -18,7 +18,7 @@ nnoremap <C-l> <C-w>l
 "only spaces no tabs
 set expandtab
 retab!
-set shiftwidth=4
+set shiftwidth=2
 retab
 
 "Super o
