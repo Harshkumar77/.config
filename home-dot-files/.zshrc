@@ -27,8 +27,8 @@ ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 ZVM_VI_EDITOR=nvim
 source ~/.config/zsh-plugins/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+alias z='zsh'
 alias vw='nvim ~/notes/index.md'
-# alias tx='tmux attach || tmux new-session -s "default"'
 alias l='exa --icons -a'
 alias ll='exa --icons -ahl'
 

@@ -109,7 +109,9 @@ let g:netrw_liststyle = 3
 set noswapfile
 
 nnoremap ; :
+vnoremap ; :
 nnoremap : ;
+vnoremap : ;
 
 set cursorline
 
@@ -145,7 +147,7 @@ let g:vimwiki_auto_header=1
 "set listchars+=eol:󰦷 
 
 "jump to last file
-nnoremap Q :b#<CR>
+nnoremap s <C-^>
 
 "only one status line
 set ls=3
