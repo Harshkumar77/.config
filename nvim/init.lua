@@ -159,5 +159,5 @@ require 'volcano.theme'
 require 'volcano.cmp'
 require 'volcano.telescope'
 require 'volcano.autocmd'
+require 'volcano.vimwiki'
 
-vim.cmd[[:set dictionary+=/usr/share/dict/words]]

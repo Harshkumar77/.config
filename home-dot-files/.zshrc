@@ -40,3 +40,11 @@ export NVM_DIR="$HOME/.nvm"
 alias t='task'
 alias tg='task ghistory.weekly'
 alias cal='task calendar'
+
+# pnpm
+export PNPM_HOME="/home/volcano/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

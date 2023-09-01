@@ -42,7 +42,8 @@ noremap <leader>; A;<Esc>o
 
 "search
 set incsearch
-set nohlsearch "no highlight on search
+"no highlight on search
+set nohlsearch
 
 "Move lines
 noremap <leader>j Vxp
@@ -86,7 +87,8 @@ set termguicolors
 
 " fold
 set foldmethod=syntax
-set nofoldenable                     " Disable folding at startup.
+" Disable folding at startup.
+set nofoldenable                    
 
 "file explorer
 nnoremap <leader>f :Explore<cr>
@@ -96,9 +98,12 @@ let g:netrw_keepdir = 0
 let g:netrw_winsize = 30
 let g:netrw_banner = 0
 let g:netrw_localcopydircmd = 'cp -r' 
-let g:netrw_localrmdir='rm -r' "doesnt work
-hi! link netrwMarkFile Search "idk what it is
-let g:netrw_liststyle = 3 "default tree
+"doesnt work
+let g:netrw_localrmdir='rm -r' 
+"idk what it is
+hi! link netrwMarkFile Search 
+"default tree
+let g:netrw_liststyle = 3 
 
 "annoying swp files
 set noswapfile
@@ -136,11 +141,14 @@ let g:vimwiki_diary_caption_level=-1
 let g:vimwiki_auto_header=1
 
 "set list
-"set listchars+=eol:󰦷 " didn't like it maybe future its eol character
+" didn't like it maybe future its eol character
+"set listchars+=eol:󰦷 
 
-nnoremap Q <C-^> "jump to last file
+"jump to last file
+nnoremap Q :b#<CR>
 
-set ls=3 "only one status line
+"only one status line
+set ls=3
 
 " not worjing now
 set dict='/usr/share/dict/words'
