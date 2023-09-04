@@ -8,4 +8,4 @@ vim.g.vimwiki_list = { {
 
 vim.g.vimwiki_markdown_link_ext = 1
 
-vim.g.vimwiki_diary_caption_level = -1
+vim.g.vimwiki_diary_caption_level=-1
