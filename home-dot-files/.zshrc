@@ -31,6 +31,7 @@ alias z='zsh'
 alias vw='nvim ~/notes/index.md'
 alias l='exa --icons -a'
 alias ll='exa --icons -ahl'
+alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

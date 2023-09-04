@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-find . -type d ! -wholename '*.config*' ! -wholename '*node_modules*' ! -wholename '*.git*' | fzf
+folder=`fdfind . ~ -t d -L -H -I -E '.git' -E 'node_modules' | awk -F "/home/volcano/" '{print $2}' | fzf`
+cd "$HOME/$folder"
