@@ -31,11 +31,11 @@ local transparent = false
 vim.api.nvim_create_user_command("GlassToggle", function()
   if (transparent == false) then
     vim.cmd [[
-highlight Normal guibg=none
-highlight NonText guibg=none
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
-]]
+      highlight Normal guibg=none
+      highlight NonText guibg=none
+      highlight Normal ctermbg=none
+      highlight NonText ctermbg=none
+    ]]
     transparent = true
     return
   end

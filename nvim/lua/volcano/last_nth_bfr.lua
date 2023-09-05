@@ -1,15 +1,15 @@
-function last_nth_buffer(n)
-  function splitString(inputstr, sep)
-    if sep == nil then
-      sep = "%s"
-    end
-    local t = {}
-    for str in string.gmatch(inputstr, "([^" .. sep .. "]+)") do
-      table.insert(t, str)
-    end
-    return t
+function splitString(inputstr, sep)
+  if sep == nil then
+    sep = "%s"
   end
+  local t = {}
+  for str in string.gmatch(inputstr, "([^" .. sep .. "]+)") do
+    table.insert(t, str)
+  end
+  return t
+end
 
+function last_nth_buffer(n)
   return function()
     local sorted_bfrs_raw = (vim.api.nvim_exec2([[:ls sort]], { output = true })).output
     local sorted_bfrs_table = splitString(sorted_bfrs_raw, "\n")
@@ -25,3 +25,8 @@ end
 vim.keymap.set('n', 'S', last_nth_buffer(3), { desc = 'last to last recent buffer' })
 vim.keymap.set('n', 'gs', last_nth_buffer(4), { desc = 'last to last to last recent buffer' })
 vim.keymap.set('n', 'gS', last_nth_buffer(5), { desc = 'last to last to last to last recent buffer' })
+vim.keymap.set('n', '<leader>gs', last_nth_buffer(6), { desc = 'last to last to last to last to last recent buffer' })
+vim.keymap.set('n', '<leader>gS', last_nth_buffer(7),
+  { desc = 'last to last to last to last to last to last recent buffer' })
+vim.keymap.set('n', '<leader>GS', last_nth_buffer(7),
+  { desc = 'last to last to last to last to last to last to last recent buffer' })

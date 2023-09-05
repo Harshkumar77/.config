@@ -61,6 +61,16 @@ require('nvim-treesitter.configs').setup {
   },
 }
 
+-- vim.api.nvim_create_augroup('spellCheck', { clear = true })
+-- vim.api.nvim_create_autocmd('BufAdd', {
+--   group = 'spellCheck',
+--   callback = function ()
+--   vim.cmd[[
+--     vim.opt.foldmethod = "expr"
+--     vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+--   ]]
+--   end
+-- })
+
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-

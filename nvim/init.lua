@@ -1,6 +1,4 @@
-vim.cmd [[
-source ~/.vimrc
-]]
+vim.cmd [[ source ~/.vimrc ]]
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
@@ -162,5 +160,4 @@ require 'volcano.cmp'
 require 'volcano.telescope'
 require 'volcano.autocmd'
 require 'volcano.vimwiki'
-require 'volcano.custom'
-
+require 'volcano.last_nth_bfr'

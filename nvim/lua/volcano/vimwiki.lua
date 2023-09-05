@@ -1,4 +1,4 @@
-vim.cmd [[:set dictionary+=/usr/share/dict/words]]
+vim.opt.dictionary:append('/usr/share/dict/words')
 
 vim.g.vimwiki_list = { {
   path = '~/notes/',
