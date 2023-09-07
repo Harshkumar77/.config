@@ -61,6 +61,8 @@ require('nvim-treesitter.configs').setup {
   },
 }
 
+require'treesitter-context'.setup()
+
 -- vim.api.nvim_create_augroup('spellCheck', { clear = true })
 -- vim.api.nvim_create_autocmd('BufAdd', {
 --   group = 'spellCheck',

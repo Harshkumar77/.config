@@ -1,5 +1,5 @@
 export EDITOR="nvim"
-export PATH=$HOME/.config/bin:$HOME/.config/bin/nvim-linux64/bin:$PATH
+export PATH=$HOME/bin:$HOME/.config/bin:$HOME/.config/bin/nvim-linux64/bin:$PATH
 clear
 random-quote
 task limit:1
@@ -32,6 +32,15 @@ alias vw='nvim ~/notes/index.md'
 alias l='exa --icons -a'
 alias ll='exa --icons -ahl'
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
+alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
+alias n="nvim ."
+
+# WSL only
+if [ ! -z "$WSLENV" ] 
+then
+  alias vlc='vlc.exe'
+  alias open='explorer.exe'
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -49,3 +58,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+#
+# GOlang
+export PATH=$PATH:/usr/local/go/bin
