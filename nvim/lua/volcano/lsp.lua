@@ -31,7 +31,7 @@ local on_attach = function(_, bufnr)
   end, '[W]orkspace [L]ist Folders')
 
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
-    for _, v in ipairs({ 'js', 'ts', 'css', 'jsx', 'tsx' }) do
+    for _, v in ipairs({ 'js', 'ts', 'css', 'jsx', 'tsx', 'vimwiki' }) do
       if v == vim.bo.filetype then
         -- local row = vim.cmd [[
         -- :echo line('.')
