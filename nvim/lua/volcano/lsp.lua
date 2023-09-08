@@ -52,8 +52,9 @@ local on_attach = function(_, bufnr)
 
   vim.api.nvim_buf_create_user_command(bufnr, 'Wf', function(_)
     vim.cmd [[
+      :w
       :Format
-    :w
+      :w
     ]]
   end, { desc = 'Format and save' })
 end
