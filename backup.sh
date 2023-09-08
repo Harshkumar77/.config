@@ -2,7 +2,10 @@ msg="$(date | openssl shake128 | awk -F ' ' '{print $2}')"
 
 echo "starting backup........."
 
-task list  > ~/notes/Tasklist
+echo '```' >> ~/notes/Tasklist
+task list >> ~/notes/Tasklist
+echo '```' >> ~/notes/Tasklist
+
 git -C ~/.config add ~/.config/nvim
 git -C ~/.config add ~/.config/wallpaper
 git -C ~/.config add ~/.config/home-dot-files
