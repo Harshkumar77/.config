@@ -33,16 +33,16 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     for _, v in ipairs({ 'js', 'ts', 'css', 'jsx', 'tsx', 'vimwiki' }) do
       if v == vim.bo.filetype then
-        -- local row = vim.cmd [[
-        -- :echo line('.')
-        -- ]]
+        local row = (vim.api.nvim_exec2([[
+         :echo line('.')
+        ]], { output = true })).output
         -- local col = vim.cmd [[
         -- :echo col('.')
         -- ]]
         vim.cmd([[
         :%! node $HOME/.local/share/nvim/mason/bin/prettier %
         ]])
-        -- vim.cmd(':' .. row )
+        vim.cmd(':' .. row)
 
         return
       end
