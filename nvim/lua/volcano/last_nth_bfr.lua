@@ -22,8 +22,12 @@ function last_nth_buffer(n)
   end
 end
 
-vim.keymap.set('n', 'S', last_nth_buffer(3), { desc = 'last to last recent buffer' })
-vim.keymap.set('n', 'gs', last_nth_buffer(4), { desc = 'last to last to last recent buffer' })
+vim.keymap.set(
+  'n', 'S', last_nth_buffer(3), { desc = 'last to last recent buffer' }
+)
+vim.keymap.set(
+  'n', 'gs', last_nth_buffer(4), { desc = 'last to last to last recent buffer' }
+)
 vim.keymap.set('n', 'gS', last_nth_buffer(5), { desc = 'last to last to last to last recent buffer' })
 vim.keymap.set('n', '<leader>gs', last_nth_buffer(6), { desc = 'last to last to last to last to last recent buffer' })
 vim.keymap.set('n', '<leader>gS', last_nth_buffer(7),
