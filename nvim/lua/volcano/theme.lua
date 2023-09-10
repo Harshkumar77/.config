@@ -42,3 +42,30 @@ vim.api.nvim_create_user_command("GlassToggle", function()
   vim.cmd('colorscheme ' .. theme)
   transparent = false
 end, {})
+
+-- Super Zen 
+local superZen = false
+
+vim.api.nvim_create_user_command("SuperZen", function()
+  if (superZen == false) then
+    vim.cmd [[
+      set noshowmode
+      set laststatus=0
+      set noshowcmd
+      set showtabline=0
+      set nonumber norelativenumber
+      set cmdheight=0
+    ]]
+    superZen = true
+    return
+  end
+  vim.cmd [[
+      set showmode
+      set laststatus=3
+      set showcmd
+      set showtabline=2
+      set number relativenumber
+      set cmdheight=1
+  ]]
+  superZen = false
+end, {})

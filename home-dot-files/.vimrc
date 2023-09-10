@@ -152,6 +152,8 @@ nnoremap s <C-^>
 
 "only one status line
 set ls=3
+" command line only show when trigger
+set cmdheight=0
 
 " not worjing now
 set dict='/usr/share/dict/words'
