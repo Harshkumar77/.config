@@ -1,3 +1,6 @@
+" the mother of all remaps
+imap kj <Esc>
+
 " new vim
 set nocompatible
 filetype plugin on
@@ -23,8 +26,8 @@ retab
 
 "Super o
 nnoremap <leader>o i<Esc>O<Esc>o
-
-imap kj <Esc>
+" soft delete keeping the line empty
+nnoremap ds 0D
 
 "+ and - for increment and decrementing a number
 nnoremap - <C-x>
