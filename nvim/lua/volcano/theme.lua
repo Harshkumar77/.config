@@ -46,7 +46,7 @@ end, {})
 -- Super Zen 
 local superZen = false
 
-vim.api.nvim_create_user_command("SuperZen", function()
+vim.api.nvim_create_user_command("SuperZenToggle", function()
   if (superZen == false) then
     vim.cmd [[
       set noshowmode
