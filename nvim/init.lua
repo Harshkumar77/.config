@@ -148,7 +148,7 @@ require('lazy').setup({
 
     { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
 
-    { 'NvChad/nvim-colorizer.lua' , opts={} }
+    { 'NvChad/nvim-colorizer.lua' }
 
 }, {})
 
@@ -164,3 +164,5 @@ require 'volcano.telescope'
 require 'volcano.autocmd'
 require 'volcano.vimwiki'
 require 'volcano.last_nth_bfr'
+
+require 'colorizer'.setup()
