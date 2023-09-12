@@ -67,8 +67,8 @@ theme.taglist_squares_unsel                     = theme_assets.taglist_squares_u
 theme.wallpaper                                 = os.getenv("HOME") .. "/.config/wallpaper/wallpaper.jpg"
 theme.taglist_squares                           = "true"
 theme.titlebar_close_button                     = "true"
-theme.menu_height                               = dpi(10)
-theme.menu_width                                = dpi(100)
+theme.menu_height                               = dpi(20)
+theme.menu_width                                = dpi(400)
 
 -- Define the image to load
 theme.titlebar_close_button_normal              = themes_path .. "default/titlebar/close_normal.png"
