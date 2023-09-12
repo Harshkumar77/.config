@@ -148,6 +148,8 @@ require('lazy').setup({
 
     { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
 
+    { 'NvChad/nvim-colorizer.lua' , opts={} }
+
 }, {})
 
 require 'volcano.tree-sitter'
