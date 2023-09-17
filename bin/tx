@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-tmux rename-window "session selector"
 session=`tmux ls -F \#S | fzf`
 (tmux switch -t "$session" || tmux attach -t "$session" ) || 
 ( 

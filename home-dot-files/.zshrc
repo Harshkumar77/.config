@@ -68,3 +68,6 @@ export PATH=$PATH:/usr/local/go/bin
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# doom emacs
+export PATH="~/.config/emacs/bin:$PATH"
