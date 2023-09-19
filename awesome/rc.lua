@@ -49,7 +49,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
--- beautiful.init(gears.filesystem.get_themes_dir() .. "sky/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "gtk/theme.lua")
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/sky/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
@@ -357,7 +357,11 @@ globalkeys = gears.table.join(
         { description = "restore minimized", group = "client" }),
 
     -- Prompt
-    awful.key({ modkey }, "r", function() awful.spawn([[rofi -show combi -combi-modes "drun,run" -theme "Monokai" ]]) end,
+    awful.key({ modkey }, "r", function()
+            awful.spawn(
+                [[rofi -show combi -combi-modes "drun,run" -theme "Monokai" ]]
+            )
+        end,
         { description = "run prompt", group = "launcher" }),
 
     -- awful.key({ modkey }, "x",
@@ -617,3 +621,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 --
 awful.spawn.with_shell("picom")
+awful.spawn.with_shell("polybar")
