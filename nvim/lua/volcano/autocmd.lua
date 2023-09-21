@@ -12,6 +12,14 @@ autocmd('Filetype', {
   command = 'set spell'
 })
 
+-- dont spell check on vimwiki diary files
+augroup('noSpellDiary', { clear = true })
+autocmd('Filetype', {
+  group = 'noSpellDiary',
+  pattern = { '*diary/*.md' },
+  command = 'set nospell'
+})
+
 autocmd({'BufWritePost'} , {
   pattern = {'*notes/*'},
   callback = function ()
