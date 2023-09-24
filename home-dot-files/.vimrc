@@ -162,4 +162,4 @@ set dict='/usr/share/dict/words'
 inoremap <C-d> <C-x><C-k>
 
 "wraping toggle
-nnoremap <leader>W :set wrap!
+nnoremap <leader>W :set wrap!<cr>
