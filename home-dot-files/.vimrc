@@ -160,3 +160,6 @@ set ls=3
 " not worjing now
 set dict='/usr/share/dict/words'
 inoremap <C-d> <C-x><C-k>
+
+"wraping toggle
+nnoremap <leader>W :set wrap!

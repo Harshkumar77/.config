@@ -136,8 +136,11 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [General]
+BrowserApplication=google-chrome.desktop
 ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
 LastUsedCustomAccentColor=233,100,58
+TerminalApplication=kitty
+TerminalService=kitty.desktop
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=Hack,12,-1,5,50,0,0,0,0,0
