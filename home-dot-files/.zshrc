@@ -34,6 +34,7 @@ alias ll='exa --icons -ahl'
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
 alias n="nvim ."
+alias open="xdg-open"
 
 # WSL only
 if [ ! -z "$WSLENV" ] 

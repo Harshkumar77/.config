@@ -135,6 +135,10 @@ ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
+[DirSelect Dialog]
+DirSelectDialog Size=872,608
+History Items[$e]=file:$HOME/D
+
 [General]
 BrowserApplication=google-chrome.desktop
 ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
