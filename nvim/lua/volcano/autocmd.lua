@@ -27,6 +27,19 @@ autocmd({'BufWritePost'} , {
   end
 })
 
+-- fold commands
+-- augroup('foldOnNewWindow', { clear = true })
+-- autocmd({'BufEnter','BufWinEnter'}, {
+--   group = 'foldOnNewWindow',
+--   pattern = {"*.*"},
+--   command = 'Fold'
+-- })
+
+augroup('foldOnSave', { clear = true })
+autocmd({'BufWritePost'} , {
+  group = 'foldOnSave',
+  command = 'Fold'
+})
 -- start buffer from the point it was leaved
 -- augroup('lastPosition', { clear = true })
 -- autocmd('Filetype', {

@@ -11,6 +11,7 @@ let mapleader = " "
 let maplocalleader = " "
 
 nnoremap <leader>q :wq<cr>
+nnoremap <leader>Q :qa!<cr>
 
 "better focus change
 nnoremap <C-h> <C-w>h
@@ -91,7 +92,7 @@ set termguicolors
 " fold
 set foldmethod=syntax
 " Disable folding at startup.
-set nofoldenable                    
+"set nofoldenable                    
 
 "file explorer
 nnoremap <leader>f :Explore<cr>
@@ -163,3 +164,8 @@ inoremap <C-d> <C-x><C-k>
 
 "wraping toggle
 nnoremap <leader>W :set wrap!<cr>
+
+"Format
+nnoremap <leader>F :Wf<cr>
+
+

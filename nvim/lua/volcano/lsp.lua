@@ -31,22 +31,33 @@ local on_attach = function(_, bufnr)
   end, '[W]orkspace [L]ist Folders')
 
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
-    for _, v in ipairs({ 'js', 'ts', 'css', 'jsx', 'tsx', 'vimwiki' }) do
+    for _, v in ipairs({ 'js', 'ts', 'css', 'jsx', 'tsx', 'vimwiki' , 'typescriptreact' , 'json' }) do
       if v == vim.bo.filetype then
         local row = (vim.api.nvim_exec2([[
          :echo line('.')
         ]], { output = true })).output
-        -- local col = vim.cmd [[
-        -- :echo col('.')
-        -- ]]
         vim.cmd([[
-        :%! node $HOME/.local/share/nvim/mason/bin/prettier %
+        :%! node $HOME/.local/share/nvim/mason/bin/prettier "%"
         ]])
         vim.cmd(':' .. row)
 
         return
       end
     end
+
+    -- for _, v in ipairs({ 'sql' }) do
+    --   if v == vim.bo.filetype then
+    --     local row = (vim.api.nvim_exec2([[
+    --      :echo line('.')
+    --     ]], { output = true })).output
+    --     vim.cmd([[
+    --     :%! ~/.local/share/nvim/mason/bin/sqlfmt %
+    --     ]])
+    --     vim.cmd(':' .. row)
+    --     return
+    --   end
+    -- end
+
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
 
