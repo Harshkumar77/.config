@@ -92,7 +92,7 @@ set termguicolors
 " fold
 set foldmethod=syntax
 " Disable folding at startup.
-"set nofoldenable                    
+set nofoldenable                    
 
 "file explorer
 nnoremap <leader>f :Explore<cr>
@@ -168,4 +168,8 @@ nnoremap <leader>W :set wrap!<cr>
 "Format
 nnoremap <leader>F :Wf<cr>
 
-
+"jump and center
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap <C-i> <C-i>zz
+nnoremap <C-o> <C-o>zz
