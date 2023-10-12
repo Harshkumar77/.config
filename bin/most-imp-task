@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+message=`task due.before:today +PRIORITY export | awk 'NR==2 {if($1=="  ") {print "Can relax"} else {print "You are late, do it asap"}}' ||
+  (task due.before:tomorrow +PRIORITY export | awk 'NR==2 {if($1=="  ") {print "Can relax"} else {print "Its near dont slack off"}}') ||
+  echo "Can relax"`
+echo $message
+

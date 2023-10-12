@@ -2,7 +2,7 @@ export EDITOR="nvim"
 export PATH=$HOME/bin:$HOME/.config/bin:$HOME/.config/bin/nvim-linux64/bin:$PATH
 clear
 random-quote
-task limit:1
+# task next limit:1
 
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -29,8 +29,8 @@ source ~/.config/zsh-plugins/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 alias z='zsh'
 alias vw='nvim ~/notes/index.md'
-alias l='exa --icons -a'
-alias ll='exa --icons -ahl'
+alias l='eza --icons -a'
+alias ll='eza --icons -ahl'
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
 alias n="nvim ."
