@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo $(((($(date +%s) - $(date -d "$(date +%Y)-01-01" +%s)) * 100 / ($(date -d "$(date +%Y)-12-31" +%s) - $(date -d "$(date +%Y)-01-01" +%s))) * 100000 / 100000)) %
