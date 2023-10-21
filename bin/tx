@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 session=`tmux ls -F \#S | fzf`
-(tmux -u switch -t "$session" || tmux -u attach -t "$session" ) || 
+echo $session
+(tmux -u attach -t "$session")  || 
+(tmux -u switch -t "$session")  || 
 ( 
     echo "No existing session. Creating new one" | lolcat;
     read -p "Name : " sname;

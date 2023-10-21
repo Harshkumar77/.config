@@ -92,7 +92,7 @@ set termguicolors
 " fold
 set foldmethod=syntax
 " Disable folding at startup.
-set nofoldenable                    
+"set nofoldenable                    
 
 "file explorer
 nnoremap <leader>f :Explore<cr>
