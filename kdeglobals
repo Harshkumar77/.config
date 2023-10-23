@@ -136,8 +136,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=872,608
-History Items[$e]=file:$HOME/D
+DirSelectDialog Size=1124,720
+History Items[$e]=file:$HOME/Desktop/Leetcode-Premium-Unlocker-0.7.7,file:$HOME/D
 
 [General]
 BrowserApplication=google-chrome.desktop
