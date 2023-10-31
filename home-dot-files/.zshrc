@@ -28,7 +28,7 @@ ZVM_VI_EDITOR=nvim
 source ~/.config/zsh-plugins/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 alias z='zsh'
-alias vw='nvim ~/notes/index.md'
+alias vw='nvim ~/notes/index.md -c "cd ~/notes"'
 alias l='eza --icons -a'
 alias ll='eza --icons -ahl'
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
