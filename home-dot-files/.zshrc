@@ -33,8 +33,10 @@ alias l='eza --icons -a'
 alias ll='eza --icons -ahl'
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
+alias dc='. ~/.config/bin/dc' # without . in front it wont change the directory
 alias n="nvim ."
-alias open="xdg-open"
+alias open='xdg-open'
+alias openn='xdg-open "$(fzf)"'
 
 # WSL only
 if [ ! -z "$WSLENV" ] 

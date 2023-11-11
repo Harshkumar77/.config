@@ -1027,7 +1027,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_4_1Triggers0]
-Key=Meta+Return
+Key=Alt+Return
 Type=SHORTCUT
 Uuid={1e917fcf-6286-4089-83e5-b78644ad2d57}
 
