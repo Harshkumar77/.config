@@ -1,4 +1,4 @@
-msg="$(date | openssl shake128 | awk -F ' ' '{print $2}')"
+msg="uuidgen"
 
 echo "starting backup........."
 
