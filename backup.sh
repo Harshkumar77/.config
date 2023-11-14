@@ -1,4 +1,4 @@
-msg="uuidgen"
+msg="$(uuidgen)"
 
 echo "starting backup........."
 
