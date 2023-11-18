@@ -20,12 +20,12 @@ autocmd('BufWinEnter', {
   command = 'set nospell'
 })
 
-autocmd({'BufWritePost'} , {
-  pattern = {'*notes/*'},
-  callback = function ()
-    vim.cmd[[!sh ~/.config/backup.sh]]
-  end
-})
+-- autocmd({'BufWritePost'} , {
+--   pattern = {'*notes/*'},
+--   callback = function ()
+--     vim.cmd[[!sh ~/.config/backup.sh]]
+--   end
+-- })
 
 -- fold commands
 -- augroup('foldOnNewWindow', { clear = true })
