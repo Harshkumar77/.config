@@ -4,28 +4,26 @@ clear
 random-quote
 # task next limit:1
 
+################################### oh-my-zsh specific ###################################
 export ZSH="$HOME/.oh-my-zsh"
-
 ZSH_THEME="dstufft"
 ZSH_THEME_RANDOM_CANDIDATES=(
 	"dstufft"
 )
-
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-
 plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
+##########################################################################################
 
-unsetopt BEEP # "no bell
 
+################################### zsh-plugins-manually loaded ###################################
 source ~/.config/fzf-tab/fzf-tab.plugin.zsh
 source ~/.config/zsh-plugins/zsh-autosuggestion/zsh-autosuggestions.zsh
 source ~/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 ZVM_VI_EDITOR=nvim
 source ~/.config/zsh-plugins/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
+##########################################################################################
 
 alias z='zsh'
 alias vw='nvim ~/notes/index.md -c "cd ~/notes"'
@@ -61,7 +59,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-#
+
 # GOlang
 export PATH=$PATH:/usr/local/go/bin
 
@@ -74,3 +72,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # doom emacs
 export PATH="~/.config/emacs/bin:$PATH"
+
+unsetopt BEEP # "no bell
