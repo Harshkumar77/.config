@@ -149,10 +149,10 @@ TerminalService=kitty.desktop
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=FiraCode Nerd Font,12,-1,5,50,0,0,0,0,0
-font=Noto Sans,12,-1,5,50,0,0,0,0,0
-menuFont=Noto Sans,10,-1,5,50,0,0,0,0,0
-smallestReadableFont=Noto Sans,10,-1,5,50,0,0,0,0,0
-toolBarFont=Noto Sans,10,-1,5,50,0,0,0,0,0
+font=FiraCode Nerd Font,12,-1,5,50,0,0,0,0,0
+menuFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
+toolBarFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
@@ -189,7 +189,7 @@ RenameFile=
 [WM]
 activeBackground=49,54,59
 activeBlend=252,252,252
-activeFont=Noto Sans,10,-1,5,50,0,0,0,0,0
+activeFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 activeForeground=252,252,252
 inactiveBackground=42,46,50
 inactiveBlend=161,169,177
