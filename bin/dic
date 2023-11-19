@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
+zip uji.zip notes -r
 openssl enc -aes-256-cbc -salt -in notes.zip -out notes.zip.enc
-openssl enc -d -aes-256-cbc -in notes.zip.enc -out folder_decrypted.zip
+# openssl enc -d -aes-256-cbc -in notes.zip.enc -out folder_decrypted.zip
