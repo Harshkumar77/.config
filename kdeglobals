@@ -141,7 +141,7 @@ History Items[$e]=file:$HOME/Desktop/Leetcode-Premium-Unlocker-0.7.7,file:$HOME/
 
 [General]
 AccentColor=184,117,220
-BrowserApplication=google-chrome.desktop
+BrowserApplication=librewolf.desktop
 ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
 LastUsedCustomAccentColor=184,117,220
 TerminalApplication=kitty
