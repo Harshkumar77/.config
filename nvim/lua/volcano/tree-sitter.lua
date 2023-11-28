@@ -63,21 +63,23 @@ require('nvim-treesitter.configs').setup {
 
 require 'treesitter-context'.setup()
 
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-
-vim.api.nvim_create_augroup('foldOnBufAdd', { clear = true })
-vim.api.nvim_create_autocmd('BufAdd', {
-  group = 'foldOnBufAdd',
-  callback = function()
-    vim.cmd [[
-    vim.opt.foldmethod = "expr"
-    vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-  ]]
-  end
-})
+-- vim.api.nvim_create_augroup('foldOnBufAdd', { clear = true })
+-- vim.api.nvim_create_autocmd('BufAdd', {
+--   group = 'foldOnBufAdd',
+--   callback = function()
+--     vim.cmd [[
+--     vim.opt.foldmethod = "expr"
+--     vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+--   ]]
+--   end
+-- })
 
 vim.api.nvim_create_user_command('Fold', function(_)
   vim.opt.foldmethod = "expr"
   vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 end, { desc = 'Add folds' })
+
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+
