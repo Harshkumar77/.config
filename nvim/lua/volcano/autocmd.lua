@@ -13,12 +13,12 @@ autocmd('Filetype', {
 })
 
 -- dont spell check on vimwiki diary files
--- augroup('noSpellDiary', { clear = true })
--- autocmd('BufWinEnter', {
---   group = 'noSpellDiary',
---   pattern = { '*diary/*.md' },
---   command = 'set nospell'
--- })
+augroup('noSpellDiary', { clear = true })
+autocmd('BufWinEnter', {
+  group = 'noSpellDiary',
+  pattern = { '*diary/*.md' },
+  command = 'set nospell'
+})
 
 -- autocmd({'BufWritePost'} , {
 --   pattern = {'*notes/*'},
