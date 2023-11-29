@@ -50,6 +50,7 @@ export NVM_DIR="$HOME/.nvm"
 # taskwarrior 
 alias t='task'
 alias tg='task ghistory.weekly'
+alias tcal='task calendar'
 
 # pnpm
 export PNPM_HOME="/home/volcano/.local/share/pnpm"
