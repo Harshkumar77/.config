@@ -75,6 +75,3 @@ export PATH="~/.config/emacs/bin:$PATH"
 
 unsetopt BEEP # "no bell
 
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
