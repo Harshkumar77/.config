@@ -3,4 +3,9 @@ migrated=true
 
 [Plugins]
 browserhistoryEnabled=false
+browsertabsEnabled=false
 konsoleprofilesEnabled=false
+krunner_spellcheckEnabled=false
+org.kde.activities2Enabled=false
+webshortcutsEnabled=false
+windowsEnabled=false
