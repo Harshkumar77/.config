@@ -35,6 +35,7 @@ alias dc='. ~/.config/bin/dc' # without . in front it wont change the directory
 alias n="nvim ."
 alias open='xdg-open'
 alias openn='xdg-open "$(fzf)"'
+alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 
 # WSL only
 if [ ! -z "$WSLENV" ] 
