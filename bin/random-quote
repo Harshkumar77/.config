@@ -2,5 +2,7 @@
 
 echo ""
 echo ""
-shuf ~/notes/quotes -n 1 | lolcat
+QUOTE="$(shuf ~/notes/quotes -n 1)"
+echo $QUOTE | lolcat
+echo $QUOTE > /tmp/qt434341
 echo ""
