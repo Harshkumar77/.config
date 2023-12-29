@@ -173,3 +173,12 @@ nnoremap n nzz
 nnoremap N Nzz
 nnoremap <C-i> <C-i>zz
 nnoremap <C-o> <C-o>zz
+
+
+imap za c
+imap zf g
+imap zw e
+imap zj h
+nnoremap <C-x> ~
+nnoremap <C-t> gg
+nnoremap <C-b> G
