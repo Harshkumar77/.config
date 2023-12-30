@@ -33,8 +33,8 @@ alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the director
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
 alias dc='. ~/.config/bin/dc' # without . in front it wont change the directory
 alias n="nvim ."
-alias open='xdg-open'
-alias openn='xdg-open "$(fzf)"'
+alias open='xdg-open 2>/dev/null'
+alias openn='xdg-open 2>/dev/null "$(fzf)"'
 alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 
 # WSL only
