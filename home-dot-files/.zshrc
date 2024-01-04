@@ -37,6 +37,9 @@ alias open='xdg-open 2>/dev/null'
 alias openn='xdg-open 2>/dev/null "$(fzf)"'
 alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 
+alias w='tesseract -l eng "$HOME/Pictures/$(ls $HOME/Pictures -t | head -1)" /tmp/output_from_ocr && cat /tmp/output_from_ocr.txt && cat /tmp/output_from_ocr.txt | xclip -selection clipboard
+'
+
 # WSL only
 if [ ! -z "$WSLENV" ] 
 then

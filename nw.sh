@@ -10,7 +10,7 @@ cd
 yay --noconfirm 
 
 # Terminal - zsh tmux tmux kitty 
-yay -S zsh eza fzf fd tmux kitty tmux curl --noconfirm   
+yay -S zsh eza fzf fd tmux kitty tmux curl xclip tesseract  tesseract-data-eng --noconfirm   
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc
