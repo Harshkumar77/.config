@@ -2,10 +2,22 @@
 migrated=true
 
 [Plugins]
+CharacterRunnerEnabled=false
+DictionaryEnabled=false
+appstreamEnabled=false
+baloosearchEnabled=false
+bookmarksEnabled=false
 browserhistoryEnabled=false
 browsertabsEnabled=false
+helprunnerEnabled=false
+katesessionsEnabled=false
 konsoleprofilesEnabled=false
-krunner_spellcheckEnabled=false
+krunner_spellcheckEnabled=true
+kwinEnabled=false
+locationsEnabled=false
 org.kde.activities2Enabled=false
+placesEnabled=false
+plasma-desktopEnabled=false
+recentdocumentsEnabled=false
 webshortcutsEnabled=false
 windowsEnabled=false
