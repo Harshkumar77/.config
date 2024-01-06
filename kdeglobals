@@ -154,6 +154,9 @@ menuFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 smallestReadableFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 toolBarFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 
+[Icons]
+Theme=BeautyFolders
+
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
 widgetStyle=Breeze
