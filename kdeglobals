@@ -136,7 +136,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=872,608
+DirSelectDialog Size=874,608
 History Items[$e]=file:$HOME,file:$HOME/D/Music,file:$HOME/Desktop/Leetcode-Premium-Unlocker-0.7.7,file:$HOME/D
 
 [General]
@@ -174,7 +174,7 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=false
-Sort by=Date
+Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
