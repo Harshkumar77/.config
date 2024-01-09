@@ -3,12 +3,12 @@ migrated=true
 
 [Plugins]
 CharacterRunnerEnabled=false
-DictionaryEnabled=false
+DictionaryEnabled=true
 appstreamEnabled=false
 baloosearchEnabled=false
 bookmarksEnabled=false
 browserhistoryEnabled=false
-browsertabsEnabled=false
+browsertabsEnabled=true
 helprunnerEnabled=false
 katesessionsEnabled=false
 konsoleprofilesEnabled=false
@@ -21,3 +21,6 @@ plasma-desktopEnabled=false
 recentdocumentsEnabled=false
 webshortcutsEnabled=false
 windowsEnabled=false
+
+[Runners][Dictionary]
+triggerWord=d
