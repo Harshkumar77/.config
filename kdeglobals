@@ -24,27 +24,27 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=143,98,171
-BackgroundNormal=49,54,59
-DecorationFocus=184,117,220
-DecorationHover=184,117,220
-ForegroundActive=184,117,220
-ForegroundInactive=161,169,177
-ForegroundLink=184,117,220
+BackgroundAlternate=179,61,81
+BackgroundNormal=54,61,67
+DecorationFocus=233,61,88
+DecorationHover=233,61,88
+ForegroundActive=233,61,88
+ForegroundInactive=194,194,194
+ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
+ForegroundNormal=222,222,222
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Complementary]
 BackgroundAlternate=30,87,116
 BackgroundNormal=42,46,50
-DecorationFocus=184,117,220
-DecorationHover=184,117,220
-ForegroundActive=184,117,220
+DecorationFocus=233,61,88
+DecorationHover=233,61,88
+ForegroundActive=233,61,88
 ForegroundInactive=161,169,177
-ForegroundLink=184,117,220
+ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -54,11 +54,11 @@ ForegroundVisited=155,89,182
 [Colors:Header]
 BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
-DecorationFocus=184,117,220
-DecorationHover=184,117,220
-ForegroundActive=184,117,220
+DecorationFocus=233,61,88
+DecorationHover=233,61,88
+ForegroundActive=233,61,88
 ForegroundInactive=161,169,177
-ForegroundLink=184,117,220
+ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -80,58 +80,58 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Selection]
-BackgroundAlternate=136,90,163
-BackgroundNormal=136,90,163
-DecorationFocus=184,117,220
-DecorationHover=184,117,220
-ForegroundActive=184,117,220
+BackgroundAlternate=170,50,70
+BackgroundNormal=170,50,70
+DecorationFocus=233,61,88
+DecorationHover=233,61,88
+ForegroundActive=233,61,88
 ForegroundInactive=255,255,255
-ForegroundLink=184,117,220
-ForegroundNegative=176,55,69
-ForegroundNeutral=198,92,0
+ForegroundLink=233,61,88
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
 ForegroundNormal=255,255,255
-ForegroundPositive=23,104,57
+ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Tooltip]
 BackgroundAlternate=42,46,50
-BackgroundNormal=49,54,59
-DecorationFocus=184,117,220
-DecorationHover=184,117,220
-ForegroundActive=184,117,220
-ForegroundInactive=161,169,177
-ForegroundLink=184,117,220
+BackgroundNormal=40,46,51
+DecorationFocus=233,61,88
+DecorationHover=233,61,88
+ForegroundActive=233,61,88
+ForegroundInactive=194,194,194
+ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
+ForegroundNormal=194,194,194
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:View]
 BackgroundAlternate=35,38,41
-BackgroundNormal=27,30,32
-DecorationFocus=184,117,220
-DecorationHover=184,117,220
-ForegroundActive=184,117,220
-ForegroundInactive=161,169,177
-ForegroundLink=184,117,220
+BackgroundNormal=24,25,29
+DecorationFocus=233,61,88
+DecorationHover=233,61,88
+ForegroundActive=233,61,88
+ForegroundInactive=194,194,194
+ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
+ForegroundNormal=222,222,222
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Window]
 BackgroundAlternate=49,54,59
-BackgroundNormal=42,46,50
-DecorationFocus=184,117,220
-DecorationHover=184,117,220
-ForegroundActive=184,117,220
-ForegroundInactive=161,169,177
-ForegroundLink=184,117,220
+BackgroundNormal=40,46,51
+DecorationFocus=233,61,88
+DecorationHover=233,61,88
+ForegroundActive=233,61,88
+ForegroundInactive=194,194,194
+ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
+ForegroundNormal=222,222,222
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
@@ -140,10 +140,10 @@ DirSelectDialog Size=874,608
 History Items[$e]=file:$HOME,file:$HOME/D/Music,file:$HOME/Desktop/Leetcode-Premium-Unlocker-0.7.7,file:$HOME/D
 
 [General]
-AccentColor=184,117,220
+AccentColor=233,61,88
 BrowserApplication=librewolf.desktop
 ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
-LastUsedCustomAccentColor=184,117,220
+LastUsedCustomAccentColor=233,61,88
 TerminalApplication=kitty
 TerminalService=kitty.desktop
 XftHintStyle=hintslight
@@ -154,11 +154,8 @@ menuFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 smallestReadableFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 toolBarFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 
-[Icons]
-Theme=Adwaita
-
 [KDE]
-LookAndFeelPackage=org.kde.breezedark.desktop
+LookAndFeelPackage=org.manjaro.breath-dark.desktop
 widgetStyle=Breeze
 
 [KFileDialog Settings]
@@ -190,10 +187,10 @@ Help=
 RenameFile=
 
 [WM]
-activeBackground=49,54,59
-activeBlend=252,252,252
+activeBackground=40,46,51
+activeBlend=40,46,51
 activeFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 activeForeground=252,252,252
-inactiveBackground=42,46,50
-inactiveBlend=161,169,177
-inactiveForeground=161,169,177
+inactiveBackground=51,57,63
+inactiveBlend=51,57,63
+inactiveForeground=89,89,89
