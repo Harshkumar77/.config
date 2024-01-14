@@ -142,7 +142,7 @@ History Items[$e]=file:$HOME,file:$HOME/D/Music,file:$HOME/Desktop/Leetcode-Prem
 [General]
 AccentColor=233,61,88
 BrowserApplication=librewolf.desktop
-ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
+ColorSchemeHash=1126fb2c0c32955cd1bb2987f48b452b357a9515
 LastUsedCustomAccentColor=233,61,88
 TerminalApplication=kitty
 TerminalService=kitty.desktop
