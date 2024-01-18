@@ -179,7 +179,7 @@ Uuid={d03619b6-9b3c-48cc-9d9c-a2aadb485550}
 [Data_2]
 Comment=This group contains various examples demonstrating most of the features of KHotkeys. (Note that this group and all its actions are disabled by default.)
 DataCount=8
-Enabled=false
+Enabled=true
 ImportId=kde32b1
 Name=Examples
 SystemGroup=0
@@ -231,7 +231,7 @@ Uuid={b1c805da-eed8-416e-8a32-2930b3229e2b}
 
 [Data_2_2]
 Comment=After pressing Alt+Ctrl+H the input of 'Hello' will be simulated, as if you typed it.  This is especially useful if you have call to frequently type a word (for instance, 'unsigned').  Every keypress in the input is separated by a colon ':'. Note that the keypresses literally mean keypresses, so you have to write what you would press on the keyboard. In the table below, the left column shows the input and the right column shows what to type.\n\n"enter" (i.e. new line)                Enter or Return\na (i.e. small a)                          A\nA (i.e. capital a)                       Shift+A\n: (colon)                                  Shift+;\n' '  (space)                              Space
-Enabled=false
+Enabled=true
 Name=Type 'Hello'
 Type=SIMPLE_ACTION_DATA
 
