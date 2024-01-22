@@ -5,7 +5,9 @@ random-quote
 # task next limit:1
 
 ################################### oh-my-zsh specific ###################################
-export ZSH="$HOME/.oh-my-zsh"
+# export ZSH="$HOME/.oh-my-zsh"
+export ZSH=/usr/share/oh-my-zsh/
+
 ZSH_THEME="dstufft"
 ZSH_THEME_RANDOM_CANDIDATES=(
 	"dstufft"
