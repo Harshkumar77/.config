@@ -50,4 +50,6 @@ git clone https://github.com/Harshkumar77/personal-wiki.git --depth 1 ~/notes
 
 crontab  ~/.config/cronjob
 
+yay -S ytdlp  google-chrome  activitywatch-bin  variety dictd  tesseract  tesseract-data-eng xclip  ttf-meslo-nerd-font-powerlevel10k  qbittorrent  chromium  telegram-desktop-bin  mpv-sponsorblock  elisa  oh-my-zsh-git  --noconfirm
+
 
