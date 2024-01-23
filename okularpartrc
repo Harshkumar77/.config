@@ -6,6 +6,7 @@ MemoryLevel=Aggressive
 
 [Document]
 ChangeColors=true
+RenderMode=Paper
 
 [PageView]
 MouseMode=TextSelect
