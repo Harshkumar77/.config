@@ -24,9 +24,11 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
 {1e917fcf-6286-4089-83e5-b78644ad2d57}=Alt+Return,none,kitty
+{320dcce7-7b6f-4a9b-a205-17cb879b32a3}=Ctrl+Shift+D,none,E
 {590b668b-e18e-47e1-a3f4-0821fe704484}=Meta+R,none,rofi
 {90a48de3-da82-4865-b4b0-bf23d3e81607}=Alt+F6,none,that-jar
-{9122b3de-1048-4708-9c94-f2d7622b1f53}=Ctrl+Alt+H,none,Type 'Hello'
+{9122b3de-1048-4708-9c94-f2d7622b1f53}=,none,Type 'Hello'
+{c4dbace1-53ac-4a88-bcfd-444580bdb0c7}=Ctrl+D,none,e
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
 
 [kmix]
