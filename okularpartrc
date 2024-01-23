@@ -6,7 +6,7 @@ MemoryLevel=Aggressive
 
 [Dlg Accessibility]
 RecolorBackground=238,223,180
-RecolorForeground=154,130,82
+RecolorForeground=68,62,26
 
 [Document]
 ChangeColors=true
