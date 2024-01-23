@@ -3,7 +3,7 @@ FullScreen=false
 
 [General]
 LockSidebar=true
-ShowSidebar=true
+ShowSidebar=false
 
 [MainWindow]
 1920x1080 screen: Height=1080
@@ -12,7 +12,7 @@ ShowSidebar=true
 1920x1080 screen: XPosition=0
 1920x1080 screen: YPosition=0
 RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAQAAAAAAAADIAAADifwCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgAAAAB9AAADiQAAAR0BAAACAAAHPAAAA+gAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgMAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAQAAAAAAAADIAAAD6PwCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgEAAAAeAAAD6AAAAR0BAAACAAAGcwAAA+gAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgMAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 eDP-1=eDP-1
 
@@ -22,8 +22,10 @@ File2[$e]=$HOME/Desktop/mpmc/files_1_2019_December_NotesHubDocument_1576793940.p
 File3[$e]=$HOME/Desktop/mpmc/u123.pdf
 File4[$e]=$HOME/Desktop/ECE 7 sem syllabus.pdf
 File5[$e]=$HOME/notes/books/Truth_and_Lies_-_Mark_Bowden.epub
+File6[$e]=$HOME/notes/books/Truth_and_Lies_-_Mark_Bowden.pdf
 Name1[$e]=_OceanofPDF.com_Discipline_Is_Destiny_-_Ryan_Holiday.epub
 Name2[$e]=files_1_2019_December_NotesHubDocument_1576793940.pdf
 Name3[$e]=u123.pdf
 Name4[$e]=ECE 7 sem syllabus.pdf
 Name5[$e]=Truth_and_Lies_-_Mark_Bowden.epub
+Name6[$e]=Truth_and_Lies_-_Mark_Bowden.pdf
