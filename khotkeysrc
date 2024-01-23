@@ -1033,7 +1033,7 @@ Uuid={1e917fcf-6286-4089-83e5-b78644ad2d57}
 
 [Data_5]
 Comment=Comment
-DataCount=2
+DataCount=5
 Enabled=true
 Name=keyboard replace
 SystemGroup=0
@@ -1081,7 +1081,7 @@ ActionsCount=1
 
 [Data_5_2Actions0]
 DestinationWindow=0
-Input=
+Input=Shift+E
 Type=KEYBOARD_INPUT
 
 [Data_5_2Conditions]
@@ -1096,6 +1096,87 @@ TriggersCount=1
 Key=Ctrl+Shift+D
 Type=SHORTCUT
 Uuid={320dcce7-7b6f-4a9b-a205-17cb879b32a3}
+
+[Data_5_3]
+Comment=Comment
+Enabled=true
+Name=s
+Type=SIMPLE_ACTION_DATA
+
+[Data_5_3Actions]
+ActionsCount=1
+
+[Data_5_3Actions0]
+DestinationWindow=0
+Input=S
+Type=KEYBOARD_INPUT
+
+[Data_5_3Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_5_3Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_5_3Triggers0]
+Key=Ctrl+W
+Type=SHORTCUT
+Uuid={6d90a641-d8d5-4f27-9c1d-9961970a9cdd}
+
+[Data_5_4]
+Comment=Comment
+Enabled=true
+Name=S
+Type=SIMPLE_ACTION_DATA
+
+[Data_5_4Actions]
+ActionsCount=1
+
+[Data_5_4Actions0]
+DestinationWindow=0
+Input=Shift+S
+Type=KEYBOARD_INPUT
+
+[Data_5_4Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_5_4Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_5_4Triggers0]
+Key=Ctrl+Shift+W
+Type=SHORTCUT
+Uuid={7fbe452e-297b-4e72-8e45-c98778ca45e3}
+
+[Data_5_5]
+Comment=Comment
+Enabled=true
+Name=g
+Type=SIMPLE_ACTION_DATA
+
+[Data_5_5Actions]
+ActionsCount=1
+
+[Data_5_5Actions0]
+DestinationWindow=0
+Input=G
+Type=KEYBOARD_INPUT
+
+[Data_5_5Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_5_5Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_5_5Triggers0]
+Key=
+Type=SHORTCUT
+Uuid={01b1b907-2e68-48c6-9895-ec9cdd070d06}
 
 [DirSelect Dialog]
 DirSelectDialog Size[$d]
