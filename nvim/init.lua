@@ -14,7 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-
+    dir = '~/D/FinalProj/last-nth-buffer',
     -- Git
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
@@ -146,7 +146,7 @@ require('lazy').setup({
 
     'vimwiki/vimwiki',
 
-    { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
+    { 'akinsho/bufferline.nvim',  version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
 
     { 'NvChad/nvim-colorizer.lua' }
 
@@ -166,3 +166,4 @@ require 'volcano.vimwiki'
 require 'volcano.last_nth_bfr'
 
 require 'colorizer'.setup()
+-- require 'os
