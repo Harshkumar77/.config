@@ -166,4 +166,4 @@ require 'volcano.vimwiki'
 require 'volcano.last_nth_bfr'
 
 require 'colorizer'.setup()
-require 'last_nth_bfr'
+-- require 'last_nth_bfr'
