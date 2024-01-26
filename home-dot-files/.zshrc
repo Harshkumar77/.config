@@ -13,15 +13,20 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 	"dstufft"
 )
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-plugins=(git)
+plugins=(git npm)
 source $ZSH/oh-my-zsh.sh
 ##########################################################################################
 
 
 ################################### zsh-plugins-manually loaded ###################################
 source ~/.config/fzf-tab/fzf-tab.plugin.zsh
-source ~/.config/zsh-plugins/zsh-autosuggestion/zsh-autosuggestions.zsh
-source ~/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# source ~/.config/zsh-plugins/zsh-autosuggestion/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# source ~/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
 ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 ZVM_VI_EDITOR=nvim
 source ~/.config/zsh-plugins/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
