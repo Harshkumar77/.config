@@ -24,16 +24,16 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=179,61,81
-BackgroundNormal=54,61,67
+BackgroundAlternate=177,58,79
+BackgroundNormal=49,54,59
 DecorationFocus=233,61,88
 DecorationHover=233,61,88
 ForegroundActive=233,61,88
-ForegroundInactive=194,194,194
+ForegroundInactive=161,169,177
 ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=222,222,222
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
@@ -80,58 +80,58 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Selection]
-BackgroundAlternate=170,50,70
-BackgroundNormal=170,50,70
+BackgroundAlternate=171,51,71
+BackgroundNormal=171,51,71
 DecorationFocus=233,61,88
 DecorationHover=233,61,88
 ForegroundActive=233,61,88
 ForegroundInactive=255,255,255
 ForegroundLink=233,61,88
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
+ForegroundNegative=176,55,69
+ForegroundNeutral=198,92,0
 ForegroundNormal=255,255,255
-ForegroundPositive=39,174,96
+ForegroundPositive=23,104,57
 ForegroundVisited=155,89,182
 
 [Colors:Tooltip]
 BackgroundAlternate=42,46,50
-BackgroundNormal=40,46,51
+BackgroundNormal=49,54,59
 DecorationFocus=233,61,88
 DecorationHover=233,61,88
 ForegroundActive=233,61,88
-ForegroundInactive=194,194,194
+ForegroundInactive=161,169,177
 ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=194,194,194
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:View]
 BackgroundAlternate=35,38,41
-BackgroundNormal=24,25,29
+BackgroundNormal=27,30,32
 DecorationFocus=233,61,88
 DecorationHover=233,61,88
 ForegroundActive=233,61,88
-ForegroundInactive=194,194,194
+ForegroundInactive=161,169,177
 ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=222,222,222
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Window]
 BackgroundAlternate=49,54,59
-BackgroundNormal=40,46,51
+BackgroundNormal=42,46,50
 DecorationFocus=233,61,88
 DecorationHover=233,61,88
 ForegroundActive=233,61,88
-ForegroundInactive=194,194,194
+ForegroundInactive=161,169,177
 ForegroundLink=233,61,88
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=222,222,222
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
@@ -142,6 +142,7 @@ History Items[$e]=file:$HOME,file:$HOME/D/Music,file:$HOME/Desktop/Leetcode-Prem
 [General]
 AccentColor=233,61,88
 BrowserApplication=librewolf.desktop
+ColorScheme=BreezeDark
 ColorSchemeHash=1126fb2c0c32955cd1bb2987f48b452b357a9515
 LastUsedCustomAccentColor=233,61,88
 TerminalApplication=kitty
@@ -187,10 +188,10 @@ Help=
 RenameFile=
 
 [WM]
-activeBackground=40,46,51
-activeBlend=40,46,51
+activeBackground=49,54,59
+activeBlend=252,252,252
 activeFont=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 activeForeground=252,252,252
-inactiveBackground=51,57,63
-inactiveBlend=51,57,63
-inactiveForeground=89,89,89
+inactiveBackground=42,46,50
+inactiveBlend=161,169,177
+inactiveForeground=161,169,177
