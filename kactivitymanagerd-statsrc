@@ -5,4 +5,4 @@ ordering=
 ordering=applications:systemsettings.desktop,applications:org.kde.dolphin.desktop
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
-ordering=applications:systemsettings.desktop,applications:org.kde.dolphin.desktop
+ordering=
