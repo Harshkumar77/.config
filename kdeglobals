@@ -136,14 +136,13 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=874,608
-History Items[$e]=file:$HOME,file:$HOME/D/Music,file:$HOME/Desktop/Leetcode-Premium-Unlocker-0.7.7,file:$HOME/D
+DirSelectDialog Size=872,608
+History Items[$e]=file:$HOME,file:$HOME,file:$HOME/D/Music,file:$HOME/Desktop/Leetcode-Premium-Unlocker-0.7.7,file:$HOME/D
 
 [General]
 AccentColor=233,61,88
 BrowserApplication=librewolf.desktop
-ColorScheme=BreezeDark
-ColorSchemeHash=1126fb2c0c32955cd1bb2987f48b452b357a9515
+ColorSchemeHash=01662607e36cd33eacc7d7d7189f69c26b9a2cc8
 LastUsedCustomAccentColor=233,61,88
 TerminalApplication=kitty
 TerminalService=kitty.desktop
