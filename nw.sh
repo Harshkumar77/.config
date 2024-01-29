@@ -1,4 +1,5 @@
 # Initial
+pacman -Syuu --noconfirm 
 rm ~/.config -rf
 git clone --depth 1 https://github.com/Harshkumar77/.config.git ~/.config
 pacman -S vim zsh --noconfirm 
@@ -12,7 +13,7 @@ yay --noconfirm
 # Terminal - zsh tmux tmux kitty 
 yay -S zsh eza fzf fd tmux kitty tmux curl xclip tesseract  tesseract-data-eng --noconfirm   
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc
 ln -s ~/.config/home-dot-files/.zshrc ~
 yay -S ttf-jetbrains-mono-nerd --noconfirm
