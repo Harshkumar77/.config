@@ -136,7 +136,7 @@ ForegroundPositive[$d]
 ForegroundVisited[$d]
 
 [Data]
-DataCount=5
+DataCount=6
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
@@ -1366,6 +1366,45 @@ TriggersCount=1
 Key=Ctrl+]
 Type=SHORTCUT
 Uuid={afd87877-5051-49d9-a337-b14b37c9b83b}
+
+[Data_6]
+Comment=Comment
+DataCount=1
+Enabled=true
+Name=Ant Esp
+SystemGroup=0
+Type=ACTION_DATA_GROUP
+
+[Data_6Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_6_1]
+Comment=Comment
+Enabled=true
+Name=bright up
+Type=SIMPLE_ACTION_DATA
+
+[Data_6_1Actions]
+ActionsCount=1
+
+[Data_6_1Actions0]
+DestinationWindow=0
+Input=
+Type=KEYBOARD_INPUT
+
+[Data_6_1Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_6_1Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_6_1Triggers0]
+Key=Media Next
+Type=SHORTCUT
+Uuid={ff052266-5ae7-4e06-8d1c-36681ececeb8}
 
 [DirSelect Dialog]
 DirSelectDialog Size[$d]
