@@ -5,9 +5,10 @@ git clone --depth 1 https://github.com/Harshkumar77/.config.git ~/.config
 pacman -S vim zsh --noconfirm 
 
 # yay for arch
-cd /tmp
-pacman -S --needed --noconfirm git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si --noconfirm 
-cd
+pacman -S --needed --noconfirm git base-devel 
+
+git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
+cd /tmp/yay-bin && makepkg -si --noconfirm 
 yay --noconfirm 
 
 # Terminal - zsh tmux tmux kitty 
