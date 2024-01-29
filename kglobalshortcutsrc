@@ -26,6 +26,7 @@ _k_friendly_name=Custom Shortcuts Service
 {1e917fcf-6286-4089-83e5-b78644ad2d57}=Alt+Return,none,kitty
 {9122b3de-1048-4708-9c94-f2d7622b1f53}=none,none,Type 'Hello'
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
+{ff052266-5ae7-4e06-8d1c-36681ececeb8}=,none,New Action
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -206,7 +207,7 @@ view_zoom_out=Meta+-\tAlt+-,Meta+-,Zoom Out
 _k_friendly_name=Media Controller
 mediavolumedown=none,,Media volume down
 mediavolumeup=none,,Media volume up
-nextmedia=Media Next,Media Next,Media playback next
+nextmedia=,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
 playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
