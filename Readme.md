@@ -1,1 +1,4 @@
-git clone --depth 1 https://github.com/Harshkumar77/.config.git
+ ```
+ sh -c "$(curl -fsSL https://raw.githubusercontent.com/harshkumar77/.config/master/nw.sh)"
+ ```
+
