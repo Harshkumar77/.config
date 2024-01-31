@@ -137,7 +137,7 @@ ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
 DirSelectDialog Size=872,608
-History Items[$e]=file:$HOME,file:$HOME,file:$HOME/D/Music,file:$HOME/Desktop/Leetcode-Premium-Unlocker-0.7.7,file:$HOME/D
+History Items[$e]=file:///D/Music,file:$HOME,file:$HOME,file:$HOME/D/Music,file:$HOME/Desktop/Leetcode-Premium-Unlocker-0.7.7,file:$HOME/D
 
 [General]
 AccentColor=233,61,88
