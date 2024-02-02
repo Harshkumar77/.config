@@ -1402,7 +1402,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_6_1Triggers0]
-Key=Media Next
+Key=
 Type=SHORTCUT
 Uuid={ff052266-5ae7-4e06-8d1c-36681ececeb8}
 

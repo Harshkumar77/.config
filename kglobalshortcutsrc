@@ -26,7 +26,7 @@ _k_friendly_name=Custom Shortcuts Service
 {1e917fcf-6286-4089-83e5-b78644ad2d57}=Alt+Return,none,kitty
 {9122b3de-1048-4708-9c94-f2d7622b1f53}=none,none,Type 'Hello'
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
-{ff052266-5ae7-4e06-8d1c-36681ececeb8}=Media Next,none,bright up
+{ff052266-5ae7-4e06-8d1c-36681ececeb8}=none,none,bright up
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -211,7 +211,7 @@ nextmedia=none,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
 playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
-previousmedia=Media Previous,Media Previous,Media playback previous
+previousmedia=none,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
 [org.kde.dolphin.desktop]
@@ -249,10 +249,10 @@ _launch=Print,Print,Launch Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
-Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
+Decrease Screen Brightness=Media Previous,Monitor Brightness Down,Decrease Screen Brightness
 Hibernate=Hibernate,Hibernate,Hibernate
 Increase Keyboard Brightness=Keyboard Brightness Up,Keyboard Brightness Up,Increase Keyboard Brightness
-Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,Increase Screen Brightness
+Increase Screen Brightness=Media Next,Monitor Brightness Up,Increase Screen Brightness
 PowerDown=Power Down,Power Down,Power Down
 PowerOff=Power Off,Power Off,Power Off
 Sleep=Sleep,Sleep,Suspend
