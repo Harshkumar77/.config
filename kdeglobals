@@ -184,6 +184,7 @@ Dialog Size=600,480
 [Shortcuts]
 FindNext=
 Help=
+Home=Alt+Home
 RenameFile=
 
 [WM]
