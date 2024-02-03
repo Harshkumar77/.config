@@ -13,7 +13,7 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 	"dstufft"
 )
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-plugins=(git npm)
+plugins=(git npm gh)
 source $ZSH/oh-my-zsh.sh
 ##########################################################################################
 
@@ -89,3 +89,7 @@ export PATH="~/.config/emacs/bin:$PATH"
 
 unsetopt BEEP # "no bell
 
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
