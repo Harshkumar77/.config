@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-folder=`fd . ~ -t d -L -H -I -E '.git' -E 'node_modules' -E '.cache' -E "go/pkg" -E "go/bin" -E ".nvm" -E ".wine" | awk -F "/home/volcano/" '{print $2}' | fzf`
+folder=`fd . / -t d -L -H -I -E '.git' -E 'node_modules' -E '.cache' -E "go/pkg" -E "go/bin" -E ".nvm" -E ".wine" |  fzf`
+# folder=`fd . ~ -t d -L -H -I -E '.git' -E 'node_modules' -E '.cache' -E "go/pkg" -E "go/bin" -E ".nvm" -E ".wine" | awk -F "/home/volcano/" '{print $2}' | fzf`
 echo "$folder" >> "$HOME/.cdd_history"
-cd "$HOME/$folder"
+cd "$folder"
