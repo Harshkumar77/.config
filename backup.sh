@@ -2,11 +2,6 @@ msg="$(uuidgen)"
 
 echo "starting backup........."
 
-echo "" > ~/notes/Tasklist.md
-cat ~/notes/codeblock >> ~/notes/Tasklist.md
-task list >> ~/notes/Tasklist.md
-cat ~/notes/codeblock>> ~/notes/Tasklist.md
-
 git -C ~/.config add ~/.config/nvim
 git -C ~/.config add ~/.config/wallpaper
 git -C ~/.config add ~/.config/home-dot-files
