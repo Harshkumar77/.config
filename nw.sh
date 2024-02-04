@@ -60,4 +60,6 @@ yay -S tesseract  tesseract-data-eng --noconfirm
 
 yay -S ytdlp  google-chrome  activitywatch-bin  variety dictd  qbittorrent  chromium  telegram-desktop-bin  mpv-sponsorblock  elisa  oh-my-zsh-git  --noconfirm
 
+# gpu related
+yay -S envycontrol --noconfirm
 
