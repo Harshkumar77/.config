@@ -136,7 +136,7 @@ ForegroundPositive[$d]
 ForegroundVisited[$d]
 
 [Data]
-DataCount=6
+DataCount=5
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
@@ -995,7 +995,7 @@ Type=GESTURE
 
 [Data_4]
 Comment=Comment
-DataCount=1
+DataCount=2
 Enabled=true
 Name=custom
 SystemGroup=0
@@ -1015,7 +1015,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_4_1Actions0]
-CommandURL=kitty tx
+CommandURL=kitty ~/.config/bin/tx
 Type=COMMAND_URL
 
 [Data_4_1Conditions]
@@ -1030,6 +1030,32 @@ TriggersCount=1
 Key=Alt+Return
 Type=SHORTCUT
 Uuid={1e917fcf-6286-4089-83e5-b78644ad2d57}
+
+[Data_4_2]
+Comment=Comment
+Enabled=true
+Name=VimWiki
+Type=SIMPLE_ACTION_DATA
+
+[Data_4_2Actions]
+ActionsCount=1
+
+[Data_4_2Actions0]
+CommandURL=kitty nvim ~/notes/Capture-Board/Capture-Board.md -c "cd ~/notes"\n
+Type=COMMAND_URL
+
+[Data_4_2Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_4_2Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_4_2Triggers0]
+Key=Alt+Shift+Return
+Type=SHORTCUT
+Uuid={4a85f739-e6d3-4757-b318-7ef44cb96d41}
 
 [Data_5]
 Comment=Comment
@@ -1367,45 +1393,6 @@ Key=Ctrl+]
 Type=SHORTCUT
 Uuid={afd87877-5051-49d9-a337-b14b37c9b83b}
 
-[Data_6]
-Comment=Comment
-DataCount=1
-Enabled=true
-Name=Ant Esp
-SystemGroup=0
-Type=ACTION_DATA_GROUP
-
-[Data_6Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_6_1]
-Comment=Comment
-Enabled=true
-Name=bright up
-Type=SIMPLE_ACTION_DATA
-
-[Data_6_1Actions]
-ActionsCount=1
-
-[Data_6_1Actions0]
-DestinationWindow=0
-Input=
-Type=KEYBOARD_INPUT
-
-[Data_6_1Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_6_1Triggers]
-Comment=Simple_action
-TriggersCount=1
-
-[Data_6_1Triggers0]
-Key=
-Type=SHORTCUT
-Uuid={ff052266-5ae7-4e06-8d1c-36681ececeb8}
-
 [DirSelect Dialog]
 DirSelectDialog Size[$d]
 History Items[$d]
@@ -1479,6 +1466,7 @@ Version=2
 [Shortcuts]
 FindNext[$d]
 Help[$d]
+Home[$d]
 RenameFile[$d]
 
 [Voice]
