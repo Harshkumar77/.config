@@ -44,7 +44,9 @@ alias open='xdg-open 2>/dev/null'
 alias openn='xdg-open 2>/dev/null "$(fzf)"'
 alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 
-alias pwc='pwd | xclip -selection clipboard; echo copied $PWD'
+alias pwc='pwd | xclip -selection clipboard; echo copied $PWD' # copy pwd
+alias xlast="tac ~/.zsh_history | head -n 2 | tail -n 1 | awk -F';'  '{print \$2}'" # copy last executed cmd
+
 
 # screenshot to text
 alias w='tesseract -l eng "$HOME/Pictures/$(ls $HOME/Pictures -t | head -1)" /tmp/output_from_ocr && cat /tmp/output_from_ocr.txt && cat /tmp/output_from_ocr.txt | xclip -selection clipboard'
