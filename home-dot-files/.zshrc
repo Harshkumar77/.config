@@ -87,8 +87,6 @@ export PATH=$PATH:/usr/local/go/bin
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# doom emacs
-export PATH="~/.config/emacs/bin:$PATH"
 
 unsetopt BEEP # "no bell
 
