@@ -175,10 +175,11 @@ nnoremap <C-i> <C-i>zz
 nnoremap <C-o> <C-o>zz
 
 
-imap za c
-imap zf g
-imap zw e
-imap zj h
-nnoremap <C-x> ~
-nnoremap <C-t> gg
-nnoremap <C-b> G
+" Main laptop Keyboard keys fix
+" imap za c
+" imap zf g
+" imap zw e
+" imap zj h
+" nnoremap <C-x> ~
+" nnoremap <C-t> gg
+" nnoremap <C-b> G
