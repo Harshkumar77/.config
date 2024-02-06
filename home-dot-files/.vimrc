@@ -10,7 +10,8 @@ colorscheme peachpuff
 let mapleader = " "
 let maplocalleader = " "
 
-nnoremap <leader>x :wqa<cr>
+nnoremap <leader>x :wa<cr>
+nnoremap <leader>X :wqa<cr>
 nnoremap <leader>Q :qa!<cr>
 
 "better focus change
