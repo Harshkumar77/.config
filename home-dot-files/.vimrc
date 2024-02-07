@@ -172,6 +172,7 @@ nnoremap <leader>F :Wf<cr>
 "jump and center
 nnoremap n nzz
 nnoremap N Nzz
+nnoremap G Nzz
 nnoremap <C-i> <C-i>zz
 nnoremap <C-o> <C-o>zz
 
