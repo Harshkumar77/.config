@@ -1,19 +1,11 @@
 #!/usr/bin/env bash
 
-if [ "" = tmux ls -F \#S ]; then
+numberOfSessions="$(tmux ls -F \#S | wc -l)"
+if [ "0" =  numberOfSessions]; then
     tmux -u new-session -s "temp";
-    return
+else
+    session=`tmux ls -F \#S | fzf`
+    echo $session
+    (tmux -u attach -t "$session")  || 
+    (tmux -u switch -t "$session")  
 fi
-session=`tmux ls -F \#S | fzf`
-echo $session
-(tmux -u attach -t "$session")  || 
-(tmux -u switch -t "$session")  || 
-( 
-    echo "No existing session. Creating new one" | lolcat;
-    if [ "" = "$sname" ]; then
-        sname='temp'
-    fi
-    tmux -u new-session -s "$sname";
-)
-
-
