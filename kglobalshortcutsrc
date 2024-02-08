@@ -30,6 +30,7 @@ _k_friendly_name=Custom Shortcuts Service
 {4a85f739-e6d3-4757-b318-7ef44cb96d41}=Alt+Shift+Return,none,VimWiki
 {54e80c94-319f-44a3-ae12-df2b72c5a759}=Ctrl+!,none,~
 {6d90a641-d8d5-4f27-9c1d-9961970a9cdd}=Ctrl+W,none,s
+{7bbe874b-17df-478b-b159-797bb1b55425}=Ctrl+Shift+Esc,none,Ksysguard
 {7fbe452e-297b-4e72-8e45-c98778ca45e3}=Ctrl+Shift+W,none,S
 {817e1259-c8ef-4e8f-a7c2-6fd4db45b7a0}=Ctrl+Shift+J,none,H
 {9122b3de-1048-4708-9c94-f2d7622b1f53}=none,none,Type 'Hello'

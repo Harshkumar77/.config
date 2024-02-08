@@ -172,10 +172,13 @@ nnoremap <leader>F :Wf<cr>
 "jump and center
 nnoremap n nzz
 nnoremap N Nzz
-nnoremap G Nzz
+nnoremap G Gzz
 nnoremap <C-i> <C-i>zz
 nnoremap <C-o> <C-o>zz
 
+
+"padding while scrolling
+set scrolloff=5
 
 " Main laptop Keyboard keys fix
 " imap za c
