@@ -7,7 +7,10 @@ echo $session
 ( 
     echo "No existing session. Creating new one" | lolcat;
     read -p "Name : " sname;
-    tmux -u new-session -s "$($sname || 'temp')";
+    if [ "" = "$sname" ]; then
+        sname='temp'
+    fi
+    tmux -u new-session -s "$sname";
 )
 
 
