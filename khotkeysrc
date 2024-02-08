@@ -1060,7 +1060,7 @@ Uuid={4a85f739-e6d3-4757-b318-7ef44cb96d41}
 [Data_5]
 Comment=Comment
 DataCount=12
-Enabled=true
+Enabled=false
 Name=keyboard replace
 SystemGroup=0
 Type=ACTION_DATA_GROUP
