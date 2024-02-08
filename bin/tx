@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
+if [ "" = tmux ls -F \#S ]; then
+    tmux -u new-session -s "temp";
+    return
+fi
 session=`tmux ls -F \#S | fzf`
 echo $session
 (tmux -u attach -t "$session")  || 
 (tmux -u switch -t "$session")  || 
 ( 
     echo "No existing session. Creating new one" | lolcat;
-    read -p "Name : " sname;
     if [ "" = "$sname" ]; then
         sname='temp'
     fi
