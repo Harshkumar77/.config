@@ -92,6 +92,7 @@ unsetopt BEEP # "no bell
 
 
 eval "$(rbenv init - zsh)"
+export GEM_HOME=~/.gem/
 
 
 # tabtab source for packages
