@@ -1,5 +1,5 @@
 export EDITOR="nvim"
-export PATH=$HOME/bin:$HOME/.config/bin:$HOME/.config/bin/nvim-linux64/bin:$PATH
+export PATH=$HOME/go/bin:$HOME/bin:$HOME/.config/bin:$HOME/.config/bin/nvim-linux64/bin:$PATH
 clear
 random-quote
 # task next limit:1
