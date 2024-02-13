@@ -23,23 +23,11 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{01b1b907-2e68-48c6-9895-ec9cdd070d06}=Ctrl+B,none,g
 {1e917fcf-6286-4089-83e5-b78644ad2d57}=Alt+Return,none,kitty
-{2df1406c-f6a9-4587-bd52-16915cf34d32}=Ctrl+Shift+B,none,G
-{320dcce7-7b6f-4a9b-a205-17cb879b32a3}=Ctrl+Shift+D,none,E
 {4a85f739-e6d3-4757-b318-7ef44cb96d41}=Alt+Shift+Return,none,VimWiki
-{54e80c94-319f-44a3-ae12-df2b72c5a759}=Ctrl+!,none,~
-{6d90a641-d8d5-4f27-9c1d-9961970a9cdd}=Ctrl+W,none,s
 {7bbe874b-17df-478b-b159-797bb1b55425}=Ctrl+Shift+Esc,none,Ksysguard
-{7fbe452e-297b-4e72-8e45-c98778ca45e3}=Ctrl+Shift+W,none,S
-{817e1259-c8ef-4e8f-a7c2-6fd4db45b7a0}=Ctrl+Shift+J,none,H
 {9122b3de-1048-4708-9c94-f2d7622b1f53}=none,none,Type 'Hello'
-{afd87877-5051-49d9-a337-b14b37c9b83b}=Ctrl+],none,=
-{b1ed0d38-c656-4dc3-8486-9b866a69a2cd}=Ctrl+1,none,`
-{b9fd867a-e8c7-48b6-ac4c-acf77967ef10}=Ctrl+J,none,h
-{c4dbace1-53ac-4a88-bcfd-444580bdb0c7}=Ctrl+D,none,e
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
-{db2b6383-5de9-458c-987c-212c6e8c0d21}=Ctrl+},none,+
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -218,11 +206,11 @@ view_zoom_out=Meta+-\tAlt+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,,Media volume down
-mediavolumeup=none,,Media volume up
+mediavolumedown=none,none,Media volume down
+mediavolumeup=none,none,Media volume up
 nextmedia=none,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,,Play media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=none,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
