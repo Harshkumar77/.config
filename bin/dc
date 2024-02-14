@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-folder=`cat "$HOME/.cdd_history" | sort | uniq -c | sort --reverse |  awk '{$1=""; print}' | cut -c2- | fzf`
+folder=`cat "$HOME/.cdd_history" | awk NF | sort | uniq -c | sort --reverse |  awk '{$1=""; print}' | cut -c2- | fzf`
 # echo "$folder" >> "$HOME/.cdd_history"
 cd "$folder"
