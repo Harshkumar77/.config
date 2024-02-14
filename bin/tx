@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 
-if [ "" = "$(tmux ls -F \#S)" ]; then
+if [[ "" == "$(printf "$all_sessions)" ]]; then
     tmux -u new-session -s "temp";
     return
 fi
 
-session=`tmux ls -F \#S | fzf`
+no_of_sessions=`printf "$all_sessions" | wc -l`
+
+if [[ "$no_of_sessions" == "1" ]]; then
+    if tmux -u attach; then 
+        return
+    fi
+fi
+
+session=`printf "$all_sessions" | fzf`
 echo $session
 (tmux -u attach -t "$session")  || 
 (tmux -u switch -t "$session")  
-
