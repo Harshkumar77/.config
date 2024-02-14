@@ -3,9 +3,9 @@
 all_sessions=`tmux ls -F \#S`
 no_of_sessions=`echo "$all_sessions" | wc -l`
 
-
-if [[ "$no_of_sessions" == "0" ]]; then
-    tmux -u new-session -s "temp";
+if [[ "$all_sessions" == "" ]]; then
+    tmux -u new-session -s "temp" ' nvim ~/notes/Capture-Board/Capture-Board.md -c "cd ~/notes"'
+    # \; new-window ' nvim ~/notes/Capture-Board/Capture-Board.md -c "cd ~/notes"'
     return
 fi
 
