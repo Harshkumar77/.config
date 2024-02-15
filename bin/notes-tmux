@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
 
-if tmux -u attach -t temp:notes; then 
-else 
-  notify-send -a "tmux" 'temp:notes doesnt exists' 
-fi 
+tmux -u attach -t temp:notes;
