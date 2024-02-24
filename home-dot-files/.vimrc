@@ -62,10 +62,11 @@ set mouse=a
 " this will copy to system clipboard
 " set clipboard = 'unnamedplus' 
 vnoremap Y "+y
+nnoremap Y$ v$"+y
 " copy whole file
 
-noremap <leader>y ggVGy<C-o>zz
-noremap <leader>Y ggVG"+y<C-o>zz
+nnoremap <leader>y ggVGy<C-o>zz
+nnoremap <leader>Y ggVG"+y<C-o>zz
 
 " Enable break indent
 set breakindent
