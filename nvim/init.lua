@@ -14,7 +14,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    dir = '~/D/FinalProj/last-nth-buffer.nvim',
     -- Git
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
@@ -146,6 +145,14 @@ require('lazy').setup({
 
     'vimwiki/vimwiki',
 
+    {
+        "ellisonleao/carbon-now.nvim",
+        lazy = true,
+        cmd = "CarbonNow",
+        -- ---@param opts cn.ConfigSchema
+        opts = {  }
+    },
+
     { 'akinsho/bufferline.nvim',  version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
 
     { 'NvChad/nvim-colorizer.lua' }
@@ -165,5 +172,4 @@ require 'volcano.autocmd'
 require 'volcano.vimwiki'
 require 'volcano.last_nth_bfr'
 
-require 'colorizer'.setup()
 -- require 'last_nth_bfr'
