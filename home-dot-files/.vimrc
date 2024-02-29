@@ -196,4 +196,3 @@ augroup END
 
 "ejs treated as html
 au BufNewFile,BufRead *.ejs set filetype=html
-au BufNewFile,BufRead *.md set foldmethod=syntax
