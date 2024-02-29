@@ -71,10 +71,10 @@ local on_attach = function(_, bufnr)
 end
 local servers = {
   clangd = {},
-  -- gopls = {},
+  gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
-  --  tsserver = { },
+   tsserver = { },
   html = {
     filetypes = { 'html', 'twig', 'hbs', 'tmpl', 'template' },
     init_options = {
