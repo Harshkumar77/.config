@@ -67,12 +67,12 @@ func main() {
 
 	stdout, err = exec.Command(
 		"timew",
-		// "summary",
+		"summary",
 		// description,
-		tags...,
 		// project,
 	).Output()
 	if err != nil {
+		fmt.Println(err.Error())
 		fmt.Println("jNo active task")
 		return
 	}
