@@ -87,5 +87,5 @@ func main() {
 	splited_timew_output := strings.Split(string(stdout), "\n")
 	time_elapsed := strings.ReplaceAll(splited_timew_output[len(splited_timew_output)-3], " ", "")
 
-	fmt.Println(time_elapsed, "-" , description)
+	fmt.Println(time_elapsed, "@" , description)
 }

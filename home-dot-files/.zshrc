@@ -46,7 +46,7 @@ alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 
 alias pwc='pwd | xclip -selection clipboard; echo copied $PWD' # copy pwd
 alias xlast="LAST_COMMAND_EXECUTED_IN_ZSH=\`tac ~/.zsh_history | head -n 2 | tail -n 1 | awk -F';'  '{print \$2}'\`;
-	      echo \$LAST_COMMAND_EXECUTED_IN_ZSH | xclip -selection clipboard  ; echo \$LAST_COMMAND_EXECUTED_IN_ZSH" # copy last executed cmd and prints to terminal
+	      printf \$LAST_COMMAND_EXECUTED_IN_ZSH | xclip -selection clipboard  ; echo \$LAST_COMMAND_EXECUTED_IN_ZSH" # copy last executed cmd and prints to terminal
 
 
 # screenshot to text
@@ -79,6 +79,7 @@ alias t7='task next limit:7'
 alias t8='task next limit:8'
 alias t9='task next limit:9'
 alias t10='task next limit:10'
+alias tsum='task summary'
 alias tm='timew'
 
 # pnpm
