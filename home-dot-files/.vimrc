@@ -173,6 +173,10 @@ nnoremap <leader>F :Wf<cr>
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap G Gzz
+nnoremap { {zz
+nnoremap } }zz
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
 nnoremap <C-i> <C-i>zz
 nnoremap <C-o> <C-o>zz
 
