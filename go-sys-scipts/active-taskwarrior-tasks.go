@@ -47,6 +47,9 @@ func main() {
 		return
 	}
 
+	// tags := string(stdout)
+	// tags = strings.ReplaceAll(tags, ",", " ")
+	// tags = strings.ReplaceAll(tags, "\n", "")
 	tagsRaw := string(stdout)
 	tagsRaw = strings.ReplaceAll(tagsRaw, "\n", "")
 	tags := strings.Split(tagsRaw, ",")
@@ -65,15 +68,29 @@ func main() {
 	project = strings.ReplaceAll(project, ",", " ")
 	project = strings.ReplaceAll(project, "\n", "")
 
+	// stdout, err = exec.Command(
+	// 	"timew",
+	// 	"summary",
+	// 	description,
+	// 	project,
+	// 	tags,
+	// ).Output()
+	var args []string
+	args = append(
+		args,
+		"summary",
+		description,
+		project,
+	)
+	for _, t := range tags {
+		args = append(args, t)
+	}
 	stdout, err = exec.Command(
 		"timew",
-		"summary",
-		// description,
-		// project,
+		args...,
 	).Output()
 	if err != nil {
-		fmt.Println(err.Error())
-		fmt.Println("jNo active task")
+		fmt.Println("No active task")
 		return
 	}
 
