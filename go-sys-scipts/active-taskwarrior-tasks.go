@@ -8,12 +8,11 @@ import (
 
 func main() {
 
-	cmd := exec.Command(
+	stdout, err := exec.Command(
 		"task",
-		"-PROJECT",
+		"+ACTIVE",
 		"limit:1",
-	)
-	stdout, err := cmd.Output()
+	).Output()
 
 	if err != nil {
 		fmt.Println("No active task")
@@ -24,18 +23,18 @@ func main() {
 	id := strings.Split(strings.Split(output, "\n")[3], " ")[0]
 
 	// task _get .description
-	cmd = exec.Command(
+	stdout, err = exec.Command(
 		"task",
 		"_get",
 		id+".description",
-	)
-	stdout, err = cmd.Output()
+	).Output()
 	if err != nil {
 		fmt.Println("No active task")
 		return
 	}
 
 	description := string(stdout)
+	description = strings.ReplaceAll(description, "\n", "")
 
 	stdout, err = exec.Command(
 		"task",
@@ -48,19 +47,36 @@ func main() {
 		return
 	}
 
-	tags := string(stdout)
+	tagsRaw := string(stdout)
+	tagsRaw = strings.ReplaceAll(tagsRaw, "\n", "")
+	tags := strings.Split(tagsRaw, ",")
 
-	cmd = exec.Command(
+	stdout, err = exec.Command(
 		"task",
 		"_get",
 		id+".project",
-	)
-	stdout, err = cmd.Output()
+	).Output()
 	if err != nil {
 		fmt.Println("No active task")
 		return
 	}
 
 	project := string(stdout)
-	fmt.Print(tags, description, project == "\n", id, len(id))
+	project = strings.ReplaceAll(project, ",", " ")
+	project = strings.ReplaceAll(project, "\n", "")
+
+	stdout, err = exec.Command(
+		"timew",
+		// "summary",
+		// description,
+		tags...,
+		// project,
+	).Output()
+	if err != nil {
+		fmt.Println("jNo active task")
+		return
+	}
+
+	timew := string(stdout)
+	fmt.Println(tags, description, project, id, timew)
 }
