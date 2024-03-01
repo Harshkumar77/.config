@@ -47,9 +47,6 @@ func main() {
 		return
 	}
 
-	// tags := string(stdout)
-	// tags = strings.ReplaceAll(tags, ",", " ")
-	// tags = strings.ReplaceAll(tags, "\n", "")
 	tagsRaw := string(stdout)
 	tagsRaw = strings.ReplaceAll(tagsRaw, "\n", "")
 	tags := strings.Split(tagsRaw, ",")
@@ -68,13 +65,6 @@ func main() {
 	project = strings.ReplaceAll(project, ",", " ")
 	project = strings.ReplaceAll(project, "\n", "")
 
-	// stdout, err = exec.Command(
-	// 	"timew",
-	// 	"summary",
-	// 	description,
-	// 	project,
-	// 	tags,
-	// ).Output()
 	var args []string
 	args = append(
 		args,
@@ -94,6 +84,8 @@ func main() {
 		return
 	}
 
-	timew := string(stdout)
-	fmt.Println(tags, description, project, id, timew)
+	splited_timew_output := strings.Split(string(stdout), "\n")
+	time_elapsed := strings.ReplaceAll(splited_timew_output[len(splited_timew_output)-3], " ", "")
+
+	fmt.Println(time_elapsed, "-" , description)
 }
