@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+timew | grep 'Current' | awk -F'Current' '{ print $2 }' | xargs 
+
+
