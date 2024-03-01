@@ -8,13 +8,14 @@ import (
 
 func main() {
 	now := time.Now()
-	age := now.Local().Year() - 2003
+	age := now.Local().Year() - 2003 - 1
 
 	nextBdayYear := now.Year()
 
 	if now.Month() > time.April ||
 		now.Month() == time.April && now.Day() > 11 {
 		nextBdayYear++
+		age++
 	}
 
 	daysTillNextBday := fmt.Sprintf(
@@ -24,7 +25,7 @@ func main() {
 		).Sub(now).Hours()/24,
 	)
 
-	daysTillGrad := time.Date(2024 , time.June , 1 , 0 , 0 , 0 , 0 , time.UTC).Sub(now).Hours()/24
+	daysTillGrad := time.Date(2024, time.June, 1, 0, 0, 0, 0, time.UTC).Sub(now).Hours() / 24
 
 	daysTillNextYear := 365 - now.YearDay()
 
@@ -32,7 +33,7 @@ func main() {
 		fmt.Sprint(daysTillNextYear),
 		daysTillNextBday,
 		fmt.Sprint(age),
-		fmt.Sprintf("%.0f",daysTillGrad),
+		fmt.Sprintf("%.0f", daysTillGrad),
 	}
 
 	for i := len(output) - 1; i > 0; i-- {
@@ -48,5 +49,5 @@ func main() {
 		output[i] = temp
 	}
 
-	fmt.Printf("%v-%v-%v-%v\n", output[0], output[1], output[2],output[3])
+	fmt.Printf("%v-%v-%v-%v\n", output[0], output[1], output[2], output[3])
 }
