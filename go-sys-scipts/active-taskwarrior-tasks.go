@@ -1,22 +1,29 @@
 package main
 
-import "os/exec"
-import  "fmt"
+import (
+	"fmt"
+	"os/exec"
+	"strings"
+)
 
 func main() {
 
-    cmd := exec.Command(
+	cmd := exec.Command(
 		"task",
 		"+ACTIVE",
-		"next",
 		"limit:1",
 	)
-    stdout, err := cmd.Output()
+	stdout, err := cmd.Output()
 
-    if err != nil {
-        fmt.Println(err.Error())
-        return
-    }
+	if err != nil {
+		fmt.Println("No active task")
+		return
+	}
+	var output string
 
-    fmt.Print(string(stdout))
+	output = string(stdout)
+	id := strings.Split(strings.Split(output, "\n")[3], " ")[0]
+
+	// task _get .description
+	fmt.Println(id)
 }
