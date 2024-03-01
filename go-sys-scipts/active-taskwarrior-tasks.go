@@ -68,6 +68,8 @@ func main() {
 	var args []string
 	args = append(
 		args,
+		"from",
+		"2022-01-01",
 		"summary",
 		description,
 		project,
