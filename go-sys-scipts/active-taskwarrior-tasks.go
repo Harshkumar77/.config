@@ -10,7 +10,7 @@ func main() {
 
 	cmd := exec.Command(
 		"task",
-		"+ACTIVE",
+		"-PROJECT",
 		"limit:1",
 	)
 	stdout, err := cmd.Output()
@@ -37,12 +37,12 @@ func main() {
 
 	description := string(stdout)
 
-	cmd = exec.Command(
+	stdout, err = exec.Command(
 		"task",
 		"_get",
 		id+".tags",
-	)
-	stdout, err = cmd.Output()
+	).Output()
+
 	if err != nil {
 		fmt.Println("No active task")
 		return
@@ -53,7 +53,7 @@ func main() {
 	cmd = exec.Command(
 		"task",
 		"_get",
-		id + ".project",
+		id+".project",
 	)
 	stdout, err = cmd.Output()
 	if err != nil {
@@ -62,5 +62,5 @@ func main() {
 	}
 
 	project := string(stdout)
-	fmt.Print(tags , description , project)
+	fmt.Print(tags, description, project == "\n", id, len(id))
 }
