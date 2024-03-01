@@ -69,6 +69,16 @@ alias t='task'
 alias tg='task ghistory.weekly'
 alias tcal='task calendar'
 alias tstop='task +ACTIVE stop'
+alias t1='task next limit:1'
+alias t2='task next limit:2'
+alias t3='task next limit:3'
+alias t4='task next limit:4'
+alias t5='task next limit:5'
+alias t6='task next limit:6'
+alias t7='task next limit:7'
+alias t8='task next limit:8'
+alias t9='task next limit:9'
+alias t10='task next limit:10'
 
 # pnpm
 export PNPM_HOME="/home/volcano/.local/share/pnpm"
