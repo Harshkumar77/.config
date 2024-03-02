@@ -2,42 +2,44 @@
 imap kj <Esc>
 
 " new vim
-set nocompatible
-filetype plugin on
-syntax on
-colorscheme peachpuff
+    set nocompatible
+    filetype plugin on
+    syntax on
+    colorscheme peachpuff
 
 let mapleader = " "
 let maplocalleader = " "
 
-nnoremap <leader>x :wa<cr>
-nnoremap <leader>X :wqa<cr>
-nnoremap <leader>Q :qa!<cr>
+" closing vim
+    nnoremap <leader>x :wa<cr>
+    nnoremap <leader>X :wqa<cr>
+    nnoremap <leader>Q :qa!<cr>
 
-"better focus change
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+"focus change
+    nnoremap <C-h> <C-w>h
+    nnoremap <C-j> <C-w>j
+    nnoremap <C-k> <C-w>k
+    nnoremap <C-l> <C-w>l
 
 "only spaces no tabs
-set expandtab
-retab!
-set shiftwidth=2
-retab
+    set expandtab
+    retab!
+    set shiftwidth=2
+    retab
 
 "Super o
 nnoremap <leader>o i<Esc>O<Esc>o
-" soft delete keeping the line empty
-nnoremap ds 0D
 
-"+ and - for increment and decrementing a number
-nnoremap - <C-x>
-nnoremap + <C-a>
+
+" Delete
+    " soft delete keeping the line empty
+    nnoremap ds 0D
+    " delete all text
+    nnoremap dA gg0dG
 
 " Disable annoying beeping
-set noerrorbells
-set vb t_vb= "
+    set noerrorbells
+    set vb t_vb= "
 
 "relative 
 set number relativenumber
@@ -46,36 +48,37 @@ set number relativenumber
 noremap <leader>; A;<Esc>o
 
 "search
-set incsearch
-"no highlight on search
-set nohlsearch
+    set incsearch
+    "no highlight on search
+    set nohlsearch
+    " Case-insensitive searching UNLESS \C or capital in search
+    set ignorecase 
+    set smartcase 
+
 
 "Move lines
-noremap <leader>j Vxp
-noremap <leader>k VxkP
+    noremap <leader>j Vxp
+    noremap <leader>k VxkP
 
 
 " # Enable mouse mode
 set mouse=a
 
-" # Clipboard
-" this will copy to system clipboard
-" set clipboard = 'unnamedplus' 
-vnoremap Y "+y
-" copy whole file
+" # Clipboard and copy
+    " this will copy to system clipboard
+    " set clipboard = 'unnamedplus' 
+    vnoremap Y "+y
+    " copy whole file
+    nnoremap <leader>y ggVGy<C-o>zz
+    nnoremap <leader>Y ggVG"+y<C-o>zz
 
-nnoremap <leader>y ggVGy<C-o>zz
-nnoremap <leader>Y ggVG"+y<C-o>zz
+
 
 " Enable break indent
 set breakindent
 
 " Save undo history
 set undofile
-
-" Case-insensitive searching UNLESS \C or capital in search
-set ignorecase 
-set smartcase 
 
 " Keep signcolumn on by default
 set scl=yes
