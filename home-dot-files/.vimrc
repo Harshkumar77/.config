@@ -131,7 +131,7 @@ nnoremap tf <C-w>gf
 nnoremap ts :tabnew<cr>:terminal<cr>a
 nnoremap H :tabprevious<cr>
 nnoremap L :tabnext<cr>
-nnoremap <C-s> :tabnew ~/notes/scrathpad.md<cr>
+nnoremap <C-s> :e ~/notes/scrathpad.md<cr>
 set tabpagemax=3
 
 " "buffer
