@@ -99,19 +99,19 @@ set foldmethod=syntax
 "set nofoldenable                    
 
 "file explorer
-nnoremap <leader>f :Explore<cr>
-" nnoremap <leader>l :Lexplore %:p:h<CR>
-nnoremap <leader>l :Lexplore<CR>
-let g:netrw_keepdir = 0
-let g:netrw_winsize = 30
-let g:netrw_banner = 0
-let g:netrw_localcopydircmd = 'cp -r' 
-"doesnt work
-let g:netrw_localrmdir='rm -r' 
-"idk what it is
-hi! link netrwMarkFile Search 
-"default tree
-let g:netrw_liststyle = 3 
+    nnoremap <leader>f :Explore<cr>
+    " nnoremap <leader>l :Lexplore %:p:h<CR>
+    nnoremap <leader>l :Lexplore<CR>
+    let g:netrw_keepdir = 0
+    let g:netrw_winsize = 30
+    let g:netrw_banner = 0
+    let g:netrw_localcopydircmd = 'cp -r' 
+    "doesnt work
+    let g:netrw_localrmdir='rm -r' 
+    "idk what it is
+    hi! link netrwMarkFile Search 
+    "default tree
+    let g:netrw_liststyle = 3 
 
 "annoying swp files
 set noswapfile
@@ -127,15 +127,15 @@ set colorcolumn=81
 tnoremap kj <C-\><C-n>
 
 "tabs
-nnoremap tt g<Tab>
-nnoremap to :tabonly<cr>
-nnoremap tn :tabnew<cr>
-nnoremap tf <C-w>gf
-nnoremap ts :tabnew<cr>:terminal<cr>a
-nnoremap H :tabprevious<cr>
-nnoremap L :tabnext<cr>
-nnoremap <C-s> :e ~/notes/scrathpad.md<cr>
-set tabpagemax=3
+    nnoremap tt g<Tab>
+    nnoremap to :tabonly<cr>
+    nnoremap tn :tabnew<cr>
+    nnoremap tf <C-w>gf
+    nnoremap ts :tabnew<cr>:terminal<cr>a
+    nnoremap H :tabprevious<cr>
+    nnoremap L :tabnext<cr>
+    nnoremap <C-s> :e ~/notes/scrathpad.md<cr>
+    set tabpagemax=3
 
 " "buffer
 " nnoremap <leader>1 :bp<cr>
@@ -145,17 +145,17 @@ set tabpagemax=3
 set nowrap
 
 " vimwiki
-let g:vimwiki_list = [{'path': '~/notes/',
-                        \ 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_markdown_link_ext = 1
-let g:vimwiki_diary_caption_level=-1
-let g:vimwiki_auto_header=1
+    let g:vimwiki_list = [{'path': '~/notes/',
+                            \ 'syntax': 'markdown', 'ext': '.md'}]
+    let g:vimwiki_markdown_link_ext = 1
+    let g:vimwiki_diary_caption_level=-1
+    let g:vimwiki_auto_header=1
 
 "set list
 " didn't like it maybe future its eol character
 "set listchars+=eol:󰦷 
 
-"jump to last file
+"jump to last file / buffer
 nnoremap s <C-^>
 
 "only one status line

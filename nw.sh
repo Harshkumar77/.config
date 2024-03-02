@@ -23,7 +23,7 @@ yay -S ttf-jetbrains-mono-nerd ttf-meslo-nerd-font-powerlevel10k  --noconfirm
 yay -S lolcat --noconfirm
 
 # vim
-yay -S neovim unzip -noconfirm   
+yay -S neovim unzip words -noconfirm   
 rm ~/.vimrc
 ln -s ~/.config/home-dot-files/.vimrc ~
 
