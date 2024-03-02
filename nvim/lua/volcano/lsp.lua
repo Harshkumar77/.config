@@ -90,7 +90,7 @@ local servers = {
   },
 
   marksman = {
-    filetypes = { "markdown", "vimwiki" },
+    filetypes = { "markdown" },
     provideFormatter = true
   },
   tailwindcss = {

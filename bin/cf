@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 tmux rename-window "config"
-selection="$(find  ~/.config ~/.config/home-dot-files ~/.config/bin -maxdepth 1 -iwholename "*config/*" -or -iname ".*" | fzf)"
+selection="$(find  ~/.config ~/.config/home-dot-files ~/.config/nvim ~/.config/nvim/lua/volcano ~/.config/bin -maxdepth 1 -iwholename "*config/*" -or -iname ".*" | fzf)"
 nvim "$selection"
 
 
