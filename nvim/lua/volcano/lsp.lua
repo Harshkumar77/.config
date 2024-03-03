@@ -76,7 +76,6 @@ local servers = {
 
   marksman = {
     filetypes = { "markdown" },
-    provideFormatter = true
   },
   tailwindcss = {
     filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "clojure", "django-html", "htmldjango", "edge",
