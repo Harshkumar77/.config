@@ -31,6 +31,13 @@ func main() {
 		fmt.Println("Couldn't start task:" + id)
 		return
 	}
+	fmt.Println(string(stdout))
 
+	stdout, err = exec.Command(
+		"timew",
+	).Output()
+	if err != nil {
+		return
+	}
 	fmt.Println(string(stdout))
 }
