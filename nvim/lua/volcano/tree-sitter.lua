@@ -11,11 +11,11 @@ require('nvim-treesitter.configs').setup {
 require 'treesitter-context'.setup()
 
 vim.api.nvim_create_user_command('Fold', function(_)
-  vim.opt.foldmethod = "expr"
-  vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+  -- vim.opt.foldmethod = "expr"
+  -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 end, { desc = 'Add folds' })
 
 
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- vim.opt.foldmethod = "expr"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 

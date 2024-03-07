@@ -203,3 +203,6 @@ augroup END
 
 "ejs treated as html
 au BufNewFile,BufRead *.ejs set filetype=html
+
+"ejs treated as html
+au BufNewFile,BufRead *.go  set foldmethod=indent
