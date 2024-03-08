@@ -29,7 +29,7 @@ local on_attach = function(_, bufnr)
   --   print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
   -- end, '[W]orkspace [L]ist Folders')
 
-  vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
+vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     local row = (vim.api.nvim_exec2([[
          :echo line('.')
       ]], { output = true })).output
@@ -46,9 +46,8 @@ local on_attach = function(_, bufnr)
 
     for _, v in ipairs({ 'sql' }) do
       if v == vim.bo.filetype then
-        print(44)
         vim.cmd([[
-        :%! $HOME/.local/share/nvim/mason/bin/sqlfmt "$PWD/%"
+        :%! $HOME/.local/share/nvim/mason/bin/sqlfmt "%"
         ]])
         vim.cmd(':' .. row)
         return
@@ -57,8 +56,7 @@ local on_attach = function(_, bufnr)
 
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
-
-  vim.api.nvim_buf_create_user_command(bufnr, 'Wf', function(_)
+    vim.api.nvim_buf_create_user_command(bufnr, 'Wf', function(_)
     vim.cmd [[
       :w
       :Format
@@ -122,3 +120,6 @@ mason_lspconfig.setup_handlers {
     }
   end
 }
+
+
+
