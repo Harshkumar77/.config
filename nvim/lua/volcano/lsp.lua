@@ -34,7 +34,7 @@ local on_attach = function(_, bufnr)
          :echo line('.')
       ]], { output = true })).output
 
-    for _, v in ipairs({'sql', 'js', 'ts', 'css', 'jsx', 'tsx', 'vimwiki', 'typescriptreact', 'json' }) do
+    for _, v in ipairs({ 'js', 'ts', 'css', 'jsx', 'tsx', 'vimwiki', 'typescriptreact', 'json' }) do
       if v == vim.bo.filetype then
         vim.cmd([[
         :%! node $HOME/.local/share/nvim/mason/bin/prettier "%"
