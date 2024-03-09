@@ -1,8 +1,12 @@
 {
-    "Diary Summary": {
+    "Diary": {
         "prefix": "diary",
         "body": [
             "## Time Planner",
+            "### Recurring Task",
+            "- [ ] Apply to Jobs",
+            "- [ ] Physical Activity ( Yoga || Strength Training || Boxing )",
+            "",
             "### Stats",
             "- **Total Hours**    :   16",
             "- **Hours Used**     :   00",
