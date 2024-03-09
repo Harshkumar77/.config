@@ -113,6 +113,7 @@ export GEM_HOME=~/.gem/
 
 # tabtab source for packages
 # uninstall by removing these lines
+# I have no idea how I make it work don't delete it
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 
 
