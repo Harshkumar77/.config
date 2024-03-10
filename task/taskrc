@@ -2,5 +2,8 @@ data.location=$HOME/notes/.task
 include solarized-dark-256.theme
 
 nag="How dare you start this one? Don't be lazy and skip difficult one"
+report.minimal.sort=urgency-
+report.minimal.columns=id,description.count,due.relative,due
+report.minimal.labels=id,description,due,due
 
 news.version=2.6.0
