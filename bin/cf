@@ -2,6 +2,6 @@
 
 tmux rename-window "config"
 selection="$(find  ~/.config ~/.config/home-dot-files ~/.config/nvim ~/.config/nvim/lua/volcano ~/.config/nvim/snippets ~/.config/bin -maxdepth 1 -iwholename "*config/*" -or -iname ".*" | fzf)"
-nvim "$selection"
+nvim "$selection" -c "silent! cd $(dirname $selection)" -c "silent! cd $selection" 
 
 
