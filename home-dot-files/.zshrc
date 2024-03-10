@@ -33,7 +33,7 @@ source ~/.config/zsh-plugins/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
 ##########################################################################################
 
 alias z='zsh'
-alias vw='nvim ~/notes/Capture-Board/Capture-Board.md -c "cd ~/notes" -c "GlassToggle"'
+alias vw='tmux rename-window "notes"; nvim ~/notes/Capture-Board/Capture-Board.md -c "cd ~/notes" -c "GlassToggle"'
 alias l='eza --icons -a'
 alias ll='eza --icons -ahl'
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
