@@ -94,6 +94,7 @@ alias T9='task next limit:9'
 alias T10='task next limit:10'
 alias tsum='task summary'
 alias tm='timew'
+alias tw='timew'
 
 # pnpm
 export PNPM_HOME="/home/volcano/.local/share/pnpm"
