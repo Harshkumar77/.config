@@ -1,12 +1,13 @@
 export EDITOR="nvim"
 export PATH=$HOME/go/bin:$HOME/bin:$HOME/.config/bin:$PATH
 clear
-random-quote
+# random-quote
 # task next limit:1
 
 ################################### oh-my-zsh specific ###################################
 # export ZSH="$HOME/.oh-my-zsh"
-export ZSH=/usr/share/oh-my-zsh/
+# export ZSH=/usr/share/oh-my-zsh/
+export ZSH=$HOME/.nix-profile/share/oh-my-zsh
 
 ZSH_THEME="dstufft"
 ZSH_THEME_RANDOM_CANDIDATES=(
@@ -22,10 +23,12 @@ source $ZSH/oh-my-zsh.sh
 source ~/.config/fzf-tab/fzf-tab.plugin.zsh
 
 # source ~/.config/zsh-plugins/zsh-autosuggestion/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # source ~/.config/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+# source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source ~/.nix-profile/share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh
 
 ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 ZVM_VI_EDITOR=nvim
@@ -118,7 +121,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 unsetopt BEEP # "no bell
 
 
-eval "$(rbenv init - zsh)"
+# eval "$(rbenv init - zsh)"
 export GEM_HOME=~/.gem/
 
 
