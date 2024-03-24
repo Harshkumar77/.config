@@ -1,7 +1,6 @@
 export EDITOR="nvim"
 export PATH=$HOME/go/bin:$HOME/bin:$HOME/.config/bin:$PATH
-clear
-# random-quote
+random-quote
 # task next limit:1
 
 ################################### oh-my-zsh specific ###################################
@@ -122,7 +121,7 @@ unsetopt BEEP # "no bell
 
 
 # eval "$(rbenv init - zsh)"
-export GEM_HOME=~/.gem/
+# export GEM_HOME=~/.gem/
 
 
 # tabtab source for packages
