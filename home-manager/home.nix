@@ -46,6 +46,9 @@
     pkgs.gh
     pkgs.bruno
 
+    # Productivity
+    pkgs.taskwarrior
+    pkgs.timewarrior
 
   ];
 
