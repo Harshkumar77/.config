@@ -30,6 +30,9 @@
     pkgs.fd 
     pkgs.xclip
     pkgs.yt-dlp
+    pkgs.speedtest-cli
+    pkgs.ripgrep
+    pkgs.ripgrep-all
 
     # Programming Languages
     ## C family
@@ -43,7 +46,7 @@
     pkgs.air
     pkgs.go-migrate
     ## python
-     (pkgs.python311.withPackages (py_pkg: [
+    (pkgs.python311.withPackages (py_pkg: [
       py_pkg.pip
     ]))
 
