@@ -33,8 +33,17 @@
 
     # Programming Languages
     pkgs.llvmPackages_12.clang-unwrapped
+    ## node
     pkgs.nodejs_20
+    pkgs.nodejs_20.pkgs.pnpm
+    ## golang
     pkgs.go
+    pkgs.air
+    pkgs.go-migrate
+    ## python
+     (pkgs.python311.withPackages (py_pkg: [
+      py_pkg.pip
+    ]))
 
     # Devtools
     pkgs.neovim
@@ -47,6 +56,8 @@
     pkgs.timewarrior
     pkgs.tuxtype
 
+    # Databases
+    pkgs.postgresql_12
   ];
 
     home.file = { };
