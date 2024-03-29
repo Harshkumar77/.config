@@ -29,6 +29,7 @@
     pkgs.eza 
     pkgs.fd 
     pkgs.xclip
+    pkgs.xorg.xkill
     pkgs.yt-dlp
     pkgs.speedtest-cli
     pkgs.ripgrep
@@ -52,6 +53,7 @@
 
     # Devtools
     pkgs.neovim
+    pkgs.zip
     pkgs.unzip
     pkgs.gh
     pkgs.bruno
