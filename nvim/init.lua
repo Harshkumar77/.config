@@ -1,4 +1,4 @@
-vim.cmd [[ source ~/.vimrc ]]
+vim.cmd [[ source ~/.config/home-dot-files/.vimrc ]]
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
@@ -98,10 +98,22 @@ require('lazy').setup({
         --  statusline
         'nvim-lualine/lualine.nvim',
         opts = {
+            sections     = {
+                lualine_a = {},
+                lualine_b = { 'filename' },
+                lualine_c = {},
+                lualine_x = {},
+                lualine_y = { 'branch', 'diff', 'diagnostics' },
+                lualine_z = {}
+            },
             options      = {
                 icons_enabled = true,
                 component_separators = '|',
                 section_separators = '',
+                path = 1,
+                symbols = {
+                    modified = '',
+                },
             },
             dependencies
                          = {
@@ -150,10 +162,8 @@ require('lazy').setup({
         lazy = true,
         cmd = "CarbonNow",
         -- ---@param opts cn.ConfigSchema
-        opts = {  }
+        opts = {}
     },
-
-    { 'akinsho/bufferline.nvim',  version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
 
     { 'NvChad/nvim-colorizer.lua' }
 
@@ -162,7 +172,6 @@ require('lazy').setup({
 require 'volcano.tree-sitter'
 require 'volcano.lsp'
 require 'volcano.nvim-tree'
-require 'volcano.bufferline'
 require 'volcano.vimwiki'
 require 'volcano.indent'
 require 'volcano.theme'
@@ -172,4 +181,4 @@ require 'volcano.autocmd'
 require 'volcano.vimwiki'
 require 'volcano.last_nth_bfr'
 
--- require 'last_nth_bfr'
+vim.cmd [[ source ~/.config/nvim/nvimrc ]]
