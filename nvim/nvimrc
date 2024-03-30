@@ -22,11 +22,11 @@ augroup END
     nnoremap <leader>q :lua vim.diagnostic.setloclist()<cr>
 
 " Last_nth_buffer 
-    nnoremap <silent>  S :lua require("volcano.last_nth_bfr").last_nth_buffer(3)()<cr>
-    nnoremap <silent>  gs :lua require("volcano.last_nth_bfr").last_nth_buffer(4)()<cr>
-    nnoremap <silent>  gS :lua require("volcano.last_nth_bfr").last_nth_buffer(5)()<cr>
-    nnoremap <silent>  <leader>gs :lua require("volcano.last_nth_bfr").last_nth_buffer(6)()<cr>
-    nnoremap <silent>  <leader>gS :lua require("volcano.last_nth_bfr").last_nth_buffer(7)()<cr>
+    nnoremap <silent> S :lua require("volcano.last_nth_bfr").last_nth_buffer(3)()<cr>
+    nnoremap <silent> gs :lua require("volcano.last_nth_bfr").last_nth_buffer(4)()<cr>
+    nnoremap <silent> gS :lua require("volcano.last_nth_bfr").last_nth_buffer(5)()<cr>
+    nnoremap <silent> <leader>gs :lua require("volcano.last_nth_bfr").last_nth_buffer(6)()<cr>
+    nnoremap <silent> <leader>gS :lua require("volcano.last_nth_bfr").last_nth_buffer(7)()<cr>
 
 " LSP - more command are in lsp.lua I dont use them
     nnoremap <leader>rn :lua vim.lsp.buf.rename()
