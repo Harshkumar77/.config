@@ -124,9 +124,10 @@ export PATH=$PATH:/usr/local/go/bin
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-
 unsetopt BEEP # "no bell
 
+# Git related
+alias gl="git log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate=full"
 
 # eval "$(rbenv init - zsh)"
 # export GEM_HOME=~/.gem/
