@@ -19,7 +19,15 @@ source $ZSH/oh-my-zsh.sh
 
 
 ################################### zsh-plugins-manually loaded ###################################
-source ~/.config/fzf-tab/fzf-tab.plugin.zsh
+# source ~/.config/fzf-tab/fzf-tab.plugin.zsh
+# # tabtab source for packages
+# # uninstall by removing these lines
+# # I have no idea how I make it work don't delete it
+# [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --icons -a --color=always $realpath'
+zstyle ':completion:*:git-checkout:*' sort false
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+source ~/.nix-profile/share/fzf-tab/fzf-tab.plugin.zsh
 
 # source ~/.config/zsh-plugins/zsh-autosuggestion/zsh-autosuggestions.zsh
 # source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -124,10 +132,4 @@ unsetopt BEEP # "no bell
 # eval "$(rbenv init - zsh)"
 # export GEM_HOME=~/.gem/
 
-
-# tabtab source for packages
-# uninstall by removing these lines
-# I have no idea how I make it work don't delete it
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
-
-
+compinit
