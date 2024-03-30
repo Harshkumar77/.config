@@ -31,7 +31,8 @@ source ~/.nix-profile/share/zsh/site-functions/fast-syntax-highlighting.plugin.z
 
 ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 ZVM_VI_EDITOR=nvim
-source ~/.config/zsh-plugins/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# source ~/.config/zsh-plugins/.zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source ~/.nix-profile/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 ##########################################################################################
 
 alias z='zsh'

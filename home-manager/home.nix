@@ -23,6 +23,7 @@
     pkgs.oh-my-zsh
     pkgs.zsh-autosuggestions
     pkgs.zsh-fast-syntax-highlighting
+    pkgs.zsh-vi-mode
 
     # Command line utilites
     pkgs.fzf 
