@@ -36,6 +36,8 @@
     pkgs.speedtest-cli
     pkgs.ripgrep
     pkgs.ripgrep-all
+    pkgs.zip
+    pkgs.unzip
 
     # Programming Languages
     ## C family
@@ -44,6 +46,7 @@
     ## node
     pkgs.nodejs_20
     pkgs.nodejs_20.pkgs.pnpm
+    pkgs.nodejs_20.pkgs.nodemon
     ## golang
     pkgs.go
     pkgs.air
@@ -55,13 +58,11 @@
 
     # Devtools
     pkgs.neovim
-    pkgs.zip
-    pkgs.unzip
     pkgs.gh
     pkgs.bruno
 
     # Productivity
-    # pkgs.taskwarrior # stuck at 2.6
+    pkgs.taskwarrior # stuck at 2.6
     pkgs.timewarrior
     pkgs.tuxtype
 
