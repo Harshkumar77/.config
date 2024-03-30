@@ -26,7 +26,6 @@ source $ZSH/oh-my-zsh.sh
 # [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --icons -a --color=always $realpath'
 zstyle ':completion:*:git-checkout:*' sort false
-zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 source ~/.nix-profile/share/fzf-tab/fzf-tab.plugin.zsh
 
 # source ~/.config/zsh-plugins/zsh-autosuggestion/zsh-autosuggestions.zsh
