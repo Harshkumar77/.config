@@ -4,8 +4,8 @@ include solarized-dark-256.theme
 nag=“Putting things off is the biggest waste of life: It snatches away each day as it comes and denies us the present by promising the future.”
 
 report.minimal.sort=urgency-
-report.minimal.columns=id,description.count,due.relative,due
-report.minimal.labels=ID,DESCRIPTION,DUE,DUE
+report.minimal.columns=id,description.count,due.relative,due,estimate
+report.minimal.labels=ID,DESCRIPTION,DUE,DUE,Est
 
 alias.mod=modify
 alias.rm=delete
@@ -13,11 +13,6 @@ alias.rm=delete
 news.version=2.6.0
 
 editor=nvim
-
-color.uda.priority.H=color265
-color.uda.priority.H=color255
-color.uda.priority.L=color245
-color.uda.priority.M=color250
 
 uda.priority.label=Priority
 uda.priority.type=string
@@ -29,3 +24,7 @@ urgency.uda.priority.L.coefficient=0.8
 urgency.uda.priority.M.coefficient=3.9
 
 uda.priority.default=L
+
+uda.estimate.type=duration
+uda.estimate.label=Est
+uda.estimate.default=1.5h
