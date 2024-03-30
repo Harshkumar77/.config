@@ -24,6 +24,7 @@
     pkgs.zsh-autosuggestions
     pkgs.zsh-fast-syntax-highlighting
     pkgs.zsh-vi-mode
+    pkgs.zsh-fzf-tab
 
     # Command line utilites
     pkgs.fzf 
