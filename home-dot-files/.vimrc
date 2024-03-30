@@ -144,13 +144,6 @@ tnoremap kj <C-\><C-n>
 " disable line wraping
 set nowrap
 
-" vimwiki
-    let g:vimwiki_list = [{'path': '~/notes/',
-                            \ 'syntax': 'markdown', 'ext': '.md'}]
-    let g:vimwiki_markdown_link_ext = 1
-    let g:vimwiki_diary_caption_level=-1
-    let g:vimwiki_auto_header=1
-
 "set list
 " didn't like it maybe future its eol character
 "set listchars+=eol:󰦷 
@@ -168,9 +161,6 @@ inoremap <C-d> <C-x><C-k>
 
 "wraping toggle
 nnoremap <leader>W :set wrap!<cr>
-
-"Format
-nnoremap <leader>F :Wf<cr>
 
 "jump and center
 nnoremap n nzz
@@ -198,3 +188,12 @@ set scrolloff=5
 
 "ejs treated as html
 au BufNewFile,BufRead *.ejs set filetype=html
+
+
+" vimwiki - plugin only work here
+    let g:vimwiki_list = [{'path': '~/notes/',
+                            \ 'syntax': 'markdown', 'ext': '.md'}]
+    let g:vimwiki_markdown_link_ext = 1
+    let g:vimwiki_diary_caption_level=-1
+    let g:vimwiki_auto_header=1
+

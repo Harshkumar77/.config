@@ -9,7 +9,9 @@ local splitString = function (inputstr, sep)
   return t
 end
 
-local last_nth_buffer = function (n)
+local M = {}
+
+function M.last_nth_buffer (n)
   return function()
     local sorted_bfrs_raw = (vim.api.nvim_exec2([[:ls sort]], {
       output = true
@@ -24,27 +26,4 @@ local last_nth_buffer = function (n)
   end
 end
 
-vim.keymap.set(
-  'n', 'S', last_nth_buffer(3),
-  { desc = 'last to last recent buffer' }
-)
-vim.keymap.set(
-  'n', 'gs', last_nth_buffer(4),
-  { desc = 'last to last to last recent buffer' }
-)
-vim.keymap.set(
-  'n', 'gS', last_nth_buffer(5),
-  { desc = 'last to last to last to last recent buffer' }
-)
-vim.keymap.set(
-  'n', '<leader>gs', last_nth_buffer(6),
-  { desc = 'last to last to last to last to last recent buffer' }
-)
-vim.keymap.set(
-  'n', '<leader>gS', last_nth_buffer(7),
-  { desc = 'last to last to last to last to last to last recent buffer' }
-)
-vim.keymap.set(
-  'n', '<leader>GS', last_nth_buffer(8),
-  { desc = 'last to last to last to last to last to last to last recent buffer' }
-)
+return M

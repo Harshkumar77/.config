@@ -7,18 +7,6 @@ local on_attach = function(_, bufnr)
     vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
   end
 
-  nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
-  nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-
-  nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
-  nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
-  nmap('<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
-  nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
-  nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
-
-  nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-  nmap('gk', vim.lsp.buf.signature_help, 'Signature Documentation')
-
   -- Lesser used LSP functionality
   -- nmap('gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
   -- nmap('gw', vim.diagnostic.open_float)
@@ -46,9 +34,10 @@ vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
 
     for _, v in ipairs({ 'sql' }) do
       if v == vim.bo.filetype then
-        vim.cmd([[
-        :%! $HOME/.local/share/nvim/mason/bin/sqlfmt "%"
-        ]])
+        -- vim.cmd([[
+        -- :! $HOME/.local/share/nvim/mason/bin/sqlfmt '%:p'
+        -- ]])
+        print(33)
         vim.cmd(':' .. row)
         return
       end
@@ -56,13 +45,6 @@ vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
 
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
-    vim.api.nvim_buf_create_user_command(bufnr, 'Wf', function(_)
-    vim.cmd [[
-      :w
-      :Format
-      :w
-    ]]
-  end, { desc = 'Format and save' })
 end
 local servers = {
   clangd = {},
@@ -120,6 +102,3 @@ mason_lspconfig.setup_handlers {
     }
   end
 }
-
-
-

@@ -60,8 +60,7 @@ require('lazy').setup({
 
 
     -- show keybinds
-    { 'folke/which-key.nvim',    opts = {} },
-    { 'nvim-tree/nvim-tree.lua', dependencies = { "nvim-tree/nvim-web-devicons" } },
+    { 'nvim-tree/nvim-tree.lua',       dependencies = { "nvim-tree/nvim-web-devicons" } },
 
     {
         -- side git changes
@@ -86,14 +85,10 @@ require('lazy').setup({
         },
     },
 
-    {
-        -- Theme
-        'navarasu/onedark.nvim',
-    },
-    {
-        'lunarvim/synthwave84.nvim'
-    },
-    { 'tanvirtin/monokai.nvim' },
+    'navarasu/onedark.nvim',
+    'lunarvim/synthwave84.nvim',
+    'tanvirtin/monokai.nvim',
+
     {
         --  statusline
         'nvim-lualine/lualine.nvim',
@@ -122,15 +117,13 @@ require('lazy').setup({
         },
     },
 
-    {
-        'lukas-reineke/indent-blankline.nvim',
-    },
+    'lukas-reineke/indent-blankline.nvim',
 
     -- "gc" to comment visual regions/lines
     { 'numToStr/Comment.nvim',         opts = {} },
 
     -- Fuzzy Finder (files, lsp, etc)
-    { 'nvim-telescope/telescope.nvim', branch = '0.1.x', dependencies = { 'nvim-lua/plenary.nvim' } },
+    { 'nvim-telescope/telescope.nvim', branch = '0.1.x',                                dependencies = { 'nvim-lua/plenary.nvim' } },
 
     -- Fuzzy Finder Algorithm which requires local dependencies to be built.
     -- Only load if `make` is available. Make sure you have the system
@@ -161,11 +154,10 @@ require('lazy').setup({
         "ellisonleao/carbon-now.nvim",
         lazy = true,
         cmd = "CarbonNow",
-        -- ---@param opts cn.ConfigSchema
         opts = {}
     },
 
-    { 'NvChad/nvim-colorizer.lua' }
+    'NvChad/nvim-colorizer.lua',
 
 }, {})
 
