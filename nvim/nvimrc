@@ -1,45 +1,45 @@
-nnoremap <silent> <leader>f :NvimTreeToggle<cr>
-
 augroup highlight_yank
     autocmd!
     au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
 augroup END
 
+nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
+
 " Telescope
-    nnoremap <leader>? :lua require('telescope.builtin').oldfiles()<cr>
-    nnoremap <leader><space> :lua require('telescope.builtin').buffers()<cr>
-    nnoremap <leader>gf :lua require('telescope.builtin').git_files()<cr>
-    nnoremap <leader>sf :lua require('telescope.builtin').find_files()<cr>
-    nnoremap <leader>sh :lua require('telescope.builtin').help_tags()<cr>
-    nnoremap <leader>* :lua require('telescope.builtin').grep_string()<cr>
-    nnoremap <leader>/ :lua require('telescope.builtin').live_grep()<cr>
-    nnoremap <leader>sd :lua require('telescope.builtin').diagnostics()<cr>
+    nnoremap <leader>?           :lua require('telescope.builtin').oldfiles()<cr>
+    nnoremap <leader><space>     :lua require('telescope.builtin').buffers()<cr>
+    nnoremap <leader>gf          :lua require('telescope.builtin').git_files()<cr>
+    nnoremap <leader>sf          :lua require('telescope.builtin').find_files()<cr>
+    nnoremap <leader>sh          :lua require('telescope.builtin').help_tags()<cr>
+    nnoremap <leader>*           :lua require('telescope.builtin').grep_string()<cr>
+    nnoremap <leader>/           :lua require('telescope.builtin').live_grep()<cr>
+    nnoremap <leader>sd          :lua require('telescope.builtin').diagnostics()<cr>
 
 " Diagnostic keymaps
-    nnoremap [d :lua vim.diagnostic.goto_prev()<cr>
-    nnoremap ]d :lua vim.diagnostic.goto_next()<cr>
-    nnoremap <leader>e :lua vim.diagnostic.open_float()<cr>
-    nnoremap <leader>q :lua vim.diagnostic.setloclist()<cr>
+    nnoremap [d                  :lua vim.diagnostic.goto_prev()<cr>
+    nnoremap ]d                  :lua vim.diagnostic.goto_next()<cr>
+    nnoremap <leader>e           :lua vim.diagnostic.open_float()<cr>
+    nnoremap <leader>q           :lua vim.diagnostic.setloclist()<cr>
 
 " Last_nth_buffer 
-    nnoremap <silent> S :lua require("volcano.last_nth_bfr").last_nth_buffer(3)()<cr>
-    nnoremap <silent> gs :lua require("volcano.last_nth_bfr").last_nth_buffer(4)()<cr>
-    nnoremap <silent> gS :lua require("volcano.last_nth_bfr").last_nth_buffer(5)()<cr>
+    nnoremap <silent> S          :lua require("volcano.last_nth_bfr").last_nth_buffer(3)()<cr>
+    nnoremap <silent> gs         :lua require("volcano.last_nth_bfr").last_nth_buffer(4)()<cr>
+    nnoremap <silent> gS         :lua require("volcano.last_nth_bfr").last_nth_buffer(5)()<cr>
     nnoremap <silent> <leader>gs :lua require("volcano.last_nth_bfr").last_nth_buffer(6)()<cr>
     nnoremap <silent> <leader>gS :lua require("volcano.last_nth_bfr").last_nth_buffer(7)()<cr>
 
 " LSP - more command are in lsp.lua I dont use them
-    nnoremap <leader>rn :lua vim.lsp.buf.rename()
-    nnoremap <leader>ca :lua vim.lsp.buf.code_action()
-    nnoremap gd :lua vim.lsp.buf.definition()
-    nnoremap gr :lua require('telescope.builtin').lsp_references()
-    nnoremap <leader>D :lua vim.lsp.buf.type_definition()
-    nnoremap <leader>ds :lua require('telescope.builtin').lsp_document_symbols()
-    nnoremap gD :lua vim.lsp.buf.declaration()
-    nnoremap K :lua vim.lsp.buf.hover()
-    nnoremap gk :lua vim.lsp.buf.signature_help()
+    nnoremap <leader>rn          :lua vim.lsp.buf.rename()
+    nnoremap <leader>ca          :lua vim.lsp.buf.code_action()
+    nnoremap gd                  :lua vim.lsp.buf.definition()
+    nnoremap gr                  :lua require('telescope.builtin').lsp_references()
+    nnoremap <leader>D           :lua vim.lsp.buf.type_definition()
+    nnoremap <leader>ds          :lua require('telescope.builtin').lsp_document_symbols()
+    nnoremap gD                  :lua vim.lsp.buf.declaration()
+    nnoremap K                   :lua vim.lsp.buf.hover()
+    nnoremap gk                  :lua vim.lsp.buf.signature_help()
 
 
 "Format
-    nnoremap <leader>F :Format<cr>
+    nnoremap <leader>F           :Format<cr>
 
