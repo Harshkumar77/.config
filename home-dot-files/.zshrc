@@ -132,4 +132,8 @@ unsetopt BEEP # "no bell
 # eval "$(rbenv init - zsh)"
 # export GEM_HOME=~/.gem/
 
-compinit
+# WSL only
+if [ ! -z "$NIX_PROFILES" ] 
+then
+  compinit
+fi
