@@ -172,28 +172,20 @@ nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
 nnoremap <C-i> <C-i>zz
 nnoremap <C-o> <C-o>zz
-
+nnoremap ]m ]mzz
+nnoremap ]M ]Mzz
+nnoremap [m [mzz
+nnoremap [M [Mzz
 
 "padding while scrolling
 set scrolloff=5
 
-" Main laptop Keyboard keys fix
-" imap za c
-" imap zf g
-" imap zw e
-" imap zj h
-" nnoremap <C-x> ~
-" nnoremap <C-t> gg
-" nnoremap <C-b> G
-
 "ejs treated as html
 au BufNewFile,BufRead *.ejs set filetype=html
 
-
-" vimwiki - plugin only work here
+" vimwiki - plugin only work here modify with caution
     let g:vimwiki_list = [{'path': '~/notes/',
                             \ 'syntax': 'markdown', 'ext': '.md'}]
     let g:vimwiki_markdown_link_ext = 1
     let g:vimwiki_diary_caption_level=-1
     let g:vimwiki_auto_header=1
-
