@@ -25,6 +25,7 @@
     pkgs.zsh-fast-syntax-highlighting
     pkgs.zsh-vi-mode
     pkgs.zsh-fzf-tab
+    pkgs.nix-zsh-completions
 
     # Command line utilites
     pkgs.fzf 

@@ -29,15 +29,15 @@ nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
     nnoremap <silent> <leader>gS :lua require("volcano.last_nth_bfr").last_nth_buffer(7)()<cr>
 
 " LSP - more command are in lsp.lua I dont use them
-    nnoremap <leader>rn          :lua vim.lsp.buf.rename()
-    nnoremap <leader>ca          :lua vim.lsp.buf.code_action()
-    nnoremap gd                  :lua vim.lsp.buf.definition()
-    nnoremap gr                  :lua require('telescope.builtin').lsp_references()
-    nnoremap <leader>D           :lua vim.lsp.buf.type_definition()
-    nnoremap <leader>ds          :lua require('telescope.builtin').lsp_document_symbols()
-    nnoremap gD                  :lua vim.lsp.buf.declaration()
-    nnoremap K                   :lua vim.lsp.buf.hover()
-    nnoremap gk                  :lua vim.lsp.buf.signature_help()
+    nnoremap <leader>rn          :lua vim.lsp.buf.rename()<cr>
+    nnoremap <leader>ca          :lua vim.lsp.buf.code_action()<cr>
+    nnoremap gd                  :lua vim.lsp.buf.definition()<cr>
+    nnoremap gr                  :lua require('telescope.builtin').lsp_references()<cr>
+    nnoremap <leader>D           :lua vim.lsp.buf.type_definition()<cr>
+    nnoremap <leader>ds          :lua require('telescope.builtin').lsp_document_symbols()<cr>
+    nnoremap gD                  :lua vim.lsp.buf.declaration()<cr>
+    nnoremap K                   :lua vim.lsp.buf.hover()<cr>
+    nnoremap gk                  :lua vim.lsp.buf.signature_help()<cr>
 
 
 "Format

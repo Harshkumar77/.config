@@ -135,5 +135,7 @@ unsetopt BEEP # "no bell
 # WSL only
 if [ ! -z "$NIX_PROFILES" ] 
 then
-  compinit
+  source ~/.nix-profile/share/zsh/plugins/nix/nix-zsh-completions.plugin.zsh
+  fpath=(~/.nix-profile/share/zsh/plugins/nix/nix-zsh-completions $fpath)
+  autoload -U compinit && compinit
 fi
