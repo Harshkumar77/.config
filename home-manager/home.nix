@@ -61,7 +61,7 @@
     pkgs.bruno
 
     # Productivity
-    pkgs.taskwarrior
+    # pkgs.taskwarrior # stuck at 2.6
     pkgs.timewarrior
     pkgs.tuxtype
 
