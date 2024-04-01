@@ -68,6 +68,8 @@ then
   alias vlc='vlc.exe'
   alias open='explorer.exe'
   alias openn='explorer.exe "$(fzf)"'
+  alias shutdown='wsl.exe --shutdown'
+
 fi
 
 export NVM_DIR="$HOME/.nvm"
