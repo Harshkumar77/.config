@@ -19,6 +19,8 @@ git -C ~/notes add -A
 git -C ~/notes commit -m "$msg"
 git -C ~/notes push
 
-crontab -l > ~/.config/cronjob
+echo '```' > ~/notes/Tasklist.md
+task next >> ~/notes/Tasklist.md
+echo '```' >> ~/notes/Tasklist.md
 
 echo "backup done"
