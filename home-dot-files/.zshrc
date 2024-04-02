@@ -69,6 +69,8 @@ then
   alias open='explorer.exe'
   alias openn='explorer.exe "$(fzf)"'
   alias shutdown='wsl.exe --shutdown'
+  alias winget='winget.exe'
+  alias wsl='wsl.exe'
 
 fi
 
