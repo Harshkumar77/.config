@@ -1,8 +1,6 @@
 # Initial
 pacman -Syuu --noconfirm 
 
-rm ~/.config -rf
-git clone --depth 1 https://github.com/Harshkumar77/.config.git ~/.config
 pacman -S vim zsh --noconfirm 
 
 # yay for arch
