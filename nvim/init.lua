@@ -21,15 +21,11 @@ require('lazy').setup({
         -- LSP Configuration & Plugins
         'neovim/nvim-lspconfig',
         dependencies = {
-            -- Automatically install LSPs to stdpath for neovim
             { 'williamboman/mason.nvim', config = true },
             'williamboman/mason-lspconfig.nvim',
 
-            -- Useful status updates for LSP
-            -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
             { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
 
-            -- Additional lua configuration, makes nvim stuff amazing!
             'folke/neodev.nvim',
         },
     },
@@ -54,8 +50,6 @@ require('lazy').setup({
         },
     },
 
-
-    -- show keybinds
     { 'nvim-tree/nvim-tree.lua',       dependencies = { "nvim-tree/nvim-web-devicons" } },
 
     {
@@ -81,6 +75,7 @@ require('lazy').setup({
         },
     },
 
+    -- Themes
     'navarasu/onedark.nvim',
     'lunarvim/synthwave84.nvim',
     'tanvirtin/monokai.nvim',
@@ -154,6 +149,8 @@ require('lazy').setup({
     },
 
     'NvChad/nvim-colorizer.lua',
+
+    'mhartington/formatter.nvim'
 
 }, {})
 
