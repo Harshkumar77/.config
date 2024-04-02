@@ -21,7 +21,7 @@ git -C ~/notes push
 echo '```' > ~/notes/Tasklist.md
 task next >> ~/notes/Tasklist.md
 echo '```' >> ~/notes/Tasklist.md
-echo '```' > ~/notes/Tasklist.md
+echo '```' >> ~/notes/Tasklist.md
 timew day >> ~/notes/Tasklist.md
 echo '```' >> ~/notes/Tasklist.md
 
