@@ -1,5 +1,6 @@
-msg="$(uuidgen)"
 backup () {
+  msg="$(uuidgen)"
+
   git -C ~/.config add ~/.config/nvim
   git -C ~/.config add ~/.config/wallpaper
   git -C ~/.config add ~/.config/home-dot-files
@@ -26,13 +27,12 @@ backup () {
 
 errorWindow ()
 {
-  
-if [ ! -z "$WSLENV" ] 
-then
-  alacritty.exe --hold -e "wsl.exe echo Error while backup"
-else
-  alacritty --hold -e "echo Error while backup"
-fi
+  if [ ! -z "$WSLENV" ] 
+  then
+    alacritty.exe --hold -e "wsl.exe echo Error while backup"
+  else
+    alacritty --hold -e "echo Error while backup"
+  fi
 }
 
 echo "starting backup........."
