@@ -25,13 +25,13 @@ backup () {
   echo '```' >> ~/notes/Tasklist.md
 }
 
-errorWindow ()
-{
+errorWindow () {
+  error_msg='Error while backup'
   if [ ! -z "$WSLENV" ] 
   then
-    alacritty.exe --hold -e "wsl.exe echo Error while backup"
+    alacritty.exe --hold -e "wsl.exe echo $error_msg"
   else
-    alacritty --hold -e "echo Error while backup"
+    alacritty --hold -e "echo $error_msg"
   fi
 }
 
