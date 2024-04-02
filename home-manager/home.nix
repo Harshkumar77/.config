@@ -39,6 +39,7 @@
     pkgs.ripgrep-all
     pkgs.zip
     pkgs.unzip
+    pkgs.xz
 
     # Programming Languages
     ## C family
