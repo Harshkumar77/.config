@@ -20,7 +20,7 @@ func main() {
 	}
 
 	output := string(stdout)
-	id := strings.Split(strings.Split(output, "\n")[3], " ")[0]
+	id := strings.Split(strings.Split(output, "\n")[3], " ")[1]
 
 	stdout, err = exec.Command(
 		"task",
@@ -28,7 +28,7 @@ func main() {
 		id,
 	).Output()
 	if err != nil {
-		fmt.Println("Couldn't start task:" + id)
+		fmt.Println("Couldn't start task:" + id + "-")
 		return
 	}
 	fmt.Println(string(stdout))
