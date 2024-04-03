@@ -148,7 +148,7 @@ require('lazy').setup({
         opts = {}
     },
 
-    'NvChad/nvim-colorizer.lua',
+    { 'NvChad/nvim-colorizer.lua' , opts={} },
 
     'mhartington/formatter.nvim'
 
