@@ -70,6 +70,10 @@
 
     # Databases
     pkgs.postgresql_12
+
+    # WSL
+    pkgs.wslu
+
   ];
 
     home.file = { };

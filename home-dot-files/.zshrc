@@ -63,11 +63,12 @@ alias xlast="LAST_COMMAND_EXECUTED_IN_ZSH=\`tac ~/.zsh_history | head -n 2 | tai
 alias w='tesseract -l eng "$HOME/Pictures/$(ls $HOME/Pictures -t | head -1)" /tmp/output_from_ocr && cat /tmp/output_from_ocr.txt && cat /tmp/output_from_ocr.txt | xclip -selection clipboard'
 
 # WSL only
-if [ ! -z "$WSLENV" ] 
+if [ -z "$WSLENV" ] 
 then
   alias vlc='vlc.exe'
-  alias open='explorer.exe'
-  alias openn='explorer.exe "$(fzf)"'
+  alias open='wslview'
+  alias xdg-open='wslview'
+  alias openn='wslview "$(fzf)"'
   alias shutdown='wsl.exe --shutdown'
   alias winget='winget.exe'
   alias wsl='wsl.exe'

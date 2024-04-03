@@ -9,13 +9,10 @@ startup_mode = "Maximized"
 opacity = 0.89
 
 [font]
-
-# MesloLGL Nerd Font Mono
 normal.family = "MesloLGS Nerd Font Propo"
 bold.family = "MesloLGS Nerd Font Propo"
 italic.family = "MesloLGS Nerd Font Propo"
 bold_italic.family = "MesloLGS Nerd Font Propo"
-
 size = 13.0
 
 # https://github.com/alacritty/alacritty-theme
