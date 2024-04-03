@@ -72,21 +72,23 @@ then
   alias shutdown='wsl.exe --shutdown'
   alias winget='winget.exe'
   alias wsl='wsl.exe'
-  config-sync-wsl ()
-  {
-    win_username="$(cmd.exe /c echo %username%)"
+
+  config-sync-wsl () {
+    win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
+
+    # Alacritty
     cp "$HOME/.config/alacritty/alacritty.toml" "/mnt/c/Users/$win_username/AppData/Roaming/alacritty"
   }
 
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
 
 # taskwarrior 
 alias t='task'
-alias tg='task ghistory.weekly'
+alias tg='task ghistory.weekly && timew week'
 alias tcal='task calendar'
 alias tstart='go run ~/.config/go-sys-scipts/taskwarrior-start.go'
 alias tstop='task +ACTIVE stop'
