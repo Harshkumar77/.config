@@ -1,7 +1,7 @@
 # cp ~/.config/alacritty/alacritty.toml /mnt/c/Users/khars/AppData/Roaming/alacritty
 [shell]
 program = "wsl.exe"
-args = [ "/home/volcano/.nix-profile/bin/zsh" ]
+args = [ "~/.nix-profile/bin/zsh", "-c ", "~/.config/bin/tx" ]
 
 
 [window]

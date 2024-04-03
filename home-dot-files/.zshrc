@@ -72,6 +72,11 @@ then
   alias shutdown='wsl.exe --shutdown'
   alias winget='winget.exe'
   alias wsl='wsl.exe'
+  config-sync-wsl ()
+  {
+    win_username="$(cmd.exe /c echo %username%)"
+    cp "$HOME/.config/alacritty/alacritty.toml" "/mnt/c/Users/$win_username/AppData/Roaming/alacritty"
+  }
 
 fi
 
