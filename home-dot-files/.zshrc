@@ -147,6 +147,7 @@ silent () {
 # DB related shit
 alias pg_start='~/.config/DB/pg_start.sh'
 alias dbeaver='silent dbeaver'
+alias pg_admin='silent pgadmin4'
 
 # Git related
 alias gl="git log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate=full"

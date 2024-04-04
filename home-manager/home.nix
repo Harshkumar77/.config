@@ -59,7 +59,6 @@
     pkgs.neovim
     pkgs.gh
     pkgs.bruno
-    pkgs.dbeaver
 
 
     # Productivity
@@ -68,6 +67,8 @@
     pkgs.tuxtype
 
     # Databases
+    pkgs.dbeaver
+    pkgs.pgadmin4-desktopmode
     pkgs.postgresql_12
 
     # WSL
