@@ -5,7 +5,8 @@ no_of_sessions=`echo "$all_sessions" | wc -l`
 
 if [[ "$all_sessions" == "" ]]; then
     last_session_name_prediction=`cat .cdd_history | awk NF | tail -1 | awk -F '/' '{ print $(NF-1) }'`
-    tmux -u new-session -s "temp" 'nvim ~/notes/Capture-Board/Capture-Board.md -c "cd ~/notes" -c ":GlassToggle"' \; rename-window 'notes' \; new-session -s "$last_session_name_prediction";
+    vw="$(grep vw ~/.zshrc | awk -F "'" '{ print $2}')"
+    tmux -u new-session -s "temp" "$vw" \; new-session -s "$last_session_name_prediction";
     return
 fi
 
