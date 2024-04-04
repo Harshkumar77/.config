@@ -5,12 +5,8 @@
   home.homeDirectory = builtins.getEnv "HOME";
 
   home.stateVersion = "23.11";
-
-	
   home.enableNixpkgsReleaseCheck = false;
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
   home.packages = [
     pkgs.hello
 
@@ -62,6 +58,8 @@
     pkgs.neovim
     pkgs.gh
     pkgs.bruno
+    pkgs.dbeaver
+
 
     # Productivity
     pkgs.taskwarrior # stuck at 2.6
