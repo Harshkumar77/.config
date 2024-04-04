@@ -131,7 +131,7 @@ esac
 export PATH=$PATH:/usr/local/go/bin
 
 # bun completions
-[ -s "/home/volcano/.bun/_bun" ] && source "/home/volcano/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -139,9 +139,14 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 unsetopt BEEP # "no bell
 
+# Silently run a command
 silent () {
    $1 &>/dev/null &
 }
+
+# DB related shit
+alias pg_start='~/.config/DB/pg_start.sh'
+alias dbeaver='silent dbeaver'
 
 # Git related
 alias gl="git log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate=full"

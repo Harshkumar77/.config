@@ -45,6 +45,7 @@
     pkgs.nodejs_20
     pkgs.nodejs_20.pkgs.pnpm
     pkgs.nodejs_20.pkgs.nodemon
+    pkgs.bun
     ## golang
     pkgs.go
     pkgs.air
