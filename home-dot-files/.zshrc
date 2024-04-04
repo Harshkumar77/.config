@@ -78,6 +78,7 @@ then
 
     # Alacritty
     cp "$HOME/.config/alacritty/alacritty.toml" "/mnt/c/Users/$win_username/AppData/Roaming/alacritty"
+    cp "$HOME/.config/wallpaper" "/mnt/c/Users/$win_username/OneDrive/Pictures" -r &
   }
 
 fi
