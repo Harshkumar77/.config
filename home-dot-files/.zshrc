@@ -139,13 +139,17 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 unsetopt BEEP # "no bell
 
+silent () {
+   $1 &>/dev/null &
+}
+
 # Git related
 alias gl="git log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate=full"
 
 # eval "$(rbenv init - zsh)"
 # export GEM_HOME=~/.gem/
 
-# WSL only
+# NIX only
 if [ ! -z "$NIX_PROFILES" ] 
 then
   source ~/.nix-profile/share/zsh/plugins/nix/nix-zsh-completions.plugin.zsh
