@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
+{ config, pkgs,  ... }:
 
 {
-  home.username = "volcano";
-  home.homeDirectory = "/home/volcano";
+  home.username = builtins.getEnv "USER";
+  home.homeDirectory = builtins.getEnv "HOME";
 
   home.stateVersion = "23.11";
 
