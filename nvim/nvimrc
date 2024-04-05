@@ -43,3 +43,7 @@ nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
 "Format
     nnoremap <leader>F           :Format<cr>
 
+"Git Signs
+    nnoremap <leader>gp          :lua require('gitsigns').prev_hunk<cr>
+    nnoremap <leader>gn          :lua require('gitsigns').next_hunk<cr>
+    nnoremap <leader>ph          :lua require('gitsigns').preview_hunk<cr>

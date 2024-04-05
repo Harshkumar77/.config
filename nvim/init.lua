@@ -56,7 +56,6 @@ require('lazy').setup({
         -- side git changes
         'lewis6991/gitsigns.nvim',
         opts = {
-            -- See `:help gitsigns.txt`
             signs = {
                 add = { text = '' },
                 change = { text = '||' },
@@ -64,14 +63,6 @@ require('lazy').setup({
                 topdelete = { text = '‾' },
                 changedelete = { text = '|' },
             },
-            on_attach = function(bufnr)
-                vim.keymap.set('n', '<leader>gp', require('gitsigns').prev_hunk,
-                    { buffer = bufnr, desc = '[G]o to [P]revious Hunk' })
-                vim.keymap.set('n', '<leader>gn', require('gitsigns').next_hunk,
-                    { buffer = bufnr, desc = '[G]o to [N]ext Hunk' })
-                vim.keymap.set('n', '<leader>ph', require('gitsigns').preview_hunk,
-                    { buffer = bufnr, desc = '[P]review [H]unk' })
-            end,
         },
     },
 
@@ -101,8 +92,7 @@ require('lazy').setup({
                     modified = '',
                 },
             },
-            dependencies
-                         = {
+            dependencies = {
                 'nvim-tree/nvim-web-devicons'
             },
         },
@@ -120,7 +110,7 @@ require('lazy').setup({
     { 'numToStr/Comment.nvim',         opts = {} },
 
     -- Fuzzy Finder (files, lsp, etc)
-    { 'nvim-telescope/telescope.nvim', branch = '0.1.x',                                dependencies = { 'nvim-lua/plenary.nvim' } },
+    { 'nvim-telescope/telescope.nvim', branch = '0.1.x', dependencies = { 'nvim-lua/plenary.nvim' } },
     {
         'nvim-telescope/telescope-fzf-native.nvim',
         build = 'make',
