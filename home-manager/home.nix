@@ -7,11 +7,12 @@
   home.stateVersion = "23.11";
   home.enableNixpkgsReleaseCheck = false;
 
+  nixpkgs.config.allowUnfreePredicate = _: true;
+
   home.packages = [
     pkgs.hello
 
     # Terminal Goodness
-    pkgs.clolcat
     pkgs.zsh
     pkgs.tmux
 
@@ -24,6 +25,7 @@
     pkgs.nix-zsh-completions
 
     # Command line utilites
+    pkgs.clolcat
     pkgs.fzf 
     pkgs.eza 
     pkgs.fd 
@@ -45,6 +47,7 @@
     pkgs.nodejs_20
     pkgs.nodejs_20.pkgs.pnpm
     pkgs.nodejs_20.pkgs.nodemon
+    pkgs.nodejs_20.pkgs.serve
     pkgs.bun
     ## golang
     pkgs.go
@@ -65,6 +68,8 @@
     pkgs.taskwarrior # stuck at 2.6
     pkgs.timewarrior
     pkgs.tuxtype
+    # pkgs.obsidian
+
 
     # Databases
     pkgs.dbeaver

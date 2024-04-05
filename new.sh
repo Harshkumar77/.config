@@ -15,4 +15,6 @@ gh auth login
 git config --global user.email "volcano@example.com"
 git config --global user.name "volcano"
 git clone https://github.com/Harshkumar77/personal-wiki.git --depth 1 ~/notes
-chmod +x ~/notes/.task/hooks/on-modify.timewarrio
+chmod +x ~/notes/.task/hooks/on-modify.timewarrior
+
+# sudo ln -s $(which wslview) /usr/local/bin/xdg-open
