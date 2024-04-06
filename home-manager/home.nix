@@ -85,17 +85,17 @@
 
     # Conditionally add WSL specific packages
     # based on the environment
-    (if builtins.getEnv "WSL_DISTRO_NAME" != "" || builtins.getEnv "WSLENV" != ""
-      then [ 
-        wslu
-      ]
-      else [
-        mpv
-        dbeaver
-      ]
-    )
+      # (if builtins.getEnv "WSL_DISTRO_NAME" != "" || builtins.getEnv "WSLENV" != ""
+      # then [ 
+    #     wslu
+    #   ]
+    #   else [
+    #     mpv
+    #     dbeaver
+    #   ]
+    # )
 
-    # mpv
+    wslu
 
 
 
