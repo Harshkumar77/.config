@@ -35,6 +35,7 @@
     xclip
     xorg.xkill
     yt-dlp
+    ffmpeg_5-full
     speedtest-cli
     ripgrep
     ripgrep-all
