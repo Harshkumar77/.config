@@ -6,7 +6,7 @@ program = "wsl.exe"
 
 [window]
 startup_mode = "Maximized" 
-opacity = 0.89
+opacity = 0.97
 
 [font]
 normal.family = "MesloLGS Nerd Font Propo"
