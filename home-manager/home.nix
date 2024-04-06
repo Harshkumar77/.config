@@ -23,8 +23,6 @@
     pkgs.zsh-vi-mode
     pkgs.zsh-fzf-tab
     pkgs.nix-zsh-completions
-    pkgs.pandoc
-    pkgs.texliveSmall
 
 
 
@@ -42,6 +40,10 @@
     pkgs.zip
     pkgs.unzip
     pkgs.xz
+    pkgs.pandoc
+    pkgs.texliveSmall
+    pkgs.tree
+
 
     # Programming Languages
     ## C family
