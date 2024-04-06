@@ -4,9 +4,6 @@
   home.username = builtins.getEnv "USER";
   home.homeDirectory = builtins.getEnv "HOME";
 
-  # (if builtins.getEnv "lol" == "")
-    builtins.trace "lol";
-    
 
   home.stateVersion = "23.11";
   home.enableNixpkgsReleaseCheck = false;
@@ -86,8 +83,17 @@
     pgadmin4-desktopmode
     postgresql_12
 
-    # WSL
-    wslu
+    # Conditionally add WSL specific packages
+    # based on the environment
+    (if builtins.getEnv "WSL_DISTRO_NAME" != "" || builtins.getEnv "WSLENV" != ""
+      then [ 
+        wslu
+      ]
+      else [
+        mpv
+        dbeaver
+      ]
+    )
 
     # mpv
 
