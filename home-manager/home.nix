@@ -85,6 +85,10 @@
     # WSL
     pkgs.wslu
 
+    pkgs.mpv
+
+
+
   ];
 
     home.file = { };
