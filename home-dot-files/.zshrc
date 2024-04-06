@@ -46,6 +46,7 @@ alias z='zsh'
 alias vw='tmux rename-window "notes"; nvim ~/notes/diary/diary.md -c "VimwikiDiaryGenerateLinks" -c "VimwikiMakeDiaryNote" -c "e ~/notes/Capture-Board/Capture-Board.md" -c "cd ~/notes" -c "GlassToggle"'
 alias l='eza --icons -a'
 alias ll='eza --icons -ahl'
+alias tree='tree --si -I "node_modules" -I ".git" -a '
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
 alias dc='. ~/.config/bin/dc' # without . in front it wont change the directory
