@@ -4,88 +4,92 @@
   home.username = builtins.getEnv "USER";
   home.homeDirectory = builtins.getEnv "HOME";
 
+  # (if builtins.getEnv "lol" == "")
+    builtins.trace "lol";
+    
+
   home.stateVersion = "23.11";
   home.enableNixpkgsReleaseCheck = false;
 
   nixpkgs.config.allowUnfreePredicate = _: true;
 
-  home.packages = [
-    pkgs.hello
+  home.packages = with pkgs; [
+    hello
 
     # Terminal Goodness
-    pkgs.zsh
-    pkgs.tmux
+    zsh
+    tmux
 
     # ZSH plugins
-    pkgs.oh-my-zsh
-    pkgs.zsh-autosuggestions
-    pkgs.zsh-fast-syntax-highlighting
-    pkgs.zsh-vi-mode
-    pkgs.zsh-fzf-tab
-    pkgs.nix-zsh-completions
+    oh-my-zsh
+    zsh-autosuggestions
+    zsh-fast-syntax-highlighting
+    zsh-vi-mode
+    zsh-fzf-tab
+    nix-zsh-completions
 
 
 
     # Command line utilites
-    pkgs.clolcat
-    pkgs.fzf 
-    pkgs.eza 
-    pkgs.fd 
-    pkgs.xclip
-    pkgs.xorg.xkill
-    pkgs.yt-dlp
-    pkgs.speedtest-cli
-    pkgs.ripgrep
-    pkgs.ripgrep-all
-    pkgs.zip
-    pkgs.unzip
-    pkgs.xz
-    pkgs.pandoc
-    pkgs.texliveSmall
-    pkgs.tree
+    clolcat
+    fzf 
+    eza 
+    fd 
+    xclip
+    xorg.xkill
+    yt-dlp
+    speedtest-cli
+    ripgrep
+    ripgrep-all
+    zip
+    unzip
+    xz
+    pandoc
+    texliveSmall
+    tree
 
 
     # Programming Languages
     ## C family
-    pkgs.llvmPackages_12.clang-unwrapped
-    pkgs.gcc9
+    llvmPackages_12.clang-unwrapped
+    gcc9
     ## node
-    pkgs.nodejs_20
-    pkgs.nodejs_20.pkgs.pnpm
-    pkgs.nodejs_20.pkgs.nodemon
-    pkgs.nodejs_20.pkgs.serve
-    pkgs.bun
+    nodejs_20
+    nodejs_20.pkgs.pnpm
+    nodejs_20.pkgs.nodemon
+    nodejs_20.pkgs.serve
+    bun
     ## golang
-    pkgs.go
-    pkgs.air
-    pkgs.go-migrate
+    go
+    air
+    go-migrate
     ## python
-    (pkgs.python311.withPackages (py_pkg: [
+    (python311.withPackages (py_pkg: [
       py_pkg.pip
     ]))
 
     # Devtools
-    pkgs.neovim
-    pkgs.gh
-    pkgs.bruno
+    neovim
+    gh
+    bruno
 
 
     # Productivity
-    pkgs.taskwarrior # stuck at 2.6
-    pkgs.timewarrior
-    pkgs.tuxtype
-    # pkgs.obsidian
+    taskwarrior # stuck at 2.6
+    timewarrior
+    tuxtype
+    # obsidian
 
 
     # Databases
-    pkgs.dbeaver
-    pkgs.pgadmin4-desktopmode
-    pkgs.postgresql_12
+    dbeaver
+    pgadmin4-desktopmode
+    postgresql_12
 
     # WSL
-    pkgs.wslu
+    wslu
 
-    pkgs.mpv
+    # mpv
 
 
 
