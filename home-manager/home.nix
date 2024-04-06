@@ -23,6 +23,10 @@
     pkgs.zsh-vi-mode
     pkgs.zsh-fzf-tab
     pkgs.nix-zsh-completions
+    pkgs.pandoc
+    pkgs.texliveSmall
+
+
 
     # Command line utilites
     pkgs.clolcat
