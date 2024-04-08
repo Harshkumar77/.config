@@ -66,9 +66,6 @@ local servers = {
     },
   },
 
-  marksman = {
-    filetypes = { "markdown" },
-  },
   tailwindcss = {
     filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "clojure", "django-html", "htmldjango", "edge",
       "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "haml", "handlebars", "hbs", "html", "html-eex", "heex",
