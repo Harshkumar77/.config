@@ -3,10 +3,14 @@ augroup highlight_yank
     au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
 augroup END
 
-augroup scratchpad_pdf
-    autocmd!
-    autocmd BufwritePost */notes/scratch/scrathpad.md !pandoc ~/notes/scratch/scrathpad.md --pdf-engine=xelatex -o ~/Downloads/scratchpad.pdf --resource-path=$(echo $HOME)/notes/scratch &
-augroup END
+" Scrathpad
+    augroup scratchpad_pdf
+        autocmd!
+        autocmd BufwritePost */notes/scratch/scrathpad.md silent !pandoc ~/notes/scratch/scrathpad.md --pdf-engine=xelatex -o ~/Downloads/scratchpad.pdf --resource-path=$(echo $HOME)/notes/scratch &
+    augroup END
+
+    :command Scrathpad           :e ~/notes/scratch/scrathpad.md
+    :command ScrathpadPDF        !xdg-open ~/Downloads/scratchpad.pdf
 
 nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
 
