@@ -42,9 +42,11 @@
     zip
     unzip
     xz
+    tree
+
+    # pandoc
     pandoc
     texliveSmall
-    tree
 
 
     # Programming Languages
