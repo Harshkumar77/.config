@@ -6,8 +6,7 @@ augroup END
 " Scrathpad
     augroup scratchpad_pdf
         autocmd!
-        "autocmd BufwritePost */notes/scratch/scrathpad.md silent !pandoc ~/notes/scratch/scrathpad.md --pdf-engine=xelatex -o ~/Downloads/scratchpad.pdf --resource-path=$(echo $HOME)/notes/scratch &
-        autocmd BufwritePost */notes/scratch/scrathpad.md silent :! pandoc ~/notes/scratch/scrathpad.md --pdf-engine=xelatex -o ~/Downloads/scratchpad.pdf --resource-path=$(echo $HOME)/notes/scratch &
+        autocmd BufwritePost */notes/scratch/scrathpad.md :silent !pandoc ~/notes/scratch/scrathpad.md --pdf-engine=xelatex -o ~/Downloads/scratchpad.pdf --resource-path=$(echo $HOME)/notes/scratch
     augroup END
 
     :command Scrathpad           :e ~/notes/scratch/scrathpad.md
