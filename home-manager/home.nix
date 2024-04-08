@@ -43,6 +43,7 @@
     unzip
     xz
     tree
+    util-linux
 
     # pandoc
     pandoc
