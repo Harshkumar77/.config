@@ -5,7 +5,7 @@ augroup END
 
 augroup scratchpad_pdf
     autocmd!
-    autocmd Bufwrite '*notes/scratch/scrathpad.md' :echo 44
+    autocmd BufwritePost */notes/scratch/scrathpad.md !pandoc ~/notes/scratch/scrathpad.md --pdf-engine=xelatex -o ~/Downloads/scratchpad.pdf --resource-path=$(echo $HOME)/notes/scratch &
 augroup END
 
 nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
