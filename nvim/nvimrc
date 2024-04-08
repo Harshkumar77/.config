@@ -3,6 +3,11 @@ augroup highlight_yank
     au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
 augroup END
 
+augroup scratchpad_pdf
+    autocmd!
+    autocmd Bufwrite '*notes/scratch/scrathpad.md' :echo 44
+augroup END
+
 nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
 
 " Telescope
