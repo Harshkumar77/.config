@@ -52,7 +52,6 @@ vim.api.nvim_create_user_command("SuperZenToggle", function()
       set noshowmode
       set laststatus=0
       set noshowcmd
-      set showtabline=0
       set nonumber norelativenumber
       set cmdheight=0
     ]]
@@ -63,7 +62,6 @@ vim.api.nvim_create_user_command("SuperZenToggle", function()
       set showmode
       set laststatus=3
       set showcmd
-      set showtabline=2
       set number relativenumber
       set cmdheight=1
   ]]
