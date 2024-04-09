@@ -16,10 +16,9 @@ editor=nvim
 
 uda.priority.label=Priority
 uda.priority.type=string
-uda.priority.values=VH,H,M,L,
+uda.priority.values=H,M,L,
 
-urgency.uda.priority.VH.coefficient=9.0
-urgency.uda.priority.H.coefficient=6.0
+urgency.uda.priority.H.coefficient=12.0
 urgency.uda.priority.L.coefficient=0.8
 urgency.uda.priority.M.coefficient=3.9
 
