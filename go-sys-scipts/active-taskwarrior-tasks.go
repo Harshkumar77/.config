@@ -7,10 +7,20 @@ import (
 )
 
 func extractID(stdout []byte) string {
-	column := strings.Split(strings.Split(string(stdout), "\n")[3], " ")
-	for i, char := range column {
-		
+	var column []string = strings.Split(string(stdout), "\n")[3]
+	var id_started bool = false
+	id := ""
+	for _, char := range column {
+		println(id_started , char , char == " ", id_started && char == " ")
+		if id_started == true && char == " " {
+			print(4)
+			return id
+		} else if char != " " {
+			id_started = true
+			id = id + char
+		}
 	}
+	return id
 
 }
 
