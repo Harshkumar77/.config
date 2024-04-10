@@ -52,7 +52,7 @@ func main() {
 		}
 
 		imp_task_description := strings.ReplaceAll(string(stdout), "\n", "")
-		fmt.Print("NEXT TASK: ", imp_task_description)
+		fmt.Print("NEXT TASK(" + imp_task_id + ") : ", imp_task_description)
 		return
 	}
 
@@ -122,7 +122,7 @@ func main() {
 	splited_timew_output := strings.Split(string(stdout), "\n")
 	time_elapsed := strings.ReplaceAll(splited_timew_output[len(splited_timew_output)-3], " ", "")
 
-	fmt.Print(time_elapsed, " @ ", active_task_description)
+	fmt.Print(time_elapsed, " @ ", active_task_description, " (", active_task_id, ")")
 	if imp_task_id != active_task_id {
 		stdout, err = exec.Command(
 			"task",
@@ -135,6 +135,6 @@ func main() {
 		}
 
 		imp_task_description := strings.ReplaceAll(string(stdout), "\n", "")
-		fmt.Print(" MORE IMPORTANT TASK: ", imp_task_description)
+		fmt.Print(" MORE IMPORTANT TASK(", imp_task_id, "): ", imp_task_description)
 	}
 }
