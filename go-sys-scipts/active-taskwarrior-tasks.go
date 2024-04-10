@@ -7,20 +7,15 @@ import (
 )
 
 func extractID(stdout []byte) string {
-	var column []string = strings.Split(string(stdout), "\n")[3]
-	var id_started bool = false
-	id := ""
+	column := strings.Split(strings.Split(string(stdout), "\n")[3], " ")
+	// first non empty element
 	for _, char := range column {
-		println(id_started , char , char == " ", id_started && char == " ")
-		if id_started == true && char == " " {
-			print(4)
-			return id
-		} else if char != " " {
-			id_started = true
-			id = id + char
+		if char == "" {
+			continue
 		}
+		return char
 	}
-	return id
+	return ""
 
 }
 
@@ -61,7 +56,7 @@ func main() {
 		return
 	}
 
-	active_task_id := strings.Split(strings.Split(string(stdout), "\n")[3], " ")[1]
+	active_task_id := extractID(stdout)
 
 	stdout, err = exec.Command(
 		"task",
