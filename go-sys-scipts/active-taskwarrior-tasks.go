@@ -20,7 +20,8 @@ func main() {
 	}
 
 	output := string(stdout)
-	id := strings.Split(strings.Split(output, "\n")[3], " ")[0]
+	id := strings.Split(strings.Split(output, "\n")[3], " ")[1]
+	// fmt.Println(output)
 
 	// task _get .description
 	stdout, err = exec.Command(
@@ -72,7 +73,7 @@ func main() {
 		"2022-01-01",
 		"summary",
 		description,
-		project,
+		// project,
 	)
 	for _, t := range tags {
 		args = append(args, t)
