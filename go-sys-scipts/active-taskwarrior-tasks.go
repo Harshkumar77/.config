@@ -21,9 +21,7 @@ func main() {
 
 	output := string(stdout)
 	id := strings.Split(strings.Split(output, "\n")[3], " ")[1]
-	// fmt.Println(output)
 
-	// task _get .description
 	stdout, err = exec.Command(
 		"task",
 		"_get",
