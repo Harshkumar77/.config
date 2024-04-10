@@ -6,6 +6,14 @@ import (
 	"strings"
 )
 
+func extractID(stdout []byte) string {
+	column := strings.Split(strings.Split(string(stdout), "\n")[3], " ")
+	for i, char := range column {
+		
+	}
+
+}
+
 func main() {
 
 	stdout, err := exec.Command(
@@ -19,7 +27,7 @@ func main() {
 		return
 	}
 
-	imp_task_id := strings.Split(strings.Split(string(stdout), "\n")[3], " ")[1]
+	imp_task_id := extractID(stdout)
 
 	stdout, err = exec.Command(
 		"task",
@@ -28,7 +36,6 @@ func main() {
 	).Output()
 
 	if err != nil {
-		fmt.Println("No active task")
 		stdout, err = exec.Command(
 			"task",
 			"_get",
