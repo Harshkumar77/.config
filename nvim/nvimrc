@@ -47,7 +47,7 @@ nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
     nnoremap <leader>D           :lua vim.lsp.buf.type_definition()<cr>
     nnoremap <leader>ds          :lua require('telescope.builtin').lsp_document_symbols()<cr>
     nnoremap gD                  :lua vim.lsp.buf.declaration()<cr>
-    nnoremap K                   :lua vim.lsp.buf.hover()<cr>
+    " nnoremap K                   :lua vim.lsp.buf.hover()<cr>
     nnoremap gk                  :lua vim.lsp.buf.signature_help()<cr>
 
 
