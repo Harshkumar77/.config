@@ -29,6 +29,18 @@ func main() {
 
 	if err != nil {
 		fmt.Println("No active task")
+		stdout, err = exec.Command(
+			"task",
+			"_get",
+			imp_task_id+".description",
+		).Output()
+		if err != nil {
+			fmt.Println("Unable to fetch active task description id:" + imp_task_id)
+			return
+		}
+
+		imp_task_description := strings.ReplaceAll(string(stdout), "\n", "")
+		fmt.Print("NEXT TASK: ", imp_task_description)
 		return
 	}
 
@@ -40,7 +52,7 @@ func main() {
 		active_task_id+".description",
 	).Output()
 	if err != nil {
-		fmt.Println("No active task")
+		fmt.Println("Unable to fetch active task description id:" + active_task_id)
 		return
 	}
 
@@ -98,5 +110,19 @@ func main() {
 	splited_timew_output := strings.Split(string(stdout), "\n")
 	time_elapsed := strings.ReplaceAll(splited_timew_output[len(splited_timew_output)-3], " ", "")
 
-	fmt.Println(time_elapsed, "@" , active_task_description)
+	fmt.Print(time_elapsed, " @ ", active_task_description)
+	if imp_task_id != active_task_id {
+		stdout, err = exec.Command(
+			"task",
+			"_get",
+			imp_task_id+".description",
+		).Output()
+		if err != nil {
+			fmt.Println("Unable to fetch active task description id:" + imp_task_id)
+			return
+		}
+
+		imp_task_description := strings.ReplaceAll(string(stdout), "\n", "")
+		fmt.Print(" MORE IMPORTANT TASK: ", imp_task_description)
+	}
 }
