@@ -11,6 +11,7 @@ augroup END
 
     :command Scrathpad           :e ~/notes/scratch/scrathpad.md
     :command ScrathpadPDF        !xdg-open ~/Downloads/scratchpad.pdf
+    :command Rough               :e ~/notes/scratch/rough.md
 
 nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
 
