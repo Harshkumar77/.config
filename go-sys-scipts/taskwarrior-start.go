@@ -6,6 +6,20 @@ import (
 	"strings"
 )
 
+func extractID(stdout []byte) string {
+	column := strings.Split(strings.Split(string(stdout), "\n")[3], " ")
+	// first non empty element
+	for _, char := range column {
+		if char == "" {
+			continue
+		}
+		return char
+	}
+	return ""
+
+}
+
+
 func main() {
 
 	stdout, err := exec.Command(
@@ -19,8 +33,7 @@ func main() {
 		return
 	}
 
-	output := string(stdout)
-	id := strings.Split(strings.Split(output, "\n")[3], " ")[1]
+	id := extractID(stdout)
 
 	stdout, err = exec.Command(
 		"task",
