@@ -1,3 +1,8 @@
+if [[ ! $(tmux list-sessions) ]]; then 
+  ~/.config/bin/tx
+fi
+
+
 export EDITOR="nvim"
 export PATH=$HOME/go/bin:$HOME/bin:$HOME/.config/bin:$PATH
 random-quote
