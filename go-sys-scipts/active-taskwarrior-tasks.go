@@ -122,6 +122,7 @@ func main() {
 
 	splited_timew_output := strings.Split(string(stdout), "\n")
 	time_elapsed := strings.ReplaceAll(splited_timew_output[len(splited_timew_output)-3], " ", "")
+	println(555)
 
 	fmt.Print(time_elapsed, " @ ", active_task_description, " (", active_task_id, ")")
 	if imp_task_id != active_task_id {
