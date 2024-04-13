@@ -106,6 +106,7 @@ func main() {
 		"summary",
 		active_task_description,
 		// project,
+		active_task_id,
 	)
 	for _, t := range tags {
 		args = append(args, t)
