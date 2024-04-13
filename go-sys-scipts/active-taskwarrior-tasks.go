@@ -6,6 +6,22 @@ import (
 	"strings"
 )
 
+func extractUUID(id string) string {
+	stdout, err := exec.Command(
+		"task",
+		"_get",
+		id+".uuid",
+	).Output()
+	if err != nil {
+		fmt.Println("Unable to fetch active task description id:" + id)
+		return "-1"
+	}
+
+	uuid := strings.ReplaceAll(string(stdout), "\n", "")
+	return uuid
+
+}
+
 func extractID(stdout []byte) string {
 	column := strings.Split(strings.Split(string(stdout), "\n")[3], " ")
 	// first non empty element
