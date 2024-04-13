@@ -77,7 +77,11 @@ require('lazy').setup({
         opts = {
             sections     = {
                 lualine_a = {},
-                lualine_b = { 'filename' },
+                lualine_b = {
+                    {
+                        'filename', symbol = { modified = '' }
+                    }
+                },
                 lualine_c = {},
                 lualine_x = {},
                 lualine_y = { 'branch', 'diff', 'diagnostics' },
@@ -89,7 +93,7 @@ require('lazy').setup({
                 section_separators = '',
                 path = 1,
                 symbols = {
-                    modified = '',
+
                 },
             },
             dependencies = {
@@ -110,7 +114,7 @@ require('lazy').setup({
     { 'numToStr/Comment.nvim',         opts = {} },
 
     -- Fuzzy Finder (files, lsp, etc)
-    { 'nvim-telescope/telescope.nvim', branch = '0.1.x', dependencies = { 'nvim-lua/plenary.nvim' } },
+    { 'nvim-telescope/telescope.nvim', branch = '0.1.x',                                dependencies = { 'nvim-lua/plenary.nvim' } },
     {
         'nvim-telescope/telescope-fzf-native.nvim',
         build = 'make',
