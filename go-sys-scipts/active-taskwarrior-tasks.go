@@ -19,7 +19,6 @@ func extractUUID(id string) string {
 
 	uuid := strings.ReplaceAll(string(stdout), "\n", "")
 	return uuid
-
 }
 
 func extractID(stdout []byte) string {
@@ -123,7 +122,7 @@ func main() {
 		"summary",
 		// active_task_description,
 		// project,
-		"@" + active_task_id,
+		extractUUID(active_task_id),
 	)
 	for _, t := range tags {
 		args = append(args, t)
@@ -138,7 +137,6 @@ func main() {
 	}
 
 	splited_timew_output := strings.Split(string(stdout), "\n")
-	println(555)
 	time_elapsed := strings.ReplaceAll(splited_timew_output[len(splited_timew_output)-3], " ", "")
 
 	fmt.Print(time_elapsed, " @ ", active_task_description, " (", active_task_id, ")")
