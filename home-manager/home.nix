@@ -44,6 +44,7 @@
     xz
     tree
     util-linux
+    gnumake
 
     # pandoc
     pandoc
