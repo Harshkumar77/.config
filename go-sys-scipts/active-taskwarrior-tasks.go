@@ -120,9 +120,9 @@ func main() {
 		"from",
 		"2022-01-01",
 		"summary",
-		// active_task_description,
+		active_task_description,
 		// project,
-		extractUUID(active_task_id),
+		// extractUUID(active_task_id),
 	)
 	for _, t := range tags {
 		args = append(args, t)
