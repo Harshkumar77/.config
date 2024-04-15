@@ -45,6 +45,7 @@
     tree
     util-linux
     gnumake
+    glow
 
     # pandoc
     pandoc
