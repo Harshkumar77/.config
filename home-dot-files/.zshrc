@@ -64,7 +64,8 @@ alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 alias pwc='pwd | xclip -selection clipboard; echo copied $PWD' # copy pwd
 alias xlast="LAST_COMMAND_EXECUTED_IN_ZSH=\`tac ~/.zsh_history | head -n 2 | tail -n 1 | awk -F';'  '{print \$2}'\`;
 	      printf \$LAST_COMMAND_EXECUTED_IN_ZSH | xclip -selection clipboard  ; echo \$LAST_COMMAND_EXECUTED_IN_ZSH" # copy last executed cmd and prints to terminal
-alias revise='cat $(fd .  ~/notes/dev/Leetcode -E "Leetcode*" | shuf) | glow; tmux copy-mode'
+alias revise='cat $(fd --extension=md .  ~/notes/dev/Leetcode  ~/notes/Helpful-knowlege/ -E "Leetcode*" | shuf) | glow; tmux copy-mode'
+
 
 # screenshot to text
 alias w='tesseract -l eng "$HOME/Pictures/$(ls $HOME/Pictures -t | head -1)" /tmp/output_from_ocr && cat /tmp/output_from_ocr.txt && cat /tmp/output_from_ocr.txt | xclip -selection clipboard'
