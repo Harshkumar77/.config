@@ -26,8 +26,9 @@ backup () {
 }
 
 errorWindow () {
+
   error_msg='Error while backup'
-  if [ ! -z "$WSLENV" ] 
+  if [ -z "$WSLENV" ] 
   then
     alacritty.exe --hold -e "wsl.exe echo $error_msg"
   else
