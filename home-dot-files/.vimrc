@@ -148,7 +148,7 @@ set nowrap
 "set listchars+=eol:󰦷 
 
 "jump to last file / buffer
-nnoremap s <C-^>
+nnoremap s <C-^>zz
 
 "only one status line
 set ls=3
