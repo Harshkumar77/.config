@@ -117,8 +117,8 @@ func main() {
 	var args []string
 	args = append(
 		args,
-		"from",
-		"2022-01-01",
+		// "from",
+		// "2022-01-01",
 		"summary",
 		active_task_description,
 		// project,
