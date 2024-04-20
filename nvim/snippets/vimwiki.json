@@ -3,7 +3,7 @@
         "prefix": "diary",
         "body": [
             "## Let it out",
-            "- ",
+            "- $0",
             "",
             "## Notes for Tomorrow",
             "- ",
