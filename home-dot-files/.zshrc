@@ -53,6 +53,11 @@ alias vw='tmux rename-window "notes"; nvim ~/notes/diary/diary.md -c "VimwikiDia
 alias l='eza --icons -a'
 alias ll='eza --icons -ahl'
 alias tree='tree --si -I "node_modules" -I ".git" -a '
+
+alias cat='bat --paging=never'
+alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
 alias dc='. ~/.config/bin/dc' # without . in front it wont change the directory

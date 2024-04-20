@@ -46,6 +46,7 @@
     util-linux
     gnumake
     glow
+    bat
 
     # pandoc
     pandoc
