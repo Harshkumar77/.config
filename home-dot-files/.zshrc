@@ -127,6 +127,7 @@ alias T10='task next limit:10'
 alias tsum='task summary'
 alias tm='timew'
 alias tw='timew'
+alias taskwarrior-garbage-collection='task rc.gc=on list'
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"

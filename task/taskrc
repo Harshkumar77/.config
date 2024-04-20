@@ -24,3 +24,4 @@ urgency.uda.priority.M.coefficient=3.9
 
 uda.priority.default=L
 
+gc=off
