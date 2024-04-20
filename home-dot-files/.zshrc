@@ -53,11 +53,6 @@ alias vw='tmux rename-window "notes"; nvim ~/notes/diary/diary.md -c "VimwikiDia
 alias l='eza --icons -a'
 alias ll='eza --icons -ahl'
 alias tree='tree --si -I "node_modules" -I ".git" -a '
-
-alias cat='bat --paging=never'
-alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
-alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
-
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
 alias dc='. ~/.config/bin/dc' # without . in front it wont change the directory
@@ -69,7 +64,7 @@ alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 alias pwc='pwd | xclip -selection clipboard; echo copied $PWD' # copy pwd
 alias xlast="LAST_COMMAND_EXECUTED_IN_ZSH=\`tac ~/.zsh_history | head -n 2 | tail -n 1 | awk -F';'  '{print \$2}'\`;
 	      printf \$LAST_COMMAND_EXECUTED_IN_ZSH | xclip -selection clipboard  ; echo \$LAST_COMMAND_EXECUTED_IN_ZSH" # copy last executed cmd and prints to terminal
-alias revise='cat $(fd --extension=md .  ~/notes/dev/Leetcode  ~/notes/Helpful-knowlege/ -E "Leetcode*" | shuf) | glow; tmux copy-mode'
+alias revise='bat --theme="Monokai Extended Origin" $(fd --extension=md .  ~/notes/dev/Leetcode  ~/notes/Helpful-knowlege/ -E "Leetcode*" | shuf)'
 
 
 # screenshot to text
@@ -165,6 +160,10 @@ alias pg_admin='silent pgadmin4'
 
 # Git related
 alias gl="git log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate=full"
+
+alias cat='bat --paging=never  --theme="Monokai Extended Origin" '
+alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 
 # eval "$(rbenv init - zsh)"
 # export GEM_HOME=~/.gem/
