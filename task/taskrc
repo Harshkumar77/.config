@@ -25,3 +25,8 @@ urgency.uda.priority.M.coefficient=3.9
 uda.priority.default=L
 
 gc=off
+
+urgency.user.tag.health.coefficient=3
+urgency.user.tag.chore.coefficient=2
+urgency.user.tag.game.coefficient=2
+
