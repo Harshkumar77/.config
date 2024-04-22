@@ -9,6 +9,7 @@ report.minimal.labels=ID,DESCRIPTION,DUE,DUE
 
 alias.mod=modify
 alias.rm=delete
+alias.note=annotate
 
 news.version=2.6.0
 
@@ -29,4 +30,5 @@ gc=off
 urgency.user.tag.health.coefficient=3
 urgency.user.tag.chore.coefficient=2
 urgency.user.tag.game.coefficient=2
+urgency.user.tag.config.coefficient=-1
 
