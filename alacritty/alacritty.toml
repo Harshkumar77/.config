@@ -1,6 +1,21 @@
-# cp ~/.config/alacritty/alacritty.toml /mnt/c/Users/khars/AppData/Roaming/alacritty
+# cp ~/.config/alacritty/alacritty.toml /mnt/c/Users/username/AppData/Roaming/alacritty
 
-import = [
+[shell]
+program = "wsl.exe"
+# args = [ "~/.nix-profile/bin/zsh", "-c ", "cd ~ && ~/.config/bin/tx" ]
+
+
+[window]
+startup_mode = "Maximized" 
+opacity = 0.97
+
+[font]
+normal.family = "MesloLGS Nerd Font Propo"
+bold.family = "MesloLGS Nerd Font Propo"
+italic.family = "MesloLGS Nerd Font Propo"
+bold_italic.family = "MesloLGS Nerd Font Propo"
+size = 13.0
+
 
 # "~/.nix-profile/Cobalt2.toml"
 # "~/.nix-profile/Mariana.toml"
@@ -17,7 +32,7 @@ import = [
 # "~/.nix-profile/ayu_light.toml"
 # "~/.nix-profile/baitong.toml"
 # "~/.nix-profile/base16_default_dark.toml"
-  "~/.nix-profile/blood_moon.toml"
+# "~/.nix-profile/blood_moon.toml"
 # "~/.nix-profile/bluish.toml"
 # "~/.nix-profile/breeze.toml"
 # "~/.nix-profile/campbell.toml"
@@ -240,22 +255,3 @@ import = [
 # "~/.nix-profile/wombat.toml"
 # "~/.nix-profile/xterm.toml"
 # "~/.nix-profile/zenburn.toml"
-]
-
-[shell]
-program = "wsl.exe"
-# args = [ "~/.nix-profile/bin/zsh", "-c ", "cd ~ && ~/.config/bin/tx" ]
-
-
-[window]
-startup_mode = "Maximized" 
-opacity = 0.97
-
-[font]
-normal.family = "MesloLGS Nerd Font Propo"
-bold.family = "MesloLGS Nerd Font Propo"
-italic.family = "MesloLGS Nerd Font Propo"
-bold_italic.family = "MesloLGS Nerd Font Propo"
-size = 13.0
-
-
