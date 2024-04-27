@@ -25,7 +25,7 @@
     zsh-fzf-tab
     nix-zsh-completions
 
-
+    alacritty-theme
 
     # Command line utilites
     clolcat
