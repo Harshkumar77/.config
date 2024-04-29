@@ -65,9 +65,10 @@ alias openn='xdg-open 2>/dev/null "$(fzf)"'
 alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 
 alias pwc='pwd | xclip -selection clipboard; echo copied $PWD' # copy pwd
-alias xlast="LAST_COMMAND_EXECUTED_IN_ZSH=\`tac ~/.zsh_history | head -n 2 | tail -n 1 | awk -F';'  '{print \$2}'\`;
+alias xlast="LAST_COMMAND_EXECUTED_IN_ZSH=\`tac ~/notes/more/.zsh_history | head -n 2 | tail -n 1 | awk -F';'  '{print \$2}'\`;
 	      printf \$LAST_COMMAND_EXECUTED_IN_ZSH | xclip -selection clipboard  ; echo \$LAST_COMMAND_EXECUTED_IN_ZSH" # copy last executed cmd and prints to terminal
-alias revise='bat $(fd --extension=md .  ~/notes/dev/Leetcode  ~/notes/Helpful-knowlege/ -E "Leetcode*" | shuf)'
+alias revise='bat $(fd --extension=md .  ~/notes/dev/Leetcode  ~/notes/Helpful-knowlege/ -E "Leetcode*" | shuf)
+	      ;random-quote;random-quote;random-quote;'
 
 
 # screenshot to text
