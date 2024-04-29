@@ -7,5 +7,6 @@ while [[ "$QUOTE" == "$PREVIOUS_QUOTE" ]]; do
   QUOTE="$(shuf ~/notes/quotes -n 1)"
 done
 
-echo $QUOTE | glow - | clolcat
+echo ""
+echo $QUOTE | clolcat
 echo "$QUOTE" > /tmp/qt434341
