@@ -2,7 +2,7 @@ if [[ ! $(tmux list-sessions) ]]; then
   ~/.config/bin/tx
 fi
 
-
+export HISTFILE=$HOME/notes/more/.zsh_history
 export EDITOR="nvim"
 export PATH=$HOME/go/bin:$HOME/bin:$HOME/.config/bin:$PATH
 # timew day

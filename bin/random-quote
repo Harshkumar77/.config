@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-echo ""
-echo ""
 QUOTE="$(shuf ~/notes/quotes -n 1)"
 PREVIOUS_QUOTE="$(cat /tmp/qt434341)"
 
@@ -9,6 +7,5 @@ while [[ "$QUOTE" == "$PREVIOUS_QUOTE" ]]; do
   QUOTE="$(shuf ~/notes/quotes -n 1)"
 done
 
-echo $QUOTE | clolcat
+echo $QUOTE | glow - | clolcat
 echo "$QUOTE" > /tmp/qt434341
-echo ""
