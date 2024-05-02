@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-QUOTE="$(shuf ~/notes/quotes -n 1)"
+QUOTE="$(shuf ~/notes/more/quotes -n 1)"
 PREVIOUS_QUOTE="$(cat /tmp/aeb4352923ecbdd29ce61ab89dc0b54d)"
 
 while [[ "$QUOTE" == "$PREVIOUS_QUOTE" ]]; do
