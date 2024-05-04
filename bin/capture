@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-
 if [[ ! "$@" ]]; then
   echo Empty
 else
-  echo "$@" >> ~/notes/more/bookmarks
+  echo "- $@" >> ~/notes/index.md
   echo Added
 fi
 
