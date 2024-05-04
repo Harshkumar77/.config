@@ -68,6 +68,7 @@ set mouse=a
     " this will copy to system clipboard
     " set clipboard = 'unnamedplus' 
     vnoremap Y "+y
+    nnoremap Y "+y
     " copy whole file
     nnoremap <leader>y ggVGy<C-o>zz
     nnoremap <leader>Y ggVG"+y<C-o>zz
