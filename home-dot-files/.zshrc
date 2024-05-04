@@ -58,6 +58,7 @@ alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
 alias dc='. ~/.config/bin/dc' # without . in front it wont change the directory
+alias b='bookmark'
 alias n="nvim ."
 alias open='xdg-open 2>/dev/null'
 alias openn='xdg-open 2>/dev/null "$(fzf)"'
