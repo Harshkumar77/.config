@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [[ "$1" = "" ]]; then
+  xdg-open "$(echo ~/notes/more/bookmarks | uniq | fzf)"
+fi
+curl "$1" 
+
+
