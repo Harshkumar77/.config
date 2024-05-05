@@ -51,6 +51,7 @@
     # pandoc
     pandoc
     texliveSmall
+    imagemagickBig
 
 
     # Programming Languages
