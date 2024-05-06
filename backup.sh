@@ -24,7 +24,7 @@ backup () {
   timew day >> ~/notes/Tasklist.md
   echo '```' >> ~/notes/Tasklist.md
 
-  (cat ~/notes/**/*.md | grep -o 'http[s]*://[^"]*') > ~/notes/more/urls_generated
+  (cat ~/notes/**/*.md | grep -Eo 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?') > ~/notes/more/urls_generated
 
 }
 
