@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 if [[ ! "$@" ]]; then
-  selected="$(tac ~/notes/more/bookmarks | sort | uniq | shuf | fzf)"
+  (cat ~/notes/**/*.md | grep -o 'http[s]*://[^"]*') > /tmp/neb4352923ebbdd29ce6ssab8ddc0b54d
+  selected="$(tac /tmp/neb4352923ebbdd29ce6ssab8ddc0b54d ~/notes/more/bookmarks | sort | uniq | shuf | fzf)"
   echo "$selected"
   echo "$selected" | xclip -selection clipboard
   # xdg-open "$selected" &

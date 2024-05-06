@@ -23,6 +23,9 @@ backup () {
   echo '```' >> ~/notes/Tasklist.md
   timew day >> ~/notes/Tasklist.md
   echo '```' >> ~/notes/Tasklist.md
+
+  (cat ~/notes/**/*.md | grep -o 'http[s]*://[^"]*') > ~/notes/more/urls_generated
+
 }
 
 errorWindow () {
