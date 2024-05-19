@@ -72,6 +72,8 @@
     (python311.withPackages (py_pkg: [
       py_pkg.pip
     ]))
+    ## Haskell
+    ghc
 
     # Devtools
     neovim
