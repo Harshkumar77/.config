@@ -25,6 +25,7 @@ backup () {
   echo '```' >> ~/notes/Tasklist.md
 
   (cat $(fd --extension=md . ~/notes) | grep -Eo 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' | tr -d ')') > ~/notes/more/urls_generated
+  (cat $(fd --extension=md . ~/notes) | grep -E 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' ) >> ~/notes/more/urls_generated
 
 }
 
