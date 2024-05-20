@@ -58,6 +58,7 @@ alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 alias cdd='. ~/.config/bin/cdd' # without . in front it wont change the directory
 alias cddd='. ~/.config/bin/cddd' # without . in front it wont change the directory
 alias dc='. ~/.config/bin/dc' # without . in front it wont change the directory
+alias backup='~/.config/backup.sh'
 alias b='bookmark'
 alias c='capture'
 alias n="nvim ."
