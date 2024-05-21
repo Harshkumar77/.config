@@ -5,4 +5,5 @@ ranger
 tmux/plugins
 wallpaper/wallpaper.jpg
 nix-env
-DB/postgres/*
+DB/postgres
+cheat/cheatsheets

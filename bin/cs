@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-curl cheat.sh/"$1" 
-tmux copy-mode
+curl cheat.sh/"$1" | bat --style=plain
 
 

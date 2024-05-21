@@ -47,6 +47,7 @@
     gnumake
     glow
     bat
+    cheat
 
     # pandoc
     pandoc
