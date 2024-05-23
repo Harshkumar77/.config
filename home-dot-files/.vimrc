@@ -189,3 +189,6 @@ au BufNewFile,BufRead *.ejs set filetype=html
     let g:vimwiki_markdown_link_ext = 1
     let g:vimwiki_diary_caption_level=-1
     let g:vimwiki_auto_header=1
+
+"List Related
+nnoremap <leader>h :hide<cr>
