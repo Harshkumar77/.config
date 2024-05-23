@@ -22,8 +22,10 @@ nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
     nnoremap <leader>sf          :lua require('telescope.builtin').find_files()<cr>
     nnoremap <leader>sh          :lua require('telescope.builtin').help_tags()<cr>
     nnoremap <leader>*           :lua require('telescope.builtin').grep_string()<cr>
+    nnoremap <leader><leader>*   :lua require('telescope.builtin').grep_string()<cr><C-q>
     nnoremap <leader>/           :lua require('telescope.builtin').live_grep()<cr>
     nnoremap <leader>sd          :lua require('telescope.builtin').diagnostics()<cr>
+    nnoremap <leader><leader>q   :lua require("volcano.telescope").toggle_quickfix()<cr>
 
 " Diagnostic keymaps
     nnoremap [d                  :lua vim.diagnostic.goto_prev()<cr>zz
