@@ -151,7 +151,43 @@ require('lazy').setup({
 
     { 'NvChad/nvim-colorizer.lua', opts = {} },
 
-    'mhartington/formatter.nvim'
+    {  -- Autoformat
+        'stevearc/conform.nvim',
+        lazy = false,
+        keys = {
+            {
+                '<leader>F',
+                function()
+                    require('conform').format { async = true, lsp_fallback = true }
+                end,
+                mode = '',
+                desc = '[F]ormat buffer',
+            },
+        },
+        opts = {
+            notify_on_error = false,
+            format_on_save = function(bufnr)
+                -- Disable "format_on_save lsp_fallback" for languages that don't
+                -- have a well standardized coding style. You can add additional
+                -- languages here or re-enable it for the disabled ones.
+                local disable_filetypes = { c = true, cpp = true }
+                return {
+                    timeout_ms = 500,
+                    lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
+                }
+            end,
+            formatters_by_ft = {
+                lua = { 'stylua' },
+                -- Conform can also run multiple formatters sequentially
+                -- python = { "isort", "black" },
+                --
+                -- You can use a sub-list to tell conform to run *until* a formatter
+                -- is found.
+                javascript = { { "prettierd", "prettier" } },
+                typescriptreact = { { "prettierd", "prettier" } },
+            },
+        },
+    },
 
 }, {})
 
@@ -165,48 +201,5 @@ require 'volcano.telescope'
 require 'volcano.autocmd'
 require 'volcano.vimwiki'
 require 'volcano.last_nth_bfr'
-
--- TODO
--- local util = require "formatter.util"
---
--- require("formatter").setup {
---   logging = true,
---   log_level = vim.log.levels.WARN,
---   filetype = {
---     -- Formatter configurations for filetype "lua" go here
---     -- and will be executed in order
---     lua = {
---       -- "formatter.filetypes.lua" defines default configurations for the
---       -- "lua" filetype
---       require("formatter.filetypes.lua").stylua,
---
---       -- You can also define your own configuration
---       function()
---         -- Supports conditional formatting
---         if util.get_current_buffer_file_name() == "special.lua" then
---           return nil
---         end
---
---         -- Full specification of configurations is down below and in Vim help
---         -- files
---         return {
---           exe = "stylua",
---           args = {
---             "--search-parent-directories",
---             "--stdin-filepath",
---             util.escape_path(util.get_current_buffer_file_path()),
---             "--",
---             "-",
---           },
---           stdin = true,
---         }
---       end
---     },
---
---     ["*"] = {
---       require("formatter.filetypes.any").remove_trailing_whitespace
---     }
---   }
--- }
 
 vim.cmd [[ source ~/.config/nvim/nvimrc ]]
