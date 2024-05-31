@@ -31,7 +31,7 @@ nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
     nnoremap [d                  :lua vim.diagnostic.goto_prev()<cr>zz
     nnoremap ]d                  :lua vim.diagnostic.goto_next()<cr>zz
     nnoremap <leader>e           :lua vim.diagnostic.open_float()<cr>
-    nnoremap <leader>q           :lua vim.diagnostic.setloclist()<cr>
+    nnoremap <leader>q           :lua vim.diagnostic.setqflist()<cr>
 
 " Last_nth_buffer 
     nnoremap <silent> S          :lua require("volcano.last_nth_bfr").last_nth_buffer(3)()<cr>zz
