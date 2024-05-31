@@ -93,6 +93,8 @@
     dbeaver
     pgadmin4-desktopmode
     postgresql_12
+    sqlite
+
 
     # Conditionally add WSL specific packages
     # based on the environment
