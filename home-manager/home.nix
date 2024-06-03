@@ -96,7 +96,7 @@
     sqlite
 
     # AI
-    ollama
+    # ollama
 
     # Conditionally add WSL specific packages
     # based on the environment
