@@ -61,3 +61,6 @@ nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
     nnoremap <leader>gp          :lua require('gitsigns').prev_hunk<cr>
     nnoremap <leader>gn          :lua require('gitsigns').next_hunk<cr>
     nnoremap <leader>ph          :lua require('gitsigns').preview_hunk<cr>
+
+" TODO
+    nnoremap <leader>qt          :TodoQuickFix<cr>
