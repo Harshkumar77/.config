@@ -95,6 +95,8 @@
     postgresql_12
     sqlite
 
+    # AI
+    ollama
 
     # Conditionally add WSL specific packages
     # based on the environment
