@@ -12,17 +12,31 @@ require('telescope').setup {
     },
   },
   pickers = {
-    'ivy',
-    buffers = {
-      theme = 'ivy',
+
+    diagnostics = {
+      theme = 'ivy'
+    },
+    live_grep = {
+      theme = 'ivy'
+    },
+    grep_string = {
+      theme = 'ivy'
+    },
+    help_tags = {
+      theme = 'ivy'
     },
     find_files = {
-      theme = 'ivy',
+      theme = 'ivy'
     },
     git_files = {
-      theme = 'ivy',
-      previewer = false,
-    }
+      theme = 'ivy'
+    },
+    buffers = {
+      theme = 'ivy'
+    },
+    oldfiles = {
+      theme = 'ivy'
+    },
   }
 }
 
@@ -34,7 +48,6 @@ local M = {}
 function M.toggle_quickfix()
   local windows = vim.fn.getwininfo()
   for _, win in pairs(windows) do
-
     if win["quickfix"] == 1 then
       vim.cmd.cclose()
       return
