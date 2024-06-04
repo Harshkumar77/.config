@@ -12,6 +12,7 @@ require('telescope').setup {
     },
   },
   pickers = {
+    'ivy',
     buffers = {
       theme = 'ivy',
     },
