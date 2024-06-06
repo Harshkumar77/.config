@@ -1,4 +1,4 @@
-///home/volcano/.nix-profile/bin/go run $0 $@ ; exit
+//$HOME/.nix-profile/bin/go run $0 $@ ; exit
 
 package main
 
