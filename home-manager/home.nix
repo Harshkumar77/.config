@@ -5,7 +5,7 @@
   home.homeDirectory = builtins.getEnv "HOME";
 
 
-  home.stateVersion = "24.05";
+  home.stateVersion = "23.11";
   home.enableNixpkgsReleaseCheck = false;
 
   nixpkgs.config.allowUnfreePredicate = _: true;
