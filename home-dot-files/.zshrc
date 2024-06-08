@@ -6,7 +6,7 @@ export EDITOR="nvim"
 export PATH=$HOME/.config/go-sys-scipts:$HOME/go/bin:$HOME/bin:$HOME/.config/bin:$PATH
 # timew day
 random-quote
-# task next limit:1
+task next limit:1
 
 ################################### oh-my-zsh specific ###################################
 # export ZSH="$HOME/.oh-my-zsh"
