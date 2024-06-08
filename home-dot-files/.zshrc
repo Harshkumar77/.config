@@ -3,7 +3,7 @@ if [[ ! $(tmux list-sessions) ]]; then
 fi
 
 export EDITOR="nvim"
-export PATH=$HOME/go/bin:$HOME/bin:$HOME/.config/bin:$PATH
+export PATH=$HOME/.config/go-sys-scipts:$HOME/go/bin:$HOME/bin:$HOME/.config/bin:$PATH
 # timew day
 random-quote
 # task next limit:1

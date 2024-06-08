@@ -2,10 +2,11 @@
 
 if [[ ! "$@" ]]; then
   selected=`(
-  ( grep -Eho 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' $(fd --extension=md . ~/notes) | tr -d ')') ;
-  ( grep -Eh 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' $(fd --extension=md . ~/notes));
+  ( rgrep -Eho 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' $(fd --extension=md . ~/notes) | tr -d ')') ;
+  ( rgrep -Eh 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' $(fd --extension=md . ~/notes));
   (cat ~/notes/more/bookmarks)
-          ) | sort | uniq | shuf | fzf `
+          ) |  fzf `
+          # ) | sort | uniq | shuf | fzf `
 
   echo "$selected"
   echo "$selected" | xclip -selection clipboard
