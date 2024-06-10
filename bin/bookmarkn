@@ -3,9 +3,9 @@
 URL_REGEX='https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' 
 if [[ ! "$@" ]]; then
   selected=`(
-  ( rgrep -Eho "$URL_REGEX" $(fd --extension=md . ~/notes) | tr -d ')') ;
-  ( rgrep -Eh  "$URL_REGEX" $(fd --extension=md . ~/notes));
-  ( rgrep -Eho "$URL_REGEX" ~/notes/more/bookmarks );
+  ( grep -Eho "$URL_REGEX" $(fd --extension=md . ~/notes) | tr -d ')') ;
+  ( grep -Eh  "$URL_REGEX" $(fd --extension=md . ~/notes));
+  ( grep -Eho "$URL_REGEX" ~/notes/more/bookmarks );
   (cat ~/notes/more/bookmarks)
           ) |  fzf `
           # ) | sort | uniq | shuf | fzf `

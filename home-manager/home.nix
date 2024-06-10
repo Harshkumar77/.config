@@ -64,6 +64,7 @@
     nodejs_20.pkgs.pnpm
     nodejs_20.pkgs.nodemon
     nodejs_20.pkgs.serve
+    nodejs_20.pkgs.degit
     bun
     ## golang
     go
@@ -90,7 +91,7 @@
 
 
     # Databases
-    dbeaver
+    dbeaver-bin
     pgadmin4-desktopmode
     postgresql_12
     sqlite
