@@ -66,4 +66,3 @@ nnoremap <silent> <leader>f      :NvimTreeToggle<cr>
 " TODO
     nnoremap <leader>qt          :TodoQuickFix<cr>
     nnoremap <leader>st          :TodoTelescope<cr>
-
