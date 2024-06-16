@@ -230,37 +230,4 @@ require 'volcano.autocmd'
 require 'volcano.vimwiki'
 require 'volcano.last_nth_bfr'
 
- -- init.lua
-
--- Function to prompt for input and execute the command
-local function run_node_with_input()
-  -- Get the selected text
-  local start_pos = vim.fn.getpos("'<")
-  local end_pos = vim.fn.getpos("'>")
-  local lines = vim.fn.getline(start_pos[2], end_pos[2])
-
-  -- Join the lines to form a single string
-  local selected_text = table.concat(lines, "\n")
-
-  -- Prompt for input
-  local prompt = vim.fn.input("Enter the JavaScript code to run: ")
-
-  -- Create the final command
-
-  local command = 'node -p \'`' .. selected_text .. '`.' .. prompt .. '\''
-    print("---")
-    print(command)
-    print("---")
-
-  -- Run the command and capture the output
-  local output = vim.fn.system(command, selected_text)
-    print(output)
-
-  -- Display the output
-  vim.api.nvim_echo({{output}}, true, {})
-end
-
--- Create the custom command in Neovim
-vim.api.nvim_create_user_command('RunNode', run_node_with_input, {range=true})
- 
 vim.cmd [[ source ~/.config/nvim/nvimrc ]]
