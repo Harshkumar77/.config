@@ -246,8 +246,11 @@ local function run_node_with_input()
   local prompt = vim.fn.input("Enter the JavaScript code to run: ")
 
   -- Create the final command
-  local command = 'node -e "' .. prompt .. '"'
 
+  local command = 'node -p \'`' .. selected_text .. '`.' .. prompt .. '\''
+    print("---")
+    print(command)
+    print("---")
 
   -- Run the command and capture the output
   local output = vim.fn.system(command, selected_text)
