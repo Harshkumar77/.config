@@ -185,6 +185,7 @@ require('lazy').setup({
                 -- is found.
                 javascript = { { "prettierd", "prettier" } },
                 typescriptreact = { { "prettierd", "prettier" } },
+                json = { { "prettierd", "prettier" } },
             },
         },
     },
