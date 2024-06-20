@@ -9,6 +9,10 @@ import (
 )
 
 func main() {
+	FORMAT := "2006-12-14"
+	dates := []string{
+		"2024-06-19",
+	}
 	now := time.Now()
 	age := now.Local().Year() - 2003 - 1
 
@@ -48,5 +52,5 @@ func main() {
 		output[i] = temp
 	}
 
-	fmt.Printf("%v-%v-%v\n", output[0], output[1], output[2])
+	fmt.Printf("%v %v %v\n", output[0], output[1], output[2])
 }
