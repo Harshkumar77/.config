@@ -10,11 +10,14 @@ import (
 )
 
 func main() {
-	now := time.Now()
-	FORMAT := "2006-01-02"
 	dates := []string{
 		"2024-06-19",
+		"2025-04-11",
+		"2025-01-01",
 	}
+
+	now := time.Now()
+	FORMAT := "2006-01-02"
 	output := []string{}
 	for i := 0; i < len(dates); i++ {
 		parsedDate, err := time.Parse(FORMAT, dates[i])
@@ -33,21 +36,8 @@ func main() {
 		age++
 	}
 
-	daysTillNextBday := fmt.Sprintf(
-		"%.0f",
-		time.Date(
-			nextBdayYear, time.April, 11, 0, 0, 0, 0, time.UTC,
-		).Sub(now).Hours()/24,
-	)
-
-	daysTillNextYear := 365 - now.YearDay()
-
-	output = append(output, fmt.Sprint(daysTillNextYear))
-	output = append(output, daysTillNextBday)
 	output = append(output, fmt.Sprint(age))
 
-	outputFormat := ""
-
 	for i := len(output) - 1; i > 0; i-- {
 		swapIdx := rand.Intn(i)
 		temp := output[swapIdx]
@@ -59,10 +49,10 @@ func main() {
 		temp := output[swapIdx]
 		output[swapIdx] = output[i]
 		output[i] = temp
-		outputFormat += "%v "
 	}
 
-	print(outputFormat)
+	for i := len(output) - 1; i >= 0; i-- {
+		fmt.Printf("%v ", output[i])
+	}
 
-	fmt.Printf("%v %v %v\n", output[0], output[1], output[2])
 }
