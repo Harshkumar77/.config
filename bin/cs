@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-curl cheat.sh/"$1" | bat --style=plain
+curl cheat.sh/"$1" --silent | bat --style=plain
 
 
