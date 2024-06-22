@@ -41,6 +41,8 @@
     ripgrep-all
     zip
     unzip
+    rar
+    # unrar
     xz
     tree
     util-linux
