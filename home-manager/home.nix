@@ -42,6 +42,7 @@
     zip
     unzip
     rar
+    p7zip
     # unrar
     xz
     tree
