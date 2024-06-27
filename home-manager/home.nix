@@ -66,6 +66,8 @@
     nodejs_20
     nodejs_20.pkgs.pnpm
     nodejs_20.pkgs.nodemon
+    # nodejs_20.pkgs.tsx 
+    # Nix doesn't have it yet
     nodejs_20.pkgs.serve
     nodejs_20.pkgs.degit
     bun
