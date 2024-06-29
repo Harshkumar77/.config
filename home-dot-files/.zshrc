@@ -77,6 +77,8 @@ alias revise='bat $(fd --extension=md .  ~/notes/dev/Leetcode  ~/notes/Helpful-k
 alias w='tesseract -l eng "$HOME/Pictures/$(ls $HOME/Pictures -t | head -1)" /tmp/output_from_ocr && cat /tmp/output_from_ocr.txt && cat /tmp/output_from_ocr.txt | xclip -selection clipboard'
 
 # sys utils
+alias cpo='/bin/cp'
+alias mvo='/bin/mv'
 alias cp='rsync -ah --info=progress2 '
 alias mv='rsync -ah --info=progress2 rsync --remove-source-files '
 rm () {
