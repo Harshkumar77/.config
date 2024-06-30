@@ -81,9 +81,9 @@ alias cpo='/bin/cp'
 alias mvo='/bin/mv'
 alias cp='rsync -ah --info=progress2 '
 alias mv='rsync -ah --info=progress2 rsync --remove-source-files '
-rm () {
-   mv $1 /tmp
-}
+# rm () {
+#    mv $1 /tmp
+# }
 
 
 # WSL only
