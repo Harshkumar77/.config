@@ -86,6 +86,7 @@
     neovim
     gh
     bruno
+    jq
 
 
     # Productivity
