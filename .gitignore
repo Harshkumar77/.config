@@ -7,3 +7,4 @@ wallpaper/wallpaper.jpg
 nix-env
 DB/postgres
 cheat/cheatsheets
+**/node_modules
