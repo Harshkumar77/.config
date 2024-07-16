@@ -1,4 +1,4 @@
-import { parse as toJson }  from 'md-2-json'
+import { parse as toJson } from 'md-2-json'
 
 
 const output = (toJson(`
@@ -16,11 +16,19 @@ This is a para
 
 
 
-const stack = [...Object.keys(output)]
-let last = false
+const stack = [
+  ...Object.keys(output)
+    .map(
+      (_) => { return { papa: [] as string[], key: _ } }
+    )
+]
 
+const final : string[][] = []
 
-while(stack.length === 0) {
+while (stack.length === 0) {
+
+  for (const key in stack)
+
 
 }
 
