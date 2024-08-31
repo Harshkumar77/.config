@@ -48,7 +48,7 @@ source ~/.nix-profile/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 ##########################################################################################
 
 alias z='zsh'
-alias vw='tmux rename-window "notes"; nvim ~/notes/diary/diary.md -c "VimwikiDiaryGenerateLinks" -c "VimwikiMakeYesterdayDiaryNote" -c "VimwikiMakeDiaryNote" -c "e ~/notes/index.md" -c "cd ~/notes" -c "GlassToggle" -c "LspStop"'
+alias vw='tmux rename-window "notes"; nvim ~/notes/diary/diary.md  -c "e ~/notes/index.md" -c "cd ~/notes" -c "GlassToggle" -c "LspStop"'
 alias l='eza --icons -a'
 alias ll='eza --icons -ahl'
 alias lt='tree --si -I "node_modules" -I ".git" -a -n'
