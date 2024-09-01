@@ -142,38 +142,38 @@ require('lazy').setup({
 
     -- 'vimwiki/vimwiki',
     {
-  "epwalsh/obsidian.nvim",
-  version = "*",  -- recommended, use latest release instead of latest commit
+        "epwalsh/obsidian.nvim",
+        version = "*", -- recommended, use latest release instead of latest commit
 
-  lazy = true,
-  ft = "markdown",
+        lazy = true,
+        ft = "markdown",
 
-  -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
-  -- event = {
-  --   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
-  --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/*.md"
-  --   -- refer to `:h file-pattern` for more examples
-  --   "BufReadPre path/to/my-vault/*.md",
-  --   "BufNewFile path/to/my-vault/*.md",
-  -- },
-  dependencies = {
+        -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
+        -- event = {
+        --   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
+        --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/*.md"
+        --   -- refer to `:h file-pattern` for more examples
+        --   "BufReadPre path/to/my-vault/*.md",
+        --   "BufNewFile path/to/my-vault/*.md",
+        -- },
+        dependencies = {
 
-    -- Required.
-    "nvim-lua/plenary.nvim",
+            -- Required.
+            "nvim-lua/plenary.nvim",
 
 
-    -- see below for full list of optional dependencies 👇
-  },
-  opts = {
-    workspaces = {
-      {
-        name = "notes",
-        path = "~/notes",
-      },
-    },
+            -- see below for full list of optional dependencies 👇
+        },
+        opts = {
+            workspaces = {
+                {
+                    name = "notes",
+                    path = "~/notes",
+                },
+            },
 
-    -- see below for full list of options 👇
-  }
+            -- see below for full list of options 👇
+        }
     },
 
     {
@@ -232,7 +232,7 @@ require('lazy').setup({
         config = function()
             local lint = require 'lint'
             lint.linters_by_ft = {
-                markdown = { 'markdownlint' },
+                -- markdown = { 'markdownlint' },
                 json = { "jsonlint" },
                 javascript = { "eslint_d" },
                 typescript = { "eslint_d" },
