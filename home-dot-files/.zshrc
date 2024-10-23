@@ -89,7 +89,7 @@ alias mv='rsync -ah --info=progress2 rsync --remove-source-files '
 # WSL only
 if [ -z "$WSLENV" ] 
 then
-  alias vlc='vlc.exe'
+  alias vlc='explorer.exe'
   alias open='wslview'
   alias xdg-open='wslview'
   alias openn='wslview "$(fzf)"'
