@@ -51,6 +51,7 @@
     glow
     bat
     cheat
+    libfaketime
 
     # pandoc
     pandoc
