@@ -11,8 +11,8 @@ import (
 
 func main() {
 	dates := []string{
-		/* Unemployement Streak */ "2024-06-19", 
 		/* Birthday */ "2025-04-11", 
+		/* Prelims Date */ "2025-05-01", 
 		/* Year End */ fmt.Sprintf("%v", time.Now().Year()+1) + "-01-01",
 	}
 
