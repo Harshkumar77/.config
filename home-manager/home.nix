@@ -52,6 +52,7 @@
     bat
     cheat
     libfaketime
+    glibc
 
     # pandoc
     pandoc
