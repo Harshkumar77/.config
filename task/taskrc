@@ -30,5 +30,8 @@ gc=off
 urgency.user.tag.health.coefficient=3
 urgency.user.tag.chore.coefficient=2
 urgency.user.tag.game.coefficient=2
-urgency.user.tag.config.coefficient=-1
+urgency.user.tag.recall.coefficient=4
+urgency.user.tag.study.coefficient=3
+urgency.user.tag.test.coefficient=5
+
 
