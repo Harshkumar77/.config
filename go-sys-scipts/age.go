@@ -11,7 +11,8 @@ import (
 
 func main() {
 	dates := []string{
-		/* Birthday */ "2025-04-11", 
+		// /* Birthday */ "2025-04-11", 
+		/* GS3 Deadline */ "2024-12-16", 
 		/* Prelims Date */ "2025-05-01", 
 		/* Year End */ fmt.Sprintf("%v", time.Now().Year()+1) + "-01-01",
 	}
