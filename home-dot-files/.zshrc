@@ -113,6 +113,7 @@ fi
 
 # taskwarrior 
 alias t='task'
+alias T='task all '
 alias tg='task ghistory.weekly && timew week'
 alias tcal='task calendar'
 alias tstart='go run ~/.config/go-sys-scipts/taskwarrior-start.go'
