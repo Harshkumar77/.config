@@ -68,7 +68,7 @@ func main() {
 		}
 
 		imp_task_description := strings.ReplaceAll(string(stdout), "\n", "")
-		fmt.Print("NEXT TASK(" + imp_task_id + ") : ", imp_task_description)
+		fmt.Print("T" + imp_task_id, "=", imp_task_description)
 		return
 	}
 
