@@ -113,7 +113,7 @@ fi
 
 # taskwarrior 
 alias t='task'
-alias tt='task summary;task limit:5'
+alias tt='task summary;task minima limit:6'
 alias T='task all '
 alias tg='task ghistory.weekly && timew week'
 alias tcal='task calendar'

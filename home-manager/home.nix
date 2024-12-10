@@ -58,6 +58,7 @@
     pandoc
     texliveSmall
     imagemagickBig
+    speedread
 
 
     # Programming Languages
