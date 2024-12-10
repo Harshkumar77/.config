@@ -1,13 +1,14 @@
 data.location=$HOME/notes/.task
-# include solarized-dark-256.theme
 
-include dark-16.theme
+# include solarized-dark-256.theme
+# include dark-16.theme
+
 include dark-violets-256.theme
 
-nag=“Putting things off is the biggest waste of life: It snatches away each day as it comes and denies us the present by promising the future.”
+# nag=“Putting things off is the biggest waste of life: It snatches away each day as it comes and denies us the present by promising the future.”
 
 report.minimal.sort=urgency-
-report.minimal.columns=id,description.count,due.relative,due
+report.minimal.columns=id,description.combined,due.relative,due
 report.minimal.labels=ID,DESCRIPTION,DUE,DUE
 
 alias.mod=modify
