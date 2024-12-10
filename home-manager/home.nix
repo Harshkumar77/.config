@@ -59,6 +59,7 @@
     texliveSmall
     imagemagickBig
     speedread
+    poppler_utils
 
 
     # Programming Languages
