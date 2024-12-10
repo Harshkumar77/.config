@@ -58,8 +58,11 @@
     pandoc
     texliveSmall
     imagemagickBig
+
+    # reading
     speedread
     poppler_utils
+    pdfgrep
 
 
     # Programming Languages
