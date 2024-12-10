@@ -14,6 +14,7 @@ report.minimal.labels=ID,DESCRIPTION,DUE,DUE
 alias.mod=modify
 alias.rm=delete
 alias.note=annotate
+alias.less=minimal limit:6
 
 news.version=2.6.0
 
