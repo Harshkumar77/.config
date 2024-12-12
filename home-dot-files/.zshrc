@@ -114,6 +114,7 @@ fi
 # taskwarrior 
 alias t='task'
 alias tt='task summary;task minima limit:6'
+alias tm='task minimal '
 alias T='task all '
 alias tg='task ghistory.weekly && timew week'
 alias tcal='task calendar'
@@ -143,8 +144,6 @@ alias T8='task next limit:8'
 alias T9='task next limit:9'
 alias T10='task next limit:10'
 alias tsum='task summary'
-alias tm='timew'
-alias tw='timew'
 alias taskwarrior-garbage-collection='task rc.gc=on list'
 
 # pnpm
