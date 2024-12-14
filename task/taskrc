@@ -15,6 +15,7 @@ alias.mod=modify
 alias.rm=delete
 alias.note=annotate
 alias.less=minimal limit:6
+alias.cycle=all -INSTANCE -DELETED -COMPLETED recur
 
 news.version=2.6.0
 
