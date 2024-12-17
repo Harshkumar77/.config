@@ -29,6 +29,8 @@
 
     # Command line utilites
     clolcat
+    figlet
+    toilet
     fzf 
     eza 
     fd 
