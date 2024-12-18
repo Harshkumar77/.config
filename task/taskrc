@@ -11,11 +11,20 @@ report.minimal.sort=urgency-
 report.minimal.columns=id,description.combined,due.relative,due
 report.minimal.labels=ID,DESCRIPTION,DUE,DUE
 
+
+report.cycle.columns=id,start.active,entry,modified.age,depends,priority,project,tags,recur,wait.remaining,scheduled,due,until,description
+report.cycle.context=1
+report.cycle.description=All details of tasks                             
+report.cycle.filter=+TEMPLATE -INSTANCE -DELETED -COMPLETED 
+report.cycle.labels=ID,A,Created,Mod,Deps,P,Project,Tags,Recur,Wait,Sched,Due,Until,Description
+report.cycle.sort=urgency-
+
+
 alias.mod=modify
 alias.rm=delete
 alias.note=annotate
 alias.less=minimal limit:6
-alias.cycle=all +TEMPLATE -INSTANCE -DELETED -COMPLETED 
+// alias.cycle=all +TEMPLATE -INSTANCE -DELETED -COMPLETED 
 
 news.version=2.6.0
 
