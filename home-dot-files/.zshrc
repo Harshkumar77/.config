@@ -115,6 +115,7 @@ fi
 alias t='task'
 alias tt='task summary;task minimal limit:6'
 alias tm='task minimal '
+alias td='task done '
 alias T='task all '
 alias tg='task ghistory.weekly && timew week'
 alias tcal='task calendar'
