@@ -114,6 +114,8 @@ fi
 # taskwarrior 
 alias t='task'
 alias tt='task summary;task minimal limit:6'
+alias tp='task project:$(echo $(t projects | head -n -2 | tail -n 3 | awk -F " " '{printf "%s\\n", $1}') | fzf --preview "task minimal project:{}")'
+
 alias tm='task minimal '
 alias td='task done '
 alias T='task all '
