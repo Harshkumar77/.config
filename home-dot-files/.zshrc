@@ -113,7 +113,7 @@ fi
 
 # taskwarrior 
 alias t='task'
-alias tt='task summary;task minimal limit:6'
+alias tt='task summary -WAITING;task minimal limit:6'
 alias tp='task-project-fzf'
 alias tm='task minimal '
 alias td='task done '
