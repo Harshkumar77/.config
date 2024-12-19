@@ -1,9 +1,0 @@
-#!/bin/bash
-
-q="gd"
-num1=$(( RANDOM % 7 + 1 ))
-num2=$(( RANDOM % 10 + 1 ))
-
-r="https://braflix.$q/tv/60625/$num1/$num2?play=true"
-echo "$r" | xclip -selection clipboard
-
