@@ -100,6 +100,7 @@
 
     # Productivity
     taskwarrior # stuck at 2.6
+    tasksh
     # timewarrior
     tuxtype
     # obsidian
