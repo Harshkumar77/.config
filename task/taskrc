@@ -27,6 +27,7 @@ alias.less=minimal limit:6
 alias.m=modify
 alias.n=annotate
 alias.d=done
+alias.dp=depends
 
 news.version=2.6.0
 
