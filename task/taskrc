@@ -26,6 +26,7 @@ alias.note=annotate
 alias.less=minimal limit:6
 alias.m=modify
 alias.n=annotate
+alias.d=done
 
 news.version=2.6.0
 
