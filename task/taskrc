@@ -24,7 +24,8 @@ alias.mod=modify
 alias.rm=delete
 alias.note=annotate
 alias.less=minimal limit:6
-// alias.cycle=all +TEMPLATE -INSTANCE -DELETED -COMPLETED 
+alias.m=modify
+alias.n=annotate
 
 news.version=2.6.0
 
