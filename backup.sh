@@ -18,12 +18,8 @@ backup () {
   git -C ~/notes push
 
   # Tasklist
-  # echo '```' > ~/notes/Tasklist.md
-  # task next >> ~/notes/Tasklist.md
-  # echo '```' >> ~/notes/Tasklist.md
-  # echo '```' >> ~/notes/Tasklist.md
-  # timew day >> ~/notes/Tasklist.md
-  # echo '```' >> ~/notes/Tasklist.md
+  task summary > ~/notes/Tasklist.txt
+  task minimal -BLOCKED >> ~/notes/Tasklist.txt
 
   (cat $(fd --extension=md . ~/notes) | grep -Eo 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' | tr -d ')') > ~/notes/more/urls_generated
   (cat $(fd --extension=md . ~/notes) | grep -E 'https?://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?' ) >> ~/notes/more/urls_generated
