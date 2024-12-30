@@ -124,29 +124,16 @@ alias tstart='go run ~/.config/go-sys-scipts/taskwarrior-start.go'
 alias tstop='task +ACTIVE stop'
 alias tdone='t +ACTIVE done'
 alias ttoggle=' task +ACTIVE stop || go run ~/.config/go-sys-scipts/taskwarrior-start.go'
-alias torg='t oldest -TAGGED'
-alias t1='task minimal limit:1'
-alias t2='task minimal limit:2'
-alias t3='task minimal limit:3'
-alias t4='task minimal limit:4'
-alias t5='task minimal limit:5'
-alias t6='task minimal limit:6'
-alias t7='task minimal limit:7'
-alias t8='task minimal limit:8'
-alias t9='task minimal limit:9'
-alias t10='task minimal limit:10'
-alias T1='task next limit:1'
-alias T2='task next limit:2'
-alias T3='task next limit:3'
-alias T4='task next limit:4'
-alias T5='task next limit:5'
-alias T6='task next limit:6'
-alias T7='task next limit:7'
-alias T8='task next limit:8'
-alias T9='task next limit:9'
-alias T10='task next limit:10'
-alias tsum='task summary'
 alias taskwarrior-garbage-collection='task rc.gc=on list'
+tid () {
+   task $1
+   task $1 _id | xargs | xclip -selection clipboard
+}
+Tid () {
+   task all $1
+   task all $1 _id | xargs | xclip -selection clipboard
+}
+
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
