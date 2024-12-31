@@ -66,6 +66,7 @@ alias open='xdg-open 2>/dev/null'
 alias openn='xdg-open 2>/dev/null "$(fzf)"'
 alias quote='xdg-open "https://duckduckgo.com/?q=$(cat /tmp/qt434341)"'
 
+alias copy='xclip -selection clipboard' # copy pwd
 alias pwc='pwd | xclip -selection clipboard; echo copied $PWD' # copy pwd
 alias xlast="LAST_COMMAND_EXECUTED_IN_ZSH=\`tac ~/.zsh_history | head -n 2 | tail -n 1 | awk -F';'  '{print \$2}'\`;
 	      printf \$LAST_COMMAND_EXECUTED_IN_ZSH | xclip -selection clipboard  ; echo \$LAST_COMMAND_EXECUTED_IN_ZSH" # copy last executed cmd and prints to terminal
