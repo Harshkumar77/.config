@@ -97,6 +97,7 @@ then
   alias shutdown='wsl.exe --shutdown'
   alias winget='winget.exe'
   alias wsl='wsl.exe'
+  alias win_sleep='RUNDLL32.EXE powrprof.dll,SetSuspendState 0,1,0'
 
   config-sync-wsl () {
     win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
