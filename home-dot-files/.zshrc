@@ -109,6 +109,10 @@ then
     cp "$HOME/.config/wallpaper" "/mnt/c/Users/$win_username/OneDrive/Pictures" -r &
   }
 
+  w () {
+    win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
+    tesseract -l eng "/mnt/c/Users/$win_username/OneDrive/Pictures/Screenshots/$(ls $HOME/Pictures -t | head -1)" /tmp/output_from_ocr && cat /tmp/output_from_ocr.txt && cat /tmp/output_from_ocr.txt | xclip -selection clipboard
+  }
 fi
 
 # export NVM_DIR="$HOME/.nvm"
