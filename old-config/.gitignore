@@ -1,0 +1,10 @@
+bin/nvim-linux64
+bin/yt-dlp
+gh
+ranger
+tmux/plugins
+wallpaper/wallpaper.jpg
+nix-env
+DB/postgres
+cheat/cheatsheets
+**/node_modules
