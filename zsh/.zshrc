@@ -45,16 +45,7 @@ if [[ $TERM != "dumb" ]]; then
   eval "$(/home/brook/.nix-profile/bin/starship init zsh)"
 fi
 
-
-# Aliases
-alias sl="ls"
-alias la="ls -a"
-alias ll="ls -la"
-alias sread="speedread ~/active.txt -w 450"
-
-# Named Directory Hashes
-
-
-
+. ~/.config/zsh/alias.zsh
+. ~/.config/zsh/function.zsh
 
 

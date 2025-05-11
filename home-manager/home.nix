@@ -32,11 +32,11 @@
 
   programs = {
     zsh = {
-      enable = true;
+      enable = false;
     };
   };
   
   programs.starship = {
-    enable = true;
+    enable = false;
   };
 }
