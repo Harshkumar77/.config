@@ -11,20 +11,23 @@
   home.homeDirectory = "/home/brook";
   home.stateVersion = "24.11";
   home.packages = with pkgs; [
-
-    nixfmt-rfc-style
+	nixfmt-rfc-style
 	wsl-open
-    sqlite
-	
+	sqlite
+
 	python312Packages.pip
-	
+
 	spotdl
 	ffmpeg_6-full
-	
+
 	speedread
-	
+
 	gh
 	starship
+
+  lazygit
+
+
 	
 	
 	

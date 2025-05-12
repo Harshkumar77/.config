@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+. ~/.config/zsh/function.zsh
+
+selected="$(fd . ~/.config -H -t f -t l)"
+nvim "$selected" && config-sync-wsl
