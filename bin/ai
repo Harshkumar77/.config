@@ -8,5 +8,4 @@ Chatgpt new | chatgpt.com/?model=auto
 Chatgpt temp | chatgpt.com/?model=auto&temporary-chat=true"
 
 selected=`echo "$models_link" | dmenu`
-# /mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe -new-window $(echo "$selected" | cut -d'|' -f2-)
 firefox -kiosk -new-window $(echo "$selected" | cut -d'|' -f2-)

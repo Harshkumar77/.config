@@ -47,5 +47,3 @@ fi
 
 . ~/.config/zsh/alias.zsh
 . ~/.config/zsh/function.zsh
-
-

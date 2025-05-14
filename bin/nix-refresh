@@ -3,3 +3,5 @@
 . ~/.config/zsh/alias.zsh
 
 home-manager switch
+cd ~/.config
+gpl

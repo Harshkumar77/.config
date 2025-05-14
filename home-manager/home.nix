@@ -27,6 +27,13 @@
 
   lazygit
 
+  tldr
+  bat
+  bat-extras.batman
+
+  ripgrep
+  poppler_utils
+
 
 	
 	

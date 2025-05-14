@@ -2,13 +2,14 @@
 
 . ~/.config/zsh/alias.zsh
 
-
-cmd="shutdown
+cmd="cancel
+shutdown
 restart
 sleep"
 
 sel_cmd=$(echo $cmd | dmenu)
-
+if [ "$sel_cmd" = "cancel" ]; then
+  exit
 
 timers="now | 0
 15 min | 900
@@ -20,6 +21,7 @@ timers="now | 0
 3 hr | 10800"
 
 selected_time=`echo "$timers" | dmenu`
+
 selected_time=$(echo $(echo "$selected_time" | cut -d'|' -f2-))
 
 if [ "$sel_cmd" = "shutdown" ]; then

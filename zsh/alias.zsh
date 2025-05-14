@@ -11,3 +11,9 @@ alias gc="git commit"
 alias ga="git add"
 alias gpl='git add .; git commit -m $(uuidgen); git push'
 
+alias dmenu='/mnt/c/Program\ Files/wlines/wlines.exe | sed 's/.$//''
+
+# Browser
+alias firefox="/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
+
+# PDF
