@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+. ~/.config/zsh/alias.zsh
+
+home-manager switch

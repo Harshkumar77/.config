@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+. ~/.config/zsh/alias.zsh
+selected="$(fd . ~/.config/bin --format {/} | dmenu)"
+zsh ~/.config/bin/$selected
