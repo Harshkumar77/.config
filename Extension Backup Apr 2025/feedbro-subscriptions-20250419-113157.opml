@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title>Feed Subscriptions</title>
+</head>
+<body>
+      <outline text="dailystoic - Instagram Bridge" title="dailystoic - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=dailystoic&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/dailystoic/"/>
+      <outline text="robertgreeneofficial - Instagram Bridge" title="robertgreeneofficial - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=robertgreeneofficial&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/robertgreeneofficial/"/>
+      <outline text="depthsofwikipedia - Instagram Bridge" title="depthsofwikipedia - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=depthsofwikipedia&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/depthsofwikipedia/"/>
+      <outline text="fayedsouza - Instagram Bridge" title="fayedsouza - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=fayedsouza&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/fayedsouza/"/>
+      <outline text="mental_masturbation subreddits curated by /u/Competitive-Head9523" title="mental_masturbation subreddits curated by /u/Competitive-Head9523" type="rss" 
+            xmlUrl="https://www.reddit.com/user/competitive-head9523/m/mental_masturbation/.rss" htmlUrl="https://www.reddit.com/user/competitive-head9523/m/mental_masturbation/"/>
+      <outline text="gaurav_karan_chaudhary - Instagram Bridge" title="gaurav_karan_chaudhary - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=gaurav_karan_chaudhary&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/gaurav_karan_chaudhary/"/>
+      <outline text="philosophyminis - Instagram Bridge" title="philosophyminis - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=philosophyminis&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/philosophyminis/"/>
+      <outline text="immanentmemer - Instagram Bridge" title="immanentmemer - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=immanentmemer&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/immanentmemer/"/>
+      <outline text="progressbar_ - Instagram Bridge" title="progressbar_ - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=progressbar_&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/progressbar_/"/>
+      <outline text="knowyourmeme - Instagram Bridge" title="knowyourmeme - Instagram Bridge" type="rss" 
+            xmlUrl="https://rss-bridge.org/bridge01/?action=display&amp;context=Username&amp;u=knowyourmeme&amp;bridge=InstagramBridge&amp;format=Mrss" htmlUrl="https://www.instagram.com/knowyourmeme/"/>
+      <outline text="UFC (@ufc) | Instagram" title="UFC (@ufc) | Instagram" type="rss" 
+            xmlUrl="https://www.instagram.com/ufc" htmlUrl="https://www.instagram.com/ufc"/>
+</body>
+</opml>

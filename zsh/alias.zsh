@@ -13,6 +13,8 @@ alias gpl='git add .; git commit -m $(uuidgen); git push'
 
 alias dmenu='/mnt/c/Program\ Files/wlines/wlines.exe | sed 's/.$//''
 
+alias man='batman'
+
 # Browser
 alias firefox="/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
 win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
