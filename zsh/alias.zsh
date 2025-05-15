@@ -19,7 +19,7 @@ alias man='batman'
 alias firefox="/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
 win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
 
-bookmarked_folders="/mnt/c/Users/$win_username/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup
+bookmarked_folders="/mnt/c/Users/$win_username/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Startup
 /mnt/c/notes/
 /mnt/c/Users/$win_username/Downloads/
 /mnt/c/Users/$win_username/Videos/"
