@@ -34,6 +34,7 @@
   ripgrep
   poppler_utils
 
+  vifm
 
 	
 	
