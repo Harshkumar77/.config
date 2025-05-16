@@ -19,6 +19,7 @@
 
 	spotdl
 	ffmpeg_6-full
+  imagemagickBig
 
 	speedread
 

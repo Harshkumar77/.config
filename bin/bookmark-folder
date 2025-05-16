@@ -2,4 +2,21 @@
 
 . ~/.config/zsh/alias.zsh
 selected=`echo "$bookmarked_folders" | dmenu`
-wsl-open "$selected"
+
+explorers="default
+term
+vifm
+firefox"
+
+wpath=`wslpath -w "$selected"`
+
+opener=$(echo $explorers | dmenu)
+if [ "$opener" = "firefox" ]; then
+  firefox "$wpath"
+elif [ "$opener" = "term" ]; then
+  wsl.exe --cd "$selected" 
+elif [ "$opener" = "vifm" ]; then
+   vifm  "$selected"
+else
+  explorer.exe "$wpath"
+fi

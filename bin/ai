@@ -8,4 +8,4 @@ Chatgpt new | chatgpt.com/?model=auto
 Chatgpt temp | chatgpt.com/?model=auto&temporary-chat=true"
 
 selected=`echo "$models_link" | dmenu`
-firefox -kiosk -new-window $(echo "$selected" | cut -d'|' -f2-)
+firefox -fullscreen -new-window $(echo "$selected" | cut -d'|' -f2-)
