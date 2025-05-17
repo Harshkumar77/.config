@@ -11,6 +11,8 @@ alias gc="git commit"
 alias ga="git add"
 alias gpl='git add .; git commit -m $(uuidgen); git push'
 
+alias man='batman'
+
 bookmarked_folders="~/.config
 ~"
 
@@ -29,8 +31,3 @@ if ! type "$(wsl.exe --version)" > /dev/null; then
 /mnt/c/Users/$win_username/Downloads/
 /mnt/c/Users/$win_username/Videos/"
 fi
-
-
-alias man='batman'
-
-

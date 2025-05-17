@@ -25,6 +25,7 @@
 
 	gh
 	starship
+  eza
 
   lazygit
 
@@ -36,10 +37,6 @@
   poppler_utils
 
   vifm
-
-	
-	
-	
   ];
 
   programs = {
