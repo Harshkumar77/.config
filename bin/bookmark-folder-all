@@ -17,5 +17,5 @@ elif [ "$opener" = "term" ]; then
 elif [ "$opener" = "vifm" ]; then
    vifm  "$selected"
 else
-  explorer.exe "$wpath"
+  wsl-open "$wpath"
 fi
