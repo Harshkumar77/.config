@@ -1,5 +1,16 @@
 
 # Aliases
+if ! type "$eza" > /dev/null; then
+  alias l='eza --icons'
+  alias ls='eza'
+  alias tree='eza --icons --tree'
+  alias t='eza --icons --tree --level 1'
+  alias t2='tree --level 2'
+  alias t3='tree --level 3'
+  alias t4='tree --level 4'
+  alias t5='tree --level 5'
+  alias t6='tree --level 6'
+fi
 alias sl="ls"
 alias la="ls -a"
 alias ll="ls -la"
