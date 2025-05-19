@@ -37,6 +37,10 @@
   poppler_utils
 
   vifm
+
+  taskwarrior3
+  taskwarrior-tui
+  vit
   ];
 
   programs = {

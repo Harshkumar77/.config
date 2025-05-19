@@ -7,4 +7,5 @@ line_number=$(echo $line_number | awk -F: '{print $1}')
 line_number=$((line_number += 1))
 
 entry="$(echo 'enter what u want\n' | dmenu)"
-sed -i "${line_number}i - $entry" /mnt/c/notes/Markdown/Memory.md
+
+echo "$entry" | xargs -I{} -d ';' sed -i "${line_number}i - {}" /mnt/c/notes/Markdown/Memory.md
