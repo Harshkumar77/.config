@@ -14,6 +14,7 @@
 	nixfmt-rfc-style
 	wsl-open
 	sqlite
+  jq
 
 	python312Packages.pip
 
