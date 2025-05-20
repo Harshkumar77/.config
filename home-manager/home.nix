@@ -41,6 +41,7 @@
   taskwarrior3
   taskwarrior-tui
   vit
+  buku
   ];
 
   programs = {
