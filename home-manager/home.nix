@@ -30,6 +30,8 @@
 
   lazygit
 
+  yt-dlp
+
   tldr
   bat
   bat-extras.batman

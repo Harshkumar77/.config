@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title>Feed Subscriptions</title>
+</head>
+<body>
+<outline text="Daily Stoic | Instagram" title="Daily Stoic | Instagram" type="rss" xmlUrl="https://www.instagram.com/dailystoic" htmlUrl="https://www.instagram.com/dailystoic"/>
+<outline text="Robert Greene | Instagram" title="Robert Greene | Instagram" type="rss" xmlUrl="https://www.instagram.com/robertgreeneofficial" htmlUrl="https://www.instagram.com/robertgreeneofficial"/>
+<outline text="Depths of Wikipedia | Instagram" title="Depths of Wikipedia | Instagram" type="rss" xmlUrl="https://www.instagram.com/depthsofwikipedia" htmlUrl="https://www.instagram.com/depthsofwikipedia"/>
+<outline text="Faye D’Souza | Instagram" title="Faye D’Souza | Instagram" type="rss" xmlUrl="https://www.instagram.com/fayedsouza" htmlUrl="https://www.instagram.com/fayedsouza"/>
+<outline text="Gaurav Karan Chaudhary | Instagram" title="Gaurav Karan Chaudhary | Instagram" type="rss" xmlUrl="https://www.instagram.com/gaurav_karan_chaudhary" htmlUrl="https://www.instagram.com/gaurav_karan_chaudhary"/>
+<outline text="Philosophy Minis | Instagram" title="Philosophy Minis | Instagram" type="rss" xmlUrl="https://www.instagram.com/philosophyminis" htmlUrl="https://www.instagram.com/philosophyminis"/>
+<outline text="Immanent Memer | Instagram" title="Immanent Memer | Instagram" type="rss" xmlUrl="https://www.instagram.com/immanentmemer" htmlUrl="https://www.instagram.com/immanentmemer"/>
+<outline text="Progressbar | Instagram" title="Progressbar | Instagram" type="rss" xmlUrl="https://www.instagram.com/progressbar_" htmlUrl="https://www.instagram.com/progressbar_"/>
+<outline text="Know Your Meme | Instagram" title="Know Your Meme | Instagram" type="rss" xmlUrl="https://www.instagram.com/knowyourmeme" htmlUrl="https://www.instagram.com/knowyourmeme"/>
+      <outline text="UFC (@ufc) | Instagram" title="UFC (@ufc) | Instagram" type="rss" 
+            xmlUrl="https://www.instagram.com/ufc" htmlUrl="https://www.instagram.com/ufc"/>
+</body>
+</opml>
