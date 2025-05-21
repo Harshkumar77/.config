@@ -24,8 +24,8 @@ alias gpl='git add .; git commit -m $(uuidgen); git push'
 
 alias man='batman'
 
-bookmarked_folders="~/.config
-~"
+bookmarked_folders="/home/brook/.config
+/home/brook/"
 
 if ! type "$(wsl.exe --version)" > /dev/null; then
   # echo wsl
@@ -40,5 +40,6 @@ if ! type "$(wsl.exe --version)" > /dev/null; then
 /mnt/c/Users/$win_username/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Startup
 /mnt/c/notes/
 /mnt/c/Users/$win_username/Downloads/
+/mnt/c/Users/$win_username/Music/
 /mnt/c/Users/$win_username/Videos/"
 fi

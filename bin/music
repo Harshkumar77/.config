@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+. ~/.config/zsh/alias.zsh
+
+selected="$(fd . ~/Music -t d --format {/} | dmenu)"
+
+toupdate="$(echo 'y\nn\nupdate?' | dmenu)"
+
+if [ "$toupdate" = "y" ]; then
+  ~/Music/$selected/download &
+fi
+  
+
+vlc.exe `wslpath -w  "/mnt/c/Users/$win_username/Music/$selected"`
+exit
