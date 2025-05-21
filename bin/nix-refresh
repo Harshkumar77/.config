@@ -2,7 +2,7 @@
 
 . ~/.config/zsh/alias.zsh
 
-home-manager switch
+home-manager switch &
 cd ~/.config
 gpl
 
