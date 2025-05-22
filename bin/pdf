@@ -2,9 +2,8 @@
 
 . ~/.config/zsh/alias.zsh
 
-paths="/mnt/c/notes/books
-/mnt/c/notes/Raw
-/mnt/c/notes/Markdown/Raw"
+paths="/mnt/c/notes/
+/mnt/c/Users/$win_username/Downloads/"
 
 s="/mnt/c/$(echo $paths | xargs fd -e pdf . | sed 's|/mnt/c/||' | dmenu)"
 
