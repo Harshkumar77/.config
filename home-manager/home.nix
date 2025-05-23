@@ -32,7 +32,7 @@
 
   yt-dlp
 
-  mermaid-cli
+    
 
   tldr
   bat

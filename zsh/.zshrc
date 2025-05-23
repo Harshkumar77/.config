@@ -8,8 +8,8 @@ done
 
 HELPDIR="/nix/store/0xy5m4xbkx8bjkb5a216q2n6v2lh3gh5-zsh-5.9/share/zsh/$ZSH_VERSION/help"
 
-
-
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 
 # Oh-My-Zsh/Prezto calls compinit during initialization,
@@ -47,3 +47,7 @@ fi
 
 . ~/.config/zsh/alias.zsh
 . ~/.config/zsh/function.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
