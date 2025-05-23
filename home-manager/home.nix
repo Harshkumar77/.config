@@ -32,6 +32,8 @@
 
   yt-dlp
 
+  mermaid-cli
+
   tldr
   bat
   bat-extras.batman
