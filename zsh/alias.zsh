@@ -29,12 +29,14 @@ bookmarked_folders="/home/brook/.config
 
 if ! type "$(wsl.exe --version)" > /dev/null; then
   # echo wsl
-  alias dmenu='/mnt/c/Program\ Files/wlines/wlines.exe | sed 's/.$//''
+  # alias dmenu='/mnt/c/Program\ Files/wlines/wlines.exe | sed 's/.$//''
+  alias dmenu='fzf -m --reverse'
 
   # Browser
   alias firefox="/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
 
-  win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
+  win_username="khars"
+  # win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
   
   bookmarked_folders="${bookmarked_folders}
 /mnt/c/Users/$win_username/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Startup
