@@ -1,10 +1,10 @@
 #!/usr/bin/env zsh
 
 . ~/.config/zsh/alias.zsh
-selected=`echo "$bookmarked_folders" | xargs fd -t d . | dmenu`
+selected=`echo "$bookmarked_folders" | xargs fd  . | dmenu`
+
 explorers="default
-term
-vifm
+nvim
 firefox"
 
 wpath=`wslpath -w "$selected"`
@@ -14,8 +14,8 @@ if [ "$opener" = "firefox" ]; then
   firefox "$wpath"
 elif [ "$opener" = "term" ]; then
   wsl.exe --cd "$selected" 
-elif [ "$opener" = "vifm" ]; then
-   vifm  "$selected"
+elif [ "$opener" = "nvim" ]; then
+   nvim  "$selected"
 else
-  wsl-open "$wpath"
+  wsl-open "$selected"
 fi

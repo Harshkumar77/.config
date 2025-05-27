@@ -37,6 +37,8 @@ if ! type "$(wsl.exe --version)" > /dev/null; then
 
   win_username="khars"
   # win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
+
+  alias alacritty='alacritty.exe'
   
   bookmarked_folders="${bookmarked_folders}
 /mnt/c/Users/$win_username/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Startup

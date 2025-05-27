@@ -1,5 +1,0 @@
-#!/usr/bin/env zsh
-
-. ~/.config/zsh/alias.zsh
-selected=`echo "$bookmarked_folders" | xargs fd  . | dmenu`
-wsl-open "$selected"

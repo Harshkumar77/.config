@@ -1,8 +1,7 @@
 #!/usr/bin/env zsh
 
 . ~/.config/zsh/alias.zsh
-selected=`echo "$bookmarked_folders" | dmenu`
-
+selected=`echo "$bookmarked_folders" | xargs fd -t d . | dmenu`
 explorers="default
 term
 vifm
@@ -18,5 +17,5 @@ elif [ "$opener" = "term" ]; then
 elif [ "$opener" = "vifm" ]; then
    vifm  "$selected"
 else
-  explorer.exe "$wpath"
+  wsl-open "$selected"
 fi
