@@ -24,6 +24,7 @@ alias gpl='git add .; git commit -m $(uuidgen); git push'
 
 alias man='batman'
 
+
 bookmarked_folders="/home/brook/.config
 /home/brook/"
 
@@ -47,3 +48,6 @@ if ! type "$(wsl.exe --version)" > /dev/null; then
 /mnt/c/Users/$win_username/Music/
 /mnt/c/Users/$win_username/Videos/"
 fi
+
+alias cdd='cd `echo "$bookmarked_folders" | xargs fd -t d . | dmenu`'
+

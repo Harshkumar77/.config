@@ -1,2 +1,2 @@
 #!/usr/bin/env zsh
-komorebic.exe stop --whkd --bar
+komorebic.exe stop --whkd --bar &

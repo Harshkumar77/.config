@@ -5,7 +5,8 @@ selected=`echo "$bookmarked_folders" | xargs fd -t d . | dmenu`
 explorers="default
 term
 vifm
-firefox"
+firefox
+vlc"
 
 wpath=`wslpath -w "$selected"`
 
@@ -16,6 +17,8 @@ elif [ "$opener" = "term" ]; then
   wsl.exe --cd "$selected" 
 elif [ "$opener" = "vifm" ]; then
    vifm  "$selected"
+elif [ "$opener" = "vlc" ]; then
+   vlc.exe "$wpath"
 else
   wsl-open "$selected"
 fi
