@@ -6,7 +6,8 @@ explorers="default
 term
 vifm
 firefox
-vlc"
+vlc
+vlc-random"
 
 wpath=`wslpath -w "$selected"`
 
@@ -18,7 +19,9 @@ elif [ "$opener" = "term" ]; then
 elif [ "$opener" = "vifm" ]; then
    vifm  "$selected"
 elif [ "$opener" = "vlc" ]; then
-   vlc.exe "$wpath"
+   vlc.exe --no-random --no-loop "$wpath"
+elif [ "$opener" = "vlc-random" ]; then
+   vlc.exe --random --loop "$wpath"
 else
   wsl-open "$selected"
 fi
