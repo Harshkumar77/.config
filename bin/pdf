@@ -21,14 +21,14 @@ speedread"
 opener=$(echo $pdfviewers | dmenu)
 if [ "$opener" = "firefox" ]; then
   firefox "$wpath"
-if [ "$opener" = "firefox-new" ]; then
-  firefox "$wpath" -new-window
+elif [ "$opener" = "firefox-new" ]; then
+  firefox -new-window "$wpath" 
 elif [ "$opener" = "okular" ]; then
   "/mnt/c/Program Files/Okular/bin/okular.exe" "$wpath"
 elif [ "$opener" = "SumatraPDF" ]; then
   /mnt/c/Users/$win_username/AppData/Local/SumatraPDF/SumatraPDF.exe "$wpath"
 elif [ "$opener" = "SumatraPDF-new-window" ]; then
-  /mnt/c/Users/$win_username/AppData/Local/SumatraPDF/SumatraPDF.exe "$wpath" -new-window
+  /mnt/c/Users/$win_username/AppData/Local/SumatraPDF/SumatraPDF.exe -new-window "$wpath" 
 elif [ "$opener" = "pdfgear" ]; then
    /mnt/c/Program\ Files/PDFgear/PDFLauncher.exe  "$wpath"
 elif [ "$opener" = "speedread" ]; then
