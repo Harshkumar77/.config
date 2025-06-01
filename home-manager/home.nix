@@ -19,7 +19,6 @@
   wordnet
   wordlists
 
-  dmenu-wayland
 
 	python312Packages.pip
 
