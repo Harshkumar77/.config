@@ -1,2 +1,2 @@
 #!/usr/bin/env zsh
-komorebic.exe start --whkd --bar &
+komorebic.exe start --whkd --bar

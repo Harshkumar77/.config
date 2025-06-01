@@ -2,11 +2,17 @@
 
 . ~/.config/zsh/alias.zsh
 
-models_link="Claude, Mistral, Ollama | duck.ai 
-Google gemini 2.5 | gemini.google.com/app
-Chatgpt new | chatgpt.com/?model=auto
-Chatgpt temp | chatgpt.com/?model=auto&temporary-chat=true
-Telegram notes notebook llm | notebooklm.google.com/notebook/6c3249d0-cd85-44ef-9fbe-90d0ea950f61"
+function fold {
+  if [ $# -eq 0 ]; then
+    /usr/bin/fold -w $COLUMNS -s
+  else
+    /usr/bin/fold $*
+  fi
+}
 
-selected=`echo "$models_link" | dmenu`
-firefox -fullscreen -new-window $(echo "$selected" | cut -d'|' -f2-)
+word=$(cat ~/raw/words_alpha.txt | sed 's/.$//' | fzf --preview 'wn {} -over | fold' --preview-window=up:60%)
+
+firefox "https://duckduckgo.com/?q=$word%20meaning%20merriam%20webster%20urban%20dictionary&t=newext&atb=v480-7&ia=web"
+wn $word -over | less
+
+~/.config/bin/dict
