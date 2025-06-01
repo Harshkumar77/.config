@@ -10,7 +10,7 @@ function fold {
   fi
 }
 
-word=$(cat ~/raw/words_alpha.txt | sed 's/.$//' | fzf --preview 'wn {} -over | fold' --preview-window=up:60%)
+word=$(cat ~/.config/raw/words_alpha.txt | sed 's/.$//' | fzf --reverse --preview 'wn {} -over | fold' --preview-window=up:60%)
 
 firefox "https://duckduckgo.com/?q=$word%20meaning%20merriam%20webster%20urban%20dictionary&t=newext&atb=v480-7&ia=web"
 wn $word -over | less

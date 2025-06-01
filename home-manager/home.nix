@@ -19,6 +19,8 @@
   wordnet
   wordlists
 
+  dmenu-rs
+
 	python312Packages.pip
 
 	spotdl
