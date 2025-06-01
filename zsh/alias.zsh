@@ -32,7 +32,7 @@ if ! type "$(wsl.exe --version)" > /dev/null; then
   # echo wsl
   # alias dmenu='/mnt/c/Program\ Files/wlines/wlines.exe | sed 's/.$//''
   alias dmenu='fzf -m --reverse'
-
+  alias copyq="/mnt/c/Program\ Files/CopyQ/copyq.exe"
   # Browser
   alias firefox="/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
 
