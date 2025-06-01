@@ -6,11 +6,12 @@ selected=`echo "$bookmarked_folders" | xargs fd  . | dmenu`
 explorers="linux
 win"
 
-wpath=`wslpath -w "$selected"`
+wpath=`wslpath -m "$selected"`
 
 opener=$(echo $explorers | dmenu)
 if [ "$opener" = "win" ]; then
-  copyq tab '&clipboard' add "echo $wpath"
+  echo "$wpath" | copy
+
 elif [ "$opener" = "linux" ]; then
-  copyq tab '&clipboard' add "$selected"
+  echo "$selected" | copy
 fi

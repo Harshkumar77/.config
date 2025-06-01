@@ -36,6 +36,8 @@ if ! type "$(wsl.exe --version)" > /dev/null; then
   # Browser
   alias firefox="/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
 
+  alias copy=' clip.exe'
+
   win_username="khars"
   # win_username="$(cmd.exe /c echo %username% |  tr -d '\r' )"
 

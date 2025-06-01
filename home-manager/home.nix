@@ -32,7 +32,7 @@
 
   yt-dlp
 
-    
+  tg
 
   tldr
   bat
