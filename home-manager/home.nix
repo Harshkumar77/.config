@@ -16,6 +16,8 @@
 	sqlite
   jq
 
+  wordnet
+
 	python312Packages.pip
 
 	spotdl
