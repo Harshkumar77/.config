@@ -19,7 +19,7 @@
   wordnet
   wordlists
 
-  dmenu
+  dmenu-wayland
 
 	python312Packages.pip
 
