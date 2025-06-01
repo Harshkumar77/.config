@@ -17,6 +17,7 @@
   jq
 
   wordnet
+  wordlists
 
 	python312Packages.pip
 
