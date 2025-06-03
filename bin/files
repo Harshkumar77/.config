@@ -1,19 +1,23 @@
 #!/usr/bin/env zsh
 
 . ~/.config/zsh/alias.zsh
-selected=`echo "$bookmarked_folders" | xargs fd  . | dmenu`
+selected=`echo "$bookmarked_folders" | xargs -I {} zsh -c 'fd  . "{}"; fd . "{}" --format {/}'| dmenu`
+
+if [[ "$(tr -cd '/' <<< "$s" | wc -c)" -lt 1 ]]; then
+  selected=`echo "$bookmarked_folders" | xargs -I {} fd --fixed-strings "$selected" "{}"`
+fi
 
 explorers="default
 nvim
 firefox"
 
-wpath=`wslpath -w "$selected"`
+wpath=`wslpath -m $selected`
 
 opener=$(echo $explorers | dmenu)
 if [ "$opener" = "firefox" ]; then
-  firefox "$wpath"
+  firefox "file:///$wpath"
 elif [ "$opener" = "nvim" ]; then
    nvim  "$selected"
 elif [ "$opener" = "default" ]; then
-  echo "$selected" | xargs -I{} wsl-open '{}'
+  wsl-open "$selected"
 fi

@@ -3,6 +3,12 @@
 -- Add any additional keymaps here
 --
 
+vim.keymap.set("n", "<leader>,", LazyVim.pick("files"), { desc = "Find Files (Root Dir)" })
+
+vim.keymap.set("n", "<leader><space>", function()
+  Snacks.picker.buffers()
+end, { desc = "Buffers" })
+
 -- insert mode escape
 vim.keymap.set("i", "kj", "<Esc>")
 

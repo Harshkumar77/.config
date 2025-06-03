@@ -10,7 +10,7 @@ files=$(echo "$paths" | xargs -I{} zsh -c 'fd -t f -e pdf . "{}"; fd -t f -e pdf
 s=`echo "$files" | dmenu`
 
 if [[ "$(tr -cd '/' <<< "$s" | wc -c)" -lt 1 ]]; then
-  s=`echo "$paths" | xargs -I {} fd "$s" "{}"`
+  s=`echo "$paths" | xargs -I {} fd --fixed-strings "$s" "{}"`
 fi
 
 wpath=`wslpath -w "$s"`
