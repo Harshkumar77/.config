@@ -4,14 +4,16 @@
 selected=`echo "$bookmarked_folders" | xargs fd  . | dmenu`
 
 explorers="linux
+linux-nw
 win"
 
-wpath=`wslpath -m "$selected"`
 
 opener=$(echo $explorers | dmenu)
 if [ "$opener" = "win" ]; then
-  echo "$wpath" | copy
-
+  echo "$selected" | xargs -I{} wslpath -m '{}' | copy
 elif [ "$opener" = "linux" ]; then
+  echo "$selected" | sed "s/.*/'&'/" | paste -sd' ' - | copy
+fi
+elif [ "$opener" = "linux-nw" ]; then
   echo "$selected" | copy
 fi
