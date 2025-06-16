@@ -1,11 +1,11 @@
 #!/usr/bin/env zsh
 
 . ~/.config/zsh/alias.zsh
-selected=`echo "$bookmarked_folders" | xargs fd  . | dmenu`
 
 explorers="linux
 linux-nw
 win"
+selected=`((echo "$bookmarked_folders" | xargs fd  .); fd -e exe . /mnt/c/Users/$win_username/AppData/Local/Microsoft/WinGet/ /mnt/c/Program\ Files /mnt/c/Program\ Files\ \(x86\) ) | dmenu`
 
 
 opener=$(echo $explorers | dmenu)

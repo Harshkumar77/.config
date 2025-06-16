@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
 . ~/.config/zsh/alias.zsh
-selected="$(fd . ~/.config/bin --format {/} | dmenu)"
+selected="$(fd . ~/.config/bin --format {/} | dmenu-w)"
 
 alacritty -e "wsl.exe ~/.config/bin/$selected" &

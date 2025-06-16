@@ -6,7 +6,7 @@ toupdate="$(echo 'y\nn\nupdate?' | dmenu)"
 shuffle="$(echo 'y\nn\nshuffle?' | dmenu)"
 
 if [[ "$(tr -cd '/' <<< "$selected" | wc -c)" -lt 1 ]]; then
-  selected=`fd --fixed-strings "$selected" "/mnt/c/Users/$win_username/Music/" "/mnt/c/Users/$win_username/Videos" -t d`
+  selected=`fd --fixed-strings "$selected" "/mnt/c/Users/$win_username/Music/" "/mnt/c/Users/$win_username/Videos" -t d -1`
 fi
 
 if [ "$toupdate" = "y" ]; then

@@ -4,7 +4,7 @@
 selected=`echo "$bookmarked_folders" | xargs -I {} zsh -c 'fd  . "{}"; fd . "{}" --format {/}'| dmenu`
 
 if [[ "$(tr -cd '/' <<< "$s" | wc -c)" -lt 1 ]]; then
-  selected=`echo "$bookmarked_folders" | xargs -I {} fd --fixed-strings "$selected" "{}"`
+  selected=`echo "$bookmarked_folders" | xargs -I {} fd --fixed-strings "$selected" "{}" -1`
 fi
 
 explorers="default
