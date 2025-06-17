@@ -6,5 +6,5 @@ home-manager switch
 cd ~/.config
 gpl
 
-fd download ~/Music --type f --exec zsh -c 'echo Running: {}; zsh {}'
-fd download ~/Videos/YT/ --type f --exec zsh -c 'echo Running: {}; zsh {}'
+# fd download ~/Music --type f --exec zsh -c 'echo Running: {}; zsh {}'
+# fd download ~/Videos/YT/ --type f --exec zsh -c 'echo Running: {}; zsh {}'
