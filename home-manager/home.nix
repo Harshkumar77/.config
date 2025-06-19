@@ -9,7 +9,7 @@
   home.username = "brook";
 
   home.homeDirectory = "/home/brook";
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.05";
   home.packages = with pkgs; [
 	nixfmt-rfc-style
 	wsl-open
@@ -51,6 +51,9 @@
   taskwarrior-tui
   vit
   buku
+
+# node pkgs 
+  # tsx
   ];
 
   programs = {
