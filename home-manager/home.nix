@@ -1,3 +1,4 @@
+# sudo -i nix-channel --update
 # home-manager switch
 
 { config, pkgs, ... }:
@@ -19,6 +20,7 @@
   wordnet
   wordlists
 
+  picocrypt-cli
 
 	python312Packages.pip
 

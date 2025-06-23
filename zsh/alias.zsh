@@ -54,3 +54,6 @@ fi
 
 alias cdd='cd `echo "$bookmarked_folders" | xargs fd -t d . | dmenu`'
 
+alias nixInstall="home-manager switch"
+alias nixInstallUpdate="sudo -i nix-channel --update;home-manager switch"
+alias nixInstallUpdateFull="sudo nixos-rebuild switch;sudo -i nix-channel --update;home-manager switch"
