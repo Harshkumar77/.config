@@ -2,15 +2,10 @@
 . ~/.config/zsh/alias.zsh
 
 selected=`(fd . ~/Music ~/Videos -t d --format {/} ;fd . "/mnt/c/Users/$win_username/Music/" "/mnt/c/Users/$win_username/Videos" -t d  ) | dmenu`
-toupdate="$(echo 'y\nn\nupdate?' | dmenu)"
 shuffle="$(echo 'y\nn\nshuffle?' | dmenu)"
 
 if [[ "$(tr -cd '/' <<< "$selected" | wc -c)" -lt 1 ]]; then
   selected=`fd --fixed-strings "$selected" "/mnt/c/Users/$win_username/Music/" "/mnt/c/Users/$win_username/Videos" -t d -1`
-fi
-
-if [ "$toupdate" = "y" ]; then
-  "$selected/download" &
 fi
 
 wpath=`wslpath -m  "$selected"`
@@ -18,5 +13,5 @@ wpath=`wslpath -m  "$selected"`
 if [ "$shuffle" = "n" ]; then
   vlc.exe "file:///$wpath" &
 else
-  vlc.exe --random --loop "file:///$wpath"
+  vlc.exe --random "file:///$wpath"
 fi
