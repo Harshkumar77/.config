@@ -11,6 +11,7 @@ unzip enc*.zip
 
 echo $pwd
 
+
 fd 'encr' --maxdepth 1 -X rm
 
 
