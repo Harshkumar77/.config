@@ -21,6 +21,7 @@
   wordlists
 
   picocrypt-cli
+  termdown
 
 	python312Packages.pip
 

@@ -52,7 +52,7 @@ if ! type "$(wsl.exe --version)" > /dev/null; then
 /mnt/c/Users/$win_username/Videos/"
 fi
 
-alias cdd='cd `echo "$bookmarked_folders" | xargs fd -t d . | dmenu`'
+alias cdd='dirto=$(echo "$bookmarked_folders" | xargs fd -t d . | dmenu);cd "$dirto"'
 
 alias nixInstall="home-manager switch"
 alias nixInstallUpdate="sudo -i nix-channel --update;home-manager switch"
