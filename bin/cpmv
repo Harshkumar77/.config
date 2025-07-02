@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+. ~/.config/zsh/alias.zsh
+
+selected_files=`echo "$bookmarked_folders" | xargs fd  . | dmenu`
+
+selected=`echo "$bookmarked_folders" | xargs fd -t d . | dmenu`
+
+actions="cp
+mv"
+
+action=$(echo $actions | dmenu)
+if [ "$action" = "cp" ]; then
+  echo "$selected_files" | xargs -I{} cp '{}' "$selected" -r
+elif [ "$action" = "mv" ]; then
+  echo "$selected_files" | xargs -I{} mv '{}' "$selected" 
+else
+  echo "nothing bye"
+fi
