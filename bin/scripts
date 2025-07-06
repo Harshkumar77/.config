@@ -2,4 +2,4 @@
 . ~/.config/zsh/alias.zsh
 selected="$(fd . ~/.config/bin --format {/} | dmenu-w)"
 
-alacritty -e "wsl.exe ~/.config/bin/$selected" --title "$selected" &
+alacritty --title "$selected" -e "wsl.exe ~/.config/bin/$selected" &
