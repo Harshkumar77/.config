@@ -15,8 +15,10 @@ alt + m                 : komorebic minimize
 
 # Focus windows
 alt + h                 : komorebic focus left
-alt + j                 : komorebic focus down
-alt + k                 : komorebic focus up
+alt + j                 : komorebic cycle-focus next
+alt + k                 : komorebic cycle-focus previous
+# alt + j                 : komorebic focus down
+# alt + k                 : komorebic focus up
 alt + l                 : komorebic focus right
 alt + shift + oem_4     : komorebic cycle-layout previous # oem_4 is [
 alt + shift + oem_6     : komorebic cycle-layout next # oem_6 is ]
