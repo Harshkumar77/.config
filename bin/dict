@@ -12,7 +12,10 @@ function fold {
 
 word=$(cat ~/.config/raw/words_alpha.txt | sed 's/.$//' | fzf --reverse --preview 'wn {} -over | fold' --preview-window=up:60%)
 
+if [[ $word -eq "q" ]]; then
+  exit;
+fi
 firefox "https://duckduckgo.com/?q=$word%20meaning%20merriam%20webster%20urban%20dictionary&t=newext&atb=v480-7&ia=web"
-wn $word -over | less
+# wn $word -over | less
 
 ~/.config/bin/dict
