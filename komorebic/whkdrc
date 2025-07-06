@@ -25,9 +25,11 @@ alt + shift + oem_6     : komorebic cycle-layout next # oem_6 is ]
 
 # Move windows
 alt + shift + h         : komorebic move left
-alt + shift + j         : komorebic move down
-alt + shift + k         : komorebic move up
 alt + shift + l         : komorebic move right
+# alt + shift + j         : komorebic move down
+# alt + shift + k         : komorebic move up
+alt + shift + j         : komorebic cycle-move next
+alt + shift + k         : komorebic cycle-move previous
 alt + return            : komorebic promote
 
 # Stack windows
