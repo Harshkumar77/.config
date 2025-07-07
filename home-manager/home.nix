@@ -49,7 +49,7 @@
   poppler_utils
   pdfgrep
 
-  gemini-cli
+  #gemini-cli
 
   vifm
 
