@@ -49,6 +49,8 @@
   poppler_utils
   pdfgrep
 
+  gemini-cli
+
   vifm
 
   taskwarrior3
