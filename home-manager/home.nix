@@ -47,6 +47,7 @@
 
   ripgrep
   poppler_utils
+  pdfgrep
 
   vifm
 
