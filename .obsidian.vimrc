@@ -5,6 +5,8 @@ unmap <Space>
 noremap : ;
 noremap ; :
 
+noremap j gj
+noremap k gk
 " Obsidian
 
 exmap foldcurrent obcommand editor:toggle-fold
