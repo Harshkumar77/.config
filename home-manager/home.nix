@@ -41,6 +41,8 @@
 
   tg
 
+  hugo
+
   tldr
   bat
   bat-extras.batman
