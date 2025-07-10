@@ -41,6 +41,8 @@
 
   tg
 
+  dialog
+
   hugo
 
   tldr
