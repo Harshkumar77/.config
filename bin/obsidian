@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+. ~/.config/zsh/alias.zsh
+
+s=$(rg '^#+' --no-heading --line-number --with-filename --glob '*.md'| awk -F: '{printf("%s|%04d|%s\n", $1, $2, $3)}' | fzf --no-sort)
+
+file="${s%%|*}"                       # before first |
+heading="${s##*|}"                    # after last |
+file="${file%.md}"                    # drop .md
+file_url=${file// /%20}               # spaces to %20
+heading_url=${heading##*# }           # drop #, get heading text
+heading_url=${heading_url// /%20}     # spaces to %20
+
+wsl-open "obsidian://adv-uri?vault=notes&filepath=${file_url}&heading=${heading_url}"
