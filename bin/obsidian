@@ -2,7 +2,7 @@
 . ~/.config/zsh/alias.zsh
 cd /mnt/c/notes/Markdown/
 
-s=$(rg '^#+' --no-heading --line-number --with-filename --glob '*.md'| awk -F: '{printf("%s|%04d|%s\n", $1, $2, $3)}' | fzf --no-sort)
+s=$(rg '^#+' --no-heading --line-number --with-filename --glob '*.md'| awk -F: '{printf("%s|%04d|%s\n", $1, $2, $3)}' | fzf --no-sort --reverse)
 
 file="${s%%|*}"                       # before first |
 heading="${s##*|}"                    # after last |
