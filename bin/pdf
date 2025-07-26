@@ -24,6 +24,8 @@ SumatraPDF-new-window
 firefox-new
 speedread"
 
+echo "$wpath" >> ~/.config/raw/recent
+
 opener=$(echo $pdfviewers | dmenu)
 if [ "$opener" = "firefox" ]; then
   firefox "$wpath"

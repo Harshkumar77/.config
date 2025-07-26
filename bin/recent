@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+. ~/.config/zsh/alias.zsh
+
+models_link="Claude, Mistral, Ollama | duck.ai 
+Google gemini 2.5 | gemini.google.com/app
+Chatgpt new | chatgpt.com/?model=auto
+Chatgpt temp | chatgpt.com/?model=auto&temporary-chat=true
+PDFgrep keyword | is.gd/6lY1kq" # gemini.google.com/app/afb6926e13fc41a8
+
+selected=`echo "$models_link" | dmenu`
+firefox -fullscreen -new-window $(echo "$selected" | cut -d'|' -f2-)
