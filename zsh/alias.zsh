@@ -53,7 +53,7 @@ if ! type "$(wsl.exe --version)" > /dev/null; then
 fi
 
 alias cdd='dirto=$(echo "$bookmarked_folders" | xargs fd -t d . | dmenu);cd "$dirto"'
-alias cddd='dirto=$(fd -t d . | dmenu);cd "$dirto"'
+alias dc='dirto=$(fd -t d . | dmenu);cd "$dirto"'
 
 alias nixInstall="home-manager switch"
 alias nixInstallUpdate="sudo -i nix-channel --update;home-manager switch"
