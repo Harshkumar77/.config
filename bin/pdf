@@ -32,7 +32,7 @@ if [ "$opener" = "firefox" ]; then
 elif [ "$opener" = "firefox-new" ]; then
   firefox -new-window "$wpath" 
 elif [ "$opener" = "okular" ]; then
-  "/mnt/c/Program Files/Okular/bin/okular.exe" "$wpath"
+  "/mnt/c/Program Files/Okular/bin/okular.exe" --unique "$wpath" 
 elif [ "$opener" = "SumatraPDF" ]; then
   /mnt/c/Users/$win_username/AppData/Local/SumatraPDF/SumatraPDF.exe "$wpath"
 elif [ "$opener" = "SumatraPDF-new-window" ]; then
