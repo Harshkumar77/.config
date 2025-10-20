@@ -4,7 +4,7 @@ if ! type "$eza" > /dev/null; then
   alias l='eza --icons'
   alias ls='eza'
   alias tree='eza --icons --tree'
-  alias t='eza --icons --tree --level 1'
+  # alias t='eza --icons --tree --level 1'
   alias t2='tree --level 2'
   alias t3='tree --level 3'
   alias t4='tree --level 4'
@@ -16,6 +16,7 @@ alias la="ls -a"
 alias ll="ls -la"
 alias sread="speedread ~/active.txt -w 450"
 
+alias t='task'
 
 alias gp="git push"
 alias gc="git commit"
