@@ -1,8 +1,0 @@
-[General]
-IgnoreImages=false
-IgnoreSelection=false
-MaxClipItems=2000
-SelectionTextOnly=false
-SyncClipboards=true
-URLGrabberEnabled=true
-Version=5.27.10

@@ -1,1 +1,0 @@
-/mnt/c/notes/books/sec.sh

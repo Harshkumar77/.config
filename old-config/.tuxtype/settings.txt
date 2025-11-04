@@ -1,4 +1,0 @@
-mus_volume=0
-sfx_volume=0
-menu_music=1
-fullscreen=1

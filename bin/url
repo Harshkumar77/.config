@@ -1,4 +1,0 @@
-#!/usr/bin/env zsh
-. ~/.config/zsh/alias.zsh
-
-firefox `buku --json -p | jq -r '.[] | "\(.title) \(.tags)  > \(.uri)"'  | dmenu | awk -F "> " '{ print $2 }'`

@@ -1,6 +1,0 @@
-#!/usr/bin/env zsh
-. ~/.config/zsh/alias.zsh
-
-cmd="$(tldr -l | dmenu)"
-batman "$cmd"
-

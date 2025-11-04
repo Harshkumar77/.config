@@ -1,9 +1,0 @@
-#!/usr/bin/env zsh
-
-. ~/.config/zsh/alias.zsh
-
-# selected=`echo "$bookmarked_folders" | xargs fd  . | dmenu`
-# echo "$selected" | xargs -I {} rm -rf '{}'
-
-selected=`echo "$bookmarked_folders" | xargs fd  . --format \'{}\' | dmenu`
-echo "$selected" | xargs rm -rf 

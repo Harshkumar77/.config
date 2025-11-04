@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-timew summary "$(task _get $(task +ACTIVE limit:1 | tail -n +4 | head -n 1 | sed 's/^ //' | cut -d ' ' -f1).description)" | tail -2 | head -1 | xargs | head -1
-
-

@@ -1,7 +1,0 @@
-{
-	"dependencies": {
-		"md-2-json": "^2.0.0",
-		"text-to-image": "^5.2.0"
-	},
-	"type": "module"
-}
