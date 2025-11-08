@@ -1,2 +1,6 @@
 @theme "fancy"
 
+
+configuration {
+font: "Noto Color Emoji 12";
+}
