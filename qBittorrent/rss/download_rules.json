@@ -1,0 +1,242 @@
+{
+    "Gnosia": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
+        ],
+        "assignedCategory": "Anime",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "15 Nov 2025 18:38:58 +0000",
+        "mustContain": "Gnosia",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "/home/giga/Downloads/Organised Episodes/Gnosia",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "Anime",
+            "download_limit": -1,
+            "download_path": "/home/giga/Downloads/temp",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/home/giga/Downloads/Organised Episodes/Gnosia",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false,
+            "use_download_path": true
+        },
+        "useRegex": false
+    },
+    "Kingdom": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
+        ],
+        "assignedCategory": "Anime",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "15 Nov 2025 19:47:24 +0000",
+        "mustContain": "Kingdom",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "/home/giga/Downloads/Organised Episodes/Kingdom",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "Anime",
+            "download_limit": -1,
+            "download_path": "/home/giga/Downloads/temp",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/home/giga/Downloads/Organised Episodes/Kingdom",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false,
+            "use_download_path": true
+        },
+        "useRegex": false
+    },
+    "Ninja vs Gakudo": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=varyg1001"
+        ],
+        "assignedCategory": "Anime",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "11 Nov 2025 17:31:34 +0000",
+        "mustContain": "ninja dual",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "/home/giga/Downloads/Organised Episodes/Ninja vs Gakudo",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "Anime",
+            "download_limit": -1,
+            "download_path": "/home/giga/Downloads/temp",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/home/giga/Downloads/Organised Episodes/Ninja vs Gakudo",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false,
+            "use_download_path": true
+        },
+        "useRegex": false
+    },
+    "One Piece": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
+        ],
+        "assignedCategory": "Anime",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "09 Nov 2025 18:52:07 +0000",
+        "mustContain": "one piece",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "/home/giga/Downloads/Organised Episodes/One Piece",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "Anime",
+            "download_limit": -1,
+            "download_path": "/home/giga/Downloads/temp",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/home/giga/Downloads/Organised Episodes/One Piece",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false,
+            "use_download_path": true
+        },
+        "useRegex": false
+    },
+    "One Punch Man": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
+        ],
+        "assignedCategory": "Anime",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "09 Nov 2025 17:03:02 +0000",
+        "mustContain": "one punch",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "/home/giga/Downloads/Organised Episodes/One Punch Man",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "Anime",
+            "download_limit": -1,
+            "download_path": "/home/giga/Downloads/temp",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/home/giga/Downloads/Organised Episodes/One Punch Man",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false,
+            "use_download_path": true
+        },
+        "useRegex": false
+    },
+    "gachiakuta": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
+        ],
+        "assignedCategory": "",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "09 Nov 2025 17:03:25 +0000",
+        "mustContain": "gachiakuta",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "/home/giga/Downloads/Organised Episodes/Gachiakuta",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "/home/giga/Downloads/temp",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/home/giga/Downloads/Organised Episodes/Gachiakuta",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false,
+            "use_download_path": true
+        },
+        "useRegex": false
+    }
+}
