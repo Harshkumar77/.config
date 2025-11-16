@@ -1,5 +1,7 @@
 eval "$(zoxide init zsh)"   # For Zsh
 alias cd='z'
+alias ls='fd --hidden --max-depth'
+alias l='fd --hidden --max-depth 1'
 
 zi
 
