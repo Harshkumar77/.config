@@ -1,0 +1,8 @@
+android-studio
+celeste-client-bin
+mpv-sponsorblock
+obsidian-bin
+oh-my-zsh-git
+qbittorrent-enhanced-nox-bin
+raidrivecli
+syncthing-gtk
