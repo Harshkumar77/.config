@@ -39,3 +39,13 @@ vlc/
 volumeicon/
 winboat/
 xfce4/
+go/
+openttd/
+qBittorrent/categories.json
+qBittorrent/lockfile
+qBittorrent/qBittorrent-data.conf
+qBittorrent/qBittorrent.conf
+qBittorrent/watched_folders.json
+retroarch/
+yay/
+
