@@ -6,3 +6,4 @@ oh-my-zsh-git
 qbittorrent-enhanced-nox-bin
 raidrivecli
 syncthing-gtk
+xidel-bin

@@ -16,3 +16,9 @@ else
 fi
 
 
+rmf() {
+	fzf -m --header="Select files to delete" | while IFS= read -r file; do
+	    rm -- "$file"
+	done
+}
+
