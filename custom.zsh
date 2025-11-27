@@ -22,3 +22,4 @@ rmf() {
 	done
 }
 
+alias extract_urls='xidel -e "//a/@href'
