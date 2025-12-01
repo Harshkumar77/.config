@@ -1046,6 +1046,7 @@ rclone
 readline
 redland
 redshift
+renameutils
 rhash
 rnnoise
 rofi
