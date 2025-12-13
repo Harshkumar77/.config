@@ -59,7 +59,6 @@ bluez-libs
 boost
 boost-libs
 botan
-botan2
 breeze-icons
 brotli
 btrfs-progs
@@ -76,7 +75,9 @@ cairomm-1.16
 cantarell-fonts
 catfish
 cdparanoia
+celluloid
 chromaprint
+chromium
 cifs-utils
 ckbcomp
 clang
@@ -251,14 +252,12 @@ gstreamer
 gtest
 gtk-layer-shell
 gtk-update-icon-cache
-gtk2
 gtk3
 gtk4
 gtkmm-4.0
 gtkmm3
 gtksourceview3
 gtksourceview4
-gtkspell
 gufw
 guile
 gupnp
@@ -276,7 +275,6 @@ gzip
 harfbuzz
 harfbuzz-icu
 hdparm
-hexchat
 hicolor-icon-theme
 hidapi
 highway
@@ -305,9 +303,11 @@ iw
 jack2
 jansson
 jasper
+java-runtime-common
 jbig2dec
 jbigkit
 jfsutils
+jre11-openjdk
 json-c
 json-glib
 jsoncpp
@@ -413,7 +413,6 @@ lib32-spirv-tools
 lib32-systemd
 lib32-vulkan-icd-loader
 lib32-vulkan-intel
-lib32-vulkan-mesa-device-select
 lib32-vulkan-nouveau
 lib32-vulkan-radeon
 lib32-wayland
@@ -424,7 +423,6 @@ lib32-zstd
 libabw
 libadwaita
 libaio
-libappindicator-gtk3
 libarchive
 libass
 libassuan
@@ -574,6 +572,7 @@ libmypaint
 libmysofa
 libnautilus-extension
 libndp
+libnet
 libnetfilter_conntrack
 libnewt
 libnfnetlink
@@ -944,7 +943,6 @@ perl-xml-sax
 perl-xml-sax-base
 perl-xml-writer
 picom
-pidgin
 pinentry
 pipewire
 pipewire-alsa
@@ -1101,6 +1099,7 @@ suitesparse
 svt-av1
 svt-hevc
 sxhkd
+sxiv
 syncthing
 sysfsutils
 systemd
@@ -1250,7 +1249,6 @@ vte-common
 vte3
 vulkan-icd-loader
 vulkan-intel
-vulkan-mesa-device-select
 vulkan-nouveau
 vulkan-radeon
 wallpapers-2018
