@@ -1,19 +1,12 @@
 
-mf() {
-        fd | fzf -m --header="Select files to delete" | while IFS= read -r file; do
+rmf() {
+        fd --maxdepth 1 | fzf -m --header="Select files to delete" | while IFS= read -r file; do
             rm -rf -- "$file"
         done
 }
 
 alias awesome-launch="killall xfwm4 && awesome"
 alias xfce-launch="killall awesome && xfwm4"
-
-
-vlc-random(){
-        OUT="/tmp/vlc-$(tr -dc A-Za-z0-9 </dev/urandom | head -c 8).m3u"
-        fd . -e mkv -a | shuf > "$OUT"
-        nohup vlc "$OUT" >/dev/null 2>&1 &
-}
 
 alias vlc='nohup vlc'
 alias mpv='nohup mpv'
@@ -38,19 +31,32 @@ download-songs() {
 
 vlc-audio() {
 	fd -e mp3 -X nohup vlc &
-	exit
+}
+
+vlc-audio-shuffle() {
+	fd -e mp3 -X nohup vlc --random &
 }
 
 celluloid-audio() {
 	fd -e mp3 -X nohup celluloid &
 }
 
-mpv-video() {
-	fd -e mkv -e mp4 -X nohup mpv &
-	exit
-}
-vlc-video() {
-	fd -e mkv -e mp4 -X nohup vlc &
-	exit
+celluloid-audio-shuffle() {
+	fd -e mp3 -X nohup celluloid --shuffle &
 }
 
+mpv-video() {
+	fd -e mkv -e mp4 -X nohup mpv &
+}
+
+mpv-video-shuffle() {
+	fd -e mkv -e mp4 -X nohup mpv --shuffle &
+}
+
+vlc-video() {
+	fd -e mkv -e mp4 -X nohup vlc &
+}
+
+vlc-video-shuffle() {
+	fd -e mkv -e mp4 -X nohup vlc --random &
+}

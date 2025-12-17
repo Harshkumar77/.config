@@ -191,6 +191,7 @@ gdk-pixbuf2
 gegl
 geoclue
 gettext
+gexiv2
 ghostscript
 giflib
 gimp
@@ -207,6 +208,7 @@ glibmm-2.68
 glm
 glslang
 glu
+glycin
 gmp
 gnome-autoar
 gnome-desktop
@@ -294,6 +296,7 @@ imlib2
 inetutils
 install-grub
 intel-ucode
+intltool
 inxi
 iproute2
 iptables
@@ -374,6 +377,7 @@ lib32-json-c
 lib32-keyutils
 lib32-krb5
 lib32-libcap
+lib32-libdisplay-info
 lib32-libdrm
 lib32-libelf
 lib32-libffi
@@ -413,6 +417,7 @@ lib32-spirv-tools
 lib32-systemd
 lib32-vulkan-icd-loader
 lib32-vulkan-intel
+lib32-vulkan-mesa-implicit-layers
 lib32-vulkan-nouveau
 lib32-vulkan-radeon
 lib32-wayland
@@ -423,6 +428,7 @@ lib32-zstd
 libabw
 libadwaita
 libaio
+libappindicator
 libarchive
 libass
 libassuan
@@ -440,6 +446,7 @@ libblockdev-loop
 libblockdev-mdraid
 libblockdev-nvme
 libblockdev-part
+libblockdev-smart
 libblockdev-swap
 libbluray
 libbpf
@@ -547,6 +554,7 @@ libldap
 liblqr
 liblrdf
 libltc
+libluv
 libmad
 libmalcontent
 libmanette
@@ -653,6 +661,7 @@ libstemmer
 libsynctex
 libsysprof-capture
 libtasn1
+libtatsu
 libteam
 libthai
 libtheora
@@ -672,6 +681,7 @@ libusb
 libusb-compat
 libusbmuxd
 libutempter
+libutf8proc
 libuv
 libva
 libva-intel-driver
@@ -682,6 +692,7 @@ libvlc
 libvorbis
 libvpl
 libvpx
+libvterm
 libwacom
 libwbclient
 libwebp
@@ -767,6 +778,7 @@ logrotate
 lpsolve
 lsb-release
 lua
+lua51-lpeg
 lua53
 lua53-lgi
 luajit
@@ -830,6 +842,7 @@ mpdecimal
 mpfr
 mpg123
 mpv
+msgpack-c
 mtdev
 mtpfs
 mugshot
@@ -841,6 +854,7 @@ nautilus
 nautilus-python
 ncurses
 neon
+neovim
 nettle
 network-manager-applet
 networkmanager
@@ -1046,6 +1060,8 @@ redland
 redshift
 renameutils
 rhash
+ripgrep
+ripgrep-all
 rnnoise
 rofi
 rofimoji
@@ -1066,6 +1082,7 @@ sdl12-compat
 sdl2-compat
 sdl2_ttf
 sdl3
+sdl3_ttf
 sdl_image
 sed
 serd
@@ -1123,8 +1140,16 @@ thunderbird
 timeshift
 timeshift-autosnap-manjaro
 tinysparql
+tk
 totem-pl-parser
 tpm2-tss
+tree-sitter
+tree-sitter-c
+tree-sitter-lua
+tree-sitter-markdown
+tree-sitter-query
+tree-sitter-vim
+tree-sitter-vimdoc
 tslib
 ttf-dejavu
 ttf-droid
@@ -1143,6 +1168,7 @@ udiskie
 udisks2
 ufw
 unace
+unibilium
 unrar
 unzip
 update-grub
@@ -1249,6 +1275,7 @@ vte-common
 vte3
 vulkan-icd-loader
 vulkan-intel
+vulkan-mesa-implicit-layers
 vulkan-nouveau
 vulkan-radeon
 wallpapers-2018
@@ -1257,6 +1284,7 @@ wavpack
 wayland
 wayland-protocols
 webkit2gtk-4.1
+webkitgtk-6.0
 webrtc-audio-processing-1
 wget
 which
@@ -1270,6 +1298,7 @@ wxwidgets-gtk3
 x264
 x265
 xapp
+xapp-symbolic-icons
 xcape
 xcb-imdkit
 xcb-proto
