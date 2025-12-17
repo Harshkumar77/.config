@@ -48,4 +48,6 @@ qBittorrent/qBittorrent.conf
 qBittorrent/watched_folders.json
 retroarch/
 yay/
-
+audacious/
+chromium/
+nohup.out
