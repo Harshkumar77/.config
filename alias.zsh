@@ -69,3 +69,6 @@ vlc-video() {
 vlc-video-shuffle() {
 	fd -e mkv -e mp4 -e mp3 -X nohup vlc --random &
 }
+
+alias play-song='nohup vlc ~/Music/Song/Song.m3u --random &'
+alias play-long='nohup vlc ~/Music/Long/Long.m3u --random &'
