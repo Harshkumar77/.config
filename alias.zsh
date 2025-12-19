@@ -17,15 +17,24 @@ alias copy-file='xclip -selection clipboard < '
 alias wallpaper='sxiv ~/.config/wallpaper -qbf -s f -S 3'
 
 download-songs() {
-	cd ~/Music
+  mkdir ~/Music/Song/ -p
+	cd ~/Music/Song
 	pipx upgrade yt-dlp
-	yt-dlp --download-archive archive.txt --no-overwrites "https://www.youtube.com/playlist?list=PLuDbTR3nQ_ZV5KbLw1w-s1Tmhq0g--4S7" -t mp3 --embed-metadata --embed-thumbnail --sponsorblock-remove all   --write-subs --embed-subs  --sleep-interval 5 --max-sleep-interval 10
-#	mkdir temp 
-#	mv *.mp3 archive.txt temp  
-#	fd -t f --maxdepth 1 --exec rm   
-#	mv temp/* .  
-#	rmdir temp  
-	rm *.temp.*    
+	yt-dlp \
+	  -x \
+	  --audio-format mp3 \
+	  --audio-quality 0 \
+	  --embed-metadata \
+	  --embed-thumbnail \
+	  --convert-thumbnails jpg \
+	  --add-metadata \
+	  --sponsorblock-remove all \
+	  --sleep-interval 5 --max-sleep-interval 10 \
+    --download-archive archive.txt 
+    "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf"
+  echo "#EXTM3U" > Song.m3u
+  fd -e mp3 > Song.m3u
+  rm *.temp.*    
 
 }
 
@@ -37,12 +46,12 @@ vlc-audio-shuffle() {
 	fd -e mp3 -X nohup vlc --random &
 }
 
-celluloid-audio() {
-	fd -e mp3 -X nohup celluloid &
+mpv-audio() {
+	fd -e mp3 -X nohup mpv &
 }
 
-celluloid-audio-shuffle() {
-	fd -e mp3 -X nohup celluloid --shuffle &
+mpv-audio-shuffle() {
+	fd -e mp3 -X nohup mpv --shuffle &
 }
 
 mpv-video() {
@@ -54,9 +63,9 @@ mpv-video-shuffle() {
 }
 
 vlc-video() {
-	fd -e mkv -e mp4 -X nohup vlc &
+	fd -e mkv -e mp4 -e mp3 -X nohup vlc &
 }
 
 vlc-video-shuffle() {
-	fd -e mkv -e mp4 -X nohup vlc --random &
+	fd -e mkv -e mp4 -e mp3 -X nohup vlc --random &
 }
