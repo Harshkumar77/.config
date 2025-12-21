@@ -31,7 +31,7 @@ download-songs() {
 	  --sponsorblock-remove all \
 	  --sleep-interval 5 --max-sleep-interval 10 \
     --download-archive archive.txt \
-    "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf" \
+    "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf"
   echo "#EXTM3U" > Song.m3u
   fd -e mp3 > Song.m3u
 
