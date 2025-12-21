@@ -30,10 +30,29 @@ download-songs() {
 	  --add-metadata \
 	  --sponsorblock-remove all \
 	  --sleep-interval 5 --max-sleep-interval 10 \
-    --download-archive archive.txt 
-    "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf"
+    --download-archive archive.txt \
+    "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf" \
   echo "#EXTM3U" > Song.m3u
   fd -e mp3 > Song.m3u
+
+  mkdir ~/Music/Long/ -p
+	cd ~/Music/Long
+	pipx upgrade yt-dlp
+	yt-dlp \
+	  -x \
+	  --audio-format mp3 \
+	  --audio-quality 0 \
+	  --embed-metadata \
+	  --embed-thumbnail \
+	  --convert-thumbnails jpg \
+	  --add-metadata \
+	  --sponsorblock-remove all \
+	  --sleep-interval 5 --max-sleep-interval 10 \
+    --download-archive archive.txt \
+    "https://youtube.com/playlist?list=PLuDbTR3nQ_ZUMRQGIydDRGe3lheNrPkYj&si=fC09ZYX__t0n10Tf"
+  echo "#EXTM3U" > Long.m3u
+  fd -e mp3 > Long.m3u
+
   rm *.temp.*    
 
 }
