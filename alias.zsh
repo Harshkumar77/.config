@@ -33,7 +33,7 @@ download-songs() {
     --download-archive archive.txt \
     "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf"
   echo "#EXTM3U" > Song.m3u
-  fd -e mp3 > Song.m3u
+  fd -e mp3 >> Song.m3u
 
   mkdir ~/Music/Long/ -p
 	cd ~/Music/Long
@@ -51,7 +51,7 @@ download-songs() {
     --download-archive archive.txt \
     "https://youtube.com/playlist?list=PLuDbTR3nQ_ZUMRQGIydDRGe3lheNrPkYj&si=fC09ZYX__t0n10Tf"
   echo "#EXTM3U" > Long.m3u
-  fd -e mp3 > Long.m3u
+  fd -e mp3 >> Long.m3u
 
   rm *.temp.*    
 
@@ -91,3 +91,10 @@ vlc-video-shuffle() {
 
 alias play-song='nohup vlc ~/Music/Song/Song.m3u --random &'
 alias play-long='nohup vlc ~/Music/Long/Long.m3u --random &'
+
+
+
+pdf() {
+  cd ~/Electra Coil/
+  fd --no-require-git -e pdf  --format "'{}'" | fzf -m | xargs  nohup okular {}
+}

@@ -1,6 +1,7 @@
 android-studio
 botan2
 celeste-client-bin
+fontpreview-git
 gtk2
 gtkspell
 hexchat
@@ -11,5 +12,7 @@ pidgin
 qbittorrent-enhanced-nox-bin
 raidrivecli
 syncthing-gtk
+vifm-devicons-git
+vifmimg-git
 xidel-bin
 yayfzf
