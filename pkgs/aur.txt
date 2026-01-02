@@ -16,3 +16,4 @@ vifm-devicons-git
 vifmimg-git
 xidel-bin
 yayfzf
+zsh-vi-mode
