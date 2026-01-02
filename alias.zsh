@@ -74,7 +74,9 @@ mpv-audio-shuffle() {
 }
 
 mpv-video() {
-	fd -e mkv -e mp4 -X nohup mpv &
+  file_name=$(uuidgen)
+  fd -e mkv -e mp4 -a > /tmp/$file_name.m3u
+  xdg-open /tmp/$file_name.m3u
 }
 
 mpv-video-shuffle() {
