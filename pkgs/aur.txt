@@ -2,6 +2,7 @@ android-studio
 botan2
 celeste-client-bin
 fontpreview-git
+fzf-tab-git
 gtk2
 gtkspell
 hexchat

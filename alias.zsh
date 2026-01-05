@@ -84,7 +84,9 @@ mpv-video-shuffle() {
 }
 
 vlc-video() {
-	fd -e mkv -e mp4 -e mp3 -X nohup vlc &
+  file_name=$(uuidgen)
+  fd -e mkv -e mp4 -a > /tmp/$file_name.m3u
+  nohup vlc /tmp/$file_name.m3u
 }
 
 vlc-video-shuffle() {
