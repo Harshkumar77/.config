@@ -79,6 +79,15 @@ mpv-video() {
   xdg-open /tmp/$file_name.m3u
 }
 
+anime-latest() {
+  file_name=$(uuidgen)
+  cd ~/Downloads/Organised\ Episodes
+  (fd -e mkv -X ls -t | head -n 10) > playlist.m3u
+  xdg-open playlist.m3u
+  sleep 3
+  rm playlist.m3u
+}
+
 mpv-video-shuffle() {
 	fd -e mkv -e mp4 -X nohup mpv --shuffle &
 }
