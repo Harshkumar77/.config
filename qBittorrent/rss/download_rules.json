@@ -8,13 +8,13 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "07 Jan 2026 15:26:12 +0000",
+        "lastMatch": "14 Jan 2026 17:28:42 +0000",
         "mustContain": "Daily Grind at Age 29",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],
         "priority": 0,
-        "savePath": "",
+        "savePath": "/home/giga/Downloads/Organised Episodes/Daily Grind at Age 29",
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
@@ -24,7 +24,7 @@
             "inactive_seeding_time_limit": -2,
             "operating_mode": "AutoManaged",
             "ratio_limit": -2,
-            "save_path": "",
+            "save_path": "/home/giga/Downloads/Organised Episodes/Daily Grind at Age 29",
             "seeding_time_limit": -2,
             "share_limit_action": "Default",
             "skip_checking": false,
@@ -32,8 +32,10 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
-            "upload_limit": -1
+            "upload_limit": -1,
+            "use_auto_tmm": false
         },
         "useRegex": false
     },
@@ -70,49 +72,10 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false
-        },
-        "useRegex": false
-    },
-    "Gnosia": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "Anime",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "10 Jan 2026 18:16:21 +0000",
-        "mustContain": "Gnosia",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "/home/giga/Downloads/Organised Episodes/Gnosia",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "Anime",
-            "download_limit": -1,
-            "download_path": "/home/giga/Downloads/temp",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "/home/giga/Downloads/Organised Episodes/Gnosia",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1,
-            "use_auto_tmm": false,
-            "use_download_path": true
         },
         "useRegex": false
     },
@@ -149,6 +112,7 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false
@@ -188,6 +152,7 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false
@@ -227,6 +192,7 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false
@@ -266,6 +232,7 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false,
@@ -306,6 +273,7 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false,
@@ -346,6 +314,7 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false,
@@ -386,6 +355,7 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false,
@@ -402,7 +372,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "06 Jan 2026 15:35:12 +0000",
+        "lastMatch": "13 Jan 2026 15:30:50 +0000",
         "mustContain": "The Darwin Incident",
         "mustNotContain": "Multi-Audio|264",
         "previouslyMatchedEpisodes": [
@@ -426,6 +396,47 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false
+        },
+        "useRegex": false
+    },
+    "The Pitt": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://thepiratebay11.com/rss/top100/208"
+        ],
+        "assignedCategory": "",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "09 Jan 2026 02:55:01 +0000",
+        "mustContain": "The Pitt Me",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "/home/giga/Downloads/Organised Episodes/The Pitt",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/home/giga/Downloads/Organised Episodes/The Pitt",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false
@@ -465,6 +476,7 @@
             "ssl_dh_params": "",
             "ssl_private_key": "",
             "tags": [
+                "Single"
             ],
             "upload_limit": -1,
             "use_auto_tmm": false,

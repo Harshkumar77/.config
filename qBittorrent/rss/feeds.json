@@ -7,6 +7,18 @@
         "uid": "{201d60cc-6ecd-480c-8ee4-22526c61c38e}",
         "url": "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
     },
+    "MeGusta - Knaben Database": {
+        "uid": "{ad137194-0ce9-4d40-8b3d-1fbd65d0a119}",
+        "url": "https://rss.knaben.org/The%20Pitt%20MeGusta"
+    },
+    "The Pirate Bay - HD - TV shows": {
+        "uid": "{b692c53f-adeb-4068-88b4-004c7d0ed510}",
+        "url": "https://thepiratebay11.com/rss/top100/208"
+    },
+    "The Pirate Bay - TV shows": {
+        "uid": "{08a9eadb-244a-4d28-89c4-88e1382a2af1}",
+        "url": "https://thepiratebay11.com/rss/top100/205"
+    },
     "ToonsHub": {
         "uid": "{e76a61ab-0455-40f5-a89b-be53238866be}",
         "url": "https://nyaa.si/?page=rss&q=%5BToonsHub%5D&c=0_0&f=0"

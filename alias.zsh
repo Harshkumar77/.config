@@ -16,6 +16,8 @@ alias copy-file='xclip -selection clipboard < '
 
 alias wallpaper='sxiv ~/.config/wallpaper -qbf -s f -S 3'
 
+alias cdd='zi'
+
 download-songs() {
   mkdir ~/Music/Song/ -p
 	cd ~/Music/Song
