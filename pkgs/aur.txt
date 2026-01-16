@@ -1,4 +1,5 @@
 android-studio
+ani-cli
 botan2
 celeste-client-bin
 fontpreview-git
