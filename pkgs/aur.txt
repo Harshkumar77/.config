@@ -2,6 +2,7 @@ android-studio
 ani-cli
 botan2
 celeste-client-bin
+dclock
 fontpreview-git
 fzf-tab-git
 gtk2

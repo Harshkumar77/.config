@@ -4,7 +4,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -18,7 +18,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "",
             "inactive_seeding_time_limit": -2,
@@ -44,7 +44,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=%5BToonsHub%5D&c=0_0&f=0"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -58,7 +58,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "",
             "inactive_seeding_time_limit": -2,
@@ -84,7 +84,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=varyg1001"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -98,7 +98,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "",
             "inactive_seeding_time_limit": -2,
@@ -124,7 +124,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Anime",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -138,7 +138,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "Anime",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "",
             "inactive_seeding_time_limit": -2,
@@ -164,11 +164,11 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=%5BToonsHub%5D&c=0_0&f=0"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "11 Jan 2026 09:03:55 +0000",
+        "lastMatch": "18 Jan 2026 09:02:22 +0000",
         "mustContain": "Kaya chan Isn t Scary dual",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -178,7 +178,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "",
             "inactive_seeding_time_limit": -2,
@@ -204,7 +204,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Anime",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -218,7 +218,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "Anime",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "/home/giga/Downloads/temp",
             "inactive_seeding_time_limit": -2,
@@ -245,11 +245,11 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=varyg1001"
         ],
-        "assignedCategory": "Anime",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "01 Jan 2026 23:21:35 +0000",
+        "lastMatch": "18 Jan 2026 16:24:23 +0000",
         "mustContain": "ninja dual",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -259,7 +259,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "Anime",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "/home/giga/Downloads/temp",
             "inactive_seeding_time_limit": -2,
@@ -286,7 +286,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Anime",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -300,7 +300,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "Anime",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "/home/giga/Downloads/temp",
             "inactive_seeding_time_limit": -2,
@@ -327,7 +327,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Anime",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -341,7 +341,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "Anime",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "/home/giga/Downloads/temp",
             "inactive_seeding_time_limit": -2,
@@ -368,7 +368,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=%5BToonsHub%5D&c=0_0&f=0"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -382,7 +382,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "",
             "inactive_seeding_time_limit": -2,
@@ -408,7 +408,7 @@
         "affectedFeeds": [
             "https://thepiratebay11.com/rss/top100/208"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -422,7 +422,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "",
             "inactive_seeding_time_limit": -2,
@@ -448,7 +448,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -462,7 +462,7 @@
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
-            "category": "",
+            "category": "Single",
             "download_limit": -1,
             "download_path": "/home/giga/Downloads/temp",
             "inactive_seeding_time_limit": -2,

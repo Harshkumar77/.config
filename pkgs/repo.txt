@@ -196,6 +196,8 @@ gdbm
 gdk-pixbuf2
 gegl
 geoclue
+geocode-glib-2
+geocode-glib-common
 gettext
 gexiv2
 ghostscript
@@ -217,6 +219,7 @@ glu
 glycin
 gmp
 gnome-autoar
+gnome-clocks
 gnome-desktop
 gnome-desktop-4
 gnome-desktop-common
@@ -298,6 +301,7 @@ icu
 ijs
 illyria-wallpaper
 imagemagick
+imake
 imath
 imlib2
 inetutils
@@ -546,6 +550,7 @@ libgsf
 libgtop
 libgudev
 libgusb
+libgweather-4
 libgxps
 libhandy
 libheif

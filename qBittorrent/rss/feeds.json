@@ -11,6 +11,14 @@
         "uid": "{ad137194-0ce9-4d40-8b3d-1fbd65d0a119}",
         "url": "https://rss.knaben.org/The%20Pitt%20MeGusta"
     },
+    "Movies/Bollywood - Knaben Database": {
+        "uid": "{ce584dc9-41ef-4906-8bc9-6a3e94e2aaa3}",
+        "url": "https://rss.knaben.org//3006000"
+    },
+    "The Pirate Bay - HD - Movies": {
+        "uid": "{95ba4267-5f23-4a26-b720-65a236caefba}",
+        "url": "https://thepiratebay11.com/rss/top100/207"
+    },
     "The Pirate Bay - HD - TV shows": {
         "uid": "{b692c53f-adeb-4068-88b4-004c7d0ed510}",
         "url": "https://thepiratebay11.com/rss/top100/208"
