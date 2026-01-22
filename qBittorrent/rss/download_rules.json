@@ -8,7 +8,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "14 Jan 2026 17:28:42 +0000",
+        "lastMatch": "21 Jan 2026 14:00:24 +0000",
         "mustContain": "Daily Grind at Age 29",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -82,15 +82,15 @@
     "Hell s Paradise": {
         "addPaused": null,
         "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=varyg1001"
+            "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
         ],
         "assignedCategory": "Single",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "11 Jan 2026 15:30:14 +0000",
+        "lastMatch": "18 Jan 2026 17:28:41 +0000",
         "mustContain": "Hell Paradise ",
-        "mustNotContain": "(Ji",
+        "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],
         "priority": 0,
@@ -372,7 +372,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "13 Jan 2026 15:30:50 +0000",
+        "lastMatch": "20 Jan 2026 15:30:35 +0000",
         "mustContain": "The Darwin Incident",
         "mustNotContain": "Multi-Audio|264",
         "previouslyMatchedEpisodes": [
