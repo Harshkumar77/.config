@@ -33,3 +33,5 @@ source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 autoload -U compinit; compinit
 source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.plugin.zsh
+
+# YUdGc2JHVnNkV0ZvQ2c9PQ==&aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2RyaXZlL3UvMC9mb2xkZXJzLzE4X29wUmt1WjluTk83SWY0blBFMmFRREdtMk5nLU1nSQ==&WVVkR2MySkhWbk5rVjBadlEyYzlQUT09
