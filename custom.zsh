@@ -27,9 +27,10 @@ source ~/.config/alias.zsh
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
-bindkey '^R' fzf-history-widget
 
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+bindkey '^R' fzf-history-widget
 
 autoload -U compinit; compinit
 source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.plugin.zsh

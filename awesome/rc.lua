@@ -452,7 +452,13 @@ clientkeys = gears.table.join(
             c.maximized_horizontal = not c.maximized_horizontal
             c:raise()
         end ,
-        {description = "(un)maximize horizontally", group = "client"})
+        {description = "(un)maximize horizontally", group = "client"}),
+    awful.key({ modkey, }, "c",
+        function (c)
+          awful.spawn('/home/giga/.config/scripts/mpv-clipboard.sh')
+        end ,
+        {description = "run command", group = "client"})
+
 )
 
 -- Bind all key numbers to tags.

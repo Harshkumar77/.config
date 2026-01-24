@@ -11,6 +11,7 @@ alias xfce-launch="killall awesome && xfwm4"
 alias vlc='nohup vlc'
 alias mpv='nohup mpv'
 
+
 alias extract-urls='xidel -e "//a/@href'
 alias copy-file='xclip -selection clipboard < '
 
@@ -92,6 +93,10 @@ anime-latest() {
   sleep 3
   rm playlist.m3u
   exit
+}
+
+yt() {
+  nohup mpv "$(copyq clipboard)"
 }
 
 mpv-video-shuffle() {
