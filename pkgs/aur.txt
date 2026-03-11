@@ -1,3 +1,4 @@
+2048-tui
 android-studio
 ani-cli
 botan2
@@ -14,9 +15,12 @@ oh-my-zsh-git
 pidgin
 qbittorrent-enhanced-nox-bin
 raidrivecli
+snake
 syncthing-gtk
+tiv
 vifm-devicons-git
 vifmimg-git
 xidel-bin
 yayfzf
+yetris
 zsh-vi-mode

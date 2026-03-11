@@ -123,4 +123,20 @@ pdf() {
   fd --no-require-git -e pdf  --format "'{}'" | fzf -m | xargs  nohup okular {}
 }
 
+twall() {
+  wallpaper_selected="$(fd . --absolute-path ~/.config/wallpaper | shuf | tail -1)"
+  tiv -w $(($COLUMNS*2)) "$wallpaper_selected"
+}
+twallz() {
+  wallpaper_selected="$(fd . --absolute-path ~/.config/wallpaper | shuf | tail -1)"
+  tiv -w $(($COLUMNS)) "$wallpaper_selected"
+}
+
+games() {
+  opts='yetris
+2048-tui
+snake'
+  zsh -c "$(echo $opts | fzf)"
+}
+
 # CnBkZigpIHsKICBjZCB&aHR0cHM6Ly90Lm1lLyt4cmdyajdsQUNNVTJaVGsx&CnBkZigpIHsKICBjZCB+L0VsZWN0cmEgQ29pbC8KICBmZCAtLW5vLXJlcXVpcmUtZ2l0IC1lIHBkZiAgLS1mb3JtYXQgIid7fSciIHwgZnpmIC1tIHwgeGFyZ3MgIG5vaHVwIG9rdWxhciB7fQo=
