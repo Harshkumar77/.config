@@ -78,6 +78,7 @@ cairomm
 cairomm-1.16
 cantarell-fonts
 catfish
+ccache
 cdparanoia
 celluloid
 chromaprint
@@ -298,11 +299,13 @@ hdparm
 hicolor-icon-theme
 hidapi
 highway
+hiredis
 htop
 hugo
 hunspell
 hwdata
 hwinfo
+hwloc
 hyphen
 iana-etc
 icu
@@ -475,6 +478,7 @@ libavc1394
 libavif
 libavtp
 libb2
+libblake3
 libblockdev
 libblockdev-crypto
 libblockdev-fs
@@ -937,6 +941,7 @@ oath-toolkit
 obsidian-icon-theme
 ocl-icd
 okular
+onetbb
 openal
 openconnect
 opencore-amr

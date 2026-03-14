@@ -135,7 +135,8 @@ twallz() {
 games() {
   opts='yetris
 2048-tui
-snake'
+snake
+myman'
   zsh -c "$(echo $opts | fzf)"
 }
 

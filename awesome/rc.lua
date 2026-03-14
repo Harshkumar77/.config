@@ -345,13 +345,7 @@ end,
 
     awful.key({ modkey, "Shift" }, "space", function () 
 		    -- Change to the previous layout
-		    awful.layout.inc(-1)
-
-		    -- Get the current layout's name after the change
-		    local current_layout = awful.layout.getname(awful.layout.get())
-		    
-		    -- Display a notification with the current layout
-	    	    awful.spawn("notify-send " .. current_layout)	
+        awful.spawn("rofi -show window") 
 		end,
 		{description = "select previous", group = "layout"}),
 
@@ -372,7 +366,7 @@ end,
               -- {description = "run prompt", group = "launcher"}),
 
     -- Xfce app finder Prompt 
-    awful.key({ modkey,           }, "r", function () awful.spawn("rofi -show drun") end,
+    awful.key({ modkey,           }, "r", function () awful.spawn("rofi -modes combi -show combi -combi-modes window,drun,run") end,
               {description = "", group = "launcher"}),
 
     awful.key({ modkey,"Shift"           }, "r", function () awful.spawn("rofi -show run") end,
@@ -382,7 +376,7 @@ end,
               {description = "", group = "launcher"}),
 
     
-    awful.key({ modkey,           }, "b", function () awful.spawn("firefox --new-window") end,
+    awful.key({ modkey,           }, "b", function () awful.spawn("firefox-beta --new-window") end,
               {description = "", group = "launcher"}),
 
     awful.key({ modkey,           }, "e", function () awful.spawn("rofimoji") end,
