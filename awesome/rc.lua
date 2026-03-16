@@ -5,6 +5,9 @@ pcall(require, "luarocks.loader")
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
+
+awful.spawn.with_shell( "picom")
+
 require("awful.autofocus")
 -- Widget and layout library
 local wibox = require("wibox")
@@ -73,7 +76,7 @@ awful.layout.layouts = {
     -- awful.layout.suit.fair.horizontal,
     -- awful.layout.suit.spiral.dwindle,
     -- awful.layout.suit.max.fullscreen,
-    -- awful.layout.suit.magnifier,
+    awful.layout.suit.magnifier,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
@@ -229,7 +232,27 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
-    awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
+    awful.key({ modkey,           }, "s",      function () 
+              local command = "picom-trans -g --current"
+              awful.spawn.easy_async_with_shell(command, function(stdout)
+                  local opacity = tonumber(stdout) or 100
+                  opacity = math.max(math.floor(opacity / 1.25), 10)
+                  awful.spawn("picom-trans --current --opacity " .. opacity)
+                  naughty.notify { text = "" .. opacity }
+              end)
+          end,
+              {description="show help", group="awesome"}),
+    awful.key({ modkey, "Shift"          }, "s",      function () 
+              local command = "picom-trans -g --current"
+              awful.spawn.easy_async_with_shell(command, function(stdout)
+                  local opacity = tonumber(stdout) or 100
+                  opacity = math.min(math.ceil(opacity * 1.25), 100)
+                  if opacity < 11 then
+                    opacity = 11
+                  end
+                  awful.spawn("picom-trans --current --opacity " .. opacity)
+              end)
+          end,
               {description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
               {description = "view previous", group = "tag"}),
@@ -365,7 +388,7 @@ end,
     -- awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
               -- {description = "run prompt", group = "launcher"}),
 
-    -- Xfce app finder Prompt 
+    -- Rofi
     awful.key({ modkey,           }, "r", function () awful.spawn("rofi -modes combi -show combi -combi-modes window,drun,run") end,
               {description = "", group = "launcher"}),
 

@@ -51,6 +51,7 @@ base
 base-devel
 bash
 bash-completion
+bat
 bc
 binutils
 bison
@@ -90,6 +91,7 @@ clipmenu
 clipnotify
 clucene
 cmake
+code
 colord
 compiler-rt
 compiler-rt20
@@ -140,6 +142,7 @@ ecryptfs-utils
 efibootmgr
 efivar
 electron37
+electron39
 elementary-icon-theme
 enchant
 engrampa
@@ -926,9 +929,13 @@ nfsidmap
 nftables
 ninja
 nm-connection-editor
+node-gyp
+nodejs
+nodejs-nopt
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+npm
 npth
 nspr
 nss
@@ -942,6 +949,7 @@ obsidian-icon-theme
 ocl-icd
 okular
 onetbb
+oniguruma
 openal
 openconnect
 opencore-amr
@@ -1177,6 +1185,7 @@ sdl3
 sdl3_ttf
 sdl_image
 sed
+semver
 serd
 shaderc
 shadow
@@ -1185,6 +1194,7 @@ signon-kwallet-extension
 signon-plugin-oauth2
 signon-ui
 signond
+simdjson
 slang
 smbclient
 snapd
@@ -1226,6 +1236,7 @@ tcl
 tdb
 telegram-desktop
 terminus-font
+tetrinet
 tevent
 texinfo
 thin-provisioning-tools
@@ -1482,6 +1493,7 @@ xorg-xmodmap
 xorg-xprop
 xorg-xrdb
 xorg-xset
+xorg-xwininfo
 xorgproto
 xsel
 xvidcore

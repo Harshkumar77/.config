@@ -3,6 +3,7 @@ android-studio
 ani-cli
 botan2
 celeste-client-bin
+curseofwar
 dclock
 firefox-beta-bin
 fontpreview-git
@@ -20,6 +21,7 @@ qbittorrent-enhanced-nox-bin
 raidrivecli
 snake-asm-bin
 syncthing-gtk
+tetrigo-bin
 tiv
 vifm-devicons-git
 vifmimg-git
