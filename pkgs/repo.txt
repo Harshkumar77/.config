@@ -251,6 +251,7 @@ gpgmepp
 gpm
 graphene
 graphite
+graphviz
 grep
 groff
 grub
@@ -282,6 +283,7 @@ gtkmm-4.0
 gtkmm3
 gtksourceview3
 gtksourceview4
+gts
 gufw
 guile
 gupnp
@@ -915,6 +917,7 @@ nautilus-python
 ncurses
 neon
 neovim
+netpbm
 nettle
 network-manager-applet
 networkmanager
@@ -1124,6 +1127,7 @@ qbittorrent
 qca-qt6
 qpdf
 qqc2-desktop-style
+qqwing
 qrencode
 qt5-base
 qt5-declarative
@@ -1289,6 +1293,7 @@ usbutils
 util-linux
 util-linux-libs
 v4l-utils
+vala
 vapoursynth
 vid.stab
 viewnior

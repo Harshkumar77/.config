@@ -20,6 +20,7 @@ pidgin
 qbittorrent-enhanced-nox-bin
 raidrivecli
 snake-asm-bin
+sudoku-gtk3
 syncthing-gtk
 tetrigo-bin
 tiv

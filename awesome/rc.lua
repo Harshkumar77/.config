@@ -238,7 +238,6 @@ globalkeys = gears.table.join(
                   local opacity = tonumber(stdout) or 100
                   opacity = math.max(math.floor(opacity / 1.25), 10)
                   awful.spawn("picom-trans --current --opacity " .. opacity)
-                  naughty.notify { text = "" .. opacity }
               end)
           end,
               {description="show help", group="awesome"}),
@@ -324,8 +323,8 @@ globalkeys = gears.table.join(
 		    local current_layout = awful.layout.getname(awful.layout.get())
 		    
 		    -- Display a notification with the current layout
-		    --naughty.notify { text = "" .. current_layout }
-	    	    awful.spawn("notify-send " .. current_layout)	
+		    naughty.notify { text = "" .. current_layout }
+	  --  	    awful.spawn("notify-send " .. current_layout)	
 		end,
 		{description = "select next", group = "layout"}),
 
@@ -357,8 +356,7 @@ globalkeys = gears.table.join(
         -- Set the layout if the selected layout is valid
         if layouts[layout_name] then
             awful.layout.set(layouts[layout_name])
---            naughty.notify { text = "" .. layout_name }
-	    awful.spawn("notify-send " .. layout_name)	
+            naughty.notify { text = "" .. layout_name }
         else
             naughty.notify { text = "Invalid layout selected." }
         end
