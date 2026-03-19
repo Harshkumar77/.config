@@ -262,7 +262,7 @@ root.buttons(gears.table.join(
 -- }}}
 
 
-funkyModTab = true
+funkyModTab = 0
 -- {{{ Key bindings
 globalkeys = gears.table.join(
 	awful.key({ modkey }, "s", function()
@@ -314,12 +314,18 @@ globalkeys = gears.table.join(
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 	awful.key({ modkey, "Control" }, "Tab", function()
-		funkyModTab = not funkyModTab
+		funkyModTab = funkyModTab + 1
+    if funkyModTab == 2 then
+     funkyModTab = -1 
+    end
 	end, { description = "go back", group = "client" }),
 	awful.key({ modkey }, "Tab", function()
-		if funkyModTab then
+		if funkyModTab == 1 then
 			awful.client.swap.byidx(1)
 			awful.client.focus.byidx(-1)
+    elseif funkyModTab == -1 then
+			awful.client.swap.byidx(-1)
+			awful.client.focus.byidx( 1)
 		else
 			awful.client.focus.history.previous()
 			if client.focus then
