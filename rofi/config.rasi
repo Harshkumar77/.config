@@ -1,6 +1,9 @@
-@theme "fancy"
+//@theme "dmenu"
 
 
 configuration {
 font: "Noto Color Emoji 12";
+mathcing: "fuzzy";
 }
+
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"

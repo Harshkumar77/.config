@@ -330,6 +330,13 @@ globalkeys = gears.table.join(
     if funkyModTab == 2 then
      funkyModTab = -1 
     end
+		if funkyModTab == 1 then
+      naughty.notify({ text = "funkyModTab: forward" })
+    elseif funkyModTab == -1 then
+      naughty.notify({ text = "funkyModTab: backward" })
+		else
+      naughty.notify({ text = "funkyModTab: disabled" })
+		end
 	end, { description = "toggle funky mod tab", group = "client" }),
 	awful.key({ modkey }, "Tab", function()
 		if funkyModTab == 1 then
@@ -439,7 +446,7 @@ globalkeys = gears.table.join(
 
 	-- Rofi
 	awful.key({ modkey }, "space", function()
-		awful.spawn("rofi -modes combi -show combi -combi-modes window,drun,layout:~/.config/awesome/rofi-selector2.sh,run")
+		awful.spawn("rofi -title '' -modes combi -show combi -combi-modes window,drun,layout:~/.config/awesome/rofi-selector2.sh,run")
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey, "Shift" }, "r", function()
