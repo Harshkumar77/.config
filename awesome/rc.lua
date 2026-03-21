@@ -314,11 +314,23 @@ globalkeys = gears.table.join(
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 	awful.key({ modkey, "Control" }, "Tab", function()
+    -- local s = awful.screen.focused()
+    -- local clients = awful.client.tiled(s)
+    -- local current = client.focus
+    -- local last = awful.client.focus.history.get(s, 1)
+    -- local current_idx, last_idx
+    -- for i, c in ipairs(clients) do
+    --     if c == current then current_idx = i end
+    --     if c == last then last_idx = i end
+    -- end
+    -- naughty.notify({ text = "" ..  current_idx})
+    -- naughty.notify({ text = "" ..  last_idx})
+
 		funkyModTab = funkyModTab + 1
     if funkyModTab == 2 then
      funkyModTab = -1 
     end
-	end, { description = "go back", group = "client" }),
+	end, { description = "toggle funky mod tab", group = "client" }),
 	awful.key({ modkey }, "Tab", function()
 		if funkyModTab == 1 then
 			awful.client.swap.byidx(1)
@@ -359,54 +371,54 @@ globalkeys = gears.table.join(
 	awful.key({ modkey, "Control" }, "l", function()
 		awful.tag.incncol(-1, nil, true)
 	end, { description = "decrease the number of columns", group = "layout" }),
-	awful.key({ modkey }, "space", function()
-		-- Change to the next layout
-		awful.layout.inc(1)
-
-		-- Get the current layout's name after the change
-		local current_layout = awful.layout.getname(awful.layout.get())
-
-		-- Display a notification with the current layout
-		naughty.notify({ text = "" .. current_layout })
-		--  	    awful.spawn("notify-send " .. current_layout)
-	end, { description = "select next", group = "layout" }),
-
-	awful.key({ modkey, "Control" }, "space", function()
-		local layouts = {
-			["floating"] = awful.layout.suit.floating,
-			["tile"] = awful.layout.suit.tile,
-			["tile.left"] = awful.layout.suit.tile.left,
-			["tile.bottom"] = awful.layout.suit.tile.bottom,
-			["tile.top"] = awful.layout.suit.tile.top,
-			["fair"] = awful.layout.suit.fair,
-			["fair.horizontal"] = awful.layout.suit.fair.horizontal,
-			["spiral"] = awful.layout.suit.spiral,
-			["spiral.dwindle"] = awful.layout.suit.spiral.dwindle,
-			["max"] = awful.layout.suit.max,
-			["max.fullscreen"] = awful.layout.suit.max.fullscreen,
-			["magnifier"] = awful.layout.suit.magnifier,
-			["corner.nw"] = awful.layout.suit.corner.nw,
-			["corner.ne"] = awful.layout.suit.corner.ne,
-			["corner.sw"] = awful.layout.suit.corner.sw,
-			["corner.se"] = awful.layout.suit.corner.se,
-		}
-
-		awful.spawn.easy_async(
-			"/home/giga/.config/awesome/rofi-selector.sh",
-			function(stdout, stderr, reason, exit_code)
-				-- Trim any whitespace from the output
-				local layout_name = stdout:gsub("%s+", "")
-
-				-- Set the layout if the selected layout is valid
-				if layouts[layout_name] then
-					awful.layout.set(layouts[layout_name])
-					naughty.notify({ text = "" .. layout_name })
-				else
-					naughty.notify({ text = "Invalid layout selected." })
-				end
-			end
-		)
-	end, { description = "select next", group = "layout" }),
+	-- awful.key({ modkey }, "space", function()
+	-- 	-- Change to the next layout
+	-- 	awful.layout.inc(1)
+	--
+	-- 	-- Get the current layout's name after the change
+	-- 	local current_layout = awful.layout.getname(awful.layout.get())
+	--
+	-- 	-- Display a notification with the current layout
+	-- 	naughty.notify({ text = "" .. current_layout })
+	-- 	--  	    awful.spawn("notify-send " .. current_layout)
+	-- end, { description = "select next", group = "layout" }),
+	--
+	-- awful.key({ modkey, "Control" }, "space", function()
+	-- 	local layouts = {
+	-- 		["floating"] = awful.layout.suit.floating,
+	-- 		["tile"] = awful.layout.suit.tile,
+	-- 		["tile.left"] = awful.layout.suit.tile.left,
+	-- 		["tile.bottom"] = awful.layout.suit.tile.bottom,
+	-- 		["tile.top"] = awful.layout.suit.tile.top,
+	-- 		["fair"] = awful.layout.suit.fair,
+	-- 		["fair.horizontal"] = awful.layout.suit.fair.horizontal,
+	-- 		["spiral"] = awful.layout.suit.spiral,
+	-- 		["spiral.dwindle"] = awful.layout.suit.spiral.dwindle,
+	-- 		["max"] = awful.layout.suit.max,
+	-- 		["max.fullscreen"] = awful.layout.suit.max.fullscreen,
+	-- 		["magnifier"] = awful.layout.suit.magnifier,
+	-- 		["corner.nw"] = awful.layout.suit.corner.nw,
+	-- 		["corner.ne"] = awful.layout.suit.corner.ne,
+	-- 		["corner.sw"] = awful.layout.suit.corner.sw,
+	-- 		["corner.se"] = awful.layout.suit.corner.se,
+	-- 	}
+	--
+	-- 	awful.spawn.easy_async(
+	-- 		"/home/giga/.config/awesome/rofi-selector.sh",
+	-- 		function(stdout, stderr, reason, exit_code)
+	-- 			-- Trim any whitespace from the output
+	-- 			local layout_name = stdout:gsub("%s+", "")
+	--
+	-- 			-- Set the layout if the selected layout is valid
+	-- 			if layouts[layout_name] then
+	-- 				awful.layout.set(layouts[layout_name])
+	-- 				naughty.notify({ text = "" .. layout_name })
+	-- 			else
+	-- 				naughty.notify({ text = "Invalid layout selected." })
+	-- 			end
+	-- 		end
+	-- 	)
+	-- end, { description = "select next", group = "layout" }),
 
 	awful.key({ modkey, "Shift" }, "space", function()
 		-- Change to the previous layout
@@ -426,8 +438,8 @@ globalkeys = gears.table.join(
 	-- {description = "run prompt", group = "launcher"}),
 
 	-- Rofi
-	awful.key({ modkey }, "r", function()
-		awful.spawn("rofi -modes combi -show combi -combi-modes window,drun,run")
+	awful.key({ modkey }, "space", function()
+		awful.spawn("rofi -modes combi -show combi -combi-modes window,drun,layout:~/.config/awesome/rofi-selector2.sh,run")
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey, "Shift" }, "r", function()

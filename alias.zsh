@@ -96,6 +96,7 @@ anime-latest() {
 }
 
 yt() {
+	pipx upgrade yt-dlp
   nohup mpv "$(copyq clipboard)"
 }
 
