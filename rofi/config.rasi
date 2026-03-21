@@ -1,8 +1,5 @@
-//@theme "dmenu"
-
-
 configuration {
-font: "Noto Color Emoji 12";
+// font: "Noto Color Emoji 12";
 mathcing: "fuzzy";
 }
 
