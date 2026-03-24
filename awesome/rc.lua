@@ -9,9 +9,7 @@ local awful = require("awful")
 awful.spawn.with_shell("picom")
 awful.spawn("redshift -x")
 awful.spawn("redshift -O 3500")
-awful.spawn.with_shell("~/.config/scripts/backup.sh")
-
-
+awful.spawn.with_shell("alacritty --command ~/.config/scripts/backup.sh")
 
 require("awful.autofocus")
 -- Widget and layout library
