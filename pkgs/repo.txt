@@ -1250,6 +1250,7 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
 thunderbird
+tig
 timeshift
 timeshift-autosnap-manjaro
 tinysparql

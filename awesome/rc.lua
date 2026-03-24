@@ -56,6 +56,8 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/home/giga/.config/awesome/" .. "zenburn/theme.lua")
 
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
+
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
 editor = os.getenv("EDITOR") or "nano"
@@ -314,18 +316,6 @@ globalkeys = gears.table.join(
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 	awful.key({ modkey, "Control" }, "Tab", function()
-    -- local s = awful.screen.focused()
-    -- local clients = awful.client.tiled(s)
-    -- local current = client.focus
-    -- local last = awful.client.focus.history.get(s, 1)
-    -- local current_idx, last_idx
-    -- for i, c in ipairs(clients) do
-    --     if c == current then current_idx = i end
-    --     if c == last then last_idx = i end
-    -- end
-    -- naughty.notify({ text = "" ..  current_idx})
-    -- naughty.notify({ text = "" ..  last_idx})
-
 		funkyModTab = funkyModTab + 1
     if funkyModTab == 2 then
      funkyModTab = -1 
@@ -338,7 +328,7 @@ globalkeys = gears.table.join(
       naughty.notify({ text = "funkyModTab: disabled" })
 		end
 	end, { description = "toggle funky mod tab", group = "client" }),
-	awful.key({ modkey }, "Tab", function()
+	awful.key({ "Tab" }, "Tab", function()
 		if funkyModTab == 1 then
 			awful.client.swap.byidx(1)
 			awful.client.focus.byidx(-1)
