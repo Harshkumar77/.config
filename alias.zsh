@@ -10,6 +10,7 @@ alias xfce-launch="killall awesome && xfwm4"
 
 alias vlc='nohup vlc'
 alias mpv='nohup mpv'
+alias bmpv='/bin/mpv'
 
 
 alias extract-urls='xidel -e "//a/@href'
@@ -78,7 +79,7 @@ mpv-audio-shuffle() {
 
 mpv-video() {
   file_name=$(uuidgen)
-  (fd -e mkv -e mp4 -e mp3) > playlist.m3u
+  (fd -e mkv -e mp4 -e mp3 -e mkv.part -e mp3.part -e mp4.part) > playlist.m3u
   xdg-open playlist.m3u
   sleep 3
   rm playlist.m3u

@@ -169,9 +169,7 @@ fftw
 file
 filesystem
 findutils
-firefox
 flac
-flameshot
 flatpak
 flex
 fluidsynth
