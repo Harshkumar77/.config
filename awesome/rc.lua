@@ -76,10 +76,10 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
+	awful.layout.suit.corner.nw,
 	awful.layout.suit.fair,
 	awful.layout.suit.spiral,
 	awful.layout.suit.max,
-	awful.layout.suit.corner.nw,
 	awful.layout.suit.floating,
 	awful.layout.suit.tile,
 	awful.layout.suit.tile.top,
@@ -483,7 +483,7 @@ globalkeys = gears.table.join(
 )
 
 clientkeys = gears.table.join(
-	awful.key({ modkey }, "f", function(c)
+	awful.key({ modkey, "Shift" }, "f", function(c)
 		c.fullscreen = not c.fullscreen
 		c:raise()
 	end, { description = "toggle fullscreen", group = "client" }),
