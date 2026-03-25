@@ -117,6 +117,7 @@ vlc-video-shuffle() {
 
 alias play-song='mpv ~/Music/Song/Song.m3u --shuffle --no-save-position-on-quit'
 alias play-long='mpv ~/Music/Long/Long.m3u --shuffle --no-save-position-on-quit'
+alias play-long-on-start='mpv ~/Music/Long/Long.m3u --pause --shuffle --no-save-position-on-quit'
 
 
 
