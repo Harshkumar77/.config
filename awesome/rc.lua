@@ -234,26 +234,26 @@ awful.screen.connect_for_each_screen(function(s)
 	})
 
 	-- Create the wibox
-	 s.mywibox = awful.wibar({ position = "bottom", screen = s })
-	
-	 -- Add widgets to the wibox
-	 s.mywibox:setup {
-	     layout = wibox.layout.align.horizontal,
-	     { -- Left widgets
-	         layout = wibox.layout.fixed.horizontal,
-	         mylauncher,
-	         s.mytaglist,
-	         s.mypromptbox,
-	     },
-	     s.mytasklist, -- Middle widget
-	     { -- Right widgets
-	         layout = wibox.layout.fixed.horizontal,
-	         mykeyboardlayout,
-	         wibox.widget.systray(),
-	         mytextclock,
-	         s.mylayoutbox,
-	     },
-	 }
+	s.mywibox = awful.wibar({ position = "top", screen = s })
+
+	-- Add widgets to the wibox
+	s.mywibox:setup({
+		layout = wibox.layout.align.horizontal,
+		{ -- Left widgets
+			layout = wibox.layout.fixed.horizontal,
+			mylauncher,
+			s.mytaglist,
+			s.mypromptbox,
+		},
+		s.mytasklist, -- Middle widget
+		{ -- Right widgets
+			layout = wibox.layout.fixed.horizontal,
+			mykeyboardlayout,
+			wibox.widget.systray(),
+			mytextclock,
+			s.mylayoutbox,
+		},
+	})
 end)
 -- }}}
 
@@ -266,7 +266,6 @@ root.buttons(gears.table.join(
 	awful.button({}, 5, awful.tag.viewprev)
 ))
 -- }}}
-
 
 funkyModTab = 0
 -- {{{ Key bindings
@@ -321,24 +320,24 @@ globalkeys = gears.table.join(
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 	awful.key({ modkey, "Control" }, "Tab", function()
 		funkyModTab = funkyModTab + 1
-    if funkyModTab == 2 then
-     funkyModTab = -1 
-    end
+		if funkyModTab == 2 then
+			funkyModTab = -1
+		end
 		if funkyModTab == 1 then
-      naughty.notify({ text = "funkyModTab: forward" })
-    elseif funkyModTab == -1 then
-      naughty.notify({ text = "funkyModTab: backward" })
+			naughty.notify({ text = "funkyModTab: forward" })
+		elseif funkyModTab == -1 then
+			naughty.notify({ text = "funkyModTab: backward" })
 		else
-      naughty.notify({ text = "funkyModTab: disabled" })
+			naughty.notify({ text = "funkyModTab: disabled" })
 		end
 	end, { description = "toggle funky mod tab", group = "client" }),
 	awful.key({ "Tab" }, "Tab", function()
 		if funkyModTab == 1 then
 			awful.client.swap.byidx(1)
 			awful.client.focus.byidx(-1)
-    elseif funkyModTab == -1 then
+		elseif funkyModTab == -1 then
 			awful.client.swap.byidx(-1)
-			awful.client.focus.byidx( 1)
+			awful.client.focus.byidx(1)
 		else
 			awful.client.focus.history.previous()
 			if client.focus then
@@ -440,7 +439,9 @@ globalkeys = gears.table.join(
 
 	-- Rofi
 	awful.key({ modkey }, "space", function()
-		awful.spawn("rofi -title '' -modes combi -show combi -combi-modes window,drun,folders:~/.config/awesome/pdf-selector.sh,layout:~/.config/awesome/rofi-selector2.sh,run")
+		awful.spawn(
+			"rofi -title '' -modes combi -show combi -combi-modes window,drun,folders:~/.config/awesome/pdf-selector.sh,layout:~/.config/awesome/rofi-selector2.sh,run"
+		)
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey, "Shift" }, "r", function()
@@ -644,8 +645,7 @@ awful.rules.rules = {
 	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = false } },
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
-	{ rule = { class = "mpv" },
-	properties = { screen = 1, tag = "5" } },
+	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "5" } },
 }
 -- }}}
 
