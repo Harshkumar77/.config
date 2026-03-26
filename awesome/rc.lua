@@ -440,7 +440,7 @@ globalkeys = gears.table.join(
 	-- Rofi
 	awful.key({ modkey }, "space", function()
 		awful.spawn(
-			"rofi -title '' -modes combi -show combi -combi-modes window,drun,folders:~/.config/awesome/pdf-selector.sh,layout:~/.config/awesome/rofi-selector2.sh,run"
+			"rofi -title '' -modes combi -show combi -combi-modes window,drun,folders:~/.config/awesome/pdf-selector.sh,power-menu:rofi-power-menu,layout:~/.config/awesome/rofi-selector2.sh,run"
 		)
 	end, { description = "", group = "launcher" }),
 
