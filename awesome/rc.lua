@@ -533,7 +533,7 @@ for i = 1, 5 do
 	globalkeys = gears.table.join(
 		globalkeys,
 		-- View tag only.
-		awful.key({ modkey }, "#" .. i + 9, function()
+		awful.key({ modkey }, keysTags:sub(i,i), function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
 			if tag then
@@ -541,7 +541,7 @@ for i = 1, 5 do
 			end
 		end, { description = "view tag #" .. i, group = "tag" }),
 		-- Toggle tag display.
-		awful.key({ modkey }, keysTags:sub(i,i), function()
+		awful.key({ modkey, "Shift" }, "#" .. i + 9, function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
 			if tag then
@@ -549,7 +549,7 @@ for i = 1, 5 do
 			end
 		end, { description = "toggle tag #" .. i, group = "tag" }),
 		-- Move client to tag.
-		awful.key({ modkey, "Shift" }, "#" .. i + 9, function()
+		awful.key({ modkey, "Shift"}, keysTags:sub(i,i), function()
 			if client.focus then
 				local tag = client.focus.screen.tags[i]
 				if tag then
@@ -558,7 +558,7 @@ for i = 1, 5 do
 			end
 		end, { description = "move focused client to tag #" .. i, group = "tag" }),
 		-- Toggle tag on focused client.
-		awful.key({ modkey, "Shift" }, keysTags:sub(i,i), function()
+		awful.key({ modkey }, "#" .. i + 9, function()
 			if client.focus then
 				local tag = client.focus.screen.tags[i]
 				if tag then
