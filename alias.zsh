@@ -1,8 +1,8 @@
 
 rmf() {
-        fd --maxdepth 1 | fzf -m --header="Select files to delete" | while IFS= read -r file; do
-            rm -rf -- "$file"
-        done
+    fd --maxdepth 1 | fzf -m --header="Select files to delete" | while IFS= read -r file; do
+        rm -rf -- "$file"
+    done
 }
 
 alias awesome-launch="killall xfwm4 && awesome"
@@ -21,98 +21,98 @@ alias wallpaper='sxiv ~/.config/wallpaper -qbf -s f -S 3'
 alias cdd='zi'
 
 download-songs() {
-  mkdir ~/Music/Song/ -p
-	cd ~/Music/Song
-	pipx upgrade yt-dlp
-	yt-dlp \
-	  -x \
-	  --audio-format mp3 \
-	  --audio-quality 0 \
-	  --embed-metadata \
-	  --embed-thumbnail \
-	  --convert-thumbnails jpg \
-	  --add-metadata \
-	  --sponsorblock-remove all \
-	  --sleep-interval 5 --max-sleep-interval 10 \
-    --download-archive archive.txt \
-    "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf"
-  echo "#EXTM3U" > Song.m3u
-  fd -e mp3 >> Song.m3u
+    mkdir ~/Music/Song/ -p
+    cd ~/Music/Song
+    pipx upgrade yt-dlp
+    yt-dlp \
+        -x \
+        --audio-format mp3 \
+        --audio-quality 0 \
+        --embed-metadata \
+        --embed-thumbnail \
+        --convert-thumbnails jpg \
+        --add-metadata \
+        --sponsorblock-remove all \
+        --sleep-interval 5 --max-sleep-interval 10 \
+        --download-archive archive.txt \
+        "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf"
+    echo "#EXTM3U" > Song.m3u
+    fd -e mp3 >> Song.m3u
 
-  mkdir ~/Music/Long/ -p
-	cd ~/Music/Long
-	pipx upgrade yt-dlp
-	yt-dlp \
-	  -x \
-	  --audio-format mp3 \
-	  --audio-quality 0 \
-	  --embed-metadata \
-	  --embed-thumbnail \
-	  --convert-thumbnails jpg \
-	  --add-metadata \
-	  --sponsorblock-remove all \
-	  --sleep-interval 5 --max-sleep-interval 10 \
-    --download-archive archive.txt \
-    "https://youtube.com/playlist?list=PLuDbTR3nQ_ZUMRQGIydDRGe3lheNrPkYj&si=fC09ZYX__t0n10Tf"
-  echo "#EXTM3U" > Long.m3u
-  fd -e mp3 >> Long.m3u
+    mkdir ~/Music/Long/ -p
+    cd ~/Music/Long
+    pipx upgrade yt-dlp
+    yt-dlp \
+        -x \
+        --audio-format mp3 \
+        --audio-quality 0 \
+        --embed-metadata \
+        --embed-thumbnail \
+        --convert-thumbnails jpg \
+        --add-metadata \
+        --sponsorblock-remove all \
+        --sleep-interval 5 --max-sleep-interval 10 \
+        --download-archive archive.txt \
+        "https://youtube.com/playlist?list=PLuDbTR3nQ_ZUMRQGIydDRGe3lheNrPkYj&si=fC09ZYX__t0n10Tf"
+    echo "#EXTM3U" > Long.m3u
+    fd -e mp3 >> Long.m3u
 
-  rm *.temp.*    
+    rm *.temp.*
 
 }
 
 vlc-audio() {
-	fd -e mp3 -X nohup vlc &
+    fd -e mp3 -X nohup vlc &
 }
 
 vlc-audio-shuffle() {
-	fd -e mp3 -X nohup vlc --random &
+    fd -e mp3 -X nohup vlc --random &
 }
 
 mpv-audio() {
-	fd -e mp3 -X nohup mpv &
+    fd -e mp3 -X nohup mpv &
 }
 
 mpv-audio-shuffle() {
-	fd -e mp3 -X nohup mpv --shuffle &
+    fd -e mp3 -X nohup mpv --shuffle &
 }
 
 mpv-video() {
-  file_name=$(uuidgen)
-  (fd -e mkv -e mp4 -e mp3 -e mkv.part -e mp3.part -e mp4.part) > playlist.m3u
-  xdg-open playlist.m3u
-  sleep 3
-  rm playlist.m3u
-  exit
+    file_name=$(uuidgen)
+    (fd -e mkv -e mp4 -e mp3 -e mkv.part -e mp3.part -e mp4.part) > playlist.m3u
+    xdg-open playlist.m3u
+    sleep 3
+    rm playlist.m3u
+    exit
 }
 
 anime-latest() {
-  file_name=$(uuidgen)
-  cd ~/Downloads/Organised\ Episodes
-  (fd -e mkv -e mp4 -X ls -t) > playlist.m3u
-  xdg-open playlist.m3u
-  sleep 3
-  rm playlist.m3u
-  exit
+    file_name=$(uuidgen)
+    cd ~/Downloads/Organised\ Episodes
+    (fd -e mkv -e mp4 -X ls -t) > playlist.m3u
+    xdg-open playlist.m3u
+    sleep 3
+    rm playlist.m3u
+    exit
 }
 
 yt() {
-	pipx upgrade yt-dlp
-  nohup mpv "$(copyq clipboard)"
+    pipx upgrade yt-dlp
+    nohup mpv "$(copyq clipboard)"
 }
 
 mpv-video-shuffle() {
-	fd -e mkv -e mp4 -X nohup mpv --shuffle &
+    fd -e mkv -e mp4 -X nohup mpv --shuffle &
 }
 
 vlc-video() {
-  file_name=$(uuidgen)
-  fd -e mkv -e mp4 -a > /tmp/$file_name.m3u
-  nohup vlc /tmp/$file_name.m3u
+    file_name=$(uuidgen)
+    fd -e mkv -e mp4 -a > /tmp/$file_name.m3u
+    nohup vlc /tmp/$file_name.m3u
 }
 
 vlc-video-shuffle() {
-	fd -e mkv -e mp4 -e mp3 -X nohup vlc --random &
+    fd -e mkv -e mp4 -e mp3 -X nohup vlc --random &
 }
 
 alias play-song='mpv ~/Music/Song/Song.m3u --shuffle --no-save-position-on-quit'
@@ -122,25 +122,30 @@ alias play-long-on-start='mpv ~/Music/Long/Long.m3u --pause --shuffle --no-save-
 
 
 pdf() {
-  cd ~/Electra Coil/
-  fd --no-require-git -e pdf  --format "'{}'" | fzf -m | xargs  nohup okular {}
+    cd ~/Electra Coil/
+    fd --no-require-git -e pdf  --format "'{}'" | fzf -m | xargs  nohup okular {}
 }
 
 twall() {
-  wallpaper_selected="$(fd . --absolute-path ~/.config/wallpaper | shuf | tail -1)"
-  tiv -w $(($COLUMNS*2)) "$wallpaper_selected"
+    wallpaper_selected="$(fd . --absolute-path ~/.config/wallpaper | shuf | tail -1)"
+    tiv -w $(($COLUMNS*2)) "$wallpaper_selected"
 }
 twallz() {
-  wallpaper_selected="$(fd . --absolute-path ~/.config/wallpaper | shuf | tail -1)"
-  tiv -w $(($COLUMNS)) "$wallpaper_selected"
+    wallpaper_selected="$(fd . --absolute-path ~/.config/wallpaper | shuf | tail -1)"
+    tiv -w $(($COLUMNS)) "$wallpaper_selected"
 }
 
 games() {
-  opts='yetris
+    opts='yetris
 2048-tui
 snake
 myman'
-  zsh -c "$(echo $opts | fzf)"
+    zsh -c "$(echo $opts | fzf)"
+}
+
+edit-config() {
+    cd ~/.config
+    nvim -c "Telescope fd"
 }
 
 # CnBkZigpIHsKICBjZCB&aHR0cHM6Ly90Lm1lLyt4cmdyajdsQUNNVTJaVGsx&CnBkZigpIHsKICBjZCB+L0VsZWN0cmEgQ29pbC8KICBmZCAtLW5vLXJlcXVpcmUtZ2l0IC1lIHBkZiAgLS1mb3JtYXQgIid7fSciIHwgZnpmIC1tIHwgeGFyZ3MgIG5vaHVwIG9rdWxhciB7fQo=

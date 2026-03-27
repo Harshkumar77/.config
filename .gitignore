@@ -30,7 +30,6 @@ picom/
 pulse/
 qt5ct/
 redshift.conf
-scripts/
 syncthing-gtk/
 user-dirs.dirs
 user-dirs.locale
