@@ -9,8 +9,7 @@ local awful = require("awful")
 
 awful.spawn.with_shell("picom")
 awful.spawn("redshift -x")
-awful.spawn("redshift -O 3500")
-awful.spawn("redshift -O 3500")
+awful.spawn("redshift -O 8000")
 awful.spawn.with_shell("~/.config/scripts/backup.sh")
 -- awful.spawn.with_shell("~/.config/awesome/Long.sh")
 
@@ -333,7 +332,7 @@ globalkeys = gears.table.join(
 		elseif funkyModTab == -1 then
 			naughty.notify({ text = "funkyModTab: backward" })
 		elseif funkyModTab == 2 then
-			awful.client.focus.byidx(1)
+			naughty.notify({ text = "funkyModTab: cyclic" })
 		else
 			naughty.notify({ text = "funkyModTab: disabled" })
 		end
@@ -344,6 +343,9 @@ globalkeys = gears.table.join(
 			awful.client.focus.byidx(-1)
 		elseif funkyModTab == -1 then
 			awful.client.swap.byidx(-1)
+			awful.client.focus.byidx(1)
+
+    elseif funkyModTab == 2 then
 			awful.client.focus.byidx(1)
 		else
 			awful.client.focus.history.previous()
