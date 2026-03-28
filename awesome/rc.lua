@@ -272,7 +272,7 @@ root.buttons(gears.table.join(
 ))
 -- }}}
 
-funkyModTab = 0
+FunkyModTab = 2
 -- {{{ Key bindings
 globalkeys = gears.table.join(
 	awful.key({ modkey }, "=", function()
@@ -324,29 +324,29 @@ globalkeys = gears.table.join(
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 	awful.key({ modkey, "Control" }, "Tab", function()
-		funkyModTab = funkyModTab + 1
-		if funkyModTab == 3 then
-			funkyModTab = -1
+		FunkyModTab = FunkyModTab + 1
+		if FunkyModTab == 3 then
+			FunkyModTab = -1
 		end
-		if funkyModTab == 1 then
+		if FunkyModTab == 1 then
 			naughty.notify({ text = "funkyModTab: forward" })
-		elseif funkyModTab == -1 then
+		elseif FunkyModTab == -1 then
 			naughty.notify({ text = "funkyModTab: backward" })
-		elseif funkyModTab == 2 then
+		elseif FunkyModTab == 2 then
 			naughty.notify({ text = "funkyModTab: cyclic" })
 		else
 			naughty.notify({ text = "funkyModTab: disabled" })
 		end
 	end, { description = "toggle funky mod tab", group = "client" }),
 	awful.key({ "Tab" }, "Tab", function()
-		if funkyModTab == 1 then
+		if FunkyModTab == 1 then
 			awful.client.swap.byidx(1)
 			awful.client.focus.byidx(-1)
-		elseif funkyModTab == -1 then
+		elseif FunkyModTab == -1 then
 			awful.client.swap.byidx(-1)
 			awful.client.focus.byidx(1)
 
-    elseif funkyModTab == 2 then
+    elseif FunkyModTab == 2 then
 			awful.client.focus.byidx(1)
 		else
 			awful.client.focus.history.previous()
