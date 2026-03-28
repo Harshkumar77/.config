@@ -1,3 +1,4 @@
+---@diagnostic disable: lowercase-global
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
@@ -199,10 +200,10 @@ awful.screen.connect_for_each_screen(function(s)
 	set_wallpaper(s)
 
 	-- Each screen has its own tag table.
-  local names = { "1", "browser", "3", "fullscreen", "todo" }
-  local l = awful.layout.suit  -- Just to save some typing: use an alias.
-  local layouts = { l.corner.nw, l.corner.nw, l.corner.nw, l.max.fullscreen, l.fair}
-  awful.tag(names, s, layouts)
+	local names = { "1", "browser", "3", "fullscreen", "todo" }
+	local l = awful.layout.suit -- Just to save some typing: use an alias.
+	local layouts = { l.corner.nw, l.corner.nw, l.corner.nw, l.max.fullscreen, l.fair }
+	awful.tag(names, s, layouts)
 
 	-- Create a promptbox for each screen
 	s.mypromptbox = awful.widget.prompt()
@@ -282,7 +283,7 @@ globalkeys = gears.table.join(
 			awful.spawn("picom-trans --current --opacity " .. opacity)
 		end)
 	end, { description = "show help", group = "awesome" }),
-	awful.key({ modkey  }, "-", function()
+	awful.key({ modkey }, "-", function()
 		local command = "picom-trans -g --current"
 		awful.spawn.easy_async_with_shell(command, function(stdout)
 			local opacity = tonumber(stdout) or 100
@@ -324,13 +325,15 @@ globalkeys = gears.table.join(
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 	awful.key({ modkey, "Control" }, "Tab", function()
 		funkyModTab = funkyModTab + 1
-		if funkyModTab == 2 then
+		if funkyModTab == 3 then
 			funkyModTab = -1
 		end
 		if funkyModTab == 1 then
 			naughty.notify({ text = "funkyModTab: forward" })
 		elseif funkyModTab == -1 then
 			naughty.notify({ text = "funkyModTab: backward" })
+		elseif funkyModTab == 2 then
+			awful.client.focus.byidx(1)
 		else
 			naughty.notify({ text = "funkyModTab: disabled" })
 		end
@@ -537,7 +540,7 @@ for i = 1, 5 do
 	globalkeys = gears.table.join(
 		globalkeys,
 		-- View tag only.
-		awful.key({ modkey }, keysTags:sub(i,i), function()
+		awful.key({ modkey }, keysTags:sub(i, i), function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
 			if tag then
@@ -553,7 +556,7 @@ for i = 1, 5 do
 			end
 		end, { description = "toggle tag #" .. i, group = "tag" }),
 		-- Move client to tag.
-		awful.key({ modkey, "Shift"}, keysTags:sub(i,i), function()
+		awful.key({ modkey, "Shift" }, keysTags:sub(i, i), function()
 			if client.focus then
 				local tag = client.focus.screen.tags[i]
 				if tag then
