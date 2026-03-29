@@ -1,5 +1,6 @@
 require "nvchad.mappings"
-require "telescope"
+
+-- require "telescope"
 
 -- add yours here
 
@@ -9,5 +10,8 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 -- map("i", "kj", "<ESC>")
 vim.cmd("source ~/.config/.vimrc")
 
+
+
 map("n", "<Space>fk", "<cmd> Telescope keymaps<cr>", {desc = "Telescope find keymaps"})
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("n", "<Space><Space>", "<cmd> Telescope buffers<cr>", {desc = "Telescope opened buffers"})
+map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

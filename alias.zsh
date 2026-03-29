@@ -1,4 +1,3 @@
-
 rmf() {
     fd --maxdepth 1 | fzf -m --header="Select files to delete" | while IFS= read -r file; do
         rm -rf -- "$file"
