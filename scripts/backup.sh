@@ -5,16 +5,13 @@ backupTime=$(cat "$backupTimeRaw")
 echo $backupTime
 
 hasOneHourPassed=`node -e "
-            const diff = (Number(new Date()) - Number(new Date('$backupTime')))/(60*60*1000);
+            const diff = (
+              ( Number(new Date()) - Number(new Date('$backupTime')) ) / (60*60*1000)
+            )
 
-            if(Math.random() < 0.25) {
-              // edge scenario in case file is missing pass through luck
-              console.log(true)
-              process.exit()
-            }
-
-
-            console.log(diff > 1 ? true : false);
+            console.log(
+                (Math.random() < 0.25 || diff > 1) ? true : false
+              )
             "`
 if [[ "$hasOneHourPassed" = "false" ]]; then
     awesome-client '

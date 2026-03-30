@@ -443,9 +443,8 @@ globalkeys = gears.table.join(
 		end
 	end, { description = "restore minimized", group = "client" }),
 
-	-- Default Prompt
-	-- awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
-	-- {description = "run prompt", group = "launcher"}),
+	awful.key({ modkey },            "r",     function () awful.spawn.with_shell("alacritty --command ~/.config/awesome/edit-config.sh") end,
+	{description = "run prompt", group = "launcher"}),
 
 	-- Rofi
 	awful.key({ modkey }, "space", function()
