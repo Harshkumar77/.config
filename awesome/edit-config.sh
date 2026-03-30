@@ -1,4 +1,3 @@
-
 source ~/.config/alias.zsh
 
-yt
+edit-config

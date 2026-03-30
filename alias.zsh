@@ -12,7 +12,9 @@ alias mpv='nohup mpv'
 alias bmpv='/bin/mpv'
 
 
-alias extract-urls='xidel -e "//a/@href'
+# alias extract-urls() {
+#   curl $1 | xidel -e "//a/@href"'
+# }
 alias copy-file='xclip -selection clipboard < '
 
 alias wallpaper='sxiv ~/.config/wallpaper -qbf -s f -S 3'
@@ -97,7 +99,8 @@ anime-latest() {
 
 yt() {
     pipx upgrade yt-dlp
-    nohup mpv "$(copyq clipboard)"
+    latest_url=$(copyq eval -- "tab('clipboard'); for(i=size(); i>0; --i) print(str(read(i-1)) + '\n');" | rg youtube | tail -1)
+    nohup mpv "$(latest_url)"
 }
 
 mpv-video-shuffle() {

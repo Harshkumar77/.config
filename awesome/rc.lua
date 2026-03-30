@@ -530,7 +530,7 @@ clientkeys = gears.table.join(
 		c:raise()
 	end, { description = "(un)maximize horizontally", group = "client" }),
 	awful.key({ modkey }, "c", function(c)
-		awful.spawn("/home/giga/.config/scripts/mpv-clipboard.sh")
+		awful.spawn.with_shell("/home/giga/.config/scripts/mpv-clipboard.sh")
 	end, { description = "run command", group = "client" })
 )
 

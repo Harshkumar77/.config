@@ -32,7 +32,7 @@ program = "zsh"
 
 [window]
 # startup_mode = "Maximized" 
-opacity = 0.97
+opacity = 0.77
 decorations = "None"
 
 [font]
