@@ -1259,6 +1259,7 @@ tinysparql
 tk
 totem-pl-parser
 tpm2-tss
+tree
 tree-sitter
 tree-sitter-c
 tree-sitter-lua
