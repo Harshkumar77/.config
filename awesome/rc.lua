@@ -11,6 +11,7 @@ awful.spawn("redshift -O 3500")
 awful.spawn.with_shell("~/.config/scripts/backup.sh")
 awful.spawn.with_shell("~/.config/awesome/Long.sh")
 awful.spawn.with_shell("~/.config/awesome/Song.sh")
+awful.spawn.with_shell("android-studio")
 
 require("awful.autofocus")
 local wibox = require("wibox")
