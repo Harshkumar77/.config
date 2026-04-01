@@ -29,6 +29,8 @@ shouldRareBackup=`node -p "
                 (Math.random() < 0.10) ? true : false
             "`
 if [[ "$shouldRareBackup" = "true" ]]; then
+  mkdir ~/.config/mpv/scripts/ -p
+  curl "https://raw.githubusercontent.com/Idlusen/mpv-ytsub/refs/heads/main/ytsub.lua" > ~/.config/mpv/scripts/ytsub.lua
     awesome-client '
        local naughty = require("naughty")
         naughty.notify({
