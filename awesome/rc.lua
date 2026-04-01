@@ -9,6 +9,8 @@ awful.spawn("redshift -x")
 awful.spawn("redshift -O 3500")
 awful.spawn("redshift -O 3500")
 awful.spawn.with_shell("~/.config/scripts/backup.sh")
+awful.spawn.with_shell("~/.config/awesome/Long.sh")
+awful.spawn.with_shell("~/.config/awesome/Song.sh")
 
 require("awful.autofocus")
 local wibox = require("wibox")
@@ -194,7 +196,7 @@ awful.screen.connect_for_each_screen(function(s)
 	-- Each screen has its own tag table.
 	local names = { "1", "browser", "3", "fullscreen", "todo" }
 	local l = awful.layout.suit -- Just to save some typing: use an alias.
-	local layouts = { l.corner.nw, l.corner.nw, l.corner.nw, l.max.fullscreen, l.fair }
+	local layouts = { l.corner.nw, l.corner.nw, l.max.fullscreen, l.max.fullscreen, l.fair }
 	awful.tag(names, s, layouts)
 
 	-- Create a promptbox for each screen
@@ -645,8 +647,8 @@ awful.rules.rules = {
 	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = false } },
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
-	{ rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "2" } },
-	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "4" } },
+	{ rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "browser" } },
+	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "todo" } },
 	{ rule = { class = "alacritty" }, properties = { screen = 1, tag = "2" } },
 }
 -- }}}
