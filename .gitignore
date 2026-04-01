@@ -61,3 +61,4 @@ celluloid/
 flameshot/
 files.html
 scripts/play.sh
+tmp/*
