@@ -8,6 +8,7 @@ if [[ "$shouldRegularBackup" = "true" ]]; then
     yay -Qnq > ~/.config/pkgs/repo.txt
 
     git add wallpaper
+    git add ~/.config/extensions-browser-backup
     git add nvim
 
     git add -u
