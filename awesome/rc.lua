@@ -1,9 +1,6 @@
 ---@diagnostic disable: lowercase-global
--- If LuaRocks is installed, make sure that packages installed through it are
--- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
--- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
 
@@ -12,19 +9,14 @@ awful.spawn("redshift -x")
 awful.spawn("redshift -O 3500")
 awful.spawn("redshift -O 3500")
 awful.spawn.with_shell("~/.config/scripts/backup.sh")
--- awful.spawn.with_shell("~/.config/awesome/Long.sh")
 
 require("awful.autofocus")
--- Widget and layout library
 local wibox = require("wibox")
--- Theme handling library
 local beautiful = require("beautiful")
--- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
--- Enable hotkeys help widget for VIM and other apps
--- when client with a matching name is opened:
+
 require("awful.hotkeys_popup.keys")
 
 -- {{{ Error handling
@@ -345,8 +337,7 @@ globalkeys = gears.table.join(
 		elseif FunkyModTab == -1 then
 			awful.client.swap.byidx(-1)
 			awful.client.focus.byidx(1)
-
-    elseif FunkyModTab == 2 then
+		elseif FunkyModTab == 2 then
 			awful.client.focus.byidx(1)
 		else
 			awful.client.focus.history.previous()
@@ -443,8 +434,9 @@ globalkeys = gears.table.join(
 		end
 	end, { description = "restore minimized", group = "client" }),
 
-	awful.key({ modkey },            "r",     function () awful.spawn.with_shell("alacritty --command ~/.config/awesome/edit-config.sh") end,
-	{description = "run prompt", group = "launcher"}),
+	awful.key({ modkey }, "r", function()
+		awful.spawn.with_shell("alacritty --command ~/.config/awesome/edit-config.sh")
+	end, { description = "run prompt", group = "launcher" }),
 
 	-- Rofi
 	awful.key({ modkey }, "space", function()
@@ -653,7 +645,7 @@ awful.rules.rules = {
 	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = false } },
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
-	{ rule = { class = "Firefox" }, properties = { screen = 1, tag = "2" } },
+	{ rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "2" } },
 	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "4" } },
 	{ rule = { class = "alacritty" }, properties = { screen = 1, tag = "2" } },
 }
@@ -712,7 +704,6 @@ client.connect_signal("request::titlebars", function(c)
 	})
 end)
 
--- Enable sloppy focus, so that focus follows mouse.
 client.connect_signal("mouse::enter", function(c)
 	c:emit_signal("request::activate", "mouse_enter", { raise = false })
 end)
