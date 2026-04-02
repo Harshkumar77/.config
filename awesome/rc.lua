@@ -273,7 +273,7 @@ globalkeys = gears.table.join(
 		local command = "picom-trans -g --current"
 		awful.spawn.easy_async_with_shell(command, function(stdout)
 			local opacity = tonumber(stdout) or 100
-			opacity = math.max(math.floor(opacity / 1.25), 10)
+			opacity = opacity + 8
 			awful.spawn("picom-trans --current --opacity " .. opacity)
 		end)
 	end, { description = "show help", group = "awesome" }),
@@ -281,7 +281,7 @@ globalkeys = gears.table.join(
 		local command = "picom-trans -g --current"
 		awful.spawn.easy_async_with_shell(command, function(stdout)
 			local opacity = tonumber(stdout) or 100
-			opacity = math.min(math.ceil(opacity * 1.25), 100)
+			opacity = opacity - 8
 			if opacity < 11 then
 				opacity = 11
 			end

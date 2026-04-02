@@ -25,6 +25,7 @@ sudoku-gtk3
 syncthing-gtk
 tetrigo-bin
 tiv
+trek
 vifm-devicons-git
 vifmimg-git
 xidel-bin
