@@ -684,6 +684,7 @@ libpsl
 libpulse
 libpurple
 libpwquality
+libqalculate
 libqmi
 libqrtr-glib
 libquadmath
@@ -1170,6 +1171,7 @@ ripgrep
 ripgrep-all
 rnnoise
 rofi
+rofi-calc
 rofimoji
 rpcbind
 rsync
