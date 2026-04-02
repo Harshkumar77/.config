@@ -195,7 +195,7 @@ awful.screen.connect_for_each_screen(function(s)
 	set_wallpaper(s)
 
 	-- Each screen has its own tag table.
-	local names = { "1", "browser", "3", "fullscreen", "todo" }
+	local names = { "1", "2", "3", "fullscreen", "todo" }
 	local l = awful.layout.suit -- Just to save some typing: use an alias.
 	local layouts = { l.corner.nw, l.corner.nw, l.max.fullscreen, l.max.fullscreen, l.fair }
 	awful.tag(names, s, layouts)
@@ -237,26 +237,25 @@ awful.screen.connect_for_each_screen(function(s)
 	s.mywibox = awful.wibar({ position = "top", screen = s })
 
 	-- Add widgets to the wibox
-	-- s.mywibox:setup({
-	-- 	layout = wibox.layout.align.horizontal,
-	-- 	{ -- Left widgets
-	-- 		layout = wibox.layout.fixed.horizontal,
-	-- 		mylauncher,
-	-- 		s.mytaglist,
-	-- 		s.mypromptbox,
-	-- 	},
-	-- 	s.mytasklist, -- Middle widget
-	-- 	{ -- Right widgets
-	-- 		layout = wibox.layout.fixed.horizontal,
-	-- 		mykeyboardlayout,
-	-- 		wibox.widget.systray(),
-	-- 		mytextclock,
-	-- 		s.mylayoutbox,
-	-- 	},
-	-- })
+	s.mywibox:setup({
+		layout = wibox.layout.align.horizontal,
+		{ -- Left widgets
+			layout = wibox.layout.fixed.horizontal,
+			mylauncher,
+			s.mypromptbox,
+		},
+		s.mytasklist, -- Middle widget
+		{ -- Right widgets
+			layout = wibox.layout.fixed.horizontal,
+			mykeyboardlayout,
+			wibox.widget.systray(),
+			mytextclock,
+			s.mylayoutbox,
+			s.mytaglist,
+		},
+	})
 end)
 -- }}}
-
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
 	awful.button({}, 3, function()
