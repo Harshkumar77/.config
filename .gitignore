@@ -62,4 +62,5 @@ flameshot/
 files.html
 scripts/play.sh
 mpv/scripts/*
-tmp
+tmp/
+qalculate/
