@@ -2,6 +2,8 @@
 android-studio
 ani-cli
 botan2
+buku
+buku-dmenu
 celeste-client-bin
 curseofwar
 dclock
