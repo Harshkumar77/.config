@@ -117,10 +117,10 @@ vlc-video-shuffle() {
     fd -e mkv -e mp4 -e mp3 -X nohup vlc --random &
 }
 
-alias play-song='mpv ~/Music/Song/Song.m3u --shuffle --no-save-position-on-quit'
-alias play-long='mpv ~/Music/Long/Long.m3u --shuffle --no-save-position-on-quit'
-alias play-long-on-start='mpv ~/Music/Long/Long.m3u --pause --shuffle --no-save-position-on-quit'
-alias play-song-on-start='mpv ~/Music/Song/Song.m3u --pause --shuffle --no-save-position-on-quit'
+alias play-song='mpv ~/Music/Song/Song.m3u --shuffle --loop-playlist=yes --no-save-position-on-quit'
+alias play-long='mpv ~/Music/Long/Long.m3u --shuffle --loop-playlist=yes --no-save-position-on-quit'
+alias play-long-on-start='mpv ~/Music/Long/Long.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit'
+alias play-song-on-start='mpv ~/Music/Song/Song.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit'
 
 
 

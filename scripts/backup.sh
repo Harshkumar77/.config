@@ -32,6 +32,8 @@ shouldRareBackup=`node -p "
 if [[ "$shouldRareBackup" = "true" ]]; then
     mkdir ~/.config/mpv/scripts/ -p
     curl "https://raw.githubusercontent.com/Idlusen/mpv-ytsub/refs/heads/main/ytsub.lua" > ~/.config/mpv/scripts/ytsub.lua
+
+    fd . ~/Music -e txt -x zsh -c 'node -p "\"{//}\".split(\"/\").pop()"; echo; cat {} ;echo' > ~/.config/media/
     awesome-client '
        local naughty = require("naughty")
         naughty.notify({
