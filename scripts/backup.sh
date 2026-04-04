@@ -27,7 +27,7 @@ fi
 
 # monthly
 shouldRareBackup=`node -p "
-                (Math.random() < 1.10) ? true : false
+                (Math.random() < 0.10) ? true : false
             "`
 if [[ "$shouldRareBackup" = "true" ]]; then
     mkdir ~/.config/mpv/scripts/ -p
