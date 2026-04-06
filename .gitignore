@@ -64,3 +64,8 @@ scripts/play.sh
 mpv/scripts/*
 tmp/
 qalculate/
+qBittorrent/rss/storage.lock
+scripts/node_modules/
+scripts/package-lock.json
+scripts/package.json
+scripts/transform.sh

@@ -15,6 +15,7 @@ alias bmpv='/bin/mpv'
 # alias extract-urls() {
 #   curl $1 | xidel -e "//a/@href"'
 # }
+
 alias copy-file='xclip -selection clipboard < '
 
 alias wallpaper='sxiv ~/.config/wallpaper -qbf -s f -S 3'
@@ -22,44 +23,7 @@ alias wallpaper='sxiv ~/.config/wallpaper -qbf -s f -S 3'
 alias cdd='zi'
 
 download-songs() {
-    mkdir ~/Music/Song/ -p
-    cd ~/Music/Song
-    pipx upgrade yt-dlp
-    yt-dlp \
-        -x \
-        --audio-format mp3 \
-        --audio-quality 0 \
-        --embed-metadata \
-        --embed-thumbnail \
-        --convert-thumbnails jpg \
-        --add-metadata \
-        --sponsorblock-remove all \
-        --sleep-interval 5 --max-sleep-interval 10 \
-        --download-archive ~/.config/media/SongArchive.txt \
-        "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZWl8j7gGxphy9vu9CL_ASSf"
-    echo "#EXTM3U" > Song.m3u
-    fd -e mp3 >> Song.m3u
-
-    mkdir ~/Music/Long/ -p
-    cd ~/Music/Long
-    pipx upgrade yt-dlp
-    yt-dlp \
-        -x \
-        --audio-format mp3 \
-        --audio-quality 0 \
-        --embed-metadata \
-        --embed-thumbnail \
-        --convert-thumbnails jpg \
-        --add-metadata \
-        --sponsorblock-remove all \
-        --sleep-interval 5 --max-sleep-interval 10 \
-        --download-archive ~/.config/media/LongArchive.txt \
-        "https://youtube.com/playlist?list=PLuDbTR3nQ_ZUMRQGIydDRGe3lheNrPkYj&si=fC09ZYX__t0n10Tf"
-    echo "#EXTM3U" > Long.m3u
-    fd -e mp3 >> Long.m3u
-
-    rm *.temp.*
-
+    zsh -c "$(node ~/.config/scripts/download-songs.ts)"
 }
 
 vlc-audio() {
@@ -137,10 +101,12 @@ twallz() {
 }
 
 games() {
-    opts='yetris
-2048-tui
-snake
-myman'
+    opts=$(node -p '[
+        "yetris",
+        "2048-tui",
+        "snake",
+        "myman",
+    ].join("\n")')
     zsh -c "$(echo $opts | fzf)"
 }
 
