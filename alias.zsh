@@ -93,7 +93,7 @@ play() {
         const p = (x.pop())
         console.log(`${p}/${l}`)
         ' | rofi -dmenu)
-    mpv "$HOME/Music/$p" --pause --loop-playlist=yes --shuffle --no-save-position-on-quit
+    nohup mpv "$HOME/Music/$p" --pause --loop-playlist=yes --shuffle --no-save-position-on-quit
 }
 
 
