@@ -24,6 +24,8 @@ alias cdd='zi'
 
 download-songs() {
     zsh -c "$(node ~/.config/scripts/download-songs.ts)"
+    node ~/.config/scripts/conan.ts
+
 }
 
 vlc-audio() {
@@ -84,6 +86,15 @@ vlc-video-shuffle() {
 alias play-long-on-start='mpv ~/Music/Long/Long.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit'
 alias play-song-on-start='mpv ~/Music/Song/Song.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit'
 
+play() {
+    p=$(fd . ~/Music -e m3u | xargs -I{} node -e '
+        const x = "{}".split("/")
+        const l = (x.pop())
+        const p = (x.pop())
+        console.log(`${p}/${l}`)
+        ' | rofi -dmenu)
+    mpv "$HOME/Music/$p" --pause --loop-playlist=yes --shuffle --no-save-position-on-quit
+}
 
 
 pdf() {
