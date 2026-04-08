@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Alias All
+Exec=zsh -c "~/.config/scripts/all.sh"
+Type=Application
