@@ -69,3 +69,4 @@ scripts/node_modules/
 scripts/package-lock.json
 scripts/package.json
 scripts/transform.sh
+wallpaper/gen/*

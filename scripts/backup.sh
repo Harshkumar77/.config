@@ -34,6 +34,13 @@ if [[ "$shouldRareBackup" = "true" ]]; then
     curl "https://raw.githubusercontent.com/Idlusen/mpv-ytsub/refs/heads/main/ytsub.lua" > ~/.config/mpv/scripts/ytsub.lua
 
     # fd . ~/Music -e txt -x zsh -c 'node -p "\"{//}\".split(\"/\").pop()"; echo; cat {} ;echo' > ~/.config/media/music.txt
+     montage ~/.config/wallpaper/*.png ~/.config/wallpaper/*.jpg ~/.config/wallpaper/*.jpeg ~/.config/wallpaper/*.webp \
+      -tile 2x2 \
+      -geometry 512x512\>+0+0 \
+      -background none \
+      -gravity center \
+      ~/.config/wallpaper/gen/output.png
+
     awesome-client '
        local naughty = require("naughty")
         naughty.notify({
