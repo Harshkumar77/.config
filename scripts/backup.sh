@@ -27,19 +27,37 @@ fi
 
 # monthly
 shouldRareBackup=`node -p "
-                (Math.random() < 0.10) ? true : false
+                (Math.random() < 0.05) ? true : false
             "`
 if [[ "$shouldRareBackup" = "true" ]]; then
     mkdir ~/.config/mpv/scripts/ -p
     curl "https://raw.githubusercontent.com/Idlusen/mpv-ytsub/refs/heads/main/ytsub.lua" > ~/.config/mpv/scripts/ytsub.lua
 
     # fd . ~/Music -e txt -x zsh -c 'node -p "\"{//}\".split(\"/\").pop()"; echo; cat {} ;echo' > ~/.config/media/music.txt
-     montage ~/.config/wallpaper/*.png ~/.config/wallpaper/*.jpg ~/.config/wallpaper/*.jpeg ~/.config/wallpaper/*.webp \
-      -tile 2x2 \
-      -geometry 512x512\>+0+0 \
-      -background none \
-      -gravity center \
-      ~/.config/wallpaper/gen/output.png
+
+    # wallpaper generator
+
+    rm ~/.config/wallpaper/gen/ -rf
+    mkdir ~/.config/wallpaper/gen/ --parents     
+    mc=$(node -p "\`$(fd . ~/.config/wallpaper/ --max-depth=1 -e png -e jpg -e webp -e jpeg | shuf; fd . ~/.config/wallpaper/ --max-depth=1 -e png -e jpg -e webp -e jpeg)\`
+      .split('\n')
+      .reduce((acc, cur, i) => {
+          if (i % 6 === 0) acc.push([]);
+          acc[acc.length - 1].push('\"' + cur + '\"');
+          return acc;
+        }, [])
+      .map((x , i) => \`
+        montage \${x.join(' ')} \
+         -tile 2x3 \
+         -geometry 512x512\>+0+0 \
+         -background black \
+         -gravity center \
+         ~/.config/wallpaper/gen/outputR\${i}.png
+        \`)
+      .join('\n\n')
+    ")
+    zsh -c "$mc"
+
 
     awesome-client '
        local naughty = require("naughty")
