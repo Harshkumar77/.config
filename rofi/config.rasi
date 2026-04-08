@@ -1,6 +1,9 @@
 configuration {
 // font: "Noto Color Emoji 12";
-mathcing: "fuzzy";
+matching: "fuzzy";
+sorting-method: "fzf";
+case-sensitive: false;
+tokenize: true;
 }
 
 @theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"

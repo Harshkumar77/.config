@@ -87,19 +87,25 @@ alias play-long-on-start='mpv ~/Music/Long/Long.m3u --pause --loop-playlist=yes 
 alias play-song-on-start='mpv ~/Music/Song/Song.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit'
 
 play() {
-    p=$(fd . ~/Music -e m3u | xargs -I{} node -e '
-        const x = "{}".split("/")
-        const l = (x.pop())
-        const p = (x.pop())
-        console.log(`${p}/${l}`)
-        ' | rofi -dmenu)
-    nohup mpv "$HOME/Music/$p" --pause --loop-playlist=yes --shuffle --no-save-position-on-quit
+    p=$(fd . ~/Music -e m3u)
+    pp=$(node -p "
+      \`$p\`
+        .split('\n')
+        .map(y => y.split('/').pop().split('.')[0])
+        .join('\n')
+      " | rofi -e  -dmenu)
+    ppp=$(fd . ~/Music -e m3u --and "$pp" | head -1)
+    nohup mpv "$ppp" --pause --loop-playlist=yes --shuffle --no-save-position-on-quit  >/dev/null 2>&1 &
 }
 
 
 pdf() {
-    cd ~/Electra Coil/
-    fd --no-require-git -e pdf  --format "'{}'" | fzf -m | xargs  nohup okular {}
+    p=$(fd . "$HOME/Electra Coil/" -e pdf -x echo '{/.}' | rofi -dmenu -multi-select)
+    search_str=$(node -p "
+      \`$p\`.split('\n').join('|')
+    ")
+    fd . "$HOME/Electra Coil/" -e pdf --and "$search_str" | xargs -I{} thunar '{}'
+
 }
 
 twall() {
