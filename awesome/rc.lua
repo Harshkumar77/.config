@@ -266,7 +266,7 @@ root.buttons(gears.table.join(
 ))
 -- }}}
 
-FunkyModTab = 2
+FunkyModTab = 0
 -- {{{ Key bindings
 globalkeys = gears.table.join(
 	awful.key({ modkey }, "=", function()
