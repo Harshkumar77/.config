@@ -55,7 +55,7 @@ if [[ "$shouldRareBackup" = "true" ]] || [[ "$force = "true"" ]]; then
          -background black \
          -gravity center \
          ~/.config/wallpaper/gen/outputR\${i}.png
-        \`)
+         `)
       .join('\n\n')
     ")
     zsh -c "$mc"
