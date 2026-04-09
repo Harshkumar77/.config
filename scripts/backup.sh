@@ -51,7 +51,7 @@ if [[ "$shouldRareBackup" = "true" ]] || [[ "$force = "true"" ]]; then
       .map((x , i) => \`
         montage \${x.join(' ')} \
          -tile 2x3 \
-         -geometry 512x512\>+0+0 \
+         -geometry 512x512 \ 
          -background black \
          -gravity center \
          ~/.config/wallpaper/gen/outputR\${i}.png
