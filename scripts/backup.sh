@@ -1,9 +1,11 @@
 #!/bin/bash
+force="false"
+force="true"
 cd ~/.config
 
 shouldRegularBackup=`node -p "(Math.random() < 0.40) ? true : false"`
 
-if [[ "$shouldRegularBackup" = "true" ]]; then
+if [[ "$shouldRegularBackup" = "true" ]] || [[ "$force = "true"" ]]; then
     yay -Qmq > ~/.config/pkgs/aur.txt
     yay -Qnq > ~/.config/pkgs/repo.txt
 
@@ -29,7 +31,7 @@ fi
 shouldRareBackup=`node -p "
                 (Math.random() < 0.05) ? true : false
             "`
-if [[ "$shouldRareBackup" = "true" ]]; then
+if [[ "$shouldRareBackup" = "true" ]] || [[ "$force = "true"" ]]; then
     mkdir ~/.config/mpv/scripts/ -p
     curl "https://raw.githubusercontent.com/Idlusen/mpv-ytsub/refs/heads/main/ytsub.lua" > ~/.config/mpv/scripts/ytsub.lua
 
