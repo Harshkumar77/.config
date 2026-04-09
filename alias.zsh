@@ -1,5 +1,5 @@
 rmf() {
-    fd --maxdepth 1 | fzf -m --header="Select files to delete" | while IFS= read -r file; do
+    fd --maxdepth 1 | rofi -dmenu -multi-select -p "Select files to delete" | while IFS= read -r file; do
         rm -rf -- "$file"
     done
 }
@@ -104,7 +104,7 @@ pdf() {
     search_str=$(node -p "
       \`$p\`.split('\n').join('|')
     ")
-    fd . "$HOME/Electra Coil/" -e pdf --and "$search_str" | xargs -I{} thunar '{}'
+    fd . "$HOME/Electra Coil/" -e pdf --and "$search_str" | xargs -I{} thunar '{}' &
 
 }
 
@@ -123,8 +123,23 @@ games() {
         "2048-tui",
         "snake",
         "myman",
-    ].join("\n")')
-    zsh -c "$(echo $opts | fzf)"
+    ]
+      .map((x) => {
+        return `alacritty --command "${x}"`
+      })
+      .join("\n") + "\n" + [
+        "https://poki.com/en/g/temple-run-2",
+        "https://poki.com/en/g/harvest-simulator",
+        "https://poki.com/en/g/subway-surfers",
+    ]
+      .map((x) => {
+        return `firefox-beta --new-window "${x}"`
+      })
+      .join("\n")
+    ')
+    echo $opts
+    # exit
+    zsh -c "$(echo $opts | rofi -dmenu)"
 }
 
 edit-config() {

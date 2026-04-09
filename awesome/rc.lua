@@ -8,10 +8,7 @@ awful.spawn.with_shell("picom")
 awful.spawn("redshift -x")
 awful.spawn("redshift -O 3500")
 awful.spawn("redshift -O 3500")
-awful.spawn.with_shell("~/.config/scripts/backup.sh")
-awful.spawn.with_shell("~/.config/awesome/Long.sh")
-awful.spawn.with_shell("~/.config/awesome/Song.sh")
-awful.spawn.with_shell("android-studio")
+awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
 
 require("awful.autofocus")
 local wibox = require("wibox")
@@ -471,12 +468,13 @@ globalkeys = gears.table.join(
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey }, "x", function()
-		awful.prompt.run({
-			prompt = "Run Lua code: ",
-			textbox = awful.screen.focused().mypromptbox.widget,
-			exe_callback = awful.util.eval,
-			history_path = awful.util.get_cache_dir() .. "/history_eval",
-		})
+		-- awful.prompt.run({
+		-- 	prompt = "Run Lua code: ",
+		-- 	textbox = awful.screen.focused().mypromptbox.widget,
+		-- 	exe_callback = awful.util.eval,
+		-- 	history_path = awful.util.get_cache_dir() .. "/history_eval",
+		-- })
+    awful.spawn.with_shell("xkill")
 	end, { description = "lua execute prompt", group = "awesome" })
 	-- Menubar
 	--    awful.key({ modkey }, "p", function() menubar.show() end,

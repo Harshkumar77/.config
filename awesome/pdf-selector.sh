@@ -10,6 +10,6 @@ else
 LAYOUT="$1"
   notify-send "$LAYOUT"
 
-  thunar "$1"
+  thunar "$1" &
 fi
 
