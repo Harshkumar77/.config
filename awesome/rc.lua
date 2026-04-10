@@ -192,7 +192,7 @@ awful.screen.connect_for_each_screen(function(s)
 	set_wallpaper(s)
 
 	-- Each screen has its own tag table.
-	local names = { "1", "2", "3", "fullscreen", "todo", "empty"}
+	local names = { "main", "main-II", "fullscreen", "fullscreen-II", "todo", "empty"}
 	local l = awful.layout.suit -- Just to save some typing: use an alias.
 	local layouts = { l.corner.nw, l.corner.nw, l.max.fullscreen, l.max.fullscreen, l.magnifier}
 	awful.tag(names, s, layouts)
