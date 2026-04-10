@@ -523,10 +523,10 @@
             "https://thepiratebay11.com/rss/top100/208"
         ],
         "assignedCategory": "Single",
-        "enabled": false,
+        "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "23 Jan 2026 02:35:01 +0000",
+        "lastMatch": "10 Apr 2026 01:55:01 +0000",
         "mustContain": "The Pitt Me",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
