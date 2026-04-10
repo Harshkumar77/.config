@@ -5,11 +5,17 @@ rmf() {
 }
 
 archive() {
-  zsh -c "~/archive/create-backup.sh"
+    zsh -c "~/archive/create-backup.sh"
 }
 
-alias awesome-launch="killall xfwm4 && awesome"
-alias xfce-launch="killall awesome && xfwm4"
+awesome-launch() {
+    killall xfwm4 && awesome
+}
+
+xfce-launch() {
+    killall awesome && xfwm4
+}
+
 
 alias vlc='nohup vlc'
 alias mpv='nohup mpv'
@@ -22,7 +28,10 @@ alias bmpv='/bin/mpv'
 
 alias copy-file='xclip -selection clipboard < '
 
-alias wallpaper='sxiv ~/.config/wallpaper -qbf -s f -S 3'
+wallpaper() {
+    sxiv ~/.config/wallpaper -qbf -s f -S 3
+}
+
 
 alias cdd='zi'
 
@@ -86,8 +95,14 @@ vlc-video-shuffle() {
     fd -e mkv -e mp4 -e mp3 -X nohup vlc --random &
 }
 
-alias play-long-on-start='mpv ~/Music/Long/Long.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit'
-alias play-song-on-start='mpv ~/Music/Song/Song.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit'
+play-long-on-start() {
+    mpv ~/Music/Long/Long.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit
+}
+
+play-song-on-start() {
+    mpv ~/Music/Song/Song.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit
+}
+
 
 play() {
     p=$(fd . ~/Music -e m3u)
