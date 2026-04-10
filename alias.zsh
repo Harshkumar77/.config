@@ -134,6 +134,7 @@ games() {
         "https://poki.com/en/g/temple-run-2",
         "https://poki.com/en/g/harvest-simulator",
         "https://poki.com/en/g/subway-surfers",
+        "https://poki.com/en/g/neon-challenge-legends",
     ]
       .map((x) => {
         return `firefox-beta --new-window "${x}"`

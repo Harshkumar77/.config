@@ -9,7 +9,11 @@ console.log(
     [
       "Long",
       "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZUMRQGIydDRGe3lheNrPkYj",
-    ]
+    ],
+    [
+      "Desi",
+      "https://music.youtube.com/playlist?list=PLuDbTR3nQ_ZVvVe9f_GgkPQrvWO1G-wrX",
+    ],
   ]
     .map(([key, url]) => {
       return `
