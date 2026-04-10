@@ -1,6 +1,6 @@
 #!/bin/bash
 force="false"
-force="true"
+# force="true"
 cd ~/.config
 
 shouldRegularBackup=`node -p "(Math.random() < 0.40) ? true : false"`
