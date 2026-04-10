@@ -4,6 +4,10 @@ rmf() {
     done
 }
 
+archive() {
+  zsh -c "~/archive/create-backup.sh"
+}
+
 alias awesome-launch="killall xfwm4 && awesome"
 alias xfce-launch="killall awesome && xfwm4"
 
@@ -25,7 +29,6 @@ alias cdd='zi'
 download-songs() {
     zsh -c "$(node ~/.config/scripts/download-songs.ts)"
     node ~/.config/scripts/conan.ts
-
 }
 
 vlc-audio() {
@@ -93,7 +96,7 @@ play() {
         .split('\n')
         .map(y => y.split('/').pop().split('.')[0])
         .join('\n')
-      " | rofi -e  -dmenu)
+      " | rofi -dmenu)
     ppp=$(fd . ~/Music -e m3u --and "$pp" | head -1)
     nohup mpv "$ppp" --pause --loop-playlist=yes --shuffle --no-save-position-on-quit  >/dev/null 2>&1 &
 }
@@ -105,13 +108,13 @@ pdf() {
       \`$p\`.split('\n').join('|')
     ")
     fd . "$HOME/Electra Coil/" -e pdf --and "$search_str" | xargs -I{} thunar '{}' &
-
 }
 
 twall() {
     wallpaper_selected="$(fd . --absolute-path ~/.config/wallpaper | shuf | tail -1)"
     tiv -w $(($COLUMNS*2)) "$wallpaper_selected"
 }
+
 twallz() {
     wallpaper_selected="$(fd . --absolute-path ~/.config/wallpaper | shuf | tail -1)"
     tiv -w $(($COLUMNS)) "$wallpaper_selected"
@@ -138,7 +141,6 @@ games() {
       .join("\n")
     ')
     echo $opts
-    # exit
     zsh -c "$(echo $opts | rofi -dmenu)"
 }
 

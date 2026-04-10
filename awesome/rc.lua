@@ -192,9 +192,9 @@ awful.screen.connect_for_each_screen(function(s)
 	set_wallpaper(s)
 
 	-- Each screen has its own tag table.
-	local names = { "main", "main-II", "fullscreen", "fullscreen-II", "todo", "empty"}
+	local names = { "main", "main-II", "fullscreen", "fullscreen-II", "todo", "empty" }
 	local l = awful.layout.suit -- Just to save some typing: use an alias.
-	local layouts = { l.corner.nw, l.corner.nw, l.max.fullscreen, l.max.fullscreen, l.magnifier}
+	local layouts = { l.corner.nw, l.corner.nw, l.max.fullscreen, l.max.fullscreen, l.magnifier }
 	awful.tag(names, s, layouts)
 
 	-- Create a promptbox for each screen
@@ -474,7 +474,7 @@ globalkeys = gears.table.join(
 		-- 	exe_callback = awful.util.eval,
 		-- 	history_path = awful.util.get_cache_dir() .. "/history_eval",
 		-- })
-    awful.spawn.with_shell("xkill")
+		awful.spawn.with_shell("xkill")
 	end, { description = "lua execute prompt", group = "awesome" })
 	-- Menubar
 	--    awful.key({ modkey }, "p", function() menubar.show() end,
