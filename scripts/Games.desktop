@@ -1,4 +1,0 @@
-[Desktop Entry]
-Name=Games
-Exec=zsh -c "source ~/.config/alias.zsh; games"
-Type=Application

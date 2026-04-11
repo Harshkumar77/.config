@@ -1,4 +1,0 @@
-[Desktop Entry]
-Name=PDF Electra Coil
-Exec=zsh -c "source ~/.config/alias.zsh; pdf"
-Type=Application

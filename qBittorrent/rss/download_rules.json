@@ -4,7 +4,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "unwatched",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -42,7 +42,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "unwatched",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -80,7 +80,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -120,7 +120,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
         ],
-        "assignedCategory": "",
+        "assignedCategory": "unwatched",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -158,7 +158,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=%5BToonsHub%5D&c=0_0&f=0"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -198,7 +198,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -238,7 +238,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -278,7 +278,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=%5BToonsHub%5D&c=0_0&f=0"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -318,7 +318,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -359,7 +359,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=varyg1001"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -400,7 +400,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -441,7 +441,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -482,7 +482,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&q=%5BToonsHub%5D&c=0_0&f=0"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -522,7 +522,7 @@
         "affectedFeeds": [
             "https://thepiratebay11.com/rss/top100/208"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
@@ -562,7 +562,7 @@
         "affectedFeeds": [
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
-        "assignedCategory": "Single",
+        "assignedCategory": "unwatched",
         "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,

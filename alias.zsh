@@ -8,6 +8,10 @@ archive() {
     zsh -c "~/archive/create-backup.sh"
 }
 
+backup() {
+    zsh -c "~/.config/scripts/backup.sh"
+}
+
 awesome-launch() {
     killall xfwm4 && awesome
 }
@@ -113,7 +117,7 @@ play() {
         .join('\n')
       " | rofi -dmenu)
     ppp=$(fd . ~/Music -e m3u --and "$pp" | head -1)
-    nohup mpv "$ppp" --pause --loop-playlist=yes --shuffle --no-save-position-on-quit  >/dev/null 2>&1 &
+    nohup mpv "$ppp" --pause --loop-playlist=yes --shuffle --no-save-position-on-quit  >/dev/null
 }
 
 
@@ -122,7 +126,7 @@ pdf() {
     search_str=$(node -p "
       \`$p\`.split('\n').join('|')
     ")
-    fd . "$HOME/Electra Coil/" -e pdf --and "$search_str" | xargs -I{} thunar '{}' &
+    fd . "$HOME/Electra Coil/" -e pdf --and "$search_str" | xargs -I{} thunar '{}'
 }
 
 twall() {
