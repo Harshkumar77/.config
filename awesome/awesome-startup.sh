@@ -11,8 +11,8 @@ choice=$((
 ) | rofi -dmenu -p "Some goodies?")
 
 if [ "$choice" == 'Yes' ]; then
-  ~/.config/awesome/Long.sh
-  ~/.config/awesome/Song.sh
-  android-studio
-  anki
+  ~/.config/awesome/Long.sh &!
+  ~/.config/awesome/Song.sh &!
+  android-studio &!
+  anki &!
 fi
