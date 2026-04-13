@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
+picom
+redshift -x
+redshift -O 3500
+redshift -O 3500
+~/.config/scripts/backup.sh &
 
 choice=$((
         echo "Yes";
@@ -6,11 +11,8 @@ choice=$((
 ) | rofi -dmenu -p "Some goodies?")
 
 if [ "$choice" == 'Yes' ]; then
-    awesome-client '
-      local awful = require("awful")
-      awful.spawn.with_shell("~/.config/scripts/backup.sh")
-      awful.spawn.with_shell("~/.config/awesome/Long.sh")
-      awful.spawn.with_shell("~/.config/awesome/Song.sh")
-      awful.spawn.with_shell("android-studio")
-    '
+  ~/.config/awesome/Long.sh
+  ~/.config/awesome/Song.sh
+  android-studio
+  anki
 fi

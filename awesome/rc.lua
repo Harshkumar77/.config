@@ -4,11 +4,6 @@ pcall(require, "luarocks.loader")
 local gears = require("gears")
 local awful = require("awful")
 
-awful.spawn.with_shell("picom")
-awful.spawn("redshift -x")
-awful.spawn("redshift -O 3500")
-awful.spawn("redshift -O 3500")
-awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
 
 require("awful.autofocus")
 local wibox = require("wibox")
@@ -719,3 +714,7 @@ client.connect_signal("unfocus", function(c)
 	c.border_color = beautiful.border_normal
 end)
 -- }}}
+--
+--
+
+awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
