@@ -52,7 +52,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("~/.config/awesome/" .. "zenburn/theme.lua")
+-- beautiful.init("~/.config/awesome/" .. "zenburn/theme.lua")
+beautiful.init("~/.config/awesome/" .. "zenburn/theme-patch.lua")
 
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 
@@ -231,20 +232,20 @@ awful.screen.connect_for_each_screen(function(s)
 	})
 
 	-- Create the wibox
-	s.mywibox = awful.wibar({ position = "top", screen = s })
+	s.mywibox = awful.wibar({ position = "bottom", screen = s })
 
 	-- Add widgets to the wibox
 	s.mywibox:setup({
 		layout = wibox.layout.align.horizontal,
 		{ -- Left widgets
 			layout = wibox.layout.fixed.horizontal,
-			mylauncher,
-			s.mypromptbox,
+			-- mylauncher,
+			-- s.mypromptbox,
 		},
 		s.mytasklist, -- Middle widget
 		{ -- Right widgets
 			layout = wibox.layout.fixed.horizontal,
-			mykeyboardlayout,
+			-- mykeyboardlayout,
 			-- wibox.widget.systray(),
 			mytextclock,
 			s.mylayoutbox,
@@ -646,6 +647,7 @@ awful.rules.rules = {
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
   { rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "fullscreen-II" } },
+  { rule = { class = "jetbrains-studio" }, properties = { screen = 1, tag = "fullscreen" } },
 	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "todo" } },
 	-- { rule = { class = "alacritty" }, properties = { screen = 1, tag = "2" } },
 }
