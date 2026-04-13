@@ -9,11 +9,9 @@ choice=$((
         echo "yes";
         echo "no"
 ) | rofi -dmenu -p "Some goodies?")
-  notify-send 33
 
-if [ "$choice" == "Yes" ]; then
+if [ "$choice" == "yes" ]; then
   zsh -c '~/.config/awesome/Long.sh' &
-  notify-send 3
   ~/.config/awesome/Song.sh &
   android-studio &
   anki &
