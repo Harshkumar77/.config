@@ -136,6 +136,7 @@ docbook-xsl
 docker
 docker-compose
 dosfstools
+dotconf
 double-conversion
 duktape
 e2fsprogs
@@ -173,6 +174,7 @@ findutils
 flac
 flatpak
 flex
+flite
 fluidsynth
 fmt
 fontconfig
@@ -469,6 +471,7 @@ libaccounts-glib
 libaccounts-qt
 libadwaita
 libaio
+libao
 libappindicator
 libarchive
 libasan
@@ -710,6 +713,7 @@ libsodium
 libsoup3
 libsoxr
 libspectre
+libspeechd
 libspiro
 libsrtp
 libssh
@@ -1226,6 +1230,7 @@ sord
 sound-theme-freedesktop
 soundtouch
 spandsp
+speech-dispatcher
 speex
 speexdsp
 spirv-tools

@@ -7,6 +7,7 @@ buku-dmenu
 celeste-client-bin
 curseofwar
 dclock
+espeak
 firefox-beta-bin
 fontpreview-git
 fzf-tab-git

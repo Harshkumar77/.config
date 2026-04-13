@@ -122,11 +122,11 @@ play() {
 
 
 pdf() {
-    p=$(fd . "$HOME/Electra Coil/" -e pdf -x echo '{/.}' | rofi -dmenu -multi-select)
+    p=$(fd . "$HOME/Electra Coil/" -e pdf --no-ignore -x echo '{/.}' | rofi -dmenu -multi-select)
     search_str=$(node -p "
       \`$p\`.split('\n').join('|')
     ")
-    fd . "$HOME/Electra Coil/" -e pdf --and "$search_str" | xargs -I{} thunar '{}'
+    fd . "$HOME/Electra Coil/" -e pdf --no-ignore --and "$search_str" | xargs -I{} thunar '{}'
 }
 
 twall() {
