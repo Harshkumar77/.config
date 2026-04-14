@@ -4,7 +4,6 @@ pcall(require, "luarocks.loader")
 local gears = require("gears")
 local awful = require("awful")
 
-
 require("awful.autofocus")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
@@ -446,7 +445,7 @@ globalkeys = gears.table.join(
 		awful.spawn("rofi -show window")
 	end, { description = "", group = "launcher" }),
 
-	awful.key({ modkey }, "Shift", "b", function()
+	awful.key({ modkey, "Shift" }, "b", function()
 		awful.spawn("firefox")
 	end, { description = "", group = "launcher" }),
 
@@ -645,8 +644,8 @@ awful.rules.rules = {
 	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = false } },
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
-  -- { rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "fullscreen-II" } },
-  { rule = { class = "jetbrains-studio" }, properties = { screen = 1, tag = "fullscreen" } },
+	-- { rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "fullscreen-II" } },
+	{ rule = { class = "jetbrains-studio" }, properties = { screen = 1, tag = "fullscreen" } },
 	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "todo" } },
 	{ rule = { class = "Thunar" }, properties = { screen = 1, tag = "main" } },
 	{ rule = { class = "okular" }, properties = { screen = 1, tag = "main" } },
