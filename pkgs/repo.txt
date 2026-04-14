@@ -172,6 +172,7 @@ fftw
 file
 filesystem
 findutils
+firefox
 flac
 flatpak
 flex

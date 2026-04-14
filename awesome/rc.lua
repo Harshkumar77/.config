@@ -446,6 +446,10 @@ globalkeys = gears.table.join(
 		awful.spawn("rofi -show window")
 	end, { description = "", group = "launcher" }),
 
+	awful.key({ modkey }, "Shift", "b", function()
+		awful.spawn("firefox")
+	end, { description = "", group = "launcher" }),
+
 	awful.key({ modkey }, "b", function()
 		awful.spawn("firefox-beta --kiosk --new-window")
 	end, { description = "", group = "launcher" }),
