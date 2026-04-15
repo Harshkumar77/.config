@@ -430,9 +430,9 @@ globalkeys = gears.table.join(
 		end
 	end, { description = "restore minimized", group = "client" }),
 
-	awful.key({ modkey }, "r", function(c)
-   awful.titlebar:toggle (awful.client.focus)
-	end, { description = "run prompt", group = "launcher" }),
+	-- awful.key({ modkey }, "r", function(c)
+	--   awful.titlebar:toggle (client)
+	-- end, { description = "run prompt", group = "launcher" }),
 
 	-- Rofi
 	awful.key({ modkey }, "space", function()
@@ -680,6 +680,7 @@ client.connect_signal("request::titlebars", function(c)
 			c:emit_signal("request::activate", "titlebar", { raise = true })
 			awful.mouse.client.resize(c)
 		end)
+
 	)
 
 	awful.titlebar(c):setup({
