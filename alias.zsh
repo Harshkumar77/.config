@@ -60,6 +60,10 @@ mpv-audio-shuffle() {
     fd -e mp3 -X nohup mpv --shuffle &
 }
 
+media() {
+  fd . ~ -e mkv -e mp3 -e mp4 -x echo '{//}' | sort | uniq | rofi -dmenu | xargs -I{} nohup mpv '{}'
+}
+
 mpv-video() {
     file_name=$(uuidgen)
     (fd -e mkv -e mp4 -e mp3 -e mkv.part -e mp3.part -e mp4.part) > playlist.m3u
