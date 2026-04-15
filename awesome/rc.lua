@@ -390,7 +390,7 @@ globalkeys = gears.table.join(
 	-- 		["spiral"] = awful.layout.suit.spiral,
 	-- 		["spiral.dwindle"] = awful.layout.suit.spiral.dwindle,
 	-- 		["max"] = awful.layout.suit.max,
-	-- 		["max.fullscreen"] = awful.layout.suit.max.fullscreen,
+	-- 		["max.fullscreen"] = awful.layout.suit.max.fullscreen,rc.la
 	-- 		["magnifier"] = awful.layout.suit.magnifier,
 	-- 		["corner.nw"] = awful.layout.suit.corner.nw,
 	-- 		["corner.ne"] = awful.layout.suit.corner.ne,
@@ -428,8 +428,8 @@ globalkeys = gears.table.join(
 		end
 	end, { description = "restore minimized", group = "client" }),
 
-	awful.key({ modkey }, "r", function()
-		awful.spawn.with_shell("alacritty --command ~/.config/awesome/edit-config.sh")
+	awful.key({ modkey }, "r", function(c)
+   awful.titlebar:toggle (c)
 	end, { description = "run prompt", group = "launcher" }),
 
 	-- Rofi
@@ -641,7 +641,7 @@ awful.rules.rules = {
 	},
 
 	-- Add titlebars to normal clients and dialogs
-	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = false } },
+	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = true } },
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
 	-- { rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "fullscreen-II" } },
