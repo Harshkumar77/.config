@@ -24,7 +24,14 @@ if [[ "$shouldRegularBackup" = "true" ]] || [[ "$force" = "true" ]]; then
               text = "config: backup done",
       })'
     # notify-send "config: backup done"
+else
+    awesome-client '
+     local naughty = require("naughty")
+      naughty.notify({
+              text = "config: skipping regular backup",
+      })'
 fi
+   
 
 
 # monthly
