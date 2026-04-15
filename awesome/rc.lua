@@ -431,7 +431,7 @@ globalkeys = gears.table.join(
 	end, { description = "restore minimized", group = "client" }),
 
 	awful.key({ modkey }, "r", function(c)
-   awful.titlebar:toggle (awful.client)
+   awful.titlebar:toggle (awful.client.focus)
 	end, { description = "run prompt", group = "launcher" }),
 
 	-- Rofi
