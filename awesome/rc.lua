@@ -48,7 +48,8 @@ end
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init("~/.config/awesome/" .. "zenburn/theme.lua")
 -- beautiful.init("~/.config/awesome/" .. "zenburn/theme-patch.lua")
-beautiful.init("~/.config/awesome/" .. "gtk/theme.lua")
+-- beautiful.init("~/.config/awesome/" .. "gtk/theme.lua")
+beautiful.init("~/.config/awesome/" .. "default/theme.lua")
 
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 
