@@ -55,7 +55,7 @@ beautiful.init("~/.config/awesome/" .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "nano"
+editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -124,7 +124,11 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget({
+	markup = "<span background='#ff0000' foreground='#0000ff'>Some</span>"
+		.. " nice <span foreground='#00ff00'>colors!</span>",
+	widget = wibox.widget.textbox,
+})
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -535,17 +539,17 @@ for i = 1, 5 do
 	globalkeys = gears.table.join(
 		globalkeys,
 		-- View tag only.
-		-- awful.key({ modkey }, keysTags:sub(i, i), function()
-		-- 	local screen = awful.screen.focused()
-		-- 	local tag = screen.tags[i]
-		-- 	if tag then
-		-- 		tag:view_only()
-		-- 	end
-		-- end, { description = "view tag #" .. i, group = "tag" }),
+		awful.key({ modkey }, keysTags:sub(i, i), function()
+			local screen = awful.screen.focused()
+			local tag = screen.tags[i]
+			if tag then
+				tag:view_only()
+			end
+		end, { description = "view tag #" .. i, group = "tag" }),
 		-- Toggle tag display.
 		-- awful.key({ modkey, "Shift" }, keysTags:sub(i, i), function()
-		awful.key({ modkey }, keysTags:sub(i, i), function()
-		-- awful.key({ modkey, "Shift" }, "#" .. i + 9, function()
+		-- awful.key({ modkey }, keysTags:sub(i, i), function()
+		awful.key({ modkey, "Shift" }, "#" .. i + 9, function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
 			if tag then
@@ -682,7 +686,6 @@ client.connect_signal("request::titlebars", function(c)
 			c:emit_signal("request::activate", "titlebar", { raise = true })
 			awful.mouse.client.resize(c)
 		end)
-
 	)
 
 	awful.titlebar(c):setup({
