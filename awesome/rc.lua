@@ -127,7 +127,7 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 mytextclock = wibox.widget({
 	markup = "<span background='#ff0000' foreground='#0000ff'>Some</span>"
 		.. " nice <span foreground='#00ff00'>colors!</span>",
-	widget = wibox.widget.textbox,
+	widget = wibox.widget.textclock,
 })
 
 -- Create a wibox for each screen and add it
