@@ -8,6 +8,11 @@ function isFileImage(file) {
       , false)
 }
 
+/**
+ * @param {Array<String>}
+ * @param {number}
+ * @return {Array<String>}
+ */
 function shuffle(arr, iter = 2) {
   if (iter === 0) return arr
   return shuffle(arr.reduce((previous, current, i) => {
@@ -24,17 +29,41 @@ function shuffle(arr, iter = 2) {
 }
 
 
+/**
+ * @param {string}
+ * @param {string}
+ * @param {string}
+ * @param {String}
+ *
+ * @return {string}
+ */
+function montageCommand(s, w, h, name) {
+  return `montage ${s} -tile ${w}x${h} -geometry 512x512 -background black -gravity center ~/.config/wallpaper/gen-desktop/${name}.png`
+}
+
+
+
 try {
 
-  const images = execSync( 'fd . ~/.config/wallpaper/ --max-depth=1 -e png -e jpg -e webp -e jpeg').toString().split('\n')
+  const images = execSync(`fd . ~/.config/wallpaper/ --max-depth=1 -e png -e jpg -e webp -e jpeg`)
+    .toString()
+    .split('\n')
+    .map(_ => "'" + _ + "'")
 
-  const batch_images = [...images, ...shuffle(images), ...shuffle(images)].reduce((previous, current, i) => {
-    if (i % 8 === 0) previous.push([])
-    previous[previous.length - 1].push(current)
-    return previous
-  }, [])
+  const batch_images = [...images, ...shuffle(images), ...shuffle(images)]
+    .reduce((previous, current, i) => {
+      if (i % 8 === 0) previous.push([])
+      previous[previous.length - 1].push(current)
+      return previous
+    },
+    /** @type {Array<String>} */([]))
 
-  log(batch_images.map(_ => _.length))
+  log(
+    batch_images.map(batch => {
+      `montage ${batch.join(" ")} -tile 4x2 -geometry 512x512 -background black -gravity center ~/.config/wallpaper/gen-desktop/outputR\${i}.png`
+    })
+  )
+
 } catch (err) {
   console.error(err.message);
 }
