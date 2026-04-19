@@ -541,8 +541,11 @@ for i = 1, 5 do
 		awful.key({ modkey }, keysTags:sub(i, i), function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
+      local t = client.focus and client.focus.first_tag or nil
 			if tag then
-				tag:view_only()
+        if t then
+          tag:view_only()
+        end
 			end
 		end, { description = "view tag #" .. i, group = "tag" }),
 		-- Toggle tag display.
