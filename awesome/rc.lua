@@ -329,7 +329,7 @@ globalkeys = gears.table.join(
 			naughty.notify({ text = "funkyModTab: disabled" })
 		end
 	end, { description = "toggle funky mod tab", group = "client" }),
-	awful.key({ "Shift_L"  }, "Shift_R", function()
+	awful.key({ modkey }, "Tab", function()
 		if FunkyModTab == 1 then
 			awful.client.swap.byidx(1)
 			awful.client.focus.byidx(-1)
