@@ -73,7 +73,6 @@ media() {
 }
 
 mpv-video() {
-    file_name=$(uuidgen)
     (fd -e mkv -e mp4 -e mp3 -e mkv.part -e mp3.part -e mp4.part) > playlist.m3u
     xdg-open playlist.m3u
     sleep 3
@@ -82,7 +81,6 @@ mpv-video() {
 }
 
 anime-latest() {
-    file_name=$(uuidgen)
     cd ~/Downloads/Organised\ Episodes
     (fd -e mkv -e mp4 -X ls -t) > playlist.m3u
     xdg-open playlist.m3u
