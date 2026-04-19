@@ -541,7 +541,8 @@ for i = 1, 5 do
 		awful.key({ modkey }, keysTags:sub(i, i), function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
-      local t = client.focus and client.focus.first_tag or nil
+      -- local t = client.focus and client.focus.first_tag or nil
+      local t = awful.screen.focused().selected_tag
 			if tag then
         if t then
           tag:view_only()
