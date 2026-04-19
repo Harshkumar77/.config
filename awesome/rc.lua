@@ -547,9 +547,9 @@ for i = 1, 5 do
 					if t == tag then
 						awful.tag.viewtoggle(tag)
 					end
+				else
+					tag:view_only()
 				end
-			else
-				tag:view_only()
 			end
 		end, { description = "view tag #" .. i, group = "tag" }),
 		-- Toggle tag display.
