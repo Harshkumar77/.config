@@ -546,6 +546,8 @@ for i = 1, 5 do
 				if t then
 					if t == tag then
 						awful.tag.viewtoggle(tag)
+					else
+						tag:view_only()
 					end
 				else
 					tag:view_only()
