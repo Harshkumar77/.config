@@ -46,7 +46,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "13 Apr 2026 16:40:17 +0000",
+        "lastMatch": "20 Apr 2026 16:37:44 +0000",
         "mustContain": " LIAR GAME ",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -486,8 +486,8 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "14 Apr 2026 07:39:59 +0000",
-        "mustContain": "Rookie 1080 H264 Kitsun",
+        "lastMatch": "18 Apr 2026 17:19:24 +0000",
+        "mustContain": "Rookie 1080 Kitsun",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],

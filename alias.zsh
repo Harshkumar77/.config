@@ -180,4 +180,7 @@ edit-config() {
     nvim -c "Telescope fd"
 }
 
+buffer() {
+  obsidian "obsidian://adv-uri?vault=Electra%20Coil&filepath=buffer.md"
+}
 # CnBkZigpIHsKICBjZCB&aHR0cHM6Ly90Lm1lLyt4cmdyajdsQUNNVTJaVGsx&CnBkZigpIHsKICBjZCB+L0VsZWN0cmEgQ29pbC8KICBmZCAtLW5vLXJlcXVpcmUtZ2l0IC1lIHBkZiAgLS1mb3JtYXQgIid7fSciIHwgZnpmIC1tIHwgeGFyZ3MgIG5vaHVwIG9rdWxhciB7fQo=
