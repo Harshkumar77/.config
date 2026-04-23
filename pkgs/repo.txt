@@ -1200,6 +1200,7 @@ re2
 readline
 redland
 redshift
+remind
 renameutils
 rhash
 ripgrep
