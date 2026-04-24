@@ -8,7 +8,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "16 Apr 2026 15:02:10 +0000",
+        "lastMatch": "23 Apr 2026 14:55:23 +0000",
         "mustContain": "STONE SCIENCE FUTURE",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -121,7 +121,7 @@
             "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
         ],
         "assignedCategory": "",
-        "enabled": true,
+        "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
         "lastMatch": "22 Apr 2026 13:10:42 +0000",
@@ -486,8 +486,8 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "18 Apr 2026 17:19:24 +0000",
-        "mustContain": "Rookie 1080 Kitsun",
+        "lastMatch": "21 Apr 2026 11:55:50 +0000",
+        "mustContain": "Rookie 1080 eth",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],
@@ -599,7 +599,7 @@
             "https://thepiratebay11.com/rss/top100/208"
         ],
         "assignedCategory": "Single",
-        "enabled": true,
+        "enabled": false,
         "episodeFilter": "",
         "ignoreDays": 0,
         "lastMatch": "17 Apr 2026 03:32:16 +0000",
