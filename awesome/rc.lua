@@ -532,6 +532,10 @@ clientkeys = gears.table.join(
 	awful.key({ modkey, "Shift" }, "c", function(c)
 		-- awful.spawn.with_shell("/home/giga/.config/scripts/mpv-clipboard.sh")
 		awful.spawn.with_shell("/home/giga/.config/scripts/screenshot-window-clipboard.sh")
+	end, { description = "run command", group = "client" }),
+	awful.key({ modkey, "Control" }, "c", function(c)
+		-- awful.spawn.with_shell("/home/giga/.config/scripts/mpv-clipboard.sh")
+		awful.spawn.with_shell("/home/giga/.config/scripts/screenshot-open-latest.sh")
 	end, { description = "run command", group = "client" })
 )
 
