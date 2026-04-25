@@ -838,6 +838,7 @@ lz4
 lzo
 m4
 mailcap
+maim
 make
 man-db
 man-pages
@@ -1183,6 +1184,7 @@ signon-ui
 signond
 simdjson
 slang
+slop
 smbclient
 snappy
 sndio
@@ -1402,6 +1404,7 @@ xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
 xcb-util-xrm
+xclip
 xcursor-vanilla-dmz-aa
 xdg-dbus-proxy
 xdg-desktop-portal
