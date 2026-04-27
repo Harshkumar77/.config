@@ -60,15 +60,13 @@ mpv-audio-shuffle() {
     fd -e mp3 -X nohup mpv --shuffle &
 }
 
-media-dir() {
+dir-play() {
   fd . ~ -e mkv -e mp3 -e mp4 -x echo '{//}' | sort | uniq | rofi -dmenu | xargs -I{} nohup mpv '{}'
 }
 
 media() {
   p="$(fzf --bind "change:reload(fd . ~ -e mkv -e mp4 --and '{q}' -x echo {/.})" --print-query | head -1)"
   (fd . ~ -e mkv --and "$p" | sort) > /tmp/aa.m3u
-  # fd . ~ -e mkv --and "$p"
-  # echo $p
   mpv /tmp/aa.m3u
 }
 

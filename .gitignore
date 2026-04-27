@@ -70,3 +70,5 @@ scripts/package-lock.json
 scripts/package.json
 scripts/transform.sh
 wallpaper/gen/*
+ts-scripts/node_modules
+sxhkd
