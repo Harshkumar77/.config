@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-node -p "
+bun -p "
   [
     ...\`$(cat ~/.config/alias.zsh | rg --fixed-strings "() {" -A 0 -B 0)\`
       .split('\n')

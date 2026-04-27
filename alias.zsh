@@ -40,8 +40,8 @@ wallpaper() {
 alias cdd='zi'
 
 download-songs() {
-    zsh -c "$(node ~/.config/scripts/download-songs.ts)"
-    node ~/.config/scripts/conan.ts
+    zsh -c "$(bun ~/.config/scripts/download-songs.ts)"
+    bun ~/.config/scripts/conan.ts
 }
 
 vlc-audio() {
@@ -118,7 +118,7 @@ play-song-on-start() {
 
 play() {
     p=$(fd . ~/Music -e m3u)
-    pp=$(node -p "
+    pp=$(bun -p "
       \`$p\`
         .split('\n')
         .map(y => y.split('/').pop().split('.')[0])
@@ -131,7 +131,7 @@ play() {
 
 pdf() {
     p=$(fd . "$HOME/Electra Coil/" -e pdf --no-ignore -x echo '{/.}' | rofi -dmenu -multi-select)
-    search_str=$(node -p "
+    search_str=$(bun -p "
       \`$p\`.split('\n').join('|')
     ")
     fd . "$HOME/Electra Coil/" -e pdf --no-ignore --and "$search_str" | xargs -I{} thunar '{}'
@@ -148,7 +148,7 @@ twallz() {
 }
 
 games() {
-    opts=$(node -p '[
+    opts=$(bun -p '[
         "yetris",
         "2048-tui",
         "snake",

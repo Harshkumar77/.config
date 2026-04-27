@@ -35,4 +35,4 @@ console.log(
       fd -e mp3 >> ${key}.m3u`
     }).join("\n")
 );
-console.log('node ~/.config/scripts/conan.ts');
+console.log('bun ~/.config/scripts/conan.ts');

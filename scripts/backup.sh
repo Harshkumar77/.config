@@ -1,9 +1,9 @@
 #!/bin/bash
 force="false"
-# force="true"
+ force="true"
 cd ~/.config
 
-shouldRegularBackup=`node -p "(Math.random() < 0.40) ? true : false"`
+shouldRegularBackup=`bun -p "(Math.random() < 0.40) ? true : false"`
 
 if [[ "$shouldRegularBackup" = "true" ]] || [[ "$force" = "true" ]]; then
     yay -Qmq > ~/.config/pkgs/aur.txt
@@ -35,20 +35,20 @@ fi
 
 
 # monthly
-shouldRareBackup=`node -p "
+shouldRareBackup=`bun -p "
                 (Math.random() < 0.05) ? true : false
             "`
 if [[ "$shouldRareBackup" = "true" ]] || [[ "$force" = "true" ]]; then
     mkdir ~/.config/mpv/scripts/ -p
     curl "https://raw.githubusercontent.com/Idlusen/mpv-ytsub/refs/heads/main/ytsub.lua" > ~/.config/mpv/scripts/ytsub.lua
 
-    # fd . ~/Music -e txt -x zsh -c 'node -p "\"{//}\".split(\"/\").pop()"; echo; cat {} ;echo' > ~/.config/media/music.txt
+    # fd . ~/Music -e txt -x zsh -c 'bun -p "\"{//}\".split(\"/\").pop()"; echo; cat {} ;echo' > ~/.config/media/music.txt
 
     # wallpaper generator
 
     rm ~/.config/wallpaper/gen/ -rf
     mkdir ~/.config/wallpaper/gen/ --parents     
-    mc=$(node -p "\`$(fd . ~/.config/wallpaper/ --max-depth=1 -e png -e jpg -e webp -e jpeg | shuf; fd . ~/.config/wallpaper/ --max-depth=1 -e png -e jpg -e webp -e jpeg)\`
+    mc=$(bun -p "\`$(fd . ~/.config/wallpaper/ --max-depth=1 -e png -e jpg -e webp -e jpeg | shuf; fd . ~/.config/wallpaper/ --max-depth=1 -e png -e jpg -e webp -e jpeg)\`
       .split('\n')
       .reduce((acc, cur, i) => {
           if (i % 6 === 0) acc.push([]);

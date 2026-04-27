@@ -1,4 +1,6 @@
-#!/usr/bin/env -S node
+#!/usr/bin/env -S bun
+
+import type { Keys } from './types'
 
 const keys: Keys = {
   screenshotMode: "full",
@@ -23,10 +25,6 @@ const keys: Keys = {
 
 
 
-type Keys = {
-  screenshotMode: "full" | "window",
-  modTabMode: "alternative" | "cycle-forward" | "cycle-backward",
-}
 const key = process.argv[2]
 
 console.log(
