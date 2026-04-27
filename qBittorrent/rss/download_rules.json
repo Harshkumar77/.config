@@ -43,7 +43,7 @@
             "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
         ],
         "assignedCategory": "",
-        "enabled": false,
+        "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
         "lastMatch": "20 Apr 2026 16:37:44 +0000",
@@ -483,7 +483,7 @@
             "https://thepiratebay11.com/rss/top100/208"
         ],
         "assignedCategory": "",
-        "enabled": false,
+        "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
         "lastMatch": "21 Apr 2026 11:55:50 +0000",
