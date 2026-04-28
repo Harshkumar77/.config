@@ -1,6 +1,5 @@
 #!/usr/bin/env -S bun
 
-import {randomUUID } from 'node:crypto'
+import { randomInt } from 'node:crypto'
 
-console.log(randomUUID);
-
+console.log(Array(1000000).fill(1).map(_ => randomInt(1000, 10000)).join(""));
