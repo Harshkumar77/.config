@@ -61,13 +61,13 @@ mpv-audio-shuffle() {
 }
 
 dir-play() {
-  fd . ~ -e mkv -e mp3 -e mp4 -x echo '{//}' | sort | uniq | rofi -dmenu | xargs -I{} nohup mpv '{}'
+    fd . ~ -e mkv -e mp3 -e mp4 -x echo '{//}' | sort | uniq | rofi -dmenu | xargs -I{} nohup mpv '{}'
 }
 
 media() {
-  p="$(fzf --bind "change:reload(fd . ~ -e mkv -e mp4 --and '{q}' -x echo {/.})" --print-query | head -1)"
-  (fd . ~ -e mkv --and "$p" | sort) > /tmp/aa.m3u
-  mpv /tmp/aa.m3u
+    p="$(fzf --bind "change:reload(fd . ~ -e mkv -e mp4 --and '{q}' -x echo {/.})" --print-query | head -1)"
+    (fd . ~ -e mkv -e mp4 --and "$p" | sort) > /tmp/aa.m3u
+    mpv /tmp/aa.m3u
 }
 
 mpv-video() {
@@ -179,6 +179,6 @@ edit-config() {
 }
 
 buffer() {
-  nohup obsidian "obsidian://adv-uri?vault=Electra%20Coil&filepath=buffer.md"
+    nohup obsidian "obsidian://adv-uri?vault=Electra%20Coil&filepath=buffer.md"
 }
 # CnBkZigpIHsKICBjZCB&aHR0cHM6Ly90Lm1lLyt4cmdyajdsQUNNVTJaVGsx&CnBkZigpIHsKICBjZCB+L0VsZWN0cmEgQ29pbC8KICBmZCAtLW5vLXJlcXVpcmUtZ2l0IC1lIHBkZiAgLS1mb3JtYXQgIid7fSciIHwgZnpmIC1tIHwgeGFyZ3MgIG5vaHVwIG9rdWxhciB7fQo=
