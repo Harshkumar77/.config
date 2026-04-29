@@ -539,6 +539,9 @@ clientkeys = gears.table.join(
 		c.maximized_horizontal = not c.maximized_horizontal
 		c:raise()
 	end, { description = "(un)maximize horizontally", group = "client" }),
+	awful.key({ modkey, "Shift" }, "p", function()
+		awful.spawn.with_shell("flameshot gui")
+	end, { description = "run command", group = "client" }),
 	awful.key({ modkey }, "c", function(c)
 		-- awful.spawn.with_shell("/home/giga/.config/scripts/mpv-clipboard.sh")
 		awful.spawn.with_shell("/home/giga/.config/scripts/screenshot-window.sh")
