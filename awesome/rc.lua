@@ -315,8 +315,9 @@ globalkeys = gears.table.join(
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 	awful.key({ modkey }, "Tab", function()
 		awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
-      naughty.notify({ text = out})
+      naughty.notify({ text = out })
 			if out == "swap" then
+				naughty.notify({ text = out })
 				awful.client.swap.byidx(1)
 				awful.client.focus.byidx(-1)
 			elseif out == "swap-reverse" then

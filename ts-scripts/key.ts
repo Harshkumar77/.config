@@ -27,4 +27,6 @@ const keys: Keys = {
 
 const key = process.argv[2] ?? ""
 
-console.log(Object.hasOwn(keys, key) ? keys[key as keyof typeof keys] : "fake");
+process.stdout.write(
+  Object.hasOwn(keys, key) ? keys[key as keyof typeof keys] : "fake"
+)
