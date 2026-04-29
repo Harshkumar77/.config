@@ -419,9 +419,9 @@ globalkeys = gears.table.join(
 		end
 	end, { description = "restore minimized", group = "client" }),
 
-	-- awful.key({ modkey }, "r", function(c)
-	--   awful.titlebar:toggle (client)
-	-- end, { description = "run prompt", group = "launcher" }),
+	awful.key({ modkey }, "r", function(c)
+		awful.spawn.with_shell("nvim ~/.config/ts-scripts/key.ts")
+	end, { description = "run prompt", group = "launcher" }),
 
 	-- Rofi
 	awful.key({ modkey }, "space", function()
