@@ -11,11 +11,7 @@ choice=$((
 ) | rofi -dmenu -p "Some goodies?")
 
 if [ "$choice" == "yes" ]; then
-  awesome-client 'awful=require("awful");
-      awful.spawn("~/.config/awesome/Long.sh", {
-        tag       = "fullscreen",
-      })'
-  # zsh -c '' &
+  zsh -c '~/.config/awesome/Long.sh' &
   ~/.config/awesome/Song.sh &
   android-studio &
   anki &
