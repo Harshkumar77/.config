@@ -4,7 +4,7 @@ import type { Keys } from './types'
 
 const keys: Keys = {
   screenshotMode: "full",
-  modTabMode: "alternative",
+  modTabMode: "swap",
 }
 
 
@@ -25,8 +25,6 @@ const keys: Keys = {
 
 
 
-const key = process.argv[2]
+const key = process.argv[2] ?? ""
 
-console.log(
-  keys[key] ?? "fake"
-);
+console.log(Object.hasOwn(keys, key) ? keys[key as keyof typeof keys] : "fake");

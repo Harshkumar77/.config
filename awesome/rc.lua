@@ -263,7 +263,6 @@ root.buttons(gears.table.join(
 ))
 -- }}}
 
-FunkyModTab = 0
 -- {{{ Key bindings
 globalkeys = gears.table.join(
 	awful.key({ modkey }, "=", function()
@@ -314,36 +313,23 @@ globalkeys = gears.table.join(
 		awful.screen.focus_relative(-1)
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
-	awful.key({ modkey, "Control" }, "Tab", function()
-		FunkyModTab = FunkyModTab + 1
-		if FunkyModTab == 3 then
-			FunkyModTab = -1
-		end
-		if FunkyModTab == 1 then
-			naughty.notify({ text = "funkyModTab: forward" })
-		elseif FunkyModTab == -1 then
-			naughty.notify({ text = "funkyModTab: backward" })
-		elseif FunkyModTab == 2 then
-			naughty.notify({ text = "funkyModTab: cyclic" })
-		else
-			naughty.notify({ text = "funkyModTab: disabled" })
-		end
-	end, { description = "toggle funky mod tab", group = "client" }),
 	awful.key({ modkey }, "Tab", function()
-		if FunkyModTab == 1 then
-			awful.client.swap.byidx(1)
-			awful.client.focus.byidx(-1)
-		elseif FunkyModTab == -1 then
-			awful.client.swap.byidx(-1)
-			awful.client.focus.byidx(1)
-		elseif FunkyModTab == 2 then
-			awful.client.focus.byidx(1)
-		else
-			awful.client.focus.history.previous()
-			if client.focus then
-				client.focus:raise()
+		awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
+			if out == "swap" then
+				awful.client.swap.byidx(1)
+				awful.client.focus.byidx(-1)
+			elseif out == "swap-reverse" then
+				awful.client.swap.byidx(-1)
+				awful.client.focus.byidx(1)
+			elseif out == "cycle-forward" then
+				awful.client.focus.byidx(1)
+			else
+				awful.client.focus.history.previous()
+				if client.focus then
+					client.focus:raise()
+				end
 			end
-		end
+		end)
 	end, { description = "go back", group = "client" }),
 
 	-- Standard program

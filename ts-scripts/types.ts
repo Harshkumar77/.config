@@ -1,5 +1,5 @@
 export type Keys = {
   screenshotMode: "full" | "window",
-  modTabMode: "alternative" | "cycle-forward" | "cycle-backward",
+  modTabMode: "alternative" | "cycle-forward" | "swap" | "swap-reverse",
 }
 
