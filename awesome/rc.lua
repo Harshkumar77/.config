@@ -56,6 +56,7 @@ beautiful.init("~/.config/awesome/" .. "default/theme.lua")
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
 editor = os.getenv("EDITOR") or "nvim"
+home = os.getenv("HOME") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -314,20 +315,47 @@ globalkeys = gears.table.join(
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
 	awful.key({ modkey }, "Tab", function()
-		awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
-			if out:match "swap" then
-				awful.client.swap.byidx(1)
-				awful.client.focus.byidx(-1)
-			elseif out:match "swap-reverse" then
-				awful.client.swap.byidx(-1)
-				awful.client.focus.byidx(1)
-			elseif out:match "cycle-forward" then
-				awful.client.focus.byidx(1)
-			else
-				awful.client.focus.history.previous()
-				if client.focus then
-					client.focus:raise()
-				end
+		awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
+			if singleTapMod:match("false") then
+				awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
+					if out:match("swap") then
+						awful.client.swap.byidx(1)
+						awful.client.focus.byidx(-1)
+					elseif out:match("swap-reverse") then
+						awful.client.swap.byidx(-1)
+						awful.client.focus.byidx(1)
+					elseif out:match("cycle-forward") then
+						awful.client.focus.byidx(1)
+					else
+						awful.client.focus.history.previous()
+						if client.focus then
+							client.focus:raise()
+						end
+					end
+				end)
+			end
+		end)
+	end, { description = "go back", group = "client" }),
+
+	awful.key({ "Tab" }, "Tab", function()
+		awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
+			if singleTapMod:match("true") then
+				awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
+					if out:match("swap") then
+						awful.client.swap.byidx(1)
+						awful.client.focus.byidx(-1)
+					elseif out:match("swap-reverse") then
+						awful.client.swap.byidx(-1)
+						awful.client.focus.byidx(1)
+					elseif out:match("cycle-forward") then
+						awful.client.focus.byidx(1)
+					else
+						awful.client.focus.history.previous()
+						if client.focus then
+							client.focus:raise()
+						end
+					end
+				end)
 			end
 		end)
 	end, { description = "go back", group = "client" }),
@@ -420,7 +448,7 @@ globalkeys = gears.table.join(
 	end, { description = "restore minimized", group = "client" }),
 
 	awful.key({ modkey }, "r", function(c)
-		awful.spawn.with_shell("nvim ~/.config/ts-scripts/key.ts")
+		awful.spawn("alacritty --command nvim /home/giga/.config/ts-scripts/key.ts")
 	end, { description = "run prompt", group = "launcher" }),
 
 	-- Rofi

@@ -172,6 +172,7 @@ filesystem
 findutils
 firefox
 flac
+flameshot
 flatpak
 flex
 flite

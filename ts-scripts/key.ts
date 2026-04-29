@@ -3,8 +3,9 @@
 import type { Keys } from './types'
 
 const keys: Keys = {
-  screenshotMode: "window",
+  screenshotMode: "full",
   modTabMode: "alternative",
+  singleTapMod : false,
 }
 
 
@@ -27,6 +28,6 @@ const keys: Keys = {
 
 const key = process.argv[2] ?? ""
 
-process.stdout.write(
+console.log(
   Object.hasOwn(keys, key) ? keys[key as keyof typeof keys] : "fake"
 )
