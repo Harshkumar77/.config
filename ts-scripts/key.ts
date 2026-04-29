@@ -3,8 +3,8 @@
 import type { Keys } from './types'
 
 const keys: Keys = {
-  screenshotMode: "full",
-  modTabMode: "swap",
+  screenshotMode: "window",
+  modTabMode: "alternative",
 }
 
 
