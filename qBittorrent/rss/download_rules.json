@@ -599,11 +599,11 @@
             "https://thepiratebay11.com/rss/top100/208"
         ],
         "assignedCategory": "Single",
-        "enabled": false,
+        "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "17 Apr 2026 03:32:16 +0000",
-        "mustContain": "The Pitt",
+        "lastMatch": "29 Apr 2026 08:08:57 +0000",
+        "mustContain": "The boy 1080 Rap",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],
