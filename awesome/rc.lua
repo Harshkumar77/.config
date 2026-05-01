@@ -337,28 +337,28 @@ globalkeys = gears.table.join(
 	-- 	end)
 	-- end, { description = "go back", group = "client" }),
 
-	awful.key({ "Tab" }, "Tab", function()
-		awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
-			if singleTapMod:match("true") then
-				awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
-					if out:match("swap") then
-						awful.client.swap.byidx(1)
-						awful.client.focus.byidx(-1)
-					elseif out:match("swap-reverse") then
-						awful.client.swap.byidx(-1)
-						awful.client.focus.byidx(1)
-					elseif out:match("cycle-forward") then
-						awful.client.focus.byidx(1)
-					else
-						awful.client.focus.history.previous()
-						if client.focus then
-							client.focus:raise()
-						end
-					end
-				end)
-			end
-		end)
-	end, { description = "go back", group = "client" }),
+	-- awful.key({ "Tab" }, "Tab", function()
+	-- 	awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
+	-- 		if singleTapMod:match("true") then
+	-- 			awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
+	-- 				if out:match("swap") then
+	-- 					awful.client.swap.byidx(1)
+	-- 					awful.client.focus.byidx(-1)
+	-- 				elseif out:match("swap-reverse") then
+	-- 					awful.client.swap.byidx(-1)
+	-- 					awful.client.focus.byidx(1)
+	-- 				elseif out:match("cycle-forward") then
+	-- 					awful.client.focus.byidx(1)
+	-- 				else
+	-- 					awful.client.focus.history.previous()
+	-- 					if client.focus then
+	-- 						client.focus:raise()
+	-- 					end
+	-- 				end
+	-- 			end)
+	-- 		end
+	-- 	end)
+	-- end, { description = "go back", group = "client" }),
 
 	-- Standard program
 	awful.key({ modkey, "Shift" }, "Return", function()
@@ -625,10 +625,6 @@ clientbuttons = gears.table.join(
 	end)
 )
 
--- Set keys
-root.keys(globalkeys)
--- }}}
-
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
@@ -765,6 +761,8 @@ end)
 awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
 
 function quickWindowSwitch()
+        naughty.notify({ text = "4444"})
+
 	awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
 		if out:match("swap") then
 			awful.client.swap.byidx(1)
@@ -783,11 +781,17 @@ function quickWindowSwitch()
 	end)
 end
 
-singleTapMod = io.popen("~/.config/ts-scripts/key.ts singleTapMod"):read("*all")
+singleTapMod = io.popen("bun ~/.config/ts-scripts/key.ts singleTapMod"):read("*all")
 if singleTapMod:match("false") then
-	gears.table.join(awful.key({ modkey }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
+	globalkeys = gears.table.join(globalkeys,
+		awful.key({ modkey }, "Tab", quickWindowSwitch,
+			{ description = "go back", group = "client" })
+	)
 else
-	gears.table.join(awful.key({ "Tab" }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
+	globalkeys = gears.table.join(globalkeys,
+		awful.key({"Tab"}, "Tab", quickWindowSwitch,
+			{ description = "go back", group = "client" })
+	)
 end
 
 -- awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
@@ -797,3 +801,7 @@ end
 -- 		gears.table.join(awful.key({ "Tab" }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
 -- 	end
 -- end)
+
+-- Set keys
+root.keys(globalkeys)
+-- }}}
