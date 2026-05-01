@@ -781,7 +781,7 @@ function quickWindowSwitch()
 	end)
 end
 
-singleTapMod = io.popen("bun ~/.config/ts-scripts/key.ts singleTapMod"):read("*all")
+singleTapMod = io.popen("~/.config/ts-scripts/key.ts singleTapMod"):read("*all")
 if singleTapMod:match("false") then
 	globalkeys = gears.table.join(globalkeys,
 		awful.key({ modkey }, "Tab", quickWindowSwitch,
