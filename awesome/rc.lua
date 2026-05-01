@@ -314,28 +314,28 @@ globalkeys = gears.table.join(
 		awful.screen.focus_relative(-1)
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
-	awful.key({ modkey }, "Tab", function()
-		awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
-			if singleTapMod:match("false") then
-				awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
-					if out:match("swap") then
-						awful.client.swap.byidx(1)
-						awful.client.focus.byidx(-1)
-					elseif out:match("swap-reverse") then
-						awful.client.swap.byidx(-1)
-						awful.client.focus.byidx(1)
-					elseif out:match("cycle-forward") then
-						awful.client.focus.byidx(1)
-					else
-						awful.client.focus.history.previous()
-						if client.focus then
-							client.focus:raise()
-						end
-					end
-				end)
-			end
-		end)
-	end, { description = "go back", group = "client" }),
+	-- awful.key({ modkey }, "Tab", function()
+	-- 	awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
+	-- 		if singleTapMod:match("false") then
+	-- 			awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
+	-- 				if out:match("swap") then
+	-- 					awful.client.swap.byidx(1)
+	-- 					awful.client.focus.byidx(-1)
+	-- 				elseif out:match("swap-reverse") then
+	-- 					awful.client.swap.byidx(-1)
+	-- 					awful.client.focus.byidx(1)
+	-- 				elseif out:match("cycle-forward") then
+	-- 					awful.client.focus.byidx(1)
+	-- 				else
+	-- 					awful.client.focus.history.previous()
+	-- 					if client.focus then
+	-- 						client.focus:raise()
+	-- 					end
+	-- 				end
+	-- 			end)
+	-- 		end
+	-- 	end)
+	-- end, { description = "go back", group = "client" }),
 
 	awful.key({ "Tab" }, "Tab", function()
 		awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
@@ -763,3 +763,37 @@ end)
 --
 
 awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
+
+function quickWindowSwitch()
+	awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
+		if out:match("swap") then
+			awful.client.swap.byidx(1)
+			awful.client.focus.byidx(-1)
+		elseif out:match("swap-reverse") then
+			awful.client.swap.byidx(-1)
+			awful.client.focus.byidx(1)
+		elseif out:match("cycle-forward") then
+			awful.client.focus.byidx(1)
+		else
+			awful.client.focus.history.previous()
+			if client.focus then
+				client.focus:raise()
+			end
+		end
+	end)
+end
+
+singleTapMod = io.popen("~/.config/ts-scripts/key.ts singleTapMod"):read("*all")
+if singleTapMod:match("false") then
+	gears.table.join(awful.key({ modkey }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
+else
+	gears.table.join(awful.key({ "Tab" }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
+end
+
+-- awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
+-- 	if singleTapMod:match("false") then
+-- 		gears.table.join(awful.key({ modkey }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
+-- 	else
+-- 		gears.table.join(awful.key({ "Tab" }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
+-- 	end
+-- end)
