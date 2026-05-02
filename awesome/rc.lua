@@ -625,6 +625,8 @@ clientbuttons = gears.table.join(
 	end)
 )
 
+titleBarEnabled = io.popen("~/.config/ts-scripts/key.ts titleBarEnabled"):read("*all"):match("true")
+
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
@@ -679,7 +681,7 @@ awful.rules.rules = {
 	},
 
 	-- Add titlebars to normal clients and dialogs
-	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = false } },
+	{ rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = titleBarEnabled } },
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
 	-- { rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "fullscreen-II" } },
@@ -760,35 +762,34 @@ end)
 
 awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
 
+modTabMode = io.popen("~/.config/ts-scripts/key.ts modTabMode"):read("*all")
 function quickWindowSwitch()
-	awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
-		if out:match("swap") then
-			awful.client.swap.byidx(1)
-			awful.client.focus.byidx(-1)
-		elseif out:match("swap-reverse") then
-			awful.client.swap.byidx(-1)
-			awful.client.focus.byidx(1)
-		elseif out:match("cycle-forward") then
-			awful.client.focus.byidx(1)
-		else
-			awful.client.focus.history.previous()
-			if client.focus then
-				client.focus:raise()
-			end
+	if modTabMode:match("swap") then
+		awful.client.swap.byidx(1)
+		awful.client.focus.byidx(-1)
+	elseif modTabMode:match("swap-reverse") then
+		awful.client.swap.byidx(-1)
+		awful.client.focus.byidx(1)
+	elseif modTabMode:match("cycle-forward") then
+		awful.client.focus.byidx(1)
+	else
+		awful.client.focus.history.previous()
+		if client.focus then
+			client.focus:raise()
 		end
-	end)
+	end
 end
 
 singleTapMod = io.popen("~/.config/ts-scripts/key.ts singleTapMod"):read("*all")
 if singleTapMod:match("false") then
-	globalkeys = gears.table.join(globalkeys,
-		awful.key({ modkey }, "Tab", quickWindowSwitch,
-			{ description = "go back", group = "client" })
+	globalkeys = gears.table.join(
+		globalkeys,
+		awful.key({ modkey }, "Tab", quickWindowSwitch, { description = "go back", group = "client" })
 	)
 else
-	globalkeys = gears.table.join(globalkeys,
-		awful.key({"Tab"}, "Tab", quickWindowSwitch,
-			{ description = "go back", group = "client" })
+	globalkeys = gears.table.join(
+		globalkeys,
+		awful.key({ "Tab" }, "Tab", quickWindowSwitch, { description = "go back", group = "client" })
 	)
 end
 
