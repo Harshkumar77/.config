@@ -1075,6 +1075,7 @@ python-cffi
 python-charset-normalizer
 python-click
 python-configargparse
+python-configobj
 python-cryptography
 python-dateutil
 python-dbus
@@ -1086,6 +1087,7 @@ python-flask
 python-flask-cors
 python-gobject
 python-html5lib
+python-httplib2
 python-idna
 python-imagesize
 python-installer
@@ -1115,7 +1117,9 @@ python-protobuf
 python-psutil
 python-ptyprocess
 python-pycparser
+python-pycurl
 python-pygments
+python-pyparsing
 python-pyproject-hooks
 python-pyqt6
 python-pyqt6-sip
@@ -1328,6 +1332,7 @@ util-linux-libs
 v4l-utils
 vala
 vapoursynth
+variety
 vid.stab
 viewnior
 vifm

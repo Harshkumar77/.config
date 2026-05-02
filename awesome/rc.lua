@@ -761,8 +761,6 @@ end)
 awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
 
 function quickWindowSwitch()
-        naughty.notify({ text = "4444"})
-
 	awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts modTabMode", function(out)
 		if out:match("swap") then
 			awful.client.swap.byidx(1)

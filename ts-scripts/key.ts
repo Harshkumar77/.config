@@ -5,7 +5,7 @@ import type { Keys } from './types'
 const keys: Keys = {
   screenshotMode: "full",
   modTabMode: "alternative",
-  singleTapMod : true,
+  singleTapMod : false,
 }
 
 
