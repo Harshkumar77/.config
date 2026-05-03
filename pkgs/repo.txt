@@ -210,8 +210,6 @@ gdbm
 gdk-pixbuf2
 gegl
 geoclue
-geocode-glib-2
-geocode-glib-common
 gettext
 gexiv2
 ghostscript
@@ -325,6 +323,7 @@ imake
 imath
 imlib2
 inetutils
+install-grub
 intel-ucode
 intltool
 inxi
@@ -559,7 +558,6 @@ libfreeaptx
 libfreehand
 libftdi
 libfyaml
-libgadu
 libgcc
 libgcrypt
 libgee
@@ -687,7 +685,6 @@ libppd
 libproxy
 libpsl
 libpulse
-libpurple
 libpwquality
 libqalculate
 libqmi
@@ -824,11 +821,17 @@ linux-firmware-broadcom
 linux-firmware-cirrus
 linux-firmware-intel
 linux-firmware-mediatek
+linux-firmware-meta
 linux-firmware-nvidia
 linux-firmware-other
 linux-firmware-radeon
 linux-firmware-realtek
 linux-firmware-whence
+linux-meta
+linux515
+linux61
+linux612
+linux618
 lirc
 live-media
 llhttp
@@ -839,6 +842,7 @@ lmdb
 localsearch
 logrotate
 lpsolve
+lsb-release
 lua
 lua51-lpeg
 lua53
@@ -862,11 +866,14 @@ manjaro-browser-settings
 manjaro-gstreamer
 manjaro-hello
 manjaro-icons
+manjaro-keyring
 manjaro-modem
 manjaro-pipewire
 manjaro-printer
+manjaro-release
 manjaro-settings-manager
 manjaro-settings-manager-notifier
+manjaro-system
 manjaro-wallpapers-18.0
 manjaro-xfce-settings
 manjaro-zsh-config
@@ -969,6 +976,7 @@ osinfo-db
 ostree
 p11-kit
 pacman
+pacman-mirrors
 pam
 pamac-cli
 pamac-gtk3
@@ -1323,6 +1331,7 @@ unace
 unibilium
 unrar
 unzip
+update-grub
 upower
 usb_modeswitch
 usbmuxd
