@@ -4,7 +4,7 @@
 
 if [ -z $@ ]
 then
-  node ~/.config/scripts/scrap-alias.js
+  bun ~/.config/scripts/scrap-alias.js
 else
     LAYOUT="$1"
     notify-send "$LAYOUT"
