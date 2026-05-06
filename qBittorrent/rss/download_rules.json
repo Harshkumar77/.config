@@ -486,14 +486,15 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "21 Apr 2026 11:55:50 +0000",
-        "mustContain": "Rookie 1080 elite",
+        "lastMatch": "05 May 2026 09:20:01 +0000",
+        "mustContain": "Rookie 1080 GRACE",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
+            "8x18"
         ],
         "priority": 0,
         "savePath": "",
-        "smartFilter": false,
+        "smartFilter": true,
         "torrentContentLayout": null,
         "torrentParams": {
             "category": "",

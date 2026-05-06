@@ -11,6 +11,10 @@
         "uid": "{201d60cc-6ecd-480c-8ee4-22526c61c38e}",
         "url": "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
     },
+    "KONTRAST - RSS": {
+        "uid": "{48bb2e7d-4ee9-4fb2-9456-444b61baaca0}",
+        "url": "https://kontrast.top/feed/rss"
+    },
     "MeGusta - Knaben Database": {
         "uid": "{ad137194-0ce9-4d40-8b3d-1fbd65d0a119}",
         "url": "https://rss.knaben.org/The%20Pitt%20MeGusta"
