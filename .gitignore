@@ -72,3 +72,5 @@ scripts/transform.sh
 wallpaper/gen/*
 ts-scripts/node_modules
 sxhkd
+ripgrep-all/
+variety/
