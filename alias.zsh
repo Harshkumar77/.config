@@ -24,7 +24,12 @@ xfce-launch() {
 alias vlc='nohup vlc'
 alias mpv='nohup mpv'
 alias bmpv='/bin/mpv'
-alias wgetv='nohup wget -c'
+
+wgetv() {
+    cd ~/Temp;
+    read "url?URL: " && wget -c "$url"
+    exit
+}
 
 
 # alias extract-urls() {
