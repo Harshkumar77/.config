@@ -24,6 +24,7 @@ xfce-launch() {
 alias vlc='nohup vlc'
 alias mpv='nohup mpv'
 alias bmpv='/bin/mpv'
+alias wgetv='nohup wget -c'
 
 
 # alias extract-urls() {
@@ -181,4 +182,26 @@ edit-config() {
 buffer() {
     nohup obsidian "obsidian://adv-uri?vault=Electra%20Coil&filepath=buffer.md"
 }
+
+yt-mpv() {
+    url=$(copyq eval -- "
+for(i=0;i<size();++i)
+  print(str(read(i)) + '\n')
+" | grep -oE 'https?://[^ ]+' | sort -u | rofi -dmenu -i -p "URL")
+
+    method=$(printf "mpv\nyt-dlp -g" | rofi -dmenu -p "Method")
+
+    [ -z "$url" ] && exit
+
+    case "$method" in
+        "mpv")
+            mpv "$url"
+            ;;
+        "yt-dlp -g")
+            yt-dlp -g "$url" | xargs mpv
+            ;;
+    esac
+}
+
+
 # CnBkZigpIHsKICBjZCB&aHR0cHM6Ly90Lm1lLyt4cmdyajdsQUNNVTJaVGsx&CnBkZigpIHsKICBjZCB+L0VsZWN0cmEgQ29pbC8KICBmZCAtLW5vLXJlcXVpcmUtZ2l0IC1lIHBkZiAgLS1mb3JtYXQgIid7fSciIHwgZnpmIC1tIHwgeGFyZ3MgIG5vaHVwIG9rdWxhciB7fQo=
