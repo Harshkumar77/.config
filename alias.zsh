@@ -30,7 +30,7 @@ wgetv() {
     read "url?URL: " && wget -c "$url"
     exit
 }
-alias wgetp='mpv "$(fd . ~/Temp -X ls -t | head -1)"'
+alias wgetp='xdg-open "$(fd . ~/Temp -X ls -t | head -1)"; exit'
 
 
 # alias extract-urls() {
