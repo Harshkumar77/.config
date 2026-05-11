@@ -5,6 +5,9 @@ redshift -O 3500
 redshift -O 3500
 ~/.config/scripts/backup.sh &
 
+killall fusuma
+fusuma &
+
 choice=$((
         echo "yes";
         echo "no"

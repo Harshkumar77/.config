@@ -1,0 +1,25 @@
+swipe:
+  3:
+    left:
+      command: 'awesome-client  "local awful = require(\"awful\");awful.tag.viewnext()"'
+    right:
+      command: 'awesome-client  "local awful = require(\"awful\");awful.tag.viewprev()"'
+    up:
+      command: 'awesome-client  "local awful = require(\"awful\");
+                local s = awful.screen.focused()
+                if s.selected_tag then
+                  awful.tag.viewtoggle(s.selected_tag)
+                else
+                  awful.tag.history.restore(s)
+                end"'
+    down:
+      command: ''
+
+threshold:
+  swipe: 0.5
+  pinch: 0.2
+
+interval:
+  swipe: 0.2
+  pinch: 0.2
+

@@ -793,13 +793,6 @@ else
 	)
 end
 
--- awful.spawn.easy_async_with_shell("~/.config/ts-scripts/key.ts singleTapMod", function(singleTapMod)
--- 	if singleTapMod:match("false") then
--- 		gears.table.join(awful.key({ modkey }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
--- 	else
--- 		gears.table.join(awful.key({ "Tab" }, "Tab", quickWindowSwitch, { description = "go back", group = "client" }))
--- 	end
--- end)
 
 -- Set keys
 root.keys(globalkeys)
