@@ -97,6 +97,7 @@ code
 colord
 compiler-rt
 compiler-rt20
+compiler-rt21
 composefs
 confuse
 containerd
@@ -210,6 +211,7 @@ gdbm
 gdk-pixbuf2
 gegl
 geoclue
+geocode-glib
 gettext
 gexiv2
 ghostscript
@@ -230,6 +232,7 @@ glm
 glslang
 glu
 glycin
+glycin-gtk4
 gmp
 gnome-autoar
 gnome-clocks
@@ -299,6 +302,7 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 gvim
+gweather-locations
 gzip
 harfbuzz
 harfbuzz-icu
@@ -338,6 +342,7 @@ jasper
 java-runtime-common
 jbig2dec
 jbigkit
+jemalloc
 jfsutils
 jre11-openjdk
 json-c
@@ -541,6 +546,7 @@ libe-book
 libebml
 libebur128
 libedit
+libei
 libelf
 libepoxy
 libepubgen
@@ -590,6 +596,7 @@ libimobiledevice
 libimobiledevice-glue
 libinih
 libinput
+libinput-tools
 libinstpatch
 libiptcdata
 libisl
@@ -808,6 +815,7 @@ libxvmc
 libxxf86vm
 libyaml
 libyuv
+libzip
 libzmf
 licenses
 lightdm
@@ -832,11 +840,13 @@ linux515
 linux61
 linux612
 linux618
+linux70
 lirc
 live-media
 llhttp
 llvm-libs
 llvm20-libs
+llvm21-libs
 lm_sensors
 lmdb
 localsearch
@@ -844,9 +854,11 @@ logrotate
 lpsolve
 lsb-release
 lua
+lua-luarocks
 lua51-lpeg
 lua53
 lua53-lgi
+lua54
 luajit
 luarocks
 lv2
@@ -896,7 +908,9 @@ mhwd-nvidia-390xx
 mhwd-nvidia-470xx
 mhwd-nvidia-570xx
 mhwd-nvidia-575xx
+mhwd-nvidia-580xx
 micro
+miniaudio
 minizip
 mjpegtools
 mkinitcpio
@@ -915,6 +929,7 @@ mtdev
 mtpfs
 mugshot
 mujs
+mypaint-brushes
 mypaint-brushes1
 nano
 nano-syntax-highlighting
@@ -965,6 +980,7 @@ opencore-amr
 openexr
 openh264
 openjpeg2
+openjph
 openssh
 openssl
 openvpn
@@ -997,6 +1013,7 @@ perl
 perl-alien-build
 perl-alien-libxml2
 perl-capture-tiny
+perl-class-inspector
 perl-clone
 perl-dbi
 perl-encode-locale
@@ -1007,6 +1024,7 @@ perl-file-chdir
 perl-file-desktopentry
 perl-file-listing
 perl-file-mimeinfo
+perl-file-sharedir
 perl-file-which
 perl-html-parser
 perl-html-tagset
@@ -1109,6 +1127,7 @@ python-jsonschema
 python-jsonschema-specifications
 python-keyutils
 python-legacy-cgi
+python-libevdev
 python-lxml
 python-markdown
 python-markupsafe
@@ -1134,6 +1153,7 @@ python-pyqt6-sip
 python-pyqt6-webengine
 python-pysocks
 python-pytz
+python-pyudev
 python-pyxdg
 python-referencing
 python-requests
@@ -1194,6 +1214,7 @@ qt6-wayland
 qt6-webchannel
 qt6-webengine
 qt6ct
+qtkeychain-qt6
 raptor
 rasqal
 rav1e
@@ -1216,6 +1237,8 @@ rsync
 rtkit
 rtmpdump
 rubberband
+ruby
+rubygems
 run-parts
 runc
 rustup

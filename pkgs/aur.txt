@@ -11,12 +11,11 @@ espeak
 firefox-beta-bin
 fontpreview-git
 fzf-tab-git
-geocode-glib-2
-geocode-glib-common
 gtk2
 gtkspell
 hexchat
 libgadu
+libinput-gestures
 libpurple
 mpv-sponsorblock
 myman
@@ -27,6 +26,7 @@ pidgin
 qbittorrent-enhanced-nox-bin
 raidrivecli
 rofi-power-menu
+ruby-fusuma
 snake-asm-bin
 sudoku-gtk3
 syncthing-gtk
