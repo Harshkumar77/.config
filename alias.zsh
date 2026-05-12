@@ -25,11 +25,11 @@ alias vlc='nohup vlc'
 alias mpv='nohup mpv'
 alias bmpv='/bin/mpv'
 
-wgetv() {
-    cd ~/Temp;
-    read "url?URL: " && wget -c "$url"
-    exit
+cmpv() {
+    url=$(rofi -dmenu)
+    mpv --demuxer-max-bytes=8000000KiB "$url"
 }
+
 alias wgetp='xdg-open "$(fd . ~/Temp -X ls -t | head -1)"; exit'
 
 
