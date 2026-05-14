@@ -30,7 +30,7 @@ cmpv() {
     mpv --demuxer-max-bytes=8000000KiB "$url"
 }
 
-alias wgetp='xdg-open "$(fd . ~/Temp -X ls -t | head -1)"; exit'
+alias wgetp='mpv "$(fd . ~/Temp -X ls -t | head -1)"; exit'
 
 
 # alias extract-urls() {
@@ -86,8 +86,8 @@ mpv-video() {
 }
 
 anime-latest() {
-    cd ~/Downloads/Organised\ Episodes
-    (fd -e mkv -e mp4 -X ls -t) > playlist.m3u
+    cd ~/Temp/
+    (fd -t f -X ls -t) > playlist.m3u
     xdg-open playlist.m3u
     sleep 3
     rm playlist.m3u
