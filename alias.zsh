@@ -172,7 +172,7 @@ games() {
         "https://quenq.com/apps/vice-city/",
     ]
       .map((x) => {
-        return `firefox-beta --new-window "${x}"`
+        return `firefox --new-window "${x}"`
       })
       .join("\n")
     ')
