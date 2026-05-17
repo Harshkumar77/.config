@@ -27,7 +27,9 @@ alias bmpv='/bin/mpv'
 
 cmpv() {
     url=$(rofi -dmenu)
-    mpv --demuxer-max-bytes=8000000KiB "$url"
+    cd ~/Temp 
+    wget "$url" &
+    mpv "$(fd . ~/Temp -X ls -t | head -1)"
 }
 
 alias wgetp='mpv "$(fd . ~/Temp -X ls -t | head -1)"; exit'
