@@ -88,11 +88,11 @@ mpv-video() {
 }
 
 anime-latest() {
-    cd ~/Temp/
-    (fd -t f -X ls -t) > playlist.m3u
-    xdg-open playlist.m3u
+    cd ~
+    (fd -e mkv -e mkv.part -X ls -t) > ~/Downloads/playlist.m3u
+    xdg-open ~/Downloads/playlist.m3u
     sleep 3
-    rm playlist.m3u
+    rm ~/Downloads/playlist.m3u
     exit
 }
 
