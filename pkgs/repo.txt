@@ -2,7 +2,6 @@
 a52dec
 aalib
 abseil-cpp
-accounts-qml-module
 accountsservice
 acl
 acpi
@@ -836,7 +835,6 @@ linux-firmware-radeon
 linux-firmware-realtek
 linux-firmware-whence
 linux-meta
-linux515
 linux61
 linux612
 linux618
