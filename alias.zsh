@@ -25,6 +25,8 @@ alias vlc='nohup vlc'
 alias mpv='nohup mpv'
 alias bmpv='/bin/mpv'
 
+alias mpv-newest='mpv "$(fd . /tmp -e mkv -X ls -t | head -1)"'
+
 cmpv() {
     url=$(rofi -dmenu)
     cd ~/Temp 
