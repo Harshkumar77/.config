@@ -40,4 +40,5 @@ vifmimg-git
 xidel-bin
 yayfzf
 yetris
+zoom
 zsh-vi-mode
