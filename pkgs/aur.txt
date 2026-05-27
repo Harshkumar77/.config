@@ -18,6 +18,7 @@ hexchat
 libgadu
 libinput-gestures
 libpurple
+linux-firmware-meta
 linux515
 mpv-sponsorblock
 myman
