@@ -11,6 +11,7 @@ dclock
 espeak
 fontpreview-git
 fzf-tab-git
+google-chrome
 gtk2
 gtkspell
 hexchat

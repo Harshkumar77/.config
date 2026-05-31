@@ -465,7 +465,7 @@ globalkeys = gears.table.join(
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey, "Shift" }, "b", function()
-		awful.spawn("firefox")
+		awful.spawn("google-chrome-stable --new-window")
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey }, "b", function()
