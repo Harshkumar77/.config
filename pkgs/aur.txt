@@ -35,6 +35,7 @@ sudoku-gtk3
 syncthing-gtk
 tetrigo-bin
 tiv
+tlauncher-installer
 trek
 vifm-devicons-git
 vifmimg-git
