@@ -35,6 +35,7 @@ cmpv() {
 }
 
 alias wgetp='mpv "$(fd . ~/Temp -X ls -t | head -1)"; exit'
+alias wget='wget --continue --content-disposition'
 
 
 # alias extract-urls() {
