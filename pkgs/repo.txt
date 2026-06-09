@@ -163,6 +163,7 @@ faac
 faad2
 fakeroot
 farstream
+fbreader
 fd
 feh
 ffmpeg
