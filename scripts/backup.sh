@@ -1,9 +1,9 @@
 #!/bin/bash
-force="true"
+force="false"
 #force="true"
 cd ~/.config
 
-shouldRegularBackup=`bun -p "(Math.random() < 0.40) ? true : false"`
+shouldRegularBackup=`bun -p "(Math.random() < 0.60) ? true : false"`
 
 if [[ "$shouldRegularBackup" = "true" ]] || [[ "$force" = "true" ]]; then
     yay -Qmq > ~/.config/pkgs/aur.txt
@@ -36,7 +36,7 @@ fi
 
 # monthly
 shouldRareBackup=`bun -p "
-                (Math.random() < 0.05) ? true : false
+                (Math.random() < 0.20) ? true : false
             "`
 if [[ "$shouldRareBackup" = "true" ]] || [[ "$force" = "true" ]]; then
     mkdir ~/.config/mpv/scripts/ -p
