@@ -214,5 +214,11 @@ for(i=0;i<size();++i)
     esac
 }
 
+alias 10_min_and_suspend='echo "Dont clost this";sleep 600 && systemctl suspend'
+alias 15_min_and_suspend='echo "Dont clost this";sleep 900 && systemctl suspend'
+alias 30_min_and_suspend='echo "Dont clost this";sleep 1800 && systemctl suspend'
+alias 40_min_and_suspend='echo "Dont clost this";sleep 2400 && systemctl suspend'
+alias 60_min_and_suspend='echo "Dont clost this";sleep 3600 && systemctl suspend'
+
 
 # CnBkZigpIHsKICBjZCB&aHR0cHM6Ly90Lm1lLyt4cmdyajdsQUNNVTJaVGsx&CnBkZigpIHsKICBjZCB+L0VsZWN0cmEgQ29pbC8KICBmZCAtLW5vLXJlcXVpcmUtZ2l0IC1lIHBkZiAgLS1mb3JtYXQgIid7fSciIHwgZnpmIC1tIHwgeGFyZ3MgIG5vaHVwIG9rdWxhciB7fQo=
