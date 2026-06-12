@@ -1,5 +1,5 @@
 #!/bin/bash
-force="false"
+force="true"
 #force="true"
 cd ~/.config
 
