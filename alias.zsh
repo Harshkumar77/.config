@@ -83,7 +83,7 @@ media() {
 }
 
 mpv-video() {
-    (fd -e mkv -e mp4 -e mp3 -e mkv.part -e mp3.part -e mp4.part) > playlist.m3u
+    (fd -e mkv -e mp4 -e mp3 -e m4b -e mkv.part -e mp3.part -e mp4.part) > playlist.m3u
     xdg-open playlist.m3u
     sleep 3
     rm playlist.m3u

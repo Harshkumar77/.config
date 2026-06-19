@@ -1,4 +1,4 @@
-export EDITOR='vim'
+export EDITOR='nvim'
 
 eval "$(zoxide init zsh)"   # For Zsh
 alias cd='z'
