@@ -39,6 +39,8 @@ tlauncher-installer
 trek
 vifm-devicons-git
 vifmimg-git
+vlc-plugin-kwallet
+vlc-plugin-quicksync
 xidel-bin
 yayfzf
 yetris
