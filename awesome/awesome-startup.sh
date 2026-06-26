@@ -16,6 +16,7 @@ choice=$((
 if [ "$choice" == "yes" ]; then
   zsh -c '~/.config/awesome/Long.sh' &
   ~/.config/awesome/Song.sh &
-  android-studio &
-  anki &
+  google-chrome-stable 
+  # android-studio &
+  # anki &
 fi
