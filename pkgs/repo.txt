@@ -45,6 +45,7 @@ autoconf
 automake
 avahi
 awesome
+ayatana-ido
 b43-fwcutter
 babl
 base
@@ -196,6 +197,7 @@ ftgl
 fuse-common
 fuse2
 fuse3
+fvm
 fzf
 galculator
 garcon
@@ -490,6 +492,8 @@ libatomic_ops
 libavc1394
 libavif
 libavtp
+libayatana-appindicator
+libayatana-indicator
 libb2
 libblake3
 libblockdev
@@ -841,7 +845,9 @@ linux618
 linux70
 lirc
 live-media
+lld
 llhttp
+llvm
 llvm-libs
 llvm20-libs
 llvm21-libs
@@ -1002,6 +1008,7 @@ papirus-icon-theme
 papirus-maia-icon-theme
 parted
 patch
+patchelf
 pavucontrol
 pciutils
 pcre
