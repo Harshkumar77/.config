@@ -4,6 +4,8 @@ matching: "fuzzy";
 sorting-method: "fzf";
 case-sensitive: false;
 tokenize: true;
+modes: [window,drun,run,ssh,windowcd];
 }
 
 @theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+

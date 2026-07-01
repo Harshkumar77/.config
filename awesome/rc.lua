@@ -436,7 +436,7 @@ globalkeys = gears.table.join(
 
 	awful.key({ modkey, "Shift" }, "space", function()
 		-- Change to the previous layout
-		awful.spawn("rofi -show window")
+		awful.spawn("rofi -show windowcd")
 	end, { description = "select previous", group = "layout" }),
 
 	awful.key({ modkey, "Control" }, "n", function()
