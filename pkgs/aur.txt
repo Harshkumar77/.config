@@ -33,7 +33,6 @@ rofi-power-menu
 ruby-fusuma
 snake-asm-bin
 sudoku-gtk3
-syncthing-gtk
 tetrigo-bin
 tiv
 tlauncher-installer

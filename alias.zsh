@@ -53,7 +53,6 @@ alias cdd='zi'
 
 download-songs() {
     zsh -c "$(bun ~/.config/scripts/download-songs.ts)"
-    bun ~/.config/scripts/conan.ts
 }
 
 vlc-audio() {

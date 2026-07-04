@@ -35,4 +35,5 @@ console.log(
       fd -e mp3 >> ${key}.m3u`
     }).join("\n")
 );
+console.log("zip -r /Temp/music.zip ~/Music")
 console.log('bun ~/.config/scripts/conan.ts');
