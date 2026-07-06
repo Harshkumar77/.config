@@ -448,7 +448,7 @@ globalkeys = gears.table.join(
 	end, { description = "restore minimized", group = "client" }),
 
 	awful.key({ modkey }, "r", function(c)
-		awful.spawn("alacritty --command nvim /home/giga/.config/ts-scripts/key.ts")
+		awful.spawn('xdg-open "obsidian://adv-uri?vault=Electra%20Coil&commandid=omnisearch%3Ashow-modal')
 	end, { description = "run prompt", group = "launcher" }),
 
 	-- Rofi
