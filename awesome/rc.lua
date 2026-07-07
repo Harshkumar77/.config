@@ -448,7 +448,7 @@ globalkeys = gears.table.join(
 	end, { description = "restore minimized", group = "client" }),
 
 	awful.key({ modkey }, "r", function(c)
-		awful.spawn("obsidian 'obsidian://adv-uri?vault=Electra%20Coil&commandid=omnisearch%3Ashow-modal'")
+		awful.spawn("obsidian 'obsidian://adv-uri?vault=Electra%20Coil&commandid=omnisearch%3Ashow-modal';sleep 1")
     awful.client.urgent.jumpto()
 	end, { description = "run prompt", group = "launcher" }),
 
