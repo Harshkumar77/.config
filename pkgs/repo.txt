@@ -1228,6 +1228,7 @@ rasqal
 rav1e
 rclone
 re2
+readest
 readline
 redland
 redshift
