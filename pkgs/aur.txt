@@ -2,6 +2,7 @@
 accounts-qml-module
 android-studio
 ani-cli
+bash-statemgr
 botan2
 buku
 buku-dmenu
@@ -18,6 +19,7 @@ hexchat
 libgadu
 libinput-gestures
 libpurple
+libvibrant
 linux-firmware-meta
 linux515
 localsend-bin
@@ -37,11 +39,13 @@ tetrigo-bin
 tiv
 tlauncher-installer
 trek
+vibrant-cli
 vifm-devicons-git
 vifmimg-git
 vlc-plugin-kwallet
 vlc-plugin-quicksync
 xidel-bin
+xrandr-mgr
 yayfzf
 yetris
 zoom

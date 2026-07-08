@@ -29,6 +29,7 @@ aom
 apparmor
 appstream
 appstream-glib
+arandr
 archlinux-appstream-data
 archlinux-keyring
 argon2
@@ -120,6 +121,7 @@ dbus-broker-units
 dbus-glib
 dbus-units
 dconf
+ddcutil
 debugedit
 default-cursors
 deno
@@ -320,6 +322,7 @@ hwdata
 hwinfo
 hwloc
 hyphen
+i2c-tools
 iana-etc
 icu
 ijs
@@ -1569,6 +1572,7 @@ xorg-xkbcomp
 xorg-xkill
 xorg-xmodmap
 xorg-xprop
+xorg-xrandr
 xorg-xrdb
 xorg-xset
 xorg-xwininfo
