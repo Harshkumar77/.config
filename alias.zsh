@@ -221,7 +221,7 @@ alias 60_min_and_suspend='echo "Dont clost this";sleep 3600 && systemctl suspend
 
 toggle_grayscreen() {
   date
-  cmd=$(vibrant-cli eDP | tail -1 | xargs -I{} bun -p '"{}".split(" ").pop().split(".")[0] === "0" ? "vibrant-cli eDP 1" : "vibrant-cli eDP 0"')
+  cmd=$(vibrant-cli eDP | tail -1 | xargs -I{} bun -p '"{}".split(" ").pop().split(".")[0] === "0" ? "vibrant-cli eDP 1; xgamma -gamma 1;" : "vibrant-cli eDP 0;xgamma -gamma 0.8;"')
   echo "$cmd"
   zsh -c "$cmd"
 

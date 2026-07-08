@@ -1567,6 +1567,7 @@ xorg-server-common
 xorg-setxkbmap
 xorg-twm
 xorg-xauth
+xorg-xgamma
 xorg-xinit
 xorg-xkbcomp
 xorg-xkill
