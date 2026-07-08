@@ -4,6 +4,7 @@ redshift -x
 redshift -O 3500
 redshift -O 3500
 ~/.config/scripts/backup.sh &
+vibrant-cli eDP 0
 
 killall fusuma
 fusuma &
