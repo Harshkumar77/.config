@@ -29,7 +29,7 @@ alias mpv-newest='mpv "$(fd . /tmp -e mkv -X ls -t | head -1)"'
 
 cmpv() {
     url=$(rofi -dmenu)
-    cd ~/Temp 
+    cd ~/Temp
     wget "$url" &
     mpv "$(fd . ~/Temp -X ls -t | head -1)"
 }
@@ -186,7 +186,7 @@ games() {
 
 edit-config() {
     cd ~/.config
-    nvim -c "Telescope fd"
+    nvim -c "Telescope live_grep"
 }
 
 buffer() {
@@ -220,11 +220,11 @@ alias 40_min_and_suspend='echo "Dont clost this";sleep 2400 && systemctl suspend
 alias 60_min_and_suspend='echo "Dont clost this";sleep 3600 && systemctl suspend;exit'
 
 toggle_grayscreen() {
-  date
-  cmd=$(vibrant-cli eDP | tail -1 | xargs -I{} bun -p '"{}".split(" ").pop().split(".")[0] === "0" ? "vibrant-cli eDP 1; xgamma -gamma 1;" : "vibrant-cli eDP 0;xgamma -gamma 0.8;"')
-  echo "$cmd"
-  zsh -c "$cmd"
-
+    date
+    vibrant-cli eDP\
+      | tail -1\
+      | xargs -I{} bun -p '"{}".split(" ").pop().split(".")[0] === "0" ? "vibrant-cli eDP 1; xgamma -gamma 1;" : "vibrant-cli eDP 0;xgamma -gamma 0.8;"'\
+      | xargs -I{} zsh -c '{}'
 }
 
 
