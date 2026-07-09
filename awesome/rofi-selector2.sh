@@ -3,22 +3,22 @@
 if [ -z $@ ]
 then
   layouts=(
-      "floating"
-      "tile"
-      "tile.left"
-      "tile.bottom"
-      "tile.top"
-      "fair"
-      "fair.horizontal"
-      "spiral"
-      "spiral.dwindle"
-      "max"
-      "max.fullscreen"
-      "magnifier"
-      "corner.nw"
-      "corner.ne"
-      "corner.sw"
-      "corner.se"
+      "layout.floating"
+      "layout.tile"
+      "layout.tile.left"
+      "layout.tile.bottom"
+      "layout.tile.top"
+      "layout.fair"
+      "layout.fair.horizontal"
+      "layout.spiral"
+      "layout.spiral.dwindle"
+      "layout.max"
+      "layout.max.fullscreen"
+      "layout.magnifier"
+      "layout.corner.nw"
+      "layout.corner.ne"
+      "layout.corner.sw"
+      "layout.corner.se"
   )
   printf "%s\n" "${layouts[@]}" 
 else
@@ -29,22 +29,22 @@ awesome-client "
     local awful = require('awful')
 
     local layouts = {
-      ['floating'] = awful.layout.suit.floating,
-      ['tile'] = awful.layout.suit.tile,
-      ['tile.left'] = awful.layout.suit.tile.left,
-      ['tile.bottom'] = awful.layout.suit.tile.bottom,
-      ['tile.top'] = awful.layout.suit.tile.top,
-      ['fair'] = awful.layout.suit.fair,
-      ['fair.horizontal'] = awful.layout.suit.fair.horizontal,
-      ['spiral'] = awful.layout.suit.spiral,
-      ['spiral.dwindle'] = awful.layout.suit.spiral.dwindle,
-      ['max'] = awful.layout.suit.max,
-      ['max.fullscreen'] = awful.layout.suit.max.fullscreen,
-      ['magnifier'] = awful.layout.suit.magnifier,
-      ['corner.nw'] = awful.layout.suit.corner.nw,
-      ['corner.ne'] = awful.layout.suit.corner.ne,
-      ['corner.sw'] = awful.layout.suit.corner.sw,
-      ['corner.se'] = awful.layout.suit.corner.se,
+      ['layout.floating'] = awful.layout.suit.floating,
+      ['layout.tile'] = awful.layout.suit.tile,
+      ['layout.tile.left'] = awful.layout.suit.tile.left,
+      ['layout.tile.bottom'] = awful.layout.suit.tile.bottom,
+      ['layout.tile.top'] = awful.layout.suit.tile.top,
+      ['layout.fair'] = awful.layout.suit.fair,
+      ['layout.fair.horizontal'] = awful.layout.suit.fair.horizontal,
+      ['layout.spiral'] = awful.layout.suit.spiral,
+      ['layout.spiral.dwindle'] = awful.layout.suit.spiral.dwindle,
+      ['layout.max'] = awful.layout.suit.max,
+      ['layout.max.fullscreen'] = awful.layout.suit.max.fullscreen,
+      ['layout.magnifier'] = awful.layout.suit.magnifier,
+      ['layout.corner.nw'] = awful.layout.suit.corner.nw,
+      ['layout.corner.ne'] = awful.layout.suit.corner.ne,
+      ['layout.corner.sw'] = awful.layout.suit.corner.sw,
+      ['layout.corner.se'] = awful.layout.suit.corner.se,
     }
 
     local t = awful.screen.focused().selected_tag
