@@ -9,6 +9,7 @@ buku-dmenu
 celeste-client-bin
 curseofwar
 dclock
+electron37
 espeak
 fontpreview-git
 fzf-tab-git
@@ -22,7 +23,10 @@ libpurple
 libvibrant
 linux-firmware-meta
 linux515
+linux70
 localsend-bin
+mhwd-nvidia-570xx
+mhwd-nvidia-575xx
 mpv-sponsorblock
 myman
 obsidian-bin

@@ -147,7 +147,6 @@ e2fsprogs
 ecryptfs-utils
 efibootmgr
 efivar
-electron37
 electron39
 elementary-icon-theme
 enchant
@@ -845,7 +844,6 @@ linux-meta
 linux61
 linux612
 linux618
-linux70
 lirc
 live-media
 lld
@@ -913,8 +911,6 @@ mhwd-db
 mhwd-nvidia
 mhwd-nvidia-390xx
 mhwd-nvidia-470xx
-mhwd-nvidia-570xx
-mhwd-nvidia-575xx
 mhwd-nvidia-580xx
 micro
 miniaudio
