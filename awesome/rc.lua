@@ -458,7 +458,8 @@ globalkeys = gears.table.join(
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey, "Shift" }, "r", function()
-		awful.spawn("rofi -show run")
+		awful.spawn("obsidian 'obsidian://adv-uri?vault=Electra%20Coil&commandid=quickadd%3Achoice%3A525f3b49-1278-477e-8e09-ef5bb134e518'")
+		awful.client.urgent.jumpto()
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey, "Shift", "Control" }, "r", function()
