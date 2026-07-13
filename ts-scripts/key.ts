@@ -7,7 +7,7 @@ const keys: Keys = {
   modTabMode: "alternative",
   singleTapMod: true,
   titleBarEnabled: false,
-  keyboardNative: true,
+  keyboardNative: false,
 }
 
 
