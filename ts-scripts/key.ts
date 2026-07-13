@@ -5,8 +5,9 @@ import type { Keys } from './types'
 const keys: Keys = {
   screenshotMode: "full",
   modTabMode: "alternative",
-  singleTapMod : true,
-  titleBarEnabled : false,
+  singleTapMod: true,
+  titleBarEnabled: false,
+  keyboardNative: true,
 }
 
 

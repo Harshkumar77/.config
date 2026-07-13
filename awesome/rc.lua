@@ -65,6 +65,10 @@ editor_cmd = terminal .. " -e " .. editor
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod1"
+keyboardNative = io.popen("~/.config/ts-scripts/key.ts keyboardNative"):read("*all")
+if keyboardNative:match("true") then
+  modkey = "Mod4"
+end
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
