@@ -28,6 +28,7 @@ source ~/.config/alias.zsh
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
+ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 bindkey '^R' fzf-history-widget

@@ -78,3 +78,5 @@ google-chrome/
 zoom.conf
 zoom/
 zoomus.conf
+com.bilingify.readest/
+scripts/toggle-monitor-grayscale.sh
