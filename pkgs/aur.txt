@@ -31,6 +31,7 @@ mpv-sponsorblock
 myman
 obsidian-bin
 oh-my-zsh-git
+openwhispr-appimage
 pacman4console
 pidgin
 qbittorrent-enhanced-nox-bin
