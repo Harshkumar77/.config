@@ -736,25 +736,17 @@ local function show_stack(s)
   table.insert(lines, "")
   table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
 
-    notif = naughty.notify({
-        replaces_id = notif and notif.id or nil,
-        title = ("Screen %d Window Stack"):format(s.index),
-        text = table.concat(lines, "\n"),
-        position = "bottom_right",
-        timeout = 1.2,
-    })
-  --
-	-- awful.spawn({
-	-- 	"notify-send",
-	-- 	"-r",
-	-- 	tostring(notify_id),
-	-- 	"-t",
-	-- 	"4200",
-	-- 	"-a",
-	-- 	"AwesomeWM",
-	-- 	string.format("Screen %d Window Stack", s.index),
-	-- 	table.concat(lines, "\n"),
-	-- }, false)
+	awful.spawn({
+		"notify-send",
+		"-r",
+		tostring(notify_id),
+		"-t",
+		"4200",
+		"-a",
+		"AwesomeWM",
+		string.format("Screen %d Window Stack", s.index),
+		table.concat(lines, "\n"),
+	}, false)
 end
 
 client.connect_signal("focus", function(c)
