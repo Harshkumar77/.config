@@ -727,26 +727,37 @@ local function show_stack(s)
 	for _, c in ipairs(s:get_clients(false)) do
 		local class = (c.class or ""):lower()
 
-		if c.type ~= "dock" and class ~= "rofi" and class ~= "polybar" and class ~= "eww" and class ~= "xfce4-notifyd" and class ~= "Xfdesktop" and class ~= "Desktop" and class ~= "DHIS" then
+		if
+			c.type ~= "dock"
+			and class ~= "rofi"
+			and class ~= "polybar"
+			and class ~= "eww"
+			and class ~= "xfce4-notifyd"
+			and class ~= "Xfdesktop"
+			and class ~= "Desktop"
+			and class ~= "DHIS"
+		then
 			local prefix = (c == focused) and "▶ " or " ○ "
 			table.insert(lines, string.format("%s%s — %s", prefix, c.class or "<unknown>", c.name or "<untitled>"))
 		end
 	end
 
-  table.insert(lines, "")
-  table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
+	table.insert(lines, "")
+	table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
 
-	awful.spawn({
-		"notify-send",
-		"-r",
-		tostring(notify_id),
-		"-t",
-		"4200",
-		"-a",
-		"AwesomeWM",
-		string.format("Screen %d Window Stack", s.index),
-		table.concat(lines, "\n"),
-	}, false)
+	local g = s.workarea -- or s.geometry
+
+	notif = naughty.notify({
+		replaces_id = notif and notif.id or nil,
+		title = ("Screen %d Window Stack"):format(s.index),
+		text = table.concat(lines, "\n"),
+
+		position = "bottom_right",
+		timeout = 1.2,
+
+		width = math.floor(g.width * 0.5),
+	})
+
 end
 
 client.connect_signal("focus", function(c)
