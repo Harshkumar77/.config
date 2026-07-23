@@ -67,7 +67,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod1"
 keyboardNative = io.popen("~/.config/ts-scripts/key.ts keyboardNative"):read("*all")
 if keyboardNative:match("true") then
-  modkey = "Mod4"
+	modkey = "Mod4"
 end
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
@@ -462,7 +462,9 @@ globalkeys = gears.table.join(
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey, "Shift" }, "r", function()
-		awful.spawn("obsidian 'obsidian://adv-uri?vault=Electra%20Coil&commandid=quickadd%3Achoice%3A525f3b49-1278-477e-8e09-ef5bb134e518'")
+		awful.spawn(
+			"obsidian 'obsidian://adv-uri?vault=Electra%20Coil&commandid=quickadd%3Achoice%3A525f3b49-1278-477e-8e09-ef5bb134e518'"
+		)
 		awful.client.urgent.jumpto()
 	end, { description = "", group = "launcher" }),
 
@@ -712,36 +714,41 @@ client.connect_signal("manage", function(c)
 	end
 end)
 
-
 local notify_id = 9999
 
 local function show_stack(s)
-    if not s then
-        return
-    end
+	if not s then
+		return
+	end
 
-    local focused = client.focus
-    local lines = {}
+	local focused = client.focus
+	local lines = {}
 
-    for _, c in ipairs(s:get_clients(false)) do
-        local prefix = (c == focused) and "▶ " or "  "
-        table.insert(lines, prefix .. (c.name or "<untitled>"))
-    end
+	for _, c in ipairs(s:get_clients(false)) do
+		local prefix = (c == focused) and "▶ " or "  "
+		local app = c.class or "<unknown>"
+		local title = c.name or "<untitled>"
 
-    awful.spawn({
-        "notify-send",
-        "-r", tostring(notify_id),
-        "-t", "1200",
-        "-a", "AwesomeWM",
-        string.format("Screen %d Window Stack", s.index),
-        table.concat(lines, "\n"),
-    }, false)
+		table.insert(lines, string.format("%s%s — %s", prefix, app, title))
+	end
+
+	awful.spawn({
+		"notify-send",
+		"-r",
+		tostring(notify_id),
+		"-t",
+		"1200",
+		"-a",
+		"AwesomeWM",
+		string.format("Screen %d Window Stack", s.index),
+		table.concat(lines, "\n"),
+	}, false)
 end
 
 client.connect_signal("focus", function(c)
-    if c then
-        show_stack(c.screen)
-    end
+	if c then
+		show_stack(c.screen)
+	end
 end)
 
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
