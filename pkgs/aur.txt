@@ -1,4 +1,3 @@
-[1m[32m==>[0m[0m Config migration executed ( 12.6.0 ): Reset 'sortby' setting to default
 2048-tui
 accounts-qml-module
 android-studio
