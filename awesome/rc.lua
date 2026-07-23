@@ -742,9 +742,6 @@ local function show_stack(s)
 		end
 	end
 
-	table.insert(lines, "")
-	table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
-
 	local g = s.workarea -- or s.geometry
 
 	notif = naughty.notify({
