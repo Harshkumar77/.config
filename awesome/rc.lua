@@ -727,11 +727,14 @@ local function show_stack(s)
 	for _, c in ipairs(s:get_clients(false)) do
 		local class = (c.class or ""):lower()
 
-		if c.type ~= "dock" and class ~= "rofi" and class ~= "polybar" and class ~= "eww" and class ~= "xfce4-notifyd" and class ~= "Xfdesktop" and class ~= "DHIS" then
-			local prefix = (c == focused) and "▶ " or "  "
+		if c.type ~= "dock" and class ~= "rofi" and class ~= "polybar" and class ~= "eww" and class ~= "xfce4-notifyd" and class ~= "Xfdesktop" and class ~= "Desktop" and class ~= "DHIS" then
+			local prefix = (c == focused) and "▶ " or " ○ "
 			table.insert(lines, string.format("%s%s — %s", prefix, c.class or "<unknown>", c.name or "<untitled>"))
 		end
 	end
+
+  table.insert(lines, "")
+  table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
 
 	awful.spawn({
 		"notify-send",
