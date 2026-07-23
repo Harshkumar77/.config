@@ -725,11 +725,12 @@ local function show_stack(s)
 	local lines = {}
 
 	for _, c in ipairs(s:get_clients(false)) do
-		local prefix = (c == focused) and "▶ " or "  "
-		local app = c.class or "<unknown>"
-		local title = c.name or "<untitled>"
+		local class = (c.class or ""):lower()
 
-		table.insert(lines, string.format("%s%s — %s", prefix, app, title))
+		if c.type ~= "dock" and class ~= "rofi" and class ~= "polybar" and class ~= "eww" then
+			local prefix = (c == focused) and "▶ " or "  "
+			table.insert(lines, string.format("%s%s — %s", prefix, c.class or "<unknown>", c.name or "<untitled>"))
+		end
 	end
 
 	awful.spawn({
@@ -737,7 +738,7 @@ local function show_stack(s)
 		"-r",
 		tostring(notify_id),
 		"-t",
-		"1200",
+		"4200",
 		"-a",
 		"AwesomeWM",
 		string.format("Screen %d Window Stack", s.index),

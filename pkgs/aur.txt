@@ -1,3 +1,4 @@
+[1m[32m==>[0m[0m Config migration executed ( 12.6.0 ): Reset 'sortby' setting to default
 2048-tui
 accounts-qml-module
 android-studio
@@ -22,11 +23,7 @@ libinput-gestures
 libpurple
 libvibrant
 linux-firmware-meta
-linux515
-linux70
 localsend-bin
-mhwd-nvidia-570xx
-mhwd-nvidia-575xx
 mpv-sponsorblock
 myman
 obsidian-bin
@@ -47,8 +44,6 @@ trek
 vibrant-cli
 vifm-devicons-git
 vifmimg-git
-vlc-plugin-kwallet
-vlc-plugin-quicksync
 xidel-bin
 xrandr-mgr
 yayfzf

@@ -94,6 +94,7 @@ clipmenu
 clipnotify
 clucene
 cmake
+cmark-gfm
 code
 colord
 compiler-rt
@@ -104,6 +105,7 @@ confuse
 containerd
 copyq
 coreutils
+cpio
 cppdap
 cpupower
 cracklib
@@ -148,7 +150,9 @@ ecryptfs-utils
 efibootmgr
 efivar
 electron39
+electron42
 elementary-icon-theme
+elfutils
 enchant
 engrampa
 evince
@@ -210,6 +214,8 @@ gcolor3
 gcr
 gcr-4
 gd
+gdb
+gdb-common
 gdbm
 gdk-pixbuf2
 gegl
@@ -226,6 +232,7 @@ github-cli
 glew
 glib-networking
 glib2
+glib2-devel
 glib2-docs
 glibc
 glibc-locales
@@ -294,6 +301,7 @@ gtksourceview4
 gts
 gufw
 guile
+gumbo-parser
 gupnp
 gupnp-dlna
 gupnp-igd
@@ -519,6 +527,7 @@ libcamera-ipa
 libcanberra
 libcap
 libcap-ng
+libcbor
 libcddb
 libcdio
 libcdio-paranoia
@@ -561,10 +570,12 @@ libev
 libevdev
 libevent
 libexif
+libexsid
 libexttextcat
 libfakekey
 libfdk-aac
 libffi
+libfido2
 libfontenc
 libfreeaptx
 libfreehand
@@ -592,6 +603,7 @@ libgweather-4
 libgxps
 libhandy
 libheif
+libhwasan
 libice
 libid3tag
 libidn
@@ -667,6 +679,7 @@ libnma-common
 libnma-gtk4
 libnotify
 libnsl
+libntfs-3g
 libnumbertext
 libnvme
 libobjc
@@ -683,6 +696,7 @@ libpamac
 libpamac-flatpak-plugin
 libpamac-snap-plugin
 libpaper
+libpathrs
 libpcap
 libpciaccess
 libpgm
@@ -708,6 +722,7 @@ libraqm
 libraw
 libraw1394
 libreoffice-still
+libresidfp
 librevenge
 librsvg
 libsamplerate
@@ -840,11 +855,14 @@ linux-firmware-other
 linux-firmware-radeon
 linux-firmware-realtek
 linux-firmware-whence
+linux-lts-meta
 linux-meta
 linux61
 linux612
 linux618
+linux71
 lirc
+litehtml0.9
 live-media
 lld
 llhttp
@@ -860,6 +878,7 @@ lpsolve
 lsb-release
 lua
 lua-luarocks
+lua51
 lua51-lpeg
 lua53
 lua53-lgi
@@ -1043,6 +1062,7 @@ perl-ipc-system-simple
 perl-libwww
 perl-lwp-mediatypes
 perl-mailtools
+perl-mime-base32
 perl-net-http
 perl-path-tiny
 perl-timedate
@@ -1282,6 +1302,7 @@ sonnet
 sord
 sound-theme-freedesktop
 soundtouch
+source-highlight
 spandsp
 speech-dispatcher
 speex
