@@ -749,7 +749,7 @@ local function show_stack(s)
 
 	notif = naughty.notify({
 		replaces_id = notif and notif.id or nil,
-		title = ("Screen %d Window Stack"):format(s.index),
+		title = os.date("%a %d %b %Y  %H:%M:%S"),
 		text = table.concat(lines, "\n"),
 
 		position = "bottom_right",

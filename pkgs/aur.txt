@@ -18,6 +18,7 @@ gtk2
 gtkspell
 hexchat
 libgadu
+libgnt
 libinput-gestures
 libpurple
 libvibrant
