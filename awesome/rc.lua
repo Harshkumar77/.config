@@ -712,6 +712,38 @@ client.connect_signal("manage", function(c)
 	end
 end)
 
+
+local notify_id = 9999
+
+local function show_stack(s)
+    if not s then
+        return
+    end
+
+    local focused = client.focus
+    local lines = {}
+
+    for _, c in ipairs(s:get_clients(false)) do
+        local prefix = (c == focused) and "▶ " or "  "
+        table.insert(lines, prefix .. (c.name or "<untitled>"))
+    end
+
+    awful.spawn({
+        "notify-send",
+        "-r", tostring(notify_id),
+        "-t", "1200",
+        "-a", "AwesomeWM",
+        string.format("Screen %d Window Stack", s.index),
+        table.concat(lines, "\n"),
+    }, false)
+end
+
+client.connect_signal("focus", function(c)
+    if c then
+        show_stack(c.screen)
+    end
+end)
+
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
 client.connect_signal("request::titlebars", function(c)
 	-- buttons for the titlebar
