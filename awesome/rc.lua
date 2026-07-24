@@ -765,7 +765,7 @@ local function show_stack(s)
 end
 
 client.connect_signal("focus", function(c)
-	if c and c.screen.index ~= 4 then
+	if c and c.screen.index == 4 then
 		show_stack(c.screen)
 	end
 end)
