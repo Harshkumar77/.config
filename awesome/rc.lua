@@ -724,6 +724,9 @@ local function show_stack(s)
 	local focused = client.focus
 	local lines = {}
 
+  table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
+  table.insert(lines, "")
+
 	for _, c in ipairs(s:get_clients(false)) do
 		local class = (c.class or ""):lower()
 
@@ -746,7 +749,6 @@ local function show_stack(s)
 
 	notif = naughty.notify({
 		replaces_id = notif and notif.id or nil,
-		title = '<span size="20000">' .. os.date("%a %d %b %Y  %H:%M:%S") .. "</span>",
 
 		text = '<span size="18000">' .. table.concat(lines, "\n") .. "</span>",
 		position = "top_middle",
