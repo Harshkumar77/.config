@@ -753,6 +753,7 @@ local function show_stack(s)
 		timeout = 1.2,
 
 		width = math.floor(g.width * 0.5),
+    height = math.floor(g.height * 0.5),
 	})
 
 end
