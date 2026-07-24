@@ -746,16 +746,15 @@ local function show_stack(s)
 
 	notif = naughty.notify({
 		replaces_id = notif and notif.id or nil,
-		title = os.date("%a %d %b %Y  %H:%M:%S"),
-		text = table.concat(lines, "\n"),
+		title = '<span size="20000">' .. os.date("%a %d %b %Y  %H:%M:%S") .. "</span>",
 
+		text = '<span size="18000">' .. table.concat(lines, "\n") .. "</span>",
 		position = "top_middle",
 		timeout = 0.6,
 
 		width = math.floor(g.width * 0.5),
-    height = math.floor(g.height * 0.5),
+		height = math.floor(g.height * 0.5),
 	})
-
 end
 
 client.connect_signal("focus", function(c)
