@@ -750,7 +750,7 @@ local function show_stack(s)
 		text = table.concat(lines, "\n"),
 
 		position = "top_left",
-		timeout = 0.6,
+		timeout = 0.3,
 
 		width = math.floor(g.width * 0.5),
     height = math.floor(g.height * 0.5),
