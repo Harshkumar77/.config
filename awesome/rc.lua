@@ -765,7 +765,7 @@ local function show_stack(s)
 end
 
 client.connect_signal("focus", function(c)
-	if c then
+	if c and c.name == "fullscreen" then
 		show_stack(c.screen)
 	end
 end)
