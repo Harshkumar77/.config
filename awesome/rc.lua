@@ -749,7 +749,7 @@ local function show_stack(s)
 		title = os.date("%a %d %b %Y  %H:%M:%S"),
 		text = table.concat(lines, "\n"),
 
-		position = "bottom_right",
+		position = "bottom_left",
 		timeout = 1.2,
 
 		width = math.floor(g.width * 0.5),
