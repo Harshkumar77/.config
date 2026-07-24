@@ -740,9 +740,8 @@ local function show_stack(s)
 			and class ~= "Desktop"
 			and class ~= "DHIS"
 		then
-			local prefix = (c == focused) and "<span foreground=\"#ff3333\"><b>" or ""
-      local suffix = "</b></span>"
-			table.insert(lines, string.format("%s%s — %s%s", prefix, c.class or "<unknown>", c.name or "<untitled>", suffix))
+			local prefix = (c == focused) and "▶ " or " ○ "
+			table.insert(lines, string.format("%s%s — %s", prefix, c.class or "<unknown>", c.name or "<untitled>"))
 		end
 	end
 
