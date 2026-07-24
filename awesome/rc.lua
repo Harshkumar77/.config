@@ -725,7 +725,7 @@ local function show_stack(s)
 	local lines = {}
 
   table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
-  table.insert(lines, "")
+  table.insert(lines, ("%a %d %b %Y  %H:%M:%S"))
 
 	for _, c in ipairs(s:get_clients(false)) do
 		local class = (c.class or ""):lower()
