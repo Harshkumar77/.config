@@ -724,39 +724,44 @@ local function show_stack(s)
 	local focused = client.focus
 	local lines = {}
 
-  table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
-  table.insert(lines, "")
+	table.insert(lines, os.date("%a %d %b %Y  %H:%M:%S"))
+	table.insert(lines, "")
 
-	for _, c in ipairs(s:get_clients(false)) do
+	local desk_i = #s:get_clients(false) - 1
+	for i, c in ipairs(s:get_clients(false)) do
 		local class = (c.class or ""):lower()
-
-		if
-			c.type ~= "dock"
-			and class ~= "rofi"
-			and class ~= "polybar"
-			and class ~= "eww"
-			and class ~= "xfce4-notifyd"
-			and class ~= "Xfdesktop"
-			and class ~= "Desktop"
-			and class ~= "DHIS"
-		then
-			local prefix = (c == focused) and "▶ " or " ○ "
-			table.insert(lines, string.format("%s%s — %s", prefix, c.class or "<unknown>", c.name or "<untitled>"))
+		if desk_i ~= i then
+			if
+				c.type ~= "dock"
+				and class ~= "rofi"
+				and class ~= "polybar"
+				and class ~= "eww"
+				and class ~= "xfce4-notifyd"
+				and class ~= "Xfdesktop"
+				and class ~= "Desktop"
+				and class ~= "DHIS"
+			then
+				local prefix = (c == focused) and "▶ " or " ○ "
+				table.insert(
+					lines,
+					string.format("%s%s — %s", prefix, c.class or "<unknown>", c.name or "<untitled>")
+				)
+			end
 		end
+
+		local g = s.workarea -- or s.geometry
+
+		notif = naughty.notify({
+			replaces_id = notif and notif.id or nil,
+
+			text = '<span size="18000">' .. table.concat(lines, "\n") .. "</span>",
+			position = "top_middle",
+			timeout = 0.6,
+
+			width = math.floor(g.width * 0.5),
+			height = math.floor(g.height * 0.5),
+		})
 	end
-
-	local g = s.workarea -- or s.geometry
-
-	notif = naughty.notify({
-		replaces_id = notif and notif.id or nil,
-
-		text = '<span size="18000">' .. table.concat(lines, "\n") .. "</span>",
-		position = "top_middle",
-		timeout = 0.6,
-
-		width = math.floor(g.width * 0.5),
-		height = math.floor(g.height * 0.5),
-	})
 end
 
 client.connect_signal("focus", function(c)
