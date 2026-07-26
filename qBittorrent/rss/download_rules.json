@@ -115,6 +115,44 @@
         },
         "useRegex": false
     },
+    "Bleach": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
+        ],
+        "assignedCategory": "",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "25 Jul 2026 17:23:31 +0000",
+        "mustContain": "bleach",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1
+        },
+        "useRegex": false
+    },
     "Classroom of the elite": {
         "addPaused": null,
         "affectedFeeds": [
