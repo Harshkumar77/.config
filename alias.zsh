@@ -12,6 +12,13 @@ backup() {
     zsh -c "~/.config/scripts/backup.sh"
 }
 
+music-archive() {
+  rm /Temp/Music.Long.zip.*; cd ~/Music ; 7z a -tzip /Temp/Music.Long.zip Long -v900m   
+  rm /Temp/Music.Song.zip.*; cd ~/Music ; 7z a -tzip /Temp/Music.Song.zip Song -v900m   
+  rm /Temp/Death\ Music.Note.zip.*; cd ~/Music ; 7z a -tzip /Temp/Death\ Music.Note.zip Death\ Note -v900m   
+  rm /Temp/Music.Desi.zip.*; cd ~/Music ; 7z a -tzip /Temp/Music.Desi.zip Desi -v900m   
+}
+
 awesome-launch() {
     killall xfwm4 && awesome
 }
@@ -64,11 +71,11 @@ vlc-audio-shuffle() {
 }
 
 mpv-audio() {
-    fd -e mp3 -X nohup mpv &
+    fd -e mp3 -X nohup mpv --force-window  --pause --loop-playlist=yes --shuffle --no-save-position-on-quit --no-save-position-on-quit &
 }
 
 mpv-audio-shuffle() {
-    fd -e mp3 -X nohup mpv --shuffle &
+    fd -e mp3 -X nohup mpv --shuffle --force-window  --pause --loop-playlist=yes --shuffle --no-save-position-on-quit &
 }
 
 dir-play() {
