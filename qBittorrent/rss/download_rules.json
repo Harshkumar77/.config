@@ -52,7 +52,7 @@
         "previouslyMatchedEpisodes": [
         ],
         "priority": 0,
-        "savePath": "",
+        "savePath": "/home/giga/Downloads/liar game",
         "smartFilter": false,
         "torrentContentLayout": null,
         "torrentParams": {
@@ -62,7 +62,7 @@
             "inactive_seeding_time_limit": -2,
             "operating_mode": "AutoManaged",
             "ratio_limit": -2,
-            "save_path": "",
+            "save_path": "/home/giga/Downloads/liar game",
             "seeding_time_limit": -2,
             "share_limit_action": "Default",
             "skip_checking": false,
@@ -71,7 +71,8 @@
             "ssl_private_key": "",
             "tags": [
             ],
-            "upload_limit": -1
+            "upload_limit": -1,
+            "use_auto_tmm": false
         },
         "useRegex": false
     },
@@ -551,6 +552,45 @@
             "tags": [
             ],
             "upload_limit": -1
+        },
+        "useRegex": false
+    },
+    "Saga of Tanya the Evil 2": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&q=Judas+Weekly+1080&c=0_0&f=0"
+        ],
+        "assignedCategory": "",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "29 Jul 2026 14:21:43 +0000",
+        "mustContain": "Saga of Tanya the Evil",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "/home/giga/Downloads/[Judas] Youjo Senki ",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/home/giga/Downloads/[Judas] Youjo Senki ",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false
         },
         "useRegex": false
     },
