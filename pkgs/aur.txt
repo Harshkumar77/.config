@@ -23,6 +23,7 @@ libinput-gestures
 libpurple
 libvibrant
 linux-firmware-meta
+litehtml0.9
 localsend-bin
 mpv-sponsorblock
 myman
@@ -31,6 +32,7 @@ oh-my-zsh-git
 openwhispr-appimage
 pacman4console
 pidgin
+python-pkg_resources
 qbittorrent-enhanced-nox-bin
 raidrivecli
 rofi-power-menu

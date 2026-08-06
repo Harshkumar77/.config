@@ -862,7 +862,6 @@ linux612
 linux618
 linux71
 lirc
-litehtml0.9
 live-media
 lld
 llhttp
@@ -1162,7 +1161,6 @@ python-packaging
 python-pexpect
 python-pillow
 python-pipx
-python-pkg_resources
 python-platformdirs
 python-protobuf
 python-psutil
