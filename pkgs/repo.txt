@@ -181,7 +181,6 @@ filesystem
 findutils
 firefox
 flac
-flameshot
 flatpak
 flex
 flite
@@ -1267,6 +1266,7 @@ runc
 rustup
 s-nail
 samba
+satty
 sbc
 sbctl
 screenfetch
