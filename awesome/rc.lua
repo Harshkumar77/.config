@@ -575,7 +575,7 @@ for i = 1, 5 do
 		awful.key({ modkey }, keysTags:sub(i, i), function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
-      local todotag = screen.tags[6]
+      local todotag = screen.tags[5]
 			local t = awful.screen.focused().selected_tag
 			if tag then
 				if t then
