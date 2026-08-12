@@ -575,11 +575,13 @@ for i = 1, 5 do
 		awful.key({ modkey }, keysTags:sub(i, i), function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
+      local todotag = screen.tags[6]
 			local t = awful.screen.focused().selected_tag
 			if tag then
 				if t then
 					if t == tag then
-						awful.tag.viewtoggle(tag)
+						-- awful.tag.viewtoggle(tag)
+						awful.tag.viewtoggle(todotag)
 					else
 						tag:view_only()
 					end
@@ -694,8 +696,8 @@ awful.rules.rules = {
 	-- Set Firefox to always map on the tag named "2" on screen 1.
 	-- { rule = { class = "Firefox Beta" }, properties = { screen = 1, tag = "fullscreen-II" } },
 	-- { rule = { class = "jetbrains-studio" }, properties = { screen = 1, tag = "fullscreen" } },
-	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "empty" } },
-	{ rule = { class = "qBittorrent" }, properties = { screen = 1, tag = "empty" } },
+	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "todo" } },
+	{ rule = { class = "qBittorrent" }, properties = { screen = 1, tag = "todo" } },
 	-- { rule = { class = "Thunar" }, properties = { screen = 1, tag = "main" } },
 	-- { rule = { class = "okular" }, properties = { screen = 1, tag = "main" } },
 	-- { rule = { class = "alacritty" }, properties = { screen = 1, tag = "2" } },
