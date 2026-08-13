@@ -11,7 +11,7 @@ echo -n "File Manager (y/n): "
 read choice
 choice=${choice:l}  # lowercase conversion
 if [[ "$choice" == "y" || "$choice" == "yes" ]]; then
-    xdg-open "$(pwd)" 
+    thunar "$(pwd)" &
     exit
 elif [[ "$choice" == "n" || "$choice" == "no"  ]]; then
     thunar "$(pwd)" &
