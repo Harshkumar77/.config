@@ -581,7 +581,7 @@ for i = 1, 5 do
 				if t then
 					if t == tag then
 						awful.tag.viewtoggle(tag)
-						awful.tag.viewtoggle(todotag)
+						-- awful.tag.viewtoggle(todotag)
 					else
 						tag:view_only()
 					end
