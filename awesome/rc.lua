@@ -827,7 +827,14 @@ end)
 --
 --
 
+client.connect_signal("manage", function(c)
+    awful.client.setslave(c)
+end)
+
+
 awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
+
+
 
 modTabMode = io.popen("~/.config/ts-scripts/key.ts modTabMode"):read("*all")
 function quickWindowSwitch()
