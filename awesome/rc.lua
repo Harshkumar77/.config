@@ -696,7 +696,7 @@ awful.rules.rules = {
 
 	-- Set Firefox to always map on the tag named "2" on screen 1.
 	-- { rule = { class = "Firefox" }, properties = { screen = 1, tag = "fullscreen-II" } },
-	{ rule = { class = "Firefox" }, properties = { screen = 1, tag = "todo" } },
+	{ rule = { class = "firefox" }, properties = { screen = 1, tag = "todo" } },
 	{ rule = { class = "Google-chrome" }, properties = { screen = 1, tag = "todo" } },
 	-- { rule = { class = "jetbrains-studio" }, properties = { screen = 1, tag = "fullscreen" } },
 	{ rule = { class = "mpv" }, properties = { screen = 1, tag = "todo" } },
