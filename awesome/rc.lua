@@ -199,7 +199,7 @@ awful.screen.connect_for_each_screen(function(s)
 	-- Each screen has its own tag table.
 	local names = {"todo",  "main-II", "main-III", "fullscreen", "empty" }
 	local l = awful.layout.suit -- Just to save some typing: use an alias.
-	local layouts = {l.spiral, l.corner.nw, l.spiral, l.max.fullscreen }
+	local layouts = {l.spiral.dwindle, l.corner.nw, l.corner.se, l.max.fullscreen }
 	awful.tag(names, s, layouts)
 
 	-- Create a promptbox for each screen
