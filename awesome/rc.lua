@@ -522,13 +522,17 @@ clientkeys = gears.table.join(
 		{ description = "toggle floating", group = "client" }
 	),
 	awful.key({ modkey, "Control" }, "Return", function(c)
-		local clients = client.get()
-		local current_idx = awful.client.idx(c)
-		local last_idx = #clients
-
-		if current_idx and last_idx and current_idx < last_idx then
-			awful.client.swap.byidx(last_idx - current_idx, c)
-		end
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
+		awful.client.swap.byidx(1)
 	end, { description = "move to last", group = "client" }),
 	awful.key({ modkey }, "Return", function(c)
 		-- c:swap(awful.client.getmaster())
