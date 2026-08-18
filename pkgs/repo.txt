@@ -394,6 +394,7 @@ kitemviews
 kjobwidgets
 kmod
 knotifications
+kodi
 kparts
 kpeople
 krb5
@@ -531,6 +532,7 @@ libcddb
 libcdio
 libcdio-paranoia
 libcdr
+libcec
 libcloudproviders
 libcmis
 libcolord
@@ -644,6 +646,7 @@ libmbim
 libmd
 libmfx
 libmicrodns
+libmicrohttpd
 libmm-glib
 libmms
 libmng
@@ -911,6 +914,7 @@ manjaro-system
 manjaro-wallpapers-18.0
 manjaro-xfce-settings
 manjaro-zsh-config
+mariadb-libs
 matcha-gtk-theme
 md4c
 mdadm
@@ -1011,6 +1015,7 @@ os-prober
 osinfo-db
 ostree
 p11-kit
+p8-platform
 pacman
 pacman-mirrors
 pam
@@ -1106,6 +1111,7 @@ projectm
 protobuf
 protobuf-c
 psmisc
+pugixml
 pulseaudio-qt
 purpose
 python
@@ -1165,6 +1171,7 @@ python-protobuf
 python-psutil
 python-ptyprocess
 python-pycparser
+python-pycryptodomex
 python-pycurl
 python-pygments
 python-pyparsing
@@ -1183,6 +1190,7 @@ python-rpds-py
 python-send2trash
 python-setproctitle
 python-setuptools
+python-simplejson
 python-six
 python-snowballstemmer
 python-soupsieve
@@ -1302,6 +1310,7 @@ sound-theme-freedesktop
 soundtouch
 source-highlight
 spandsp
+spdlog
 speech-dispatcher
 speex
 speexdsp
@@ -1344,6 +1353,8 @@ tig
 timeshift
 timeshift-autosnap-manjaro
 tinysparql
+tinyxml
+tinyxml2
 tk
 totem-pl-parser
 tpm2-tss
@@ -1489,6 +1500,7 @@ wallpapers-juhraya
 wavpack
 wayland
 wayland-protocols
+waylandpp
 webkit2gtk-4.1
 webkitgtk-6.0
 webrtc-audio-processing-1
