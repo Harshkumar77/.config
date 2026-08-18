@@ -197,9 +197,9 @@ awful.screen.connect_for_each_screen(function(s)
 	set_wallpaper(s)
 
 	-- Each screen has its own tag table.
-	local names = {"todo",  "main-II", "main-III", "fullscreen", "empty" }
+	local names = { "todo", "main-II", "main-III", "fullscreen", "empty" }
 	local l = awful.layout.suit -- Just to save some typing: use an alias.
-	local layouts = {l.spiral.dwindle, l.corner.nw, l.corner.se, l.max.fullscreen }
+	local layouts = { l.spiral.dwindle, l.corner.nw, l.corner.se, l.max.fullscreen }
 	awful.tag(names, s, layouts)
 
 	-- Create a promptbox for each screen
@@ -522,9 +522,13 @@ clientkeys = gears.table.join(
 		{ description = "toggle floating", group = "client" }
 	),
 	awful.key({ modkey, "Control" }, "Return", function(c)
-		-- c:swap(awful.client.getmaster())
-		awful.client.swap.byidx(49, c)
-		-- awful.client.setmaster(c)
+		local clients = client.get()
+		local current_idx = awful.client.idx(c)
+		local last_idx = #clients
+
+		if current_idx and last_idx and current_idx < last_idx then
+			awful.client.swap.byidx(last_idx - current_idx, c)
+		end
 	end, { description = "move to last", group = "client" }),
 	awful.key({ modkey }, "Return", function(c)
 		-- c:swap(awful.client.getmaster())
@@ -581,7 +585,7 @@ for i = 1, 5 do
 		awful.key({ modkey }, keysTags:sub(i, i), function()
 			local screen = awful.screen.focused()
 			local tag = screen.tags[i]
-      local todotag = screen.tags[5]
+			local todotag = screen.tags[5]
 			local t = awful.screen.focused().selected_tag
 			if tag then
 				if t then
@@ -836,13 +840,10 @@ end)
 --
 
 client.connect_signal("manage", function(c)
-    awful.client.setslave(c)
+	awful.client.setslave(c)
 end)
 
-
 awful.spawn.with_shell("~/.config/awesome/awesome-startup.sh")
-
-
 
 modTabMode = io.popen("~/.config/ts-scripts/key.ts modTabMode"):read("*all")
 function quickWindowSwitch()
