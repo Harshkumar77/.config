@@ -371,6 +371,11 @@ theme.titlebar_bg_focus = "#CC9393"
 theme.titlebar_bg_normal = "#3F3F3F"
 -- }}}
 
+theme.useless_gap = dpi(2)
+theme.border_width = dpi(5)
+theme.border_normal = "#272822"
+theme.border_focus = "#c4265e"
+theme.border_marked = "#CC9393"
 return theme
 
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80:foldmethod=marker
