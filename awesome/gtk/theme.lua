@@ -359,11 +359,11 @@ theme.bg_systray = theme.bg_normal
 -- }}}
 
 -- {{{ Borders
-theme.useless_gap = dpi(0)
-theme.border_width = dpi(0)
-theme.border_normal = "#272822"
-theme.border_focus = "##c6a0f6"
-theme.border_marked = "#CC9393"
+-- theme.useless_gap = dpi(0)
+-- theme.border_width = dpi(0)
+-- theme.border_normal = "#272822"
+-- theme.border_focus = "##c6a0f6"
+-- theme.border_marked = "#CC9393"
 -- }}}
 
 -- {{{ Titlebars
@@ -376,6 +376,7 @@ theme.border_width = dpi(5)
 theme.border_normal = "#272822"
 theme.border_focus = "#c4265e"
 theme.border_marked = "#CC9393"
+
 return theme
 
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80:foldmethod=marker
