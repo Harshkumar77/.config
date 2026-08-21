@@ -50,8 +50,9 @@ end
 -- beautiful.init("~/.config/awesome/" .. "zenburn/theme-patch.lua")
 -- beautiful.init("~/.config/awesome/" .. "gtk/theme.lua")
 -- beautiful.init("~/.config/awesome/" .. "default/theme.lua")
+beautiful.init("~/.config/awesome/" .. "sky-cus/theme.lua")
 
-beautiful.init(gears.filesystem.get_themes_dir() .. "sky/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "sky/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
