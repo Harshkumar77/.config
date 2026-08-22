@@ -304,6 +304,11 @@ globalkeys = gears.table.join(
 	--         {description = "show main menu", group = "awesome"}),
 
 	-- Layout manipulation
+	awful.key({ modkey, "Shift" }, "r", function()
+		awful.spawn(
+			'zsh -c \'xdotool set_window --name "$(rofi -dmenu -p Rename <<< "$(xdotool getactivewindow getwindowname)")" "$(xdotool getactivewindow)"\''
+		)
+	end),
 	awful.key({ modkey, "Shift" }, "j", function()
 		awful.client.swap.byidx(1)
 		--awful.client.focus.byidx(-1)
@@ -523,8 +528,7 @@ clientkeys = gears.table.join(
 		{ description = "toggle floating", group = "client" }
 	),
 	awful.key({ modkey, "Control" }, "Return", function(c)
-    awful.client.setslave(c)
-
+		awful.client.setslave(c)
 	end, { description = "move to last", group = "client" }),
 	awful.key({ modkey }, "Return", function(c)
 		-- c:swap(awful.client.getmaster())
