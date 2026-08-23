@@ -17,6 +17,7 @@ google-chrome
 gtk2
 gtkspell
 hexchat
+lib32-libcap
 libgadu
 libgnt
 libinput-gestures
