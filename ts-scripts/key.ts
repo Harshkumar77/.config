@@ -6,7 +6,7 @@ const keys: Keys = {
   screenshotMode: "full",
   modTabMode: "alternative",
   singleTapMod: true,
-  titleBarEnabled: true,
+  titleBarEnabled: false,
   keyboardNative: true,
 }
 
