@@ -17,7 +17,11 @@ google-chrome
 gtk2
 gtkspell
 hexchat
+lib32-audit
 lib32-libcap
+lib32-libnsl
+lib32-libtirpc
+lib32-pam
 libgadu
 libgnt
 libinput-gestures
