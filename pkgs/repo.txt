@@ -85,6 +85,7 @@ catfish
 ccache
 cdparanoia
 celluloid
+cfitsio
 chromaprint
 chromium
 cifs-utils
@@ -222,6 +223,7 @@ geoclue
 geocode-glib
 gettext
 gexiv2
+gexiv2-common
 ghostscript
 giflib
 gimp
@@ -316,6 +318,7 @@ gweather-locations
 gzip
 harfbuzz
 harfbuzz-icu
+hdf5
 hdparm
 hicolor-icon-theme
 hidapi
@@ -403,6 +406,7 @@ kstatusnotifieritem
 ksvg
 ktextwidgets
 kvantum
+kvantum-qt5
 kvantum-theme-matcha
 kwallet
 kwidgetsaddons
@@ -483,6 +487,7 @@ libabw
 libaccounts-glib
 libaccounts-qt
 libadwaita
+libaec
 libaio
 libao
 libappindicator
@@ -528,6 +533,7 @@ libcdio
 libcdio-paranoia
 libcdr
 libcec
+libcgif
 libcloudproviders
 libcmis
 libcolord
@@ -636,6 +642,7 @@ libmad
 libmakepkg-dropins
 libmalcontent
 libmanette
+libmatio
 libmatroska
 libmbim
 libmd
@@ -758,6 +765,8 @@ libtirpc
 libtommath
 libtool
 libtorrent-rasterbar
+libtraceevent
+libtracefs
 libtsan
 libubsan
 libunibreak
@@ -776,6 +785,7 @@ libva
 libva-intel-driver
 libvdpau
 libverto
+libvips
 libvisio
 libvlc
 libvorbis
@@ -859,6 +869,7 @@ linux612
 linux618
 linux71
 lirc
+litehtml
 live-media
 lld
 llhttp
@@ -1030,6 +1041,7 @@ pciutils
 pcre
 pcre2
 pcsclite
+pdfio
 perl
 perl-alien-build
 perl-alien-libxml2
