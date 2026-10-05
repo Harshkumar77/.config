@@ -126,7 +126,7 @@ vlc-video-shuffle() {
 }
 
 play-long-on-start() {
-    mpv ~/Music/Long/Long.m3u --pause --loop-playlist=yes --shuffle --no-save-position-on-quit
+    mpv ~/Music/Long/Long.m3u --pause --loop --shuffle --no-save-position-on-quit
 }
 
 play-song-on-start() {
