@@ -79,6 +79,7 @@
     "American Hostage": {
         "addPaused": null,
         "affectedFeeds": [
+            "https://rss.knaben.org/1080p%20web%20h264-ethel"
         ],
         "assignedCategory": "",
         "enabled": true,
