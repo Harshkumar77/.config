@@ -479,7 +479,7 @@ globalkeys = gears.table.join(
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey, "Shift" }, "b", function()
-		awful.spawn("google-chrome-stable --new-window 'file:///home/giga/.config/Error%20404%20(Not%20Found)!!1.html'")
+		awful.spawn("google-chrome-stable --app='file:///home/giga/.config/Error%20404%20(Not%20Found)!!1.html' --new-window")
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey , "Control"}, "b", function()
@@ -487,7 +487,7 @@ globalkeys = gears.table.join(
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey }, "b", function()
-		awful.spawn("google-chrome-stable --app='file:///home/giga/.config/Error%20404%20(Not%20Found)!!1.html' --new-window")
+		awful.spawn("google-chrome-stable --new-window 'file:///home/giga/.config/Error%20404%20(Not%20Found)!!1.html'")
 	end, { description = "", group = "launcher" }),
 
 	awful.key({ modkey }, "e", function()
