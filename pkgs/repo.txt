@@ -1219,7 +1219,6 @@ python-werkzeug
 python-wheel
 python-wxpython
 python-yaml
-qbittorrent
 qca-qt6
 qpdf
 qqc2-desktop-style
