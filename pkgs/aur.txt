@@ -28,6 +28,7 @@ libinput-gestures
 libpurple
 libvibrant
 linux-firmware-meta
+linux71
 litehtml0.9
 localsend-bin
 mpv-sponsorblock
