@@ -127,6 +127,7 @@ dconf
 ddcutil
 debugedit
 default-cursors
+deluge
 deno
 desktop-file-utils
 device-mapper
@@ -221,6 +222,8 @@ gdk-pixbuf2
 gegl
 geoclue
 geocode-glib
+geoip
+geoip-database
 gettext
 gexiv2
 gexiv2-common
@@ -505,6 +508,7 @@ libavtp
 libayatana-appindicator
 libayatana-indicator
 libb2
+libb64
 libblake3
 libblockdev
 libblockdev-crypto
@@ -664,6 +668,7 @@ libmtp
 libmwaw
 libmypaint
 libmysofa
+libnatpmp
 libnautilus-extension
 libndp
 libnet
@@ -940,6 +945,7 @@ mhwd-nvidia-470xx
 mhwd-nvidia-580xx
 micro
 miniaudio
+miniupnpc
 minizip
 mjpegtools
 mkinitcpio
@@ -1124,6 +1130,7 @@ python
 python-argcomplete
 python-attrs
 python-autocommand
+python-automat
 python-babel
 python-bcrypt
 python-beautifulsoup4
@@ -1132,10 +1139,12 @@ python-build
 python-cairo
 python-certifi
 python-cffi
+python-chardet
 python-charset-normalizer
 python-click
 python-configargparse
 python-configobj
+python-constantly
 python-cryptography
 python-dateutil
 python-dbus
@@ -1145,11 +1154,15 @@ python-docopt
 python-docutils
 python-flask
 python-flask-cors
+python-geoip
 python-gobject
 python-html5lib
 python-httplib2
+python-hyperlink
 python-idna
+python-ifaddr
 python-imagesize
+python-incremental
 python-installer
 python-itsdangerous
 python-jaraco.collections
@@ -1163,6 +1176,7 @@ python-keyutils
 python-legacy-cgi
 python-libevdev
 python-lxml
+python-mako
 python-markdown
 python-markupsafe
 python-more-itertools
@@ -1176,10 +1190,12 @@ python-platformdirs
 python-protobuf
 python-psutil
 python-ptyprocess
+python-pyasn1
 python-pycparser
 python-pycryptodomex
 python-pycurl
 python-pygments
+python-pyopenssl
 python-pyparsing
 python-pyproject-hooks
 python-pyqt6
@@ -1190,10 +1206,12 @@ python-pytz
 python-pyudev
 python-pyxdg
 python-referencing
+python-rencode
 python-requests
 python-roman-numerals-py
 python-rpds-py
 python-send2trash
+python-service-identity
 python-setproctitle
 python-setuptools
 python-simplejson
@@ -1209,6 +1227,7 @@ python-sphinxcontrib-jsmath
 python-sphinxcontrib-qthelp
 python-sphinxcontrib-serializinghtml
 python-tqdm
+python-twisted
 python-typing_extensions
 python-urllib3
 python-userpath
@@ -1218,6 +1237,7 @@ python-werkzeug
 python-wheel
 python-wxpython
 python-yaml
+python-zope-interface
 qca-qt6
 qpdf
 qqc2-desktop-style
@@ -1363,6 +1383,7 @@ tinyxml2
 tk
 totem-pl-parser
 tpm2-tss
+transmission-gtk
 tree
 tree-sitter
 tree-sitter-c
