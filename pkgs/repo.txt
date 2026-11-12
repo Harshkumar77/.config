@@ -101,6 +101,7 @@ colord
 compiler-rt
 compiler-rt20
 compiler-rt21
+compiler-rt22
 composefs
 confuse
 containerd
@@ -872,6 +873,7 @@ linux-meta
 linux61
 linux612
 linux618
+linux72
 lirc
 litehtml
 live-media
@@ -881,6 +883,7 @@ llvm
 llvm-libs
 llvm20-libs
 llvm21-libs
+llvm22-libs
 lm_sensors
 lmdb
 localsearch
@@ -1001,6 +1004,7 @@ nss
 nss-mdns
 ntfs-3g
 ntp
+numactl
 numlockx
 nvidia-driver-assistant
 oath-toolkit
@@ -1320,6 +1324,7 @@ signon-plugin-oauth2
 signon-ui
 signond
 simdjson
+simdutf
 slang
 slop
 smbclient
@@ -1381,6 +1386,7 @@ tinysparql
 tinyxml
 tinyxml2
 tk
+tlottie
 totem-pl-parser
 tpm2-tss
 transmission-gtk
