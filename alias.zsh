@@ -107,7 +107,7 @@ anime-latest() {
 
 yt() {
     pipx upgrade yt-dlp
-    latest_url=$(copyq eval -- "tab('clipboard'); for(i=size(); i>0; --i) print(str(read(i-1)) + '\n');" | rg youtube | tail -1)
+    latest_url=$(copyq eval -- "tab('clipboard'); for(i=size(); i>0; --i) print(str(read(i-1)) + '\n');" | rg "youtube|mkv" | tail -1)
     nohup mpv "$latest_url" --pause
 }
 
