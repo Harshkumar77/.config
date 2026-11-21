@@ -1,3 +1,7 @@
+function mkcd() {
+  mkdir -p -- "$1" && cd -- "$1"
+}
+
 rmf() {
     fd --maxdepth 1 | rofi -dmenu -multi-select -p "Select files to delete" | while IFS= read -r file; do
         rm -rf -- "$file"
