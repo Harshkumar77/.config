@@ -87,8 +87,8 @@ dir-play() {
 }
 
 media() {
-    p="$(fzf --bind "change:reload(fd . ~ -e mkv -e mp4 -e zip -e crdownload --and '{q}' -x echo {/.})" --print-query | head -1)"
-    (fd . ~ -e mkv -e mp4 -e zip -e crdownload --and "$p" | sort) > /tmp/aa.m3u
+    p="$(fzf --bind "change:reload(fd . ~ -e mkv -e mp4 -e zip -e m3u -e crdownload --and '{q}' -x echo {/.})" --print-query | head -1)"
+    (fd . ~ -e m3u -e mkv -e mp4 -e zip -e crdownload --and "$p" | sort) > /tmp/aa.m3u
     mpv /tmp/aa.m3u
 }
 
