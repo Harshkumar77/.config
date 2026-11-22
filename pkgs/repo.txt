@@ -87,7 +87,6 @@ cdparanoia
 celluloid
 cfitsio
 chromaprint
-chromium
 cifs-utils
 ckbcomp
 clang
