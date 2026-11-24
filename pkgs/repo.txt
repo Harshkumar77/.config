@@ -874,7 +874,6 @@ linux-meta
 linux61
 linux612
 linux618
-linux72
 lirc
 litehtml
 live-media
