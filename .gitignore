@@ -80,3 +80,7 @@ zoom/
 zoomus.conf
 com.bilingify.readest/
 scripts/toggle-monitor-grayscale.sh
+deluge/
+libaccounts-glib/
+open-whispr/
+transmission/
